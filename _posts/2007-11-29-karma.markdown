@@ -1,0 +1,15 @@
+---
+date: '2007-11-29 10:13:35'
+layout: post
+slug: karma
+status: publish
+title: Karma
+wordpress_id: '34'
+categories:
+- Computers
+---
+
+While I was stuck in an airport Sunday, I spent an hour or so working on a clone of Bjorn's Karmerd (link not available because [Bjorn took down all his stuff](http://www.tipling.com/)). He has stopped development since getting frustrated with a BerkeleyDB incompatibility. Basically this web app allows you to increase or decrease an integer associated with a name. [Try it out.](/karma/) It's totally useless, but it's fun to waste time and/or brag about your score. One thing I really like is how it shows off Rails' simple URIs. You don't even really need hyperlinks between pages when URIs look like /karma/up/blah. As usual, all code is in a [public svn repo](/repos/karma/). I'm always impressed by how Rails handles escaping HTML, JavaScript, etc. Instead of having to write or even use a bunch of methods, it just takes care of the data munging behind the scenes. I suspect the only problem with this database will be spam, since it is so easy to create an entry. I hate CAPTCHAs with a vengeance, so I'm definitely not going to add something like that. If things get too bad I guess I'll block some IPs and/or reset the DB, so don't be depressed if your karma disappears. Another option would be to cease showing things with a score below some threshold, that way users can get rid of spam (and annoy their friends) and I can sit back and be lazy. 
+
+On an unrelated note, Sea-Tac lacks free wifi. This wouldn't be a problem except that EDGE is filtered heavily as well. Outgoing packets not addressed to port 80 get dropped. HTTP on other ports does not work, IMAP and POP don't work, not even ssh or telnet work. My direct flight from Spokane to San Jose turned into a flight through Seattle to San Jose, which turned into a delayed flight, which turned into a cancelled flight. After getting on a later plane to SJC, that flight was delayed and I got in much later than I expected (without my luggage). For all the annoyances I had to put up with, I wasn't compensated at all. Alaska used to at least offer free alcohol on flights delayed over 30 minutes. Guess I'm flying Southwest next time.
+

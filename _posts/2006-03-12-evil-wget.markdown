@@ -1,0 +1,12 @@
+---
+date: '2006-03-12 04:17:41'
+layout: post
+slug: evil-wget
+status: publish
+title: Evil wget
+wordpress_id: '19'
+categories:
+- Computers
+---
+
+I got tired of wget obeying robots.txt, so I got rid of a lines of code in the source and recompiled. It took me all of 5 minutes, and most of that was waiting for evil wget to compile. So to save others 5 minutes I've thrown the new [source](/code/evil_wget/evil_wget-1.10.2.tar.gz) and [binaries](/code/evil_wget/binaries/) up.

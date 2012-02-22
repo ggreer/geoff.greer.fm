@@ -1,0 +1,15 @@
+---
+date: '2009-08-16 17:38:46'
+layout: post
+slug: beggars
+status: publish
+title: Beggars
+wordpress_id: '332'
+---
+
+Living in a large city, I'm sometimes approached by people asking for money. I politely refuse, since I can't be sure they'll spend it on something helpful. For all I know they could use it to buy alcohol or other drugs. Still, I feel guilty about not helping these people. Recently I adopted a policy that lets me provide some degree of aid. 
+
+Now when approached, I still politely refuse, but I keep track of how many times this happens. When the tally gets big enough, I make a donation to my local chapter of the [American Red Cross](http://www.redcross.org/). The donation amount is one dollar for every time I was asked. Then I reset my tally and repeat.
+
+It's not perfect. I use my phone to keep the tally, but I can't pull it out while I'm driving or on a motorcycle. I've probably forgotten some occasions. The Red Cross is oriented more toward disaster aid, so I might donate to [OXFAM](http://www.oxfamamerica.org/) next time. Anyway my  implementation details are suboptimal, but it's an improvement over doing nothing.
+

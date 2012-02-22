@@ -1,0 +1,87 @@
+body {
+    background: #fff;
+    font-family: georgia,times,serif;
+    font-size: 120%;
+    color: #000;
+}
+
+a, a:link { color:#000; text-decoration:none; }
+a:visited { color:#555; }
+a:hover { text-decoration:underline; }
+a:active { color:#aaa; }
+
+hr {
+    height: 1px;
+    background-color: #000;
+    border: 0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 35em;
+    min-width: 25em;
+    width: 80%;
+}
+
+#title {
+    font-size: 3.5em;
+    text-align: center;
+    margin: 0.2em 0 0.1em;
+    padding: 0;
+}
+
+#globalnav {
+    text-align: center;
+}
+#globalnav ul, div#globalnav ul li {
+    display: inline;
+    list-style: none;
+    font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
+}
+#globalnav ul li {
+    line-height: 200%;
+    margin: 0 1em;
+}
+
+h2 {
+    font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    margin: 2em 0 0 0;
+}
+
+.post_header {
+    font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
+}
+.post_title {
+    font-size: 2em;
+    margin: 1em 0 0 0;
+}
+.post_date {
+    line-height: 150%;
+    text-align: right;
+    width: 100%;
+}
+.post {
+    line-height: 150%;
+}
+.post a, .post a:link {
+    text-decoration: underline;
+}
+
+.year {
+    color: #aaa;
+    font-size: 140%;
+    line-height: 200%;
+}
+.month {
+    font-size: 125%;
+    color: #777;
+    line-height: 150%;
+}
+.day {
+    float: left;
+    line-height: 125%;
+}
+.date {
+    width: 4em;
+}

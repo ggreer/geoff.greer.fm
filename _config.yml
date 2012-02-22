@@ -1,0 +1,8 @@
+auto: true
+#markdown: rdiscount
+paginate: 3
+permalink: /:year/:month/:day/:title
+pygments: true
+url: http://geoff.greer.fm/
+author: Geoff Greer
+title: Geoff's Site

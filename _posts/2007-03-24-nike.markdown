@@ -1,0 +1,12 @@
+---
+date: '2007-03-24 17:06:18'
+layout: post
+slug: nike
+status: publish
+title: Nike++
+wordpress_id: '10'
+categories:
+- Computers
+---
+
+I got tired of Nike's flash-based UI and I wanted to learn Ruby on Rails, so I've started work on a little RoR web app that allows people to [create accounts](/workout/public/login/add_user), [upload](/workout/public/runs) Nike+ XML files, and [view](/workout/public/runs) their runs. To view an example, just log in as geoff with the password geoff. This thing is definitely a work in progress, but if you want to screw around with the code you can download it [here](/code/workout.zip). The easiest way to deploy and test everything would probably be to just generate a generic Rails app and then copy the app directory over. If you want to try uploading runs but you don't have an iPod sport kit, use the XML files [here](/code/nike_xml/) for testing.

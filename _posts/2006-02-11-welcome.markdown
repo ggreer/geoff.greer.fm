@@ -1,0 +1,10 @@
+---
+date: '2006-02-11 03:01:34'
+layout: post
+slug: welcome
+status: publish
+title: Welcome
+wordpress_id: '21'
+---
+
+Well, this is my new website. I don't have much here right now, as it's mostly for myself and a few friends. Anything listed as older stuff will use whatever poorly written HTML from back when I made the page.

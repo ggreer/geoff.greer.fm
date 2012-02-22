@@ -1,0 +1,20 @@
+---
+layout: default
+title: ~/
+---
+
+{% for post in site.posts %}
+{% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% capture post_month %}{{ post.date | date: "%b" }}{% endcapture %}
+    {% if last_post_year != post_year %}
+{% capture last_post_year %}{{ post_year }}{% endcapture %}
+<p><div class="year date">{{ last_post_year }}</div></p>
+    {% endif %}
+    {% if last_post_month != post_month %}
+{% capture last_post_month %}{{ post_month }}{% endcapture %}
+<p><div class="month date">{{ last_post_month }}</div></p>
+    {% endif %}
+<p>
+<div class="day date">{{ post.date|date:"%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
+</p>
+{% endfor %}
