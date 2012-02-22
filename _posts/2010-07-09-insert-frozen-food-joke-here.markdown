@@ -37,28 +37,28 @@ For those who don't want to spend 25 minutes watching the video, the main points
 
 
 
-  * The common conception of freezing damage is backwards. Ice doesn't cause cells to expand and burst. Ice crystals form between cells, dehydrating and squishing cells as the crystals grow.
+* The common conception of freezing damage is backwards. Ice doesn't cause cells to expand and burst. Ice crystals form between cells, dehydrating and squishing cells as the crystals grow.
 
 
-  * Cryoprotectants can limit or even eliminate ice formation at liquid nitrogen temperatures. Instead of freezing, the solution increases in viscosity as temperature drops. Around -120ºC, the solution reaches its [glass transition temperature](http://en.wikipedia.org/wiki/Glass_transition) and becomes an [amorphous solid](http://en.wikipedia.org/wiki/Amorphous_solid).
+* Cryoprotectants can limit or even eliminate ice formation at liquid nitrogen temperatures. Instead of freezing, the solution increases in viscosity as temperature drops. Around -120ºC, the solution reaches its [glass transition temperature](http://en.wikipedia.org/wiki/Glass_transition) and becomes an [amorphous solid](http://en.wikipedia.org/wiki/Amorphous_solid).
 
 
-  * Cryoprotectant research is ongoing. A decade ago, cryoprotectants needed cooling/warming rates of 70ºC per second to prevent ice formation. Cell survival rates were around 50% in tissue samples. Today's cryoprotectants can revive 90% of cells with cooling/warming rates of less than 1ºC per second.
+* Cryoprotectant research is ongoing. A decade ago, cryoprotectants needed cooling/warming rates of 70ºC per second to prevent ice formation. Cell survival rates were around 50% in tissue samples. Today's cryoprotectants can revive 90% of cells with cooling/warming rates of less than 1ºC per second.
 
 
-  * Wowk's team used their current best cryoprotectant (M22) to successfully cryopreserve, thaw, and transplant rabbit kidneys.
+* Wowk's team used their current best cryoprotectant (M22) to successfully cryopreserve, thaw, and transplant rabbit kidneys.
 
 
-  * Based on evidence from victims of hypothermia, barbituate overdose, and cardiac arrest, silencing electrical activity in the brain doesn't erase any long-term memories. Cryopreserving the brain should preserve all aspects of self.
+* Based on evidence from victims of hypothermia, barbituate overdose, and cardiac arrest, silencing electrical activity in the brain doesn't erase any long-term memories. Cryopreserving the brain should preserve all aspects of self.
 
 
-  * SEM micrographs of cryopreserved brain tissue show fine structure is preserved. Individual [axons](http://en.wikipedia.org/wiki/Axon) are unharmed. Even [synaptic vesicles](http://en.wikipedia.org/wiki/Synaptic_vesicle) are preserved.
+* SEM micrographs of cryopreserved brain tissue show fine structure is preserved. Individual [axons](http://en.wikipedia.org/wiki/Axon) are unharmed. Even [synaptic vesicles](http://en.wikipedia.org/wiki/Synaptic_vesicle) are preserved.
 
 
-  * Cooling cryoprotectant solution too far below the glass transition temperature will cause fracturing from thermal stresses. While they make revival harder, the fractures are few in number and typically cause simple translations of tissue. The information destroyed is negligible.
+* Cooling cryoprotectant solution too far below the glass transition temperature will cause fracturing from thermal stresses. While they make revival harder, the fractures are few in number and typically cause simple translations of tissue. The information destroyed is negligible.
 
 
-  * Despite limited funding, cryopreservation techniques have improved substantially. Cryopreservation and transplantation of large organs is expected in 10 years.
+* Despite limited funding, cryopreservation techniques have improved substantially. Cryopreservation and transplantation of large organs is expected in 10 years.
 
 
 
