@@ -1,0 +1,3 @@
+[submodule "lscolors"]
+	path = lscolors
+	url = git@github.com:ggreer/lscolors.git
