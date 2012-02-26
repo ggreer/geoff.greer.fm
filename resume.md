@@ -6,8 +6,6 @@ title: Résumé
 ---
 
 Geoff Greer  
-geoff@greer.fm  
-(415) 343-5517
 
 ## Skills
 
