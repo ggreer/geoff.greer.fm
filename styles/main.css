@@ -43,7 +43,7 @@ hr {
     margin: 0 1em;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
     font-weight: normal;
     margin: 2em 0 0 0;
