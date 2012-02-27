@@ -26,15 +26,10 @@ I didn't put much effort into the angle/power guessing, since latency screws up 
 If I felt like wasting more than an hour on this, it could be improved by:
 
 
+* Storing success rates of angle/power pairs, then trying the most successful pairs first.
 
+* Registering multiple IPs to the same username, allowing multiple copies of the bot to increase a single user's score.
 
-  * Storing success rates of angle/power pairs, then trying the most successful pairs first.
-
-
-  * Registering multiple IPs to the same username, allowing multiple copies of the bot to increase a single user's score.
-
-
-  * Using image processing and OCR to find the difference between the attempted angle/power and the actual angle/power.
-
+* Using image processing and OCR to find the difference between the attempted angle/power and the actual angle/power.
 
 
