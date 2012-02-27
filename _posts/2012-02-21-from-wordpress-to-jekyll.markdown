@@ -13,3 +13,5 @@ I rewrote my site in [Jekyll](https://github.com/mojombo/jekyll) this weekend. A
 I'm still going back through old posts to fix formatting errors. Also, comments will come back at some point in the future.
 
 I hope you like the new design. It's a blatant rip-off of [mnmlist](http://mnmlist.com/).
+
+Edit: Everyone's comments are back.
