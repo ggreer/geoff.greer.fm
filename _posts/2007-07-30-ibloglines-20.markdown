@@ -19,47 +19,24 @@ Honestly, no other readers besides Bloglines have a decent iPhone site. NewsGato
 
 
 
-  * Formatting is terrible. It looks exactly like NewsGator designed and tested their iPhone site on a full-blown Mac in Safari. Every feed title takes up approximately three times as much vertical space as it should. Site names wrap, but only the first line indents. Even the default packs have this problem. If you're going to waste space indenting stuff, at least be consistent and indent all of it.
+* Formatting is terrible. It looks exactly like NewsGator designed and tested their iPhone site on a full-blown Mac in Safari. Every feed title takes up approximately three times as much vertical space as it should. Site names wrap, but only the first line indents. Even the default packs have this problem. If you're going to waste space indenting stuff, at least be consistent and indent all of it.
   
 
   
 
-
-
-
-
-  * 
-Timestamps are below item text. You know, so you can try to guess when an article was published based on its content.
+* Timestamps are below item text. You know, so you can try to guess when an article was published based on its content.
   
 
   
-
-
-
-
-
-  * 
-iUI's JavaScript animations are enabled. Although they look cool on a PC, the iPhone animates them at about three frames per second. This means pages take at least an extra second to load, because you have to taste the bitter eye candy. Again, this is probably because nobody at NewsGator tried to use their site on an iPhone.
+* iUI's JavaScript animations are enabled. Although they look cool on a PC, the iPhone animates them at about three frames per second. This means pages take at least an extra second to load, because you have to taste the bitter eye candy. Again, this is probably because nobody at NewsGator tried to use their site on an iPhone.
   
 
   
-
-
-
-
-
-  * 
-NewsGator shows 20 items per page, meaning pretty much any feed worth reading (and many that aren't, such as Digg) force you to scroll like crazy. This wouldn't be so bad except for...
+* NewsGator shows 20 items per page, meaning pretty much any feed worth reading (and many that aren't, such as Digg) force you to scroll like crazy. This wouldn't be so bad except for...
   
 
   
-
-
-
-
-
-  * 
-...marking unread/read sucks. There's no way to mark all items on the current page as read. Items default to unread and you must manually mark each one or press the "All Read" button. Instead of marking everything on the current page read, All Read marks all unread items in the feed, including ones you could not have possibly seen yet. Larger items are collapsed, but if you expand them they are not marked read. So if you're actually reading any feed with more than a few sentences of text, you have to click **twice for every item**.
+* ...marking unread/read sucks. There's no way to mark all items on the current page as read. Items default to unread and you must manually mark each one or press the "All Read" button. Instead of marking everything on the current page read, All Read marks all unread items in the feed, including ones you could not have possibly seen yet. Larger items are collapsed, but if you expand them they are not marked read. So if you're actually reading any feed with more than a few sentences of text, you have to click **twice for every item**.
   
 
   
@@ -67,13 +44,11 @@ NewsGator shows 20 items per page, meaning pretty much any feed worth reading (a
 Scrolling all the way to the bottom (which takes a while, see above) and clicking next doesn't mark anything read. The three main problems...
 
 
-    1. Items default to unread.
+1. Items default to unread.
 
+2. Going to the next page does not mark the last page read.
 
-    2. Going to the next page does not mark the last page read.
-
-
-    3. Clicking All Read marks every unread item in the feed.
+3. Clicking All Read marks every unread item in the feed.
 
 
 ...create a trifecta of unusability. I have no clue what they were thinking when they made this-- actually I do. It was, "Deploy an iPhone version of our site so we can get press."
@@ -85,28 +60,15 @@ Scrolling all the way to the bottom (which takes a while, see above) and clickin
 
 
 
-  * 
-There are no site favicons. This is a big one for me as many of my favorite feeds have their own favicons. Why even put the syndication icon there if every feed has it?
+* There are no site favicons. This is a big one for me as many of my favorite feeds have their own favicons. Why even put the syndication icon there if every feed has it?
   
 
   
-
-
-
-
-
-  * 
-No sharing/e-mailing items. The iPhone has an e-mail client and understands mailto: just fine. It would be so easy to add this.
+* No sharing/e-mailing items. The iPhone has an e-mail client and understands mailto: just fine. It would be so easy to add this.
   
 
   
-
-
-
-
-
-  * 
-No blog search.
+* No blog search.
   
 
   

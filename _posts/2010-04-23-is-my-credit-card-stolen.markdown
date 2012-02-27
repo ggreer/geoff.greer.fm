@@ -28,13 +28,11 @@ What have I learned from this?
 
 
 
-  * People on Twitter are dumber than I thought.
+* People on Twitter are dumber than I thought.
 
+* A small group can add any relatively-unpopular site to the Firefox phishing blacklist.
 
-  * A small group can add any relatively-unpopular site to the Firefox phishing blacklist.
-
-
-  * Some "reporter" couldn't be troubled to click the about link on the front page of the site he wrote an article about.
+* Some "reporter" couldn't be troubled to click the about link on the front page of the site he wrote an article about.
 
 
 
