@@ -23,7 +23,10 @@ Having a small laptop is crucial. Large laptops won't fit on your lap if someone
 
 I followed my own advice here and managed to get a ton of work done on The Silver Searcher. I managed to add support for pipes, clean up some particularly ugly chunks of code, and fix a bunch of bugs related to printing matches. In total I changed over 1,000 lines on the trans-pacific flights. I accomplished more in those 20 hours than I did in the month previous. I also felt a significant sense of accomplishment that I hardly ever get in my normal work.
 
-I'm going to try more of this sort of distraction-elimination at work and home. Maybe it will pay off.
+As [Russell](http://russellhaering.com/) [says](https://twitter.com/#!/russell_h/status/180862812074164224), "If you want to find time to hack on a side project, get on an airplane."
+
+---
+Footnotes
 
 <a name="ref_1"> </a>
 1. Lack of Internet access, phone, or friends nearby.
