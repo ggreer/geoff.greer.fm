@@ -9,7 +9,7 @@ categories:
 - Computers
 ---
 
-Let's say you're messing with some Python and you forget how the `global` keyword changes scoping\[1\]. To find the answer you might try...
+Let's say you're messing with some Python and you forget how the `global` keyword changes scoping[\[1\]](#ref_1). To find the answer you might try...
 
 
 1. [Google](https://www.google.com/)
@@ -81,7 +81,7 @@ These sorts of code blurbs are great for learning. They're also great for solvin
 
 Code experiments can be much trickier, and much more useful, than above. For example...
 
-...at work we recently switched a project's MySQL engine from [MyISAM](http://en.wikipedia.org/wiki/MyISAM) to [InnoDB](http://en.wikipedia.org/wiki/InnoDB). After the switch, we encountered some weird errors. A process would save an object to the DB, but some services couldn't find the newly-created object\[2\]. I had a hunch that transactions were responsible for the weirdness; my reasoning being that MyISAM lacks transaction support, and it had worked fine.
+...at work we recently switched a project's MySQL engine from [MyISAM](http://en.wikipedia.org/wiki/MyISAM) to [InnoDB](http://en.wikipedia.org/wiki/InnoDB). After the switch, we encountered some weird errors. A process would save an object to the DB, but some services couldn't find the newly-created object[\[2\]](#ref_2). I had a hunch that transactions were responsible for the weirdness; my reasoning being that MyISAM lacks transaction support, and it had worked fine.
 
 So I did science. I opened up two MySQL consoles. In console #1, I ran `start transaction;`. Then in console #2, I ran:
 
@@ -137,14 +137,14 @@ The experiment plus [Brad](https://github.com/morgabra)'s knowledge of Django he
 
 After I added `transaction-isolation = READ-COMMITTED` to the my.cnf [chef](http://wiki.opscode.com/display/chef/Home) template, everything worked swimmingly. Hooray for science.
 
-The next time you're stumped, try some experiments. As a programmer, you have immense power over the program's universe. Your code runs on a perfectly deterministic machine\[3\]. With the right software tools, you can stop time. You can read or change any part of memory. [You can step through](http://en.wikipedia.org/wiki/GNU_Debugger), [one line at a time](http://docs.python.org/library/pdb.html), to see exactly what's happening.
+The next time you're stumped, try some experiments. As a programmer, you have immense power over the program's universe. Your code runs on a perfectly deterministic machine[\[3\]](#ref_3). With the right software tools, you can stop time. You can read or change any part of memory. [You can step through](http://en.wikipedia.org/wiki/GNU_Debugger), [one line at a time](http://docs.python.org/library/pdb.html), to see exactly what's happening.
 
 Of course, this isn't _real_ science. These apparati make programming a cakewalk compared to real science.
 
-
-
-Footnotes:
-
+---
+<a name="ref_1"> </a>
 1. You forgot this fact not because you suck at Python, but because you usually write clean code with no globals. At least, that's what you keep telling yourself.
+<a name="ref_2"> </a>
 2. Just so nobody freaks out: This thing is non-customer-facing and currently under heavy development. I'm also over-simplifying the process. The actual changes happened in a development branch and weren't merged until things were hunky-dory.
+<a name="ref_3"> </a>
 3. [Cosmic rays](http://en.wikipedia.org/wiki/Single_event_upset) notwithstanding.
