@@ -17,4 +17,4 @@ My favorite part of the entire trip was going to the 52nd floor of the Park Hyat
 
 A close second was running in the hills above Kyoto as snow fell. The dusting of snow over the trees made for beautiful scenery.
 
-I was back in San Francisco for the weekend (and my birthday, also known as St. Patrick's Day). Now it's off to Chile and Argentina until the end of the month.
+I stopped in San Francisco for the weekend (and my birthday, also known as St. Patrick's Day). Now it's off to Chile and Argentina until the end of the month.
