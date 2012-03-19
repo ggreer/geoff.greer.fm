@@ -26,8 +26,6 @@ I followed my own advice here and managed to get a ton of work done on The Silve
 As [Russell](http://russellhaering.com/) [says](https://twitter.com/#!/russell_h/status/180862812074164224), "If you want to find time to hack on a side project, get on an airplane."
 
 ---
-Footnotes
-
 <a name="ref_1"> </a>
 1. Lack of Internet access, phone, or friends nearby.
 <a name="ref_2"> </a>

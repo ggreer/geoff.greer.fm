@@ -22,8 +22,6 @@ My tool can give false positives on a heavily-loaded system. This is because I'm
 That's two production issues identified and fixed because of a silly hack day project. Booyah.[\[3\]](#ref_3)
 
 ---
-Footnotes:
-
 <a name="ref_1"> </a>
 1. We got around performance issues by running multiple instances of these services. The problems were never fixed because they were in really old code that was written before anyone at Cloudkick knew how to write twisted.
 <a name="ref_2"> </a>
