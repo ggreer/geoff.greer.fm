@@ -26,7 +26,7 @@ Here's a typical profiling run for Ag:
 {% highlight text %}
 $ make clean && ./build.sh
 (snip)
-$ time valgrind --tool=callgrind ./ag --literal abcdefghijklmnopqrstuvwxyz ../
+$ time valgrind --tool=callgrind --dsymutil=yes ./ag --literal abcdefghijklmnopqrstuvwxyz ../
 (snip)
 real	1m34.709s
 user	1m33.206s
