@@ -15,7 +15,7 @@ That said, there are some caveats.
 
 Having a small laptop is crucial. Large laptops won't fit on your lap if someone reclines their seat. 
 
-And I can't do any sort of work on a plane. Anything requiring Internet access is right-out. Learning a new programming language isn't going to happen. There are just too many tools I'd have to download and newbie error messages that I'd have to google. Writing something new in Twisted Python is fine, since I know the language and I can save all the necessary documentation beforehand. Writing C is also fine, since most of its documentation is in manpages. And anything I can't figure out from docs I can usually figure out with [science](/2012/01/30/programming-we-can-do-science/).
+And I can't do just any sort of work on a plane. Anything requiring Internet access is right-out. Learning a new programming language isn't going to happen. There are just too many tools I'd have to download and newbie error messages that I'd have to google. Writing something new in Twisted Python is fine, since I know the language and I can save all the necessary documentation beforehand. Writing C is also fine, since most of its documentation is in manpages. And anything I can't figure out from docs I can usually figure out with [science](/2012/01/30/programming-we-can-do-science/).
 
 Another issue: If I travel with any sort of [shallow content](/2011/12/04/consume-less-shallow-content), I end up wasting time (and battery life) watching movies instead of coding.
 
