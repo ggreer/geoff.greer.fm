@@ -2,7 +2,7 @@
 date: '2012-03-22 21:01:17'
 layout: post
 slug: work-patterns-on-a-plane
-status: draft
+status: publish
 title: Work Patterns on a Plane
 categories:
 - Computers
