@@ -9,9 +9,9 @@ categories:
 - Productivity
 ---
 
-I've found that planes provide a good opportunity for me to get stuff done. The isolation[\[1\]](#ref_1) helps me avoid distractions and forces my mind to stay focused on the job at hand. I'm also buoyed by the knowledge that I will have minimal interruptions for the duration of the flight.
+I've found that air travel provides a good opportunity for me to get stuff done. The isolation[\[1\]](#ref_1) helps me avoid distractions and forces my mind to stay focused on the job at hand. I'm also buoyed by the knowledge that I will have minimal interruptions for the duration of the flight.
 
-But there are some caveats.
+That said, there are some caveats.
 
 Having a small laptop is crucial. Large laptops won't fit on your lap if someone reclines their seat. 
 
