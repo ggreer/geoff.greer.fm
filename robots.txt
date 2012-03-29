@@ -1,3 +1,2 @@
 User-agent: *
 Disallow:
-Sitemap: http://geoff.greer.fm/sitemap.xml
