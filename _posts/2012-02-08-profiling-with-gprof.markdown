@@ -22,10 +22,10 @@ $ make clean && ./build.sh
 $ time ./ag --literal abcdefghijklmnopqrstuvwxyz ../ | wc -l
 271
 
-real	0m1.144s
-user	0m0.792s
-sys	0m0.340s
-                                          
+real    0m1.144s
+user    0m0.792s
+sys     0m0.340s
+
 $ gprof -bp ag gmon.out 
 Flat profile:
 
