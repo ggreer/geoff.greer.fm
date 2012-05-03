@@ -17,11 +17,20 @@ What follows is an overview of the fundamentals. These are things I take for gra
 
 Subversion. Git. Mercurial. It doesn't matter what you use. *Anything* is better than no version control. Even if you are the *only* person working on the code, **use version control!** It's not hard to set up. It's not hard to use.
 
-
+{% highlight text %}
+git init
+{% endhighlight %}
 
 ###SSH Keys
 
 Generate an SSH key.
 
-sudo, not root
-disable root login
+{% highlight text %}
+ssh-keygen
+{% endhighlight %}
+
+###Root is harmful
+
+Use sudo instead of root. This makes it a little bit easier to avoid expensive mistakes.
+
+While you're at it, disable root logins over ssh. It's common for people to scan for ssh servers and guess common root passwords. 
