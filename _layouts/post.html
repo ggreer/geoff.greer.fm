@@ -13,6 +13,22 @@
 <div class="post">
 {{ content }}
 </div>
+<hr />
+<table class="nav" style="line-height: 130%; width: 100%;">
+    <tr>
+        <td style="text-align: center; width: 50%;">
+            {% if page.previous %}
+            <div style="width: 80%; float: left;"><a href="{{ page.previous.url }}">« {{ page.previous.title }}</a></div>
+            {% endif %}
+        </td>
+        <td style="text-align: center; width: 50%;">
+            {% if page.next %}
+            <div style="width: 80%; float: right;"><a href="{{ page.next.url }}">{{ page.next.title }} »</a></div>
+            {% endif %}
+        </td>
+    </tr>
+</table>
+<hr />
 {% include disqus.html %}
 {% include footer.html %}
 </div>
