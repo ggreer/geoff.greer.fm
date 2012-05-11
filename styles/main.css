@@ -30,13 +30,14 @@ hr {
     padding: 0;
 }
 
-#globalnav {
+.nav {
     text-align: center;
+    font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
 }
+
 #globalnav ul, div#globalnav ul li {
     display: inline;
     list-style: none;
-    font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
 }
 #globalnav ul li {
     line-height: 200%;
