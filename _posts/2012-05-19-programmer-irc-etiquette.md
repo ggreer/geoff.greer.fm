@@ -1,9 +1,9 @@
 ---
 date: '2012-05-19 18:12:50'
 layout: post
-slug: developer-irc-etiquette
+slug: programmer-irc-etiquette
 status: draft
-title: A Primer on Developer IRC Etiquette
+title: A Primer on Programmer IRC Etiquette
 categories:
 - Computers
 ---
@@ -21,4 +21,4 @@ If you're new to IRC, here is a short list of guidelines:
 
 Following these rules will make life much more pleasant for everyone involved. You'll be more likely to get your problem solved and the channel regulars will have less stress in their lives. 
 
-I was motivated to write this after an inexperienced person joined #node.js on Freenode. I failed to find a similar rule list that I read years before. I thought about linking to ESR's [How to Ask Questions the Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html), but it's too general, too long, and insults the reader. Now that I've written this, I'll be ready next time.
+I was motivated to write this after an inexperienced person joined #node.js on Freenode. I failed to find a similar rule list that I read years before. I thought about linking to ESR's [How to Ask Questions the Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html), but it's too general, too long, and insults the reader. Now that I've written this, I'm ready for next time.
