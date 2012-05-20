@@ -9,7 +9,7 @@ categories:
 - Computers
 ---
 
-Since I got back [from vacation](/2012/03/19/japan-trip/), I've been writing JavaScript at work. It wasn't long before I embarked on a journey into Mordor. I found a bug in a program, then found a bug in the test suite for that program, then found a bug in node.js, which was caused by a bug in [V8](http://code.google.com/p/v8/).
+Since I got back [from vacation](/2012/03/19/japan-trip/), I've been writing JavaScript at work. It wasn't long before I embarked on a journey into Mordor. 
 
 I'll start at the beginning. [Gutsy](https://github.com/racker/gutsy) is an open-source dashboard written in Node.js. It's useful for showing all kinds of development and operations stuff in one place. You can see points of contact for each project, on-call rotations, issue stats, and more. It even has a high score page (where everything's made up and the points don't matter). Anyway, I've been working on it since early April, learning Node.js along the way. Fast-forward a couple weeks. [Felix](http://www.felixsargent.com/) wanted to merge a pull request, but tests were failing in his branch. The failing tests didn't seem to be in any way related to the code he changed. Gutsy uses the [Whiskey](https://github.com/cloudkick/whiskey) test runner, so I tried out Whiskey's debugger: 
 
@@ -39,23 +39,20 @@ It crashed. I tried some other commands besides backtrace. No dice. Apparently n
 
 Now I had two problems.
 
-I took a look at Whiskey's [\_debugger.js](https://github.com/cloudkick/whiskey/blob/master/lib/extern/_debugger.js). The fact that it was in extern should have tipped me off, but once I opened the file I knew: it was a modified version of \_debugger.js from Node.js 0.4. The debugger changed quite a bit in 0.6, so it makes sense that Whiskey broke.
+I took a look at Whiskey's [\_debugger.js](https://github.com/cloudkick/whiskey/blob/master/lib/extern/_debugger.js). The fact that it was in extern should have tipped me off, but once I opened the file I knew: it was a modified version of [\_debugger.js from Node.js 0.4](https://github.com/joyent/node/blob/82cfdb88facd946926a40822b6939737e0ebddc4/lib/_debugger.js). The debugger changed quite a bit in 0.6, so it makes sense that Whiskey broke.
 
 At that point I decided to fix Whiskey's debug option. Instead of copy-pasting Node's new debugger client, I figured it would be better to do things the right way. Whiskey already runs tests in a child process anyway, so my plan was to append `debug` to the arguments sent to `child_process.spawn()`. After that, I'd just need to hook up stdin, stdout, and stderr, and handle signals appropriately.
 
-It didn't take me long to get things mostly-working, but I was stymied by one show-stopper: Hitting ctrl+c in the debugger repl killed the child process instead of exiting the repl. After toying around with [kill.d](http://www.brendangregg.com/DTrace/kill.d), I saw that `node debug` was sending `SIGINT` to the child. The child was paused, so it would die even if it had a signal handler. `node debug` is forwarding signals that it shouldn't.
+It didn't take me long to get things mostly-working, but I was stymied by one show-stopper: Hitting ctrl+c in the debugger repl killed the child process instead of exiting the repl. After toying around with [kill.d](http://www.brendangregg.com/DTrace/kill.d), I saw that `node debug` was sending `SIGINT` to the child. The child was paused, so it would die even if it had a signal handler. Basically, `node debug` was forwarding signals that it shouldn't.
 
 Now I had three problems.
 
-I created [an issue](https://github.com/joyent/node/issues/3167). [Ben Noordhuis](https://github.com/bnoordhuis) looked into it, and found that part of the reason for Node's behavior was [a bug in V8](http://code.google.com/p/v8/issues/detail?id=2098)!
+I built a simple failure case and created [an issue](https://github.com/joyent/node/issues/3167). [Ben Noordhuis](https://github.com/bnoordhuis) looked into it, and found that part of the reason for Node's behavior was [a bug in V8](http://code.google.com/p/v8/issues/detail?id=2098)!
 
-
-
+To summarize: I found a bug in a program, then found a bug in the test suite for that program, then found a bug in Node.js, which was caused by a bug in [V8](http://code.google.com/p/v8/). Talk about your leaky abstractions!
 
 As [Douglas Crockford](http://www.crockford.com/) says:
 
 >I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, \"I'm done. This is stupid. I'm going to do something else.\" But not us, 'cause there's something really wrong with us.
 
-Programmers have something wrong with them. Any sane person would write one program and vow to never do it again. Programmers seem to forget how terrible programming is.
-
-I don't recall encountering a leakier abstraction than this. I'm just glad the issue didn't go any deeper. The next step would have been an operating system bug, and those take forever to get fixed.
+I'm surprised I haven't gone insane from dealing with these sorts of bugs. OK, I'll admit I'm a little wacky. I'm surprised I haven't gone *more* insane.
