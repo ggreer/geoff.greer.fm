@@ -43,7 +43,7 @@ I took a look at Whiskey's [\_debugger.js](https://github.com/cloudkick/whiskey/
 
 At that point I decided to fix Whiskey's debug option. Instead of copy-pasting Node's new debugger client, I figured it would be better to do things the right way. Whiskey runs tests in a child process, so my plan was to append `debug` to the arguments sent to `child_process.spawn()`. After that, I'd just need to hook up stdin, stdout, and stderr, and handle signals appropriately.
 
-It didn't take me long to get things mostly-working, but I was stymied by one show-stopper: Hitting ctrl+c in the debugger repl killed the child process instead of exiting the repl. After toying around with [kill.d](http://www.brendangregg.com/DTrace/kill.d), I saw that `node debug` was sending `SIGINT` to the child. The child was paused, so it would die even if it had a signal handler. Basically, `node debug` was forwarding signals that it shouldn't.
+It didn't take me long to get things mostly-working, but I was stymied by one show-stopper: Hitting ctrl+c in the debugger [REPL](http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) killed the child process instead of exiting the REPL. After toying around with [kill.d](http://www.brendangregg.com/DTrace/kill.d), I saw that `node debug` was sending `SIGINT` to the child. The child was paused, so it would die even if it had a signal handler. Basically, `node debug` was forwarding signals that it shouldn't.
 
 Now I had three problems.
 
