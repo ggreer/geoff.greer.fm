@@ -9,7 +9,7 @@ categories:
 - Computers
 ---
 
-Since I got back [from vacation](/2012/03/19/japan-trip/), I've been writing JavaScript. Node.js to be specific. Not long after I started, I found myself on a journey into Mordor.
+Since I got back [from vacation](/2012/03/19/japan-trip/), I've been writing JavaScript, Node.js to be specific. Not long after I started, I found myself on a journey into Mordor.
 
 I'll start at the beginning. [Gutsy](https://github.com/racker/gutsy) is an open-source dashboard written in Node.js. It's useful for showing all kinds of development and operations stuff in one place. You can see points of contact for each project, on-call rotations, issue stats, and other handy stuff. It even has a high score page (where everything's made up and the points don't matter). I started working on it in early April, learning Node.js along the way. Fast-forward a couple weeks. [Felix](http://www.felixsargent.com/) wanted to merge a pull request, but tests were failing in his branch. This was confusing, because the failing tests didn't seem to be related to the code he changed. Gutsy uses the [Whiskey](https://github.com/cloudkick/whiskey) test runner, so I tried out Whiskey's debugger: 
 
