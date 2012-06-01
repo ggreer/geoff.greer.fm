@@ -4,17 +4,23 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = 'gallery.html'
+      @name = "gallery.html"
 
       puts "processing..."
       self.process(@name)
       puts "done"
-      self.read_yaml(File.join(base, '_layouts'), 'gallery_index.html')
+      self.read_yaml(File.join(base, "_layouts"), "gallery_index.html")
       puts "read yaml"
-      self.data['gallery'] = gallery_name
-      gallery_title_prefix = site.config['gallery_title_prefix'] || 'Photos: '
-      self.data['title'] = "#{gallery_title_prefix}#{gallery_name}"
-      self.data['images'] = Dir.entries(dir)
+      self.data["gallery"] = gallery_name
+      gallery_title_prefix = site.config["gallery_title_prefix"] || "Photos: "
+      self.data["title"] = "#{gallery_title_prefix}#{gallery_name}"
+      images = []
+      Dir.foreach(dir) do |image|
+        if image.chars.first != "."
+          images.push(image)
+        end
+      end
+      self.data["images"] = images
       puts "data", self.data
     end
   end
@@ -23,10 +29,10 @@ module Jekyll
     safe true
 
     def generate(site)
-      unless site.layouts.key? 'gallery_index'
+      unless site.layouts.key? "gallery_index"
         return
       end
-      dir = site.config['gallery_dir'] || 'photos'
+      dir = site.config["gallery_dir"] || "photos"
       Dir.foreach(dir) do |gallery_dir|
         gallery_path = File.join(dir, gallery_dir)
         if File.directory?(gallery_path) and gallery_dir.chars.first != "."
