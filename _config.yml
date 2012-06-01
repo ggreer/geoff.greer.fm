@@ -3,7 +3,7 @@ auto: true
 paginate: 3
 permalink: /:year/:month/:day/:title
 pygments: true
-url: http://geoff.greer.fm/
+url: http://geoff.greer.fm
 author: Geoff Greer
 title: Geoff's Site
 exclude: deploy_site.sh new_post.sh
