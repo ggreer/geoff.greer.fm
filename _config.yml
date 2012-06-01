@@ -6,3 +6,5 @@ url: http://geoff.greer.fm
 author: Geoff Greer
 title: Geoff's Site
 exclude: deploy_site.sh new_post.sh
+
+gallery_dir: photos
