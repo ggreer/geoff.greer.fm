@@ -5,9 +5,9 @@
     <title type="text" xml:lang="en">{{ site.title }}</title>
     <author><name>{{ site.author }}</name></author>
     <link type="application/atom+xml" href="{{ site.url }}/feed.atom" rel="self"/>
-    <link href="{{ site.url }}" rel="alternate"/>
+    <link href="{{ site.url }}/" rel="alternate"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}</id>
+    <id>{{ site.url }}/</id>
     {% for post in site.posts limit:20 %}
     <entry>
         <title>{{ post.title }}</title>
