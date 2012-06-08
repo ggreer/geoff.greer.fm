@@ -24,6 +24,7 @@ module Jekyll
       @name = "index.html"
       @images = []
 
+      best_image = nil
       self.process(@name)
       self.read_yaml(File.join(base, "_layouts"), "gallery_page.html")
       self.data["gallery"] = gallery_name
@@ -34,9 +35,15 @@ module Jekyll
       Dir.foreach(dir) do |image|
         if image.chars.first != "." and image.downcase().end_with?(*$image_extensions)
           @images.push(image)
+          best_image = image
         end
       end
       self.data["images"] = @images
+      begin
+        best_image = site.config["galleries"][self.data["gallery"]]["best_image"]
+      rescue
+      end
+      self.data["best_image"] = best_image
     end
   end
 

@@ -1,10 +1,12 @@
 ---
 layout: page
 ---
-<ul>
 {% for gallery in page.galleries %}
-<li>
-    <a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a> {{ gallery["images"] | size }} images
-</li>
+<div style="width: 35em; text-align: center; padding: 1em 0 4em 0;">
+    <a href="{{ gallery['gallery'] }}">
+        <img style="max-height: 20em; max-width: 20em;" src="{{ gallery['gallery'] }}/{{ gallery['best_image'] }}">
+    </a>
+    <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
+    {{ gallery["images"] | size }} images
+</div>
 {% endfor %}
-</ul>
