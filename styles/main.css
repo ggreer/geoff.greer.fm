@@ -47,7 +47,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
     font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
     font-weight: normal;
-    margin: 2em 0 0 0;
+    margin: 1em 0 0 0;
 }
 
 .post_header {
@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post_title {
     font-size: 2em;
-    margin: 1em 0 0 0;
 }
 .post_date {
     line-height: 150%;
@@ -85,4 +84,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .date {
     width: 4em;
+}
+
+.gallery-image-wrapper {
+  height: 300px;
+  width: 300px;
+  float: left;
+  margin: 1em;
+  position: relative;
+  text-align: center;
+}
+.gallery-image {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  max-height: 100%;
+  max-width: 100%;
 }

@@ -1,10 +1,19 @@
----
-layout: default
----
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+{% include head.html %}
+<body>
+<div id="wrapper" style="max-width: 100%;">
+{% include header.html %}
 <h1>{{ page.title }}</h1>
-{{ page.images }}
+<hr />
 {% for image in page.images %}
-    <a href="{{ image }}"><img src="{{ image }}" /></a>
-    {{ image }}
+    <div class="gallery-image-wrapper">
+        <a href="{{ image }}"><img class="gallery-image" src="{{ image }}" /></a>
+    </div>
 {% endfor %}
+{% include footer.html %}
+</div>
+{% include ga.html %}
+</body>
+</html>
