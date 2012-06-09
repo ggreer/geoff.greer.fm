@@ -15,7 +15,7 @@ I was close to my earned-time-off cap, so I took the month of March off. The fir
 
 More photos are [here](/photos/japan_trip/).
 
-My favorite part of the entire trip was going to the 52nd floor of the Park Hyatt in Tokyo. We drank expensive cocktails while admiring [the Blade Runner-esque view](/photos/Japan_Trip_files/Media/IMG_0978/IMG_0978.jpg). There was a magnitude 6.1 earthquake right after we ordered drinks. I knew we were perfectly safe, but some primitive part of my brain panicked and released copious quantities of adrenaline. The building took a *long* time to stop swaying.
+My favorite part of the entire trip was going to the 52nd floor of the Park Hyatt in Tokyo. We drank expensive cocktails while admiring [the Blade Runner-esque view](/photos/japan_trip/IMG_0978.jpg). There was a magnitude 6.1 earthquake right after we ordered drinks. I knew we were perfectly safe, but some primitive part of my brain panicked and released copious quantities of adrenaline. The building took a *long* time to stop swaying.
 
 A close second was running in the hills above Kyoto as snow fell. The dusting of snow over the trees made for beautiful scenery.
 
