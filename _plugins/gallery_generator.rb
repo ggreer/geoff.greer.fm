@@ -4,6 +4,12 @@ include Magick
 $image_extensions = [".png", ".jpg", ".jpeg", ".gif"]
 
 module Jekyll
+  class GalleryFile < StaticFile
+    def write(dest)
+      return false
+    end
+  end
+
   class GalleryIndex < Page
     def initialize(site, base, dir, galleries)
       @site = site
@@ -44,13 +50,13 @@ module Jekyll
         if image.chars.first != "." and image.downcase().end_with?(*$image_extensions)
           @images.push(image)
           best_image = image
+          site.static_files << GalleryFile.new(site, base, "#{dir}/thumbs/", image)
           if File.file?("#{thumbs_dir}/#{image}") == false or File.mtime("#{dir}/#{image}") > File.mtime("#{thumbs_dir}/#{image}")
             begin
               m_image = ImageList.new("#{dir}/#{image}")
               m_image.resize_to_fit!(max_size, max_size)
               puts "Writing thumbnail to #{thumbs_dir}/#{image}"
               m_image.write("#{thumbs_dir}/#{image}")
-              site.files << "#{dir}/thumbs/#{image}"
             rescue
               puts $!
             end
@@ -82,7 +88,7 @@ module Jekyll
           gallery.render(site.layouts, site.site_payload)
           gallery.write(site.dest)
           site.pages << gallery
-          galleries.push(gallery)
+          galleries << gallery
         end
       end
 

@@ -87,8 +87,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery-image-wrapper {
-  height: {{ site.config['gallery_thumb_size'] }}px;
-  width: {{ site.config['gallery_thumb_size'] }}px;
+  height: 300px;
+  width: 300px;
   float: left;
   margin: 1em;
   position: relative;
