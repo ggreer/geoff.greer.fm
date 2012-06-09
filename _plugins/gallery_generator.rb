@@ -40,10 +40,11 @@ module Jekyll
       self.read_yaml(File.join(base, "_layouts"), "gallery_page.html")
       self.data["gallery"] = gallery_name
       gallery_title_prefix = site.config["gallery_title_prefix"] || "Photos: "
-      gallery_name = gallery_name.gsub("_", " ").capitalize()
+      gallery_name = gallery_name.gsub("_", " ").gsub(/\w+/) {|word| word.capitalize}
       self.data["name"] = gallery_name
       self.data["title"] = "#{gallery_title_prefix}#{gallery_name}"
       thumbs_dir = "#{site.dest}/#{dir}/thumbs"
+
       FileUtils.mkdir_p(thumbs_dir, :mode => 0755)
       Dir.foreach(dir) do |image|
         if image.chars.first != "." and image.downcase().end_with?(*$image_extensions)
