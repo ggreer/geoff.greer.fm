@@ -5,11 +5,11 @@
 <body>
 <div id="wrapper" style="max-width: 100%;">
 {% include header.html %}
-<h1>{{ page.title }}</h1>
+<h1><a href="/{{ site.config['gallery_dir'] }}">{{ page.title }}</a></h1>
 <hr />
 {% for image in page.images %}
     <div class="gallery-image-wrapper">
-        <a href="{{ image }}"><img class="gallery-image" src="{{ image }}" /></a>
+        <a href="{{ image }}"><img class="gallery-image" src="thumbs/{{ image }}" /></a>
     </div>
 {% endfor %}
 {% include footer.html %}

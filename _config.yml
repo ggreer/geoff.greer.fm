@@ -8,6 +8,7 @@ title: Geoff's Site
 exclude: deploy_site.sh new_post.sh lscolors/README.md
 
 gallery_dir: photos
+gallery_thumb_size: 300
 galleries:
   chile_trip:
     best_image: IMG_1068.JPG
