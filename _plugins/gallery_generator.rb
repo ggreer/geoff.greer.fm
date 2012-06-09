@@ -22,7 +22,7 @@ module Jekyll
       self.read_yaml(File.join(base, "_layouts"), "gallery_index.html")
       self.data["title"] = "Photos"
       self.data["galleries"] = []
-      galleries.each {|gallery| self.data["galleries"].push(gallery.data) }
+      galleries.each {|gallery| self.data["galleries"].push(gallery.data)}
     end
   end
 
