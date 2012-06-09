@@ -1,3 +1,6 @@
+require 'RMagick'
+include Magick
+
 $image_extensions = [".png", ".jpg", ".jpeg", ".gif"]
 
 module Jekyll
@@ -25,6 +28,7 @@ module Jekyll
       @images = []
 
       best_image = nil
+      max_size = site.config["gallery_thumb_size"]
       self.process(@name)
       self.read_yaml(File.join(base, "_layouts"), "gallery_page.html")
       self.data["gallery"] = gallery_name
@@ -32,10 +36,25 @@ module Jekyll
       gallery_name = gallery_name.gsub("_", " ").capitalize()
       self.data["name"] = gallery_name
       self.data["title"] = "#{gallery_title_prefix}#{gallery_name}"
+      thumbs_dir = "#{site.dest}/#{dir}/thumbs"
+      unless File.directory?(thumbs_dir)
+        Dir.mkdir(thumbs_dir, 0755)
+      end
       Dir.foreach(dir) do |image|
         if image.chars.first != "." and image.downcase().end_with?(*$image_extensions)
           @images.push(image)
           best_image = image
+          if File.file?("#{thumbs_dir}/#{image}") == false or File.mtime("#{dir}/#{image}") > File.mtime("#{thumbs_dir}/#{image}")
+            begin
+              m_image = ImageList.new("#{dir}/#{image}")
+              m_image.resize_to_fit!(max_size, max_size)
+              puts "Writing thumbnail to #{thumbs_dir}/#{image}"
+              m_image.write("#{thumbs_dir}/#{image}")
+              site.files << "#{dir}/thumbs/#{image}"
+            rescue
+              puts $!
+            end
+          end
         end
       end
       self.data["images"] = @images
