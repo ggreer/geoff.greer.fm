@@ -1,5 +1,6 @@
 require 'RMagick'
 include Magick
+include FileUtils
 
 $image_extensions = [".png", ".jpg", ".jpeg", ".gif"]
 
@@ -43,14 +44,12 @@ module Jekyll
       self.data["name"] = gallery_name
       self.data["title"] = "#{gallery_title_prefix}#{gallery_name}"
       thumbs_dir = "#{site.dest}/#{dir}/thumbs"
-      unless File.directory?(thumbs_dir)
-        Dir.mkdir(thumbs_dir, 0755)
-      end
+      FileUtils.mkdir_p(thumbs_dir, :mode => 0755)
       Dir.foreach(dir) do |image|
         if image.chars.first != "." and image.downcase().end_with?(*$image_extensions)
           @images.push(image)
           best_image = image
-          site.static_files << GalleryFile.new(site, base, "#{dir}/thumbs/", image)
+          @site.static_files << GalleryFile.new(site, base, "#{dir}/thumbs/", image)
           if File.file?("#{thumbs_dir}/#{image}") == false or File.mtime("#{dir}/#{image}") > File.mtime("#{thumbs_dir}/#{image}")
             begin
               m_image = ImageList.new("#{dir}/#{image}")
@@ -58,6 +57,7 @@ module Jekyll
               puts "Writing thumbnail to #{thumbs_dir}/#{image}"
               m_image.write("#{thumbs_dir}/#{image}")
             rescue
+              puts "error"
               puts $!
             end
           end
@@ -81,15 +81,19 @@ module Jekyll
       end
       dir = site.config["gallery_dir"] || "photos"
       galleries = []
-      Dir.foreach(dir) do |gallery_dir|
-        gallery_path = File.join(dir, gallery_dir)
-        if File.directory?(gallery_path) and gallery_dir.chars.first != "."
-          gallery = GalleryPage.new(site, site.source, gallery_path, gallery_dir)
-          gallery.render(site.layouts, site.site_payload)
-          gallery.write(site.dest)
-          site.pages << gallery
-          galleries << gallery
+      begin
+        Dir.foreach(dir) do |gallery_dir|
+          gallery_path = File.join(dir, gallery_dir)
+          if File.directory?(gallery_path) and gallery_dir.chars.first != "."
+            gallery = GalleryPage.new(site, site.source, gallery_path, gallery_dir)
+            gallery.render(site.layouts, site.site_payload)
+            gallery.write(site.dest)
+            site.pages << gallery
+            galleries << gallery
+          end
         end
+      rescue
+        puts $!
       end
 
       gallery_index = GalleryIndex.new(site, site.source, dir, galleries)
