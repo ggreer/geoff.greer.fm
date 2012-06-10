@@ -1,8 +1,8 @@
 ---
 date: '2012-06-09 14:15:04'
 layout: post
-slug: nodejs-problems
-title: 'Node.js Problems'
+slug: nodejs-complaints
+title: 'Node.js Complaints'
 published: true
 categories:
 - Computers
@@ -24,7 +24,7 @@ Hopefully will be fixed in the future: http://nodejs.org/docs/v0.7.9/api/domain.
 but for now, you're screwed
 
 
-### Node modules
+## Node modules
 
 Node modules are of varying quality. Some are pretty solid. Some aren't. It's not easy to tell which is which until you start using one. Popular modules such as node-sqlite3 have significant issues.
 
@@ -38,9 +38,11 @@ sqlite3 suddenly depended on node-gyp. there was a build error but npm install k
 
 Reload a module.
 
-### Isolation
+## Error Isolation
 
-I know people have said this before, but it's insane that node runs its own web server. You lose a ton features that specialized web servers like apache and nginx have. worse, you lose an ecosystem of tools and documentation centered around them. no .htaccess files, no rate limiting. no ip blocking. no mod_rewrite. Worst of all, by default a single unhandled error will cause your web server to crash. Here's an example:
+I know people have said this before, but it's insane that node runs its own web server. Specialized web servers like httpd and nginx have a ton features, and an ecosystem of tools and documentation centered around them. You lose all that with Node.js. Rate-limiting, .htaccess files, IP blocking, mod_rewrite. You have to re-implement these, or proxy all requests through a real web server.
+
+Worst of all, by default a single unhandled error will cause your web server to **crash**. Here's an example:
 
 {% highlight javascript %}
 var http = require('http');
@@ -49,7 +51,6 @@ http.createServer(function (req, res) {
   var result = decodeURIComponent(req.url);
   // chop off / at the beginning
   result = result.slice(1);
-
   result = result.toUpperCase(); // SHOUT
 
   res.writeHead(200, {'Content-Type': 'text/plain'});
