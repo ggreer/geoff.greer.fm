@@ -149,12 +149,13 @@ module Jekyll
     #    is output for this property.
     def entry(path, date, changefreq, site)
       # Remove the trailing slash from the baseurl if it is present, for consistency.
+      site_url = site.config['url']
       baseurl = site.config['baseurl']
       baseurl = baseurl[0..-2] if baseurl=~/\/$/
       
       "
   <url>
-      <loc>#{baseurl}#{path}</loc>
+      <loc>#{site_url}#{baseurl}#{path}</loc>
       <lastmod>#{date.strftime("%Y-%m-%d")}</lastmod>#{if changefreq.length > 0
           "\n      <changefreq>#{changefreq}</changefreq>" end}
   </url>"
