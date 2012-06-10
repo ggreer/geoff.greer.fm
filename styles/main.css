@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "HelveticaNeue-Light",Helvetica,Arial,sans-serif;
 }
 .post_title {
+    margin-top: 0.75em;
     font-size: 2em;
 }
 .post_date {
