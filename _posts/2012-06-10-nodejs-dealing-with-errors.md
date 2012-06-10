@@ -105,8 +105,8 @@ process.on('uncaughtException', function(err) {
 });
 {% endhighlight %}
 
-But that doesn't completely solve the problem. The user gets no useful error message, just a timeout. Also, you still have to write a bullet-proof error handler. If you throw an error trying to log a stack trace, it's lights-out for your web server. Putting your handler code in a big try/catch can mitigate this, but that's effectively writing an error handler for your error handler. The fact that such a solution is required by Node.js is a bad [code smell](http://en.wikipedia.org/wiki/Code_smell).
+But that doesn't completely solve the problem. The user gets no useful error message, just a timeout. Also, you the programmer still have to write a bullet-proof error handler. If your code throws an error trying to log a stack trace, it's lights-out for your web server. Putting your handler code in a big try/catch can mitigate this, but that's effectively writing an error handler for your error handler. The fact that such a solution is required by Node.js is a bad [code smell](http://en.wikipedia.org/wiki/Code_smell).
 
-Hopefully, errors will be more isolated in the future. Node.js 0.8 will introduce [domains](http://nodejs.org/docs/v0.7.9/api/domain.html), which will make it easier to handle errors with more granularity. Domains seem like a good idea, but they introduce a *third* way of handling errors.
+Hopefully, errors will be more isolated in the future. Node.js 0.8 will introduce [domains](http://nodejs.org/docs/v0.7.9/api/domain.html), which make it easier to handle errors with more granularity. Domains seem like a good idea, but they introduce a *third* way of handling errors.
 
 For now, Node.js forces you to reinvent the wheel. Web servers solved these problems over a decade ago, but Node's coupling between web server and application prevents you from using those solutions.
