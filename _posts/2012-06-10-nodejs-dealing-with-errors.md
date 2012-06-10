@@ -9,7 +9,7 @@ categories:
 - Node.js
 ---
 
-I've been working with Node.js for a couple of months now, and my experience has been largely negative. By far, my biggest gripe is error handling. Handling errors in Node.js is a giant pain, because there are two incompatible ways to do it. JavaScript uses [try/throw/catch](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Examples). Node.js uses callbacks with error arguments. The impedance mismatch happens when throwing an error in a callback. Here's a concrete example:
+I've been working with [Node.js](http://nodejs.org/) for a couple of months now, and my experience has been largely negative. By far, my biggest gripe is error handling. Handling errors in Node.js is a giant pain, because there are two incompatible ways to do it. JavaScript uses [try/throw/catch](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Error#Examples). Node.js uses callbacks with error arguments. The impedance mismatch happens when throwing an error in a callback. Here's a concrete example:
 
 {% highlight javascript %}
 fs = require('fs');
