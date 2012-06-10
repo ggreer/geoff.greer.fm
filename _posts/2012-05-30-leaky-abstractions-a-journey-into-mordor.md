@@ -7,6 +7,7 @@ status: publish
 published: true
 categories:
 - Computers
+- Node.js
 ---
 
 Since I got back [from vacation](/2012/03/19/japan-trip/), I've been writing JavaScript; Node.js to be specific. Not long after I started, I found myself on a journey into Mordor.
