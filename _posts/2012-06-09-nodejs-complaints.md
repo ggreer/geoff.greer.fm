@@ -1,48 +1,23 @@
 ---
 date: '2012-06-09 23:19:40'
 layout: post
-slug: nodejs-complaints
-title: 'Node.js Complaints'
-published: false
+slug: nodejs-dealing-with-errors
+title: 'Node.js: Dealing with Errors'
+published: true
 categories:
 - Computers
+- Node.js
 ---
 
-I've been working with Node.js for a couple of months now, and my experience has been largely negative. Node.js has a lot of problems. Worse, it doesn't seem to solve many 
-
-By far, my biggest gripe is error handling. JavaScript uses try/throw/catch. Node.js uses callbacks with error arguments. But a single uncaught error means the callback will never be called. Here's a concrete example:
+I've been working with Node.js for a couple of months now, and my experience has been largely negative. By far, my biggest gripe is error handling. Handling errors in Node.js is a giant pain, because there are two incompatible ways to do it. JavaScript uses try/throw/catch. Node.js uses callbacks with error arguments. The problem is that a single uncaught error results in the callback will never getting called. Here's a concrete example:
 
 {% highlight text %}
-blah
+
 {% endhighlight %}
 
-javascript
-throws errors
-node.js
-uses callbacks/errbacks
-Hopefully will be fixed in the future: http://nodejs.org/docs/v0.7.9/api/domain.html
-but for now, you're screwed
+## Error isolation
 
-
-## Node modules
-
-Node modules are of varying quality. Some are pretty solid. Some aren't. It's not easy to tell which is which until you start using one. Popular modules such as node-sqlite3 have significant issues.
-
-npm module stability
-    sqlite3 module. trace doesn't always print the sql executed
-    useless error messages
-http://stackoverflow.com/questions/9210542/node-js-require-cache-possible-to-invalidate
-
-npm install broke sqlite3.
-sqlite3 suddenly depended on node-gyp. there was a build error but npm install kept on truckin'
-
-Reload a module.
-
-## Error Isolation
-
-I know people have said this before, but it's insane that node runs its own web server. Specialized web servers like httpd and nginx have a ton features, and an ecosystem of tools and documentation centered around them. You lose all that with Node.js. Rate-limiting, .htaccess files, IP blocking, mod_rewrite. You have to re-implement these, or proxy all requests through a real web server.
-
-Worst of all, by default a single unhandled error will cause your web server to **crash**. Here's an example:
+I know people have said this before, but it's insane that node runs its own web server. By default, a single unhandled error will cause your web server to **crash**. Here's an example:
 
 {% highlight javascript %}
 var http = require('http');
@@ -89,6 +64,10 @@ URIError: URI malformed
 ggreer@carbon:~%
 {% endhighlight %}
 
+That sucks, now what can we do about it?
+
+## Solutions
+
 To stop the web server from crashing, you need to add uncaught exception handler:
 
 {% highlight javascript %}
@@ -97,8 +76,8 @@ process.on('uncaughtException', function(err) {
 });
 {% endhighlight %}
 
-But that doesn't completely solve the problem. The user gets no useful error message, just a timeout. Also, you still have to write a bullet-proof error handler. If you throw an error trying to log a stack trace, it's lights-out for your web server. This can mostly be mitigated by putting everything in a big try/catch, but 
+But that doesn't completely solve the problem. The user gets no useful error message, just a timeout. Also, you still have to write a bullet-proof error handler. If you throw an error trying to log a stack trace, it's lights-out for your web server. This can mostly be mitigated by putting everything in a big try/catch, but that's effectively writing an error handler for your error handler. 
 
-This kind of coupling is insane. Web servers solved these problems decades ago. Node.js forces you to reinvent the wheel. 
+Hopefully, errors will be more isolated in the future. Node.js 0.8 will introduce [domains](http://nodejs.org/docs/v0.7.9/api/domain.html). These allow you to restrict errors to 
 
-Performance. 
+But for now, you're screwed. This kind of coupling is insane. Web servers solved these problems decades ago. Node.js forces you to reinvent the wheel.
