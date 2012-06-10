@@ -7,8 +7,6 @@ author: Geoff Greer
 title: Geoff's Site
 exclude: deploy_site.sh new_post.sh lscolors/README.md
 
-future: false
-
 gallery_dir: photos
 galleries:
   chile_trip:
