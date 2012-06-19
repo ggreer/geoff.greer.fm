@@ -60,11 +60,11 @@ The last iteration of the iBook G4 came out in September of 2005 and was sold un
 
 There are a dozen things that don't show up in the numbers. The iBook's keyboard is spongy. It has a smaller trackpad that only supports two-finger scrolling. The iBook's display is much worse, although that may be due to age. The iBook's trackpad is plastic instead of glass. Even with a fresh install of Leopard, it feels slow. Yet somehow I used it as my main computer for two years.
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/11/air_ibook2-500x332.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/11/air_ibook2.jpg)
+[![](/images/air_ibook2-500x332.jpg)](/images/air_ibook2.jpg)
 
 In case you forgot, that skinny ethernet port on the iBook is a 56k modem. It's like ethernet, but data goes 1,800 times slower and makes angry noises.
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/11/air_ibook-500x250.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/11/air_ibook.jpg)
+[![](/images/air_ibook-500x250.jpg)](/images/air_ibook.jpg)
 
 I wonder what I'll compare my Air to in 2015.
 

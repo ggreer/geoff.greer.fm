@@ -17,7 +17,7 @@ The password thing was a big red flag, but I didn't want to give up so easily. I
 
 I woke up and saw my inbox contained an invoice for $1.00. Yes, VPS.net sends an invoice every day. Worse, after a week, VPS.net started warning me that my invoices were overdue. I tried to log in and pay the measly $10. I was confronted with a login page asking me to enter my username, password, and answer some security questions. They noticed I was trying to log in from a different IP address and threw some security questions at me. I finally managed to get enough answers correct to log in.
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/11/Screen-shot-2010-11-11-at-1.06.18-AM-500x242.png)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/11/Screen-shot-2010-11-11-at-1.06.18-AM.png)
+[![](/images/Screen-shot-2010-11-11-at-1.06.18-AM-500x242.png)](/images/Screen-shot-2010-11-11-at-1.06.18-AM.png)
 
 That "Pay Now" button is actually a "try to pay $1 and show a big failure message, but mark the invoice as paid if there have been no payment attempts in the past few hours" button. I had to click it once for each invoice, waiting 3-4 hours between tries if I wanted them to work. Later I noticed the charges actually showed up on my card. 
 
