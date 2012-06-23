@@ -1,4 +1,4 @@
-[![](/icons/github_favicon.ico) Github](https://github.com/ggreer){:rel=me}  
+[![](/icons/github_favicon.ico) GitHub](https://github.com/ggreer){:rel=me}  
 [![](/icons/lw.png) LessWrong](http://lesswrong.com/user/AngryParsley){:rel=me}  
 [![](/icons/hn.png) Hacker News](http://news.ycombinator.com/threads?id=AngryParsley){:rel=me}  
 [![](/icons/blank_icon.png) LSCOLORS Generator](/lscolors/){:rel=me}  
