@@ -3,3 +3,6 @@ _site
 files
 images
 photos
+videos
+*.zip
+*.gz

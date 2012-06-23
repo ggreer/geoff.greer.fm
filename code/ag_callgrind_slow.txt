@@ -1,0 +1,492 @@
+$ callgrind_annotate --auto=yes callgrind.out.10361 
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.10361' (creator: callgrind-3.6.1-Debian)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 798409857
+Trigger: Program termination
+Profiled target:  ./ag --literal abcdefghijklmnopqrstuvwxyz ../ (PID 10361, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+           Ir 
+--------------------------------------------------------------------------------
+3,068,387,924  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+           Ir  file:function
+--------------------------------------------------------------------------------
+1,764,541,095  src/util.c:ag_strnstr [/home/geoff/code/the_silver_searcher/ag]
+  386,020,821  /build/buildd/eglibc-2.13/posix/fnmatch_loop.c:internal_fnmatch [/lib/x86_64-linux-gnu/libc-2.13.so]
+  226,548,868  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strcmp.S:__GI_strncmp [/lib/x86_64-linux-gnu/libc-2.13.so]
+  181,861,517  src/util.c:is_binary [/home/geoff/code/the_silver_searcher/ag]
+  123,211,270  /build/buildd/eglibc-2.13/posix/fnmatch.c:fnmatch@@GLIBC_2.2.5 [/lib/x86_64-linux-gnu/libc-2.13.so]
+  104,867,805  src/print.c:print_file_matches [/home/geoff/code/the_silver_searcher/ag]
+   77,058,570  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strlen.S:__GI_strlen [/lib/x86_64-linux-gnu/libc-2.13.so]
+   60,030,629  /build/buildd/eglibc-2.13/posix/fnmatch_loop.c:internal_fnmatch'2 [/lib/x86_64-linux-gnu/libc-2.13.so]
+   44,019,376  src/ignore.c:filename_filter [/home/geoff/code/the_silver_searcher/ag]
+   27,072,821  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/memchr.S:memchr [/lib/x86_64-linux-gnu/libc-2.13.so]
+    9,329,984  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strcmp.S:__GI_strcmp [/lib/x86_64-linux-gnu/libc-2.13.so]
+    7,803,075  /build/buildd/eglibc-2.13/malloc/malloc.c:_int_malloc [/lib/x86_64-linux-gnu/libc-2.13.so]
+    7,040,644  /build/buildd/eglibc-2.13/posix/../locale/weight.h:internal_fnmatch
+    6,062,124  /build/buildd/eglibc-2.13/string/../string/memmove.c:__GI_memmove [/lib/x86_64-linux-gnu/libc-2.13.so]
+    4,384,383  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../memcpy.S:__GI_memcpy [/lib/x86_64-linux-gnu/libc-2.13.so]
+    3,951,640  /build/buildd/eglibc-2.13/malloc/malloc.c:_int_free [/lib/x86_64-linux-gnu/libc-2.13.so]
+    3,779,300  /build/buildd/eglibc-2.13/dirent/../sysdeps/unix/readdir.c:readdir [/lib/x86_64-linux-gnu/libc-2.13.so]
+    3,181,118  /build/buildd/eglibc-2.13/malloc/malloc.c:malloc [/lib/x86_64-linux-gnu/libc-2.13.so]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: src/util.c
+--------------------------------------------------------------------------------
+           Ir 
+
+-- line 5 ----------------------------------------
+            .  #include <stdarg.h>
+            .  #include <strings.h>
+            .  #include "util.h"
+            .  
+            .  /* Blatantly stolen from darwin source code and modified for my own purposes
+            .     TODO: take a look at boyer-moore string searching
+            .   */
+            .  char* ag_strnstr(const char *s, const char *find, size_t slen)
+  171,601,139  {
+            .      char c, sc;
+            .      size_t len;
+            .  
+       66,276      if ((c = *find++) != '\0') {
+       66,276          len = strlen(find);
+      447,363  => /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strlen.S:__GI_strlen (16569x)
+            .          do {
+            .              do {
+1,200,235,403                  if (slen-- < 1 || (sc = *s++) == '\0')
+            .                      return (NULL);
+  342,919,288              } while (sc != c);
+   12,378,870              if (len > slen)
+       32,846                  return (NULL);
+   37,091,876          } while (strncmp(s, find, len) != 0);
+  226,548,103  => /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strcmp.S:__GI_strncmp (6181955x)
+          931  => /build/buildd/eglibc-2.13/elf/../sysdeps/x86_64/dl-trampoline.S:_dl_runtime_resolve (1x)
+            .          s--;
+            .      }
+            .      return ((char *)s);
+      149,121  }
+            .  
+            .  char* ag_strncasestr(const char *s, const char *find, size_t slen)
+            .  {
+            .      char c, sc;
+            .      size_t len;
+            .  
+            .      if ((c = *find++) != '\0') {
+            .          len = strlen(find);
+-- line 38 ----------------------------------------
+-- line 81 ----------------------------------------
+            .          haystack += skip_lookup[(int)*haystack];
+            .          s_len -= skip_lookup[(int)*s];
+            .      }
+            .  
+            .      return(NULL);
+            .  }
+            .  
+            .  int is_binary(const void* buf, const int buf_len) {
+       41,710      int suspicious_bytes = 0;
+       51,642      int total_bytes = buf_len > 1024 ? 1024 : buf_len;
+            .      const unsigned char *buf_c = buf;
+            .      int i;
+            .  
+   75,718,929      for (i = 0; i < buf_len && i < 1024; i++) {
+   60,511,947          if (buf_c[i] == '\0') {
+            .              /* NULL char. It's binary */
+       93,450              return(1);
+            .          }
+   15,129,486          else if (buf_c[i] < 32 || buf_c[i] > 128) {
+   30,258,972              suspicious_bytes++;
+            .          }
+            .      }
+            .  
+            .      /* If > 10% of bytes are suspicious, assume it's binary */
+       51,642      if ((suspicious_bytes * 100) / total_bytes > 10) {
+            .          return(1);
+            .      }
+            .  
+            .      return(0);
+        3,739  }
+            .  
+            .  /*
+            .   * These functions are taken from Linux. Renamed so there's no
+            .   * possible function name conflicts.
+            .   */
+            .  size_t ag_strlcat(char *dest, const char *src, size_t count)
+      527,540  {
+      105,508      size_t dsize = strlen(dest);
+    1,903,679  => /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strlen.S:__GI_strlen (52754x)
+      105,508      size_t len = strlen(src);
+      862,324  => /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strlen.S:__GI_strlen (52754x)
+       52,754      size_t res = dsize + len;
+            .  
+       52,754      dest += dsize;
+       52,754      count -= dsize;
+            .  
+            .      if (len >= count)
+      158,262          len = count - 1;
+            .  
+            .      memcpy(dest, src, len);
+            .  
+       52,754      dest[len] = 0;
+            .  
+            .      return res;
+      474,786  }
+            .  
+            .  size_t ag_strlcpy(char *dest, const char *src, size_t size)
+      237,393  {
+       79,131      size_t ret = strlen(src);
+      946,680  => /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strlen.S:__GI_strlen (26377x)
+            .  
+       52,754      if (size)
+            .      {
+       79,131          size_t len = (ret >= size) ? size - 1 : ret;
+            .          memcpy(dest, src, len);
+       26,377          dest[len] = '\0';
+            .      }
+            .  
+            .      return ret;
+      211,016  }
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: src/print.c
+--------------------------------------------------------------------------------
+        Ir 
+
+-- line 10 ----------------------------------------
+         .  
+         .  int first_file_match = 1;
+         .  
+         .  const char *colors_reset = "\e[0m\e[K";
+         .  const char *colors_path = "\e[1;32m";   /* bold green */
+         .  const char *colors_match = "\e[30;43m"; /* black with yellow background */
+         .  
+         .  void print_path(const char* path) {
+       189      if (opts.ackmate) {
+         .          printf(":%s", path);
+         .      }
+         .      else {
+       189          if (opts.color) {
+         .              printf("%s%s%s", colors_path, path, colors_reset);
+         .          }
+         .          else {
+         .              printf("%s", path);
+         .          }
+         .      }
+         .  }
+         .  
+         .  /* TODO: make print_matching_line() */
+         .  
+         .  /* TODO: line numbers need to be colorized */
+ 3,565,290  void print_file_matches(const char* path, const char* buf, const int buf_len, const match matches[], const int matches_len) {
+         .      int line = 1;
+         .      int column = 0;
+         .      char **context_prev_lines = NULL;
+         .      int prev_line = 0;
+         .      int last_prev_line = 0;
+         .      int prev_line_offset = 0;
+         .      int cur_match = 0;
+         .      int in_a_match = 0;
+         .      int lines_since_last_match = 1000000; /* if I initialize this to INT_MAX it'll overflow */
+         .      int last_printed_match = 0;
+       252      char sep = '-';
+         .      int i, j;
+         .  
+         .      if (opts.ackmate) {
+         .          sep = ':';
+         .      }
+         .  
+       375      if (first_file_match == 0 && opts.print_break) {
+         .          printf("\n");
+         .      }
+        63      first_file_match = 0;
+         .  
+       189      if (opts.print_heading) {
+       126          print_path(path);
+    92,376  => src/print.c:print_path (63x)
+         .          printf("\n");
+         .      }
+         .  
+       378      context_prev_lines = malloc(sizeof(char*) * (opts.before + 1));
+     6,833  => /build/buildd/eglibc-2.13/malloc/malloc.c:malloc (63x)
+         .  
+       126      for (i = 0; i < opts.before; i++) {
+         .          context_prev_lines[i] = NULL;
+         .      }
+         .  
+20,809,245      for (i = 0; i < buf_len && (cur_match < matches_len || lines_since_last_match <= opts.after); i++) {
+20,727,294          if (cur_match < matches_len && i == matches[cur_match].start) {
+       292              in_a_match = 1;
+         .  
+       687              if (cur_match > 0 && opts.context && lines_since_last_match > (opts.before + opts.after)) {
+         .                  printf("--\n");
+         .              }
+         .  
+       292              if (lines_since_last_match > 0) {
+         .                  /* TODO: this is buggy as hell */
+       438                  if (opts.before > 0 && lines_since_last_match > opts.after + opts.before) {
+         .                      /* We found the start of a match. print the previous line(s) */
+         .                      for (j = 0; j < opts.before; j++) {
+         .                          prev_line = (last_prev_line + j) % opts.before;
+         .                          if (context_prev_lines[prev_line] != NULL) {
+         .                              if (opts.print_heading == 0) {
+         .                                  print_path(path);
+         .                                  printf(":");
+         .                              }
+       126                              printf("%i%c%s\n", line - (opts.before - j), sep, context_prev_lines[prev_line]);
+         .                          }
+         .                      }
+         .                  }
+         .  
+       438                  if (opts.ackmate == 0) {
+       438                      if (opts.print_heading == 0) {
+         .                          print_path(path);
+         .                          printf(":");
+         .                      }
+         .                      printf("%i:", line);
+       438                      if (opts.column) {
+       146                          printf("%i:", column + 1);
+         .                      }
+         .                      /* print up to current char */
+    18,770                      for (j = prev_line_offset; j < i; j++) {
+     9,093                          putchar(buf[j]);
+         .                      }
+         .                  }
+         .              }
+         .  
+       146              lines_since_last_match = 0;
+       438              if (opts.color) {
+         .                  printf("%s", colors_match);
+         .              }
+         .          }
+         .  
+13,818,196          if (cur_match < matches_len && i == matches[cur_match].end) {
+         .              /* We found the end of a match. */
+       146              in_a_match = 0;
+       146              cur_match++;
+       584              if (opts.color) {
+         .                  printf("%s", colors_reset);
+         .              }
+         .          }
+         .  
+13,856,697          if ((in_a_match || lines_since_last_match == 0) && opts.ackmate == 0) {
+    11,581              putchar(buf[i]);
+         .          }
+         .  
+         .          column++;
+         .  
+ 6,922,558          if (buf[i] == '\n') {
+   304,509              if (opts.before > 0) {
+         .                  if (context_prev_lines[last_prev_line] != NULL) {
+         .                      free(context_prev_lines[last_prev_line]);
+         .                  }
+         .                  /* We just incremented column so it will always be at least 1.
+         .                   * We don't want to strcpy the \n
+         .                   */
+         .                  context_prev_lines[last_prev_line] = strndup(&buf[prev_line_offset], i - prev_line_offset);
+         .                  last_prev_line = (last_prev_line + 1) % opts.before;
+         .              }
+         .          }
+         .  
+ 6,719,804          if (buf[i] == '\n' || i == buf_len - 1) {
+   203,006              if (lines_since_last_match == 0) {
+       438                  if (opts.ackmate) {
+         .                      /* print headers for ackmate to parse */
+         .                      printf("%i;", line);
+         .                      while (last_printed_match < cur_match) {
+         .                          printf("%i %i", (matches[last_printed_match].start - prev_line_offset), (matches[last_printed_match].end - matches[last_printed_match].start));
+         .                          if (last_printed_match == cur_match - 1) {
+         .                              putchar(':');
+         .                          }
+         .                          else {
+-- line 152 ----------------------------------------
+-- line 157 ----------------------------------------
+         .                      }
+         .                      /* print up to current char */
+         .                      for (j = prev_line_offset; j < i; j++) {
+         .                          putchar(buf[j]);
+         .                      }
+         .                      putchar('\n');
+         .                  }
+         .              }
+   202,714              else if (lines_since_last_match <= opts.after) {
+         .                  /* print context after matching line */
+         .                  if (opts.print_heading == 0) {
+         .                      print_path(path);
+         .                      printf(":");
+         .                  }
+         .                  printf("%i%c", line, sep);
+         .  
+         .                  for (j = prev_line_offset; j < i; j++) {
+         .                      putchar(buf[j]);
+         .                  }
+         .                  putchar('\n');
+         .              }
+         .  
+         .              prev_line_offset = i + 1; /* skip the newline */
+   101,503              line++;
+   101,503              column = 0;
+ 7,125,564              lines_since_last_match++;
+         .          }
+         .      }
+         .  
+10,363,335      free(context_prev_lines);
+     5,002  => /build/buildd/eglibc-2.13/malloc/malloc.c:free (63x)
+       441  }
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: src/ignore.c
+--------------------------------------------------------------------------------
+        Ir 
+
+-- line 24 ----------------------------------------
+         .  };
+         .  
+         .  /* TODO: make this a sorted array so filtering is O(log(n)) instead of O(n) */
+         .  char **ignore_patterns = NULL;
+         .  int ignore_patterns_len = 0;
+         .  
+         .  const int fnmatch_flags = 0 & FNM_PATHNAME;
+         .  
+       852  void add_ignore_pattern(const char* pattern) {
+     1,491      ignore_patterns = realloc(ignore_patterns, (ignore_patterns_len + 1) * sizeof(char**));
+    43,366  => /build/buildd/eglibc-2.13/malloc/malloc.c:realloc (213x)
+       989  => /build/buildd/eglibc-2.13/elf/../sysdeps/x86_64/dl-trampoline.S:_dl_runtime_resolve (1x)
+     1,065      ignore_patterns[ignore_patterns_len] = strdup(pattern);
+    62,429  => /build/buildd/eglibc-2.13/string/strdup.c:strdup (213x)
+       213      ignore_patterns_len++;
+       852      log_debug("added ignore pattern %s", pattern);
+     7,029  => /home/geoff/code/the_silver_searcher/src/log.c:log_debug (213x)
+       639  }
+         .  
+         3  void cleanup_ignore_patterns() {
+         .      int i;
+       858      for(i = 0; i<ignore_patterns_len; i++) {
+       639          free(ignore_patterns[i]);
+    17,887  => /build/buildd/eglibc-2.13/malloc/malloc.c:free (213x)
+         .      }
+         2      free(ignore_patterns);
+       134  => /build/buildd/eglibc-2.13/malloc/malloc.c:free (1x)
+         3  }
+         .  
+         .  /* For loading git/svn/hg ignore patterns */
+        64  void load_ignore_patterns(const char *ignore_filename) {
+         .      FILE *fp = NULL;
+        48      fp = fopen(ignore_filename, "r");
+     9,020  => /build/buildd/eglibc-2.13/libio/../sysdeps/wordsize-64/../../libio/iofopen.c:fopen@@GLIBC_2.2.5 (16x)
+       887  => /build/buildd/eglibc-2.13/elf/../sysdeps/x86_64/dl-trampoline.S:_dl_runtime_resolve (1x)
+        32      if (fp == NULL) {
+         .          log_err("Skipping ignore file %s", ignore_filename);
+         .          return;
+         .      }
+         .  
+        16      char *line = NULL;
+         .      ssize_t line_length = 0;
+        16      size_t line_cap = 0;
+         .  
+       474      while((line_length = getline(&line, &line_cap, fp)) > 0) {
+       426          line[line_length-1] = '\0'; /* kill the \n */
+       426          add_ignore_pattern(line);
+   118,925  => src/ignore.c:add_ignore_pattern (213x)
+         .      }
+         .  
+        32      free(line);
+     1,269  => /build/buildd/eglibc-2.13/malloc/malloc.c:free (16x)
+        32      fclose(fp);
+     6,443  => /build/buildd/eglibc-2.13/libio/iofclose.c:fclose@@GLIBC_2.2.5 (16x)
+       927  => /build/buildd/eglibc-2.13/elf/../sysdeps/x86_64/dl-trampoline.S:_dl_runtime_resolve (1x)
+        64  }
+         .  
+   164,500  int ignorefile_filter(struct dirent *dir) {
+         .      int i;
+   616,731      for (i = 0; ignore_pattern_files[i] != NULL; i++) {
+   493,372          if (strcmp(ignore_pattern_files[i], dir->d_name) == 0) {
+       923  => /build/buildd/eglibc-2.13/elf/../sysdeps/x86_64/dl-trampoline.S:_dl_runtime_resolve (1x)
+ 5,309,909  => /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strcmp.S:__GI_strcmp (123343x)
+        48              log_debug("ignore pattern matched for %s", dir->d_name);
+       528  => /home/geoff/code/the_silver_searcher/src/log.c:log_debug (16x)
+   123,343              return(1);
+         .          }
+         .      }
+    82,234      return(0);
+   164,500  }
+         .  
+         .  /* this function is REALLY HOT. It gets called for every file */
+   205,625  int filename_filter(struct dirent *dir) {
+    41,125      const char *filename = dir->d_name;
+         .      char *pattern = NULL;
+         .      int rc = 0;
+         .      int i;
+         .  
+   205,625      if (opts.follow_symlinks == 0 && dir->d_type == DT_LNK) {
+       468          log_debug("File %s ignored becaused it's a symlink", dir->d_name);
+     3,861  => /home/geoff/code/the_silver_searcher/src/log.c:log_debug (117x)
+       234          return(0);
+         .      }
+         .  
+         .      /* TODO: check if opts want to ignore hidden files */
+    82,016      if (filename[0] == '.') {
+    41,008          return(0);
+         .      }
+         .  
+   327,635      for (i = 0; evil_hardcoded_ignore_files[i] != NULL; i++) {
+   238,280          if (strcmp(filename, evil_hardcoded_ignore_files[i]) == 0) {
+ 1,826,850  => /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strcmp.S:__GI_strcmp (59570x)
+         .              log_err("file %s ignored because of name", filename);
+    59,570              return(0);
+         .          }
+         .      }
+         .  
+14,244,775      for (i = 0; i<ignore_patterns_len; i++) {
+ 7,040,644          pattern = ignore_patterns[i];
+21,121,932          if (fnmatch(pattern, filename, fnmatch_flags) == 0) {
+674,448,456  => /build/buildd/eglibc-2.13/posix/fnmatch.c:fnmatch@@GLIBC_2.2.5 (3520322x)
+       927  => /build/buildd/eglibc-2.13/elf/../sysdeps/x86_64/dl-trampoline.S:_dl_runtime_resolve (1x)
+    13,696              log_debug("file %s ignored because name matches pattern %s", dir->d_name, pattern);
+   112,992  => /home/geoff/code/the_silver_searcher/src/log.c:log_debug (3424x)
+     3,424              return(0);
+         .          }
+         .      }
+         .  
+    79,083      if (opts.ackmate_dir_filter != NULL) {
+         .          /* we just care about the match, not where the matches are */
+         .          rc = pcre_exec(opts.ackmate_dir_filter, NULL, dir->d_name, strlen(dir->d_name), 0, 0, NULL, 0);
+         .          if (rc >= 0) {
+         .              log_err("file %s ignored because name ackmate dir filter pattern", dir->d_name);
+         .              return(0);
+         .          }
+         .      }
+         .  
+    26,361      return(1);
+   287,875  }
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/buildd/eglibc-2.13/posix/fnmatch.c
+  /build/buildd/eglibc-2.13/posix/../locale/weight.h
+  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../memcpy.S
+  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strcmp.S
+  /build/buildd/eglibc-2.13/malloc/malloc.c
+  /build/buildd/eglibc-2.13/posix/fnmatch_loop.c
+  /build/buildd/eglibc-2.13/dirent/../sysdeps/unix/readdir.c
+  /build/buildd/eglibc-2.13/string/../string/memmove.c
+  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/multiarch/../strlen.S
+  /build/buildd/eglibc-2.13/string/../sysdeps/x86_64/memchr.S
+
+--------------------------------------------------------------------------------
+Ir 
+--------------------------------------------------------------------------------
+68  percentage of events annotated
+

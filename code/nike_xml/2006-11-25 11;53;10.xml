@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sportsData><vers>2</vers>
+<runSummary><workoutName><![CDATA[Basic]]></workoutName>
+<time>2006-11-25T11:43:09-08:00</time>
+<duration>561260</duration>
+<durationString>9:21</durationString>
+<distance unit="km">2.4663</distance>
+<distanceString>1.53 mi</distanceString>
+<pace>6:06 min/mi</pace>
+<calories>140</calories>
+<battery></battery>
+<playlistList><playlist><playlistName><![CDATA[On-The-Go]]></playlistName>
+</playlist>
+</playlistList>
+<stepCounts><walkBegin>0</walkBegin>
+<walkEnd>2414</walkEnd>
+<runBegin>0</runBegin>
+<runEnd>88790</runEnd>
+</stepCounts>
+<powerSong><title><![CDATA[Blackout]]></title>
+<artist><![CDATA[Hybrid]]></artist>
+<album><![CDATA[Morning Sci-Fi]]></album>
+</powerSong>
+</runSummary>
+<template><templateID>8D495DCE</templateID>
+<templateName><![CDATA[Basic]]></templateName>
+</template>
+<goal type="" value="" unit=""></goal>
+<userInfo><empedID>4H637RSMVSX</empedID>
+<weight>55.3</weight>
+<device>iPod</device>
+<calibration>0000000041700000021a00230000000041f0000004af000000cd4b0500000000</calibration>
+</userInfo>
+<startTime>2006-11-25T11:43:09-08:00</startTime>
+<snapShotList snapShotType="kmSplit"><snapShot><duration>237528</duration>
+<distance>1.003</distance>
+<pace>226802</pace>
+</snapShot>
+<snapShot><duration>458392</duration>
+<distance>2.002</distance>
+<pace>220133</pace>
+</snapShot>
+</snapShotList>
+<snapShotList snapShotType="userClick"><snapShot event="onDemandVP"><duration>338089</duration>
+<distance>1.458</distance>
+<pace>219022</pace>
+</snapShot>
+<snapShot event="pause"><duration>355074</duration>
+<distance>1.535</distance>
+<pace>219022</pace>
+</snapShot>
+<snapShot event="resume"><duration>355079</duration>
+<distance>1.535</distance>
+<pace>219022</pace>
+</snapShot>
+<snapShot event="onDemandVP"><duration>551352</duration>
+<distance>2.42</distance>
+<pace>223469</pace>
+</snapShot>
+<snapShot event="pause"><duration>561255</duration>
+<distance>2.466</distance>
+<pace>209015</pace>
+</snapShot>
+<snapShot event="stop"><duration>561260</duration>
+<distance>2.466</distance>
+<pace>209015</pace>
+</snapShot>
+</snapShotList>
+<snapShotList snapShotType="mileSplit"><snapShot><duration>371257</duration>
+<distance>1.611</distance>
+<pace>204567</pace>
+</snapShot>
+</snapShotList>
+<extendedDataList><extendedData dataType="distance" intervalType="time" intervalUnit="s" intervalValue="10">0.0, 0.0225, 0.0654, 0.109, 0.1484, 0.1915, 0.2347, 0.2786, 0.3174, 0.361, 0.4054, 0.4271, 0.4891, 0.5338, 0.5771, 0.6169, 0.6615, 0.7066, 0.7468, 0.7914, 0.8363, 0.8813, 0.9265, 0.9671, 1.0126, 1.0573, 1.0982, 1.1455, 1.192, 1.238, 1.2849, 1.3316, 1.3792, 1.4263, 1.4682, 1.5166, 1.5549, 1.6058, 1.654, 1.6962, 1.7424, 1.7883, 1.8291, 1.8739, 1.9197, 1.9608, 2.0071, 2.0569, 2.0985, 2.1454, 2.1919, 2.2339, 2.2797, 2.3266, 2.3694, 2.4149, 2.4621</extendedData>
+</extendedDataList>
+</sportsData>

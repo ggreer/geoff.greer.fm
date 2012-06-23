@@ -1,0 +1,53 @@
+#!/usr/bin/perl
+# IRC log swapper
+# Mixes up content and usernames to make for a useless log that looks legit at a glance
+# AngryParsley 6/15/2006
+
+srand();
+
+foreach $log_file (@ARGV)
+{
+
+open(INPUT,$log_file) or die("I can't open $log_file");
+@lines=<INPUT>;
+close(INPUT);
+
+$linecount=@lines;
+
+for($i=0;$i<=$linecount;$i++)
+{
+   $linenumber1=int(rand($linecount));
+   $linenumber2=int(rand($linecount));
+
+   $date1=substr($lines[$i],0,16);
+   $line1=substr($lines[$i],16);
+   ($nickname1,@sentence1)=split(" ",$line1);
+   $sentence1="@sentence1";
+
+   $date2=substr($lines[$linenumber1],0,16);
+   $line2=substr($lines[$linenumber1],16);
+   ($nickname2,@sentence2)=split(" ",$line2);
+   $sentence2="@sentence2";
+
+   $date3=substr($lines[$linenumber2],0,16);
+   $line3=substr($lines[$linenumber2],16);
+   ($nickname3,@sentence3)=split(" ",$line3);
+   $sentence3="@sentence3";
+
+   if($date1 =~ m/:/ && $date2 =~ m/:/ && $date3 =~ m/:/ && $nickname1 && $nickname2 && $nickname3)
+   {
+      $lines[$i]="$date1$nickname2 $sentence3\n";
+      $lines[$linenumber1]="$date2$nickname3 $sentence1\n";
+      $lines[$linenumber2]="$date3$nickname1 $sentence2\n";
+   }
+}
+
+$log_file="$log_file.swap";
+
+open(OUTPUT,"> $log_file") or die("I can't open $log_file");
+print OUTPUT @lines;
+close(OUTPUT);
+
+print "$linecount lines swapped and written to $log_file\n";
+
+}

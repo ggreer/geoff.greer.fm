@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sportsData><vers>2</vers>
+<runSummary><workoutName><![CDATA[Basic]]></workoutName>
+<time>2006-12-10T16:26:21-08:00</time>
+<duration>6389</duration>
+<durationString>0:06</durationString>
+<distance unit="km">0.0</distance>
+<distanceString>0.00 mi</distanceString>
+<pace>0:00 min/mi</pace>
+<calories>0</calories>
+<battery></battery>
+<playlistList><playlist><playlistName><![CDATA[Ghost]]></playlistName>
+</playlist>
+</playlistList>
+<stepCounts><walkBegin>2484</walkBegin>
+<walkEnd>2510</walkEnd>
+<runBegin>101630</runBegin>
+<runEnd>101636</runEnd>
+</stepCounts>
+<powerSong><title><![CDATA[Blackout]]></title>
+<artist><![CDATA[Hybrid]]></artist>
+<album><![CDATA[Morning Sci-Fi]]></album>
+</powerSong>
+</runSummary>
+<template><templateID>8D495DCE</templateID>
+<templateName><![CDATA[Basic]]></templateName>
+</template>
+<goal type="" value="" unit=""></goal>
+<userInfo><empedID>4H637RSMVSX</empedID>
+<weight>55.3</weight>
+<device>iPod</device>
+<calibration>0000000041700000021a00230000000041f0000004af000000cd4b0500000000</calibration>
+</userInfo>
+<startTime>2006-12-10T16:26:21-08:00</startTime>
+<snapShotList snapShotType="userClick"><snapShot event="pause"><duration>4231</duration>
+<distance>0.0</distance>
+<pace>0</pace>
+</snapShot>
+<snapShot event="resume"><duration>4236</duration>
+<distance>0.0</distance>
+<pace>0</pace>
+</snapShot>
+<snapShot event="stop"><duration>6349</duration>
+<distance>0.0</distance>
+<pace>0</pace>
+</snapShot>
+</snapShotList>
+<extendedDataList><extendedData dataType="distance" intervalType="time" intervalUnit="s" intervalValue="10">0.0</extendedData>
+</extendedDataList>
+</sportsData>

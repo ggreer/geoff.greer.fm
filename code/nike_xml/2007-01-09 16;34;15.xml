@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sportsData><vers>2</vers>
+<runSummary><workoutName><![CDATA[Basic]]></workoutName>
+<time>2007-01-09T15:59:32-08:00</time>
+<duration>1961863</duration>
+<durationString>32:41</durationString>
+<distance unit="km">8.5587</distance>
+<distanceString>5.31 mi</distanceString>
+<pace>6:08 min/mi</pace>
+<calories>487</calories>
+<battery></battery>
+<playlistList><playlist><playlistName><![CDATA[On-The-Go]]></playlistName>
+</playlist>
+</playlistList>
+<stepCounts><walkBegin>0</walkBegin>
+<walkEnd>3206</walkEnd>
+<runBegin>0</runBegin>
+<runEnd>140608</runEnd>
+</stepCounts>
+<powerSong><title><![CDATA[Blackout]]></title>
+<artist><![CDATA[Hybrid]]></artist>
+<album><![CDATA[Morning Sci-Fi]]></album>
+</powerSong>
+</runSummary>
+<template><templateID>8D495DCE</templateID>
+<templateName><![CDATA[Basic]]></templateName>
+</template>
+<goal type="" value="" unit=""></goal>
+<userInfo><empedID>4H637RSMVSX</empedID>
+<weight>55.3</weight>
+<device>iPod</device>
+<calibration>0000000041700000021a00230000000041f0000004af000000cd130500000000</calibration>
+</userInfo>
+<startTime>2007-01-09T15:59:32-08:00</startTime>
+<snapShotList snapShotType="kmSplit"><snapShot><duration>220477</duration>
+<distance>1.004</distance>
+<pace>207904</pace>
+</snapShot>
+<snapShot><duration>422975</duration>
+<distance>2.001</distance>
+<pace>205678</pace>
+</snapShot>
+<snapShot><duration>636157</duration>
+<distance>3.003</distance>
+<pace>229028</pace>
+</snapShot>
+<snapShot><duration>874785</duration>
+<distance>4.003</distance>
+<pace>221244</pace>
+</snapShot>
+<snapShot><duration>1114504</duration>
+<distance>5.002</distance>
+<pace>234587</pace>
+</snapShot>
+<snapShot><duration>1344047</duration>
+<distance>6.003</distance>
+<pace>214574</pace>
+</snapShot>
+<snapShot><duration>1568384</duration>
+<distance>7.001</distance>
+<pace>235698</pace>
+</snapShot>
+<snapShot><duration>1829702</duration>
+<distance>8.002</distance>
+<pace>231250</pace>
+</snapShot>
+</snapShotList>
+<snapShotList snapShotType="userClick"><snapShot event="pause"><duration>323223</duration>
+<distance>1.513</distance>
+<pace>207904</pace>
+</snapShot>
+<snapShot event="onDemandVP"><duration>323228</duration>
+<distance>1.513</distance>
+<pace>207904</pace>
+</snapShot>
+<snapShot event="resume"><duration>323228</duration>
+<distance>1.513</distance>
+<pace>207904</pace>
+</snapShot>
+<snapShot event="pause"><duration>1273012</duration>
+<distance>5.679</distance>
+<pace>241257</pace>
+</snapShot>
+<snapShot event="resume"><duration>1273016</duration>
+<distance>5.679</distance>
+<pace>241257</pace>
+</snapShot>
+<snapShot event="onDemandVP"><duration>1399945</duration>
+<distance>6.249</distance>
+<pace>225691</pace>
+</snapShot>
+<snapShot event="pause"><duration>1875056</duration>
+<distance>8.202</distance>
+<pace>271276</pace>
+</snapShot>
+<snapShot event="resume"><duration>1875061</duration>
+<distance>8.202</distance>
+<pace>271276</pace>
+</snapShot>
+<snapShot event="pause"><duration>1961858</duration>
+<distance>8.558</distance>
+<pace>247927</pace>
+</snapShot>
+<snapShot event="stop"><duration>1961863</duration>
+<distance>8.558</distance>
+<pace>247927</pace>
+</snapShot>
+</snapShotList>
+<snapShotList snapShotType="mileSplit"><snapShot><duration>342045</duration>
+<distance>1.609</distance>
+<pace>207904</pace>
+</snapShot>
+<snapShot><duration>686313</duration>
+<distance>3.218</distance>
+<pace>242368</pace>
+</snapShot>
+<snapShot><duration>1072508</duration>
+<distance>4.829</distance>
+<pace>241257</pace>
+</snapShot>
+<snapShot><duration>1441365</duration>
+<distance>6.439</distance>
+<pace>219022</pace>
+</snapShot>
+<snapShot><duration>1839904</duration>
+<distance>8.047</distance>
+<pace>226802</pace>
+</snapShot>
+</snapShotList>
+<extendedDataList><extendedData dataType="distance" intervalType="time" intervalUnit="s" intervalValue="10">0.0, 0.0263, 0.0737, 0.1204, 0.1673, 0.208, 0.2585, 0.3019, 0.3497, 0.3962, 0.4402, 0.4884, 0.5353, 0.5832, 0.6319, 0.6768, 0.7186, 0.7662, 0.8151, 0.8589, 0.9067, 0.9508, 0.9947, 1.0496, 1.1011, 1.151, 1.1955, 1.2469, 1.2999, 1.3503, 1.3811, 1.4523, 1.4936, 1.5425, 1.6002, 1.6453, 1.6958, 1.7445, 1.799, 1.8446, 1.8945, 1.9381, 1.9915, 2.0366, 2.0889, 2.1361, 2.1849, 2.2279, 2.2788, 2.3297, 2.3721, 2.4188, 2.463, 2.5129, 2.5622, 2.6157, 2.6545, 2.7083, 2.7592, 2.7985, 2.8513, 2.8935, 2.9393, 2.9816, 3.022, 3.0652, 3.105, 3.1491, 3.1926, 3.2355, 3.2788, 3.3171, 3.3619, 3.4026, 3.4421, 3.4744, 3.5204, 3.5636, 3.6091, 3.6503, 3.6944, 3.7351, 3.7708, 3.8132, 3.8571, 3.9003, 3.9363, 3.9798, 4.0251, 4.0652, 4.1087, 4.1567, 4.1999, 4.2378, 4.2803, 4.3225, 4.3654, 4.4039, 4.4447, 4.4862, 4.5237, 4.5612, 4.6083, 4.6463, 4.6922, 4.7347, 4.7779, 4.8165, 4.8583, 4.9001, 4.9376, 4.9809, 5.0241, 5.0679, 5.1111, 5.1512, 5.1958, 5.2451, 5.2845, 5.3274, 5.3705, 5.4103, 5.4527, 5.4959, 5.5348, 5.5796, 5.6248, 5.6704, 5.7059, 5.7544, 5.8021, 5.8449, 5.891, 5.9368, 5.9888, 6.0306, 6.0721, 6.1178, 6.1628, 6.2035, 6.2534, 6.3, 6.3417, 6.3881, 6.4351, 6.4825, 6.526, 6.5725, 6.6188, 6.6662, 6.709, 6.7554, 6.801, 6.839, 6.8833, 6.9257, 6.9681, 7.0061, 7.0444, 7.0906, 7.1329, 7.1698, 7.2066, 7.2529, 7.2926, 7.3282, 7.3678, 7.4127, 7.4468, 7.4847, 7.5255, 7.563, 7.6044, 7.6434, 7.6852, 7.7207, 7.7582, 7.7899, 7.821, 7.8551, 7.8885, 7.9236, 7.9584, 8.0024, 8.0478, 8.0937, 8.1354, 8.1814, 8.2194, 8.2657, 8.3102, 8.3491, 8.3914, 8.4329, 8.4741, 8.5165, 8.5546</extendedData>
+</extendedDataList>
+</sportsData>
