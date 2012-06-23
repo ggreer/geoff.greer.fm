@@ -10,11 +10,16 @@ categories:
 ---
 
 I've noticed the search suggestions on Ask.com are a little... preoccupied with a certain topic:
-![How to](http://geoff.greer.fm/rambling/wp-content/uploads/2007/12/picture-3.png)
-![How do I know](http://geoff.greer.fm/rambling/wp-content/uploads/2007/12/picture-5.png)
-![si](http://geoff.greer.fm/rambling/wp-content/uploads/2007/12/picture-6.png)
-![e](http://geoff.greer.fm/rambling/wp-content/uploads/2007/12/picture-2.png)
-![v](http://geoff.greer.fm/rambling/wp-content/uploads/2007/12/picture-1.png)
+
+![How to](/images/search_suggestions/picture-3.png)
+
+![How do I know](/images/search_suggestions/picture-5.png)
+
+![si](/images/search_suggestions/picture-6.png)
+
+![e](/images/search_suggestions/picture-2.png)
+
+![v](/images/search_suggestions/picture-1.png)
 
 I know medical searches are increasing, but this is a little ridiculous.
 

@@ -13,11 +13,11 @@ I recently finished taking the [Motorcycle Safety Foundation](http://www.msf-usa
 
 Will just got a Canon Rebel XTI and was testing it out today:
 
-![geoff_s_bike_small.jpg](http://geoff.greer.fm/rambling/wp-content/uploads/2008/03/geoff_s_bike_small.jpg)
+![geoff_s_bike_small.jpg](/images/geoff_s_bike_small.jpg)
 
 Yes, the flames do make it go faster.
 
 Edit: I rode to San Francisco and back today.
-![My bike at the Golden Gate bridge](http://geoff.greer.fm/rambling/wp-content/uploads/2008/03/golden_gate.jpg)
+![My bike at the Golden Gate bridge](/images/golden_gate.jpg)
 
 

@@ -12,7 +12,7 @@ categories:
 
 Last week I ordered some [X10](http://en.wikipedia.org/wiki/X10_%28industry_standard%29) gear off Amazon to play with. Included was a CM17A Firecracker X10 controller. It plugs into a serial port and transmits X10 signals to a receiver hooked up to your power lines. I found a neat little open source program called [Heyu](http://heyu.tanj.com/) that lets you control the CM17A. Of course, controlling your X10 stuff from a command line isn't cool enough for me, so I started on a Ruby on Rails app that lets me control everything from my iPhone. After adding some  iUI styling it works pretty well. The Firecracker can only transmit, not receive data, so I had to store appliance state in the database. Besides that minor annoyance, everything worked out pretty well. I added [iUI](http://www.joehewitt.com/iui/) styling and I'm pretty happy with what I've got so far.
 
-Anyone who wants to can check out the source [here](http://geoff.greer.fm/repos/x10/). It's nowhere near done. There is no way to add houses or units short of making a migration or modifying the database directly. Also it requires that you have Heyu installed and in your path. Turning stuff on and off works though, as demonstrated by me in this video:
+Anyone who wants to can check out the source [here](/repos/x10/). It's nowhere near done. There is no way to add houses or units short of making a migration or modifying the database directly. Also it requires that you have Heyu installed and in your path. Turning stuff on and off works though, as demonstrated by me in this video:
 
 
 

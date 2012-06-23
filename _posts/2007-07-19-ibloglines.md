@@ -17,15 +17,15 @@ At the start of the week [one of my coworkers](http://journal.paul.querna.org/) 
 The following screenshots were taken in iPhoney, so they don't get rid of the tool bar like on the iPhone:  
   
 
-![iBloglines Feed List](http://geoff.greer.fm/rambling/wp-content/uploads/2007/07/ibloglines1.png)
+![iBloglines Feed List](/images/ibloglines1.png)
   
 
   
 
-![iBloglines Items](http://geoff.greer.fm/rambling/wp-content/uploads/2007/07/ibloglines2.png)
+![iBloglines Items](/images/ibloglines2.png)
   
 
   
 
-![iBloglines End of Item List](http://geoff.greer.fm/rambling/wp-content/uploads/2007/07/ibloglines3.png)
+![iBloglines End of Item List](/images/ibloglines3.png)
 
