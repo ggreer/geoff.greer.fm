@@ -9,9 +9,9 @@ categories:
 - Computers
 ---
 
-A while back I made a [little web page to spruce up ls output](http://geoff.greer.fm/2006/08/01/lscolorsexfxcxdxbxegedabagacad/). Of course I completely forgot about it until recently. Some of Ubuntu's default colors were hard to see in Terminal.app, so I added mostly-working LS_COLORS for Linux. The string format is completely different, and harder to go from text to preview, so I ditched that feature. Linux people will have to copy-paste the color string and type ls in their terminals. Life's tough, I know. 
+A while back I made a [little web page to spruce up ls output](/2006/08/01/lscolorsexfxcxdxbxegedabagacad/). Of course I completely forgot about it until recently. Some of Ubuntu's default colors were hard to see in Terminal.app, so I added mostly-working LS_COLORS for Linux. The string format is completely different, and harder to go from text to preview, so I ditched that feature. Linux people will have to copy-paste the color string and type ls in their terminals. Life's tough, I know. 
 
-Anyway, [try it out](http://geoff.greer.fm/lscolors/).
+Anyway, [try it out](/lscolors/).
 
 Once you've got a theme you like, try the following for BSD/OS X:
 `
