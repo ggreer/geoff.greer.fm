@@ -1,0 +1,24 @@
+ggreer
+geoffrey.greer@ask.com
+tbe=1; wz_uid=024B9E81CCD4939A5D4608AACD141D03; ptid=3488|0~3116|0~3117|0~3683|0~3686|0~3487|0~3684|0~3685|0; user=o=0&l=dir; wz_scnt=3; accepting=1; wz_sid=0C4F938EEE77D31A0D46C87AEDB4FD91; AUID=kfIHGCE96DQGqDT6RUsqTw==|geoffrey.greer@ask.com; nname=ggreer; SUID=57T4C+1uM//B/+SN+bh5qAx7r03Pk6hdA50JSuQY7GcDnfcF7JLWSiMjWJ+VQF9BHUMECT4p4yfuMEc/K020d6vhztsUxw5M|1; autosave=on; editnote=off; PUID=; puser=pt=U3VuLTgtRmViLTIwMDktMDc6MDI6NDItVVRD&po=0&pp=dir; skftc=ftc_ret=0&ftc_ac4=0&ftc_ord=0&ftc_ac2=0&ftc_ac3=0&ftc_ac1=0&ftc_scr=0&ftc_pst=0; jss=1
+
+AJ
+aj@slater.net
+tbe=1; accepting=1; user=o=0&l=dir; puser=pt=U3VuLTgtRmViLTIwMDktMDc6MjQ6NDUtVVRD&po=0&pp=dir; skftc=ftc_ret=0&ftc_ac4=0&ftc_ord=0&ftc_ac2=0&ftc_ac3=0&ftc_ac1=0&ftc_scr=0&ftc_pst=0; wz_uid=084C9689C5C4F34F81C5E150050D11FD; wz_scnt=3; ptid=3488|0~3116|0~3117|0~3683|0~3686|0~3487|0~3684|0~3685|0; jss=1; AUID=vySg4Jij/JK8vyuFGxgpVQ==|aj@slater.net; nname=AJ; SUID=/WmoL7w7CDxqBxk0OAlW8SO79jqBmHxTZHnNo3jq4fuqfilCNupn/cdXb+jUW6JdnkquGGAu/7UxfRzGwL0bLSZISmSxL1C2|1; autosave=off; editnote=off
+
+Bjorn
+bjorn@ambientchill.com
+wz_uid=0E4482D6588AFDB05101A5050109EA49; tbe=1; accepting=1; ptid=3488|0~3452|0~3451|0~3487|0~3443|0~3552|0~3637|0~3636|0~3474|0~3475|0~3540|0~3473|0~3539|0~3116|0~3117|0~3551|0~3620|0~3621|0~3647|0~3640|0~3639|0~3638|0~3626|0~3627|0~3624|0~3625|0~3648|0~3623|0~3649|0~3650|0~3651|1; __utmz=252994457.1228983813.1.1.utmcsr=alpha.today.iad.ask.com|utmccn=(referral)|utmcmd=referral|utmcct=/default; __utma=252994457.1420376796868877800.1228983813.1228983813.1228983813.1; user=o=0&l=dir; wz_sid=004A918EE88BF25ACD6628EAADF4FDA3; wz_scnt=25; AUID=FtahbOI/u5PXdA85ecgd4g==|bjorn@ambientchill.com; nname=Bjorn; SUID=qwbz0Vy8XAG9unesfr/hxpFwBel31tlYMmnpLrod4ctmGYpnTmO1lCnxSBF/0FwwB9JOAIJUB4fNUj0UKM5Cg133ylgUc+I1|1; autosave=on; editnote=off; PUID=; puser=pt=U3VuLTgtRmViLTIwMDktMDc6NTM6MjMtVVRD&po=0&pp=dir; skftc=ftc_ret=0&ftc_ac4=0&ftc_ord=9&ftc_ac2=0&ftc_ac3=0&ftc_ac1=0&ftc_scr=0&ftc_pst=0; jss=1
+
+blowery
+blowery@gmail.com
+tbe=1; accepting=1; puser=pt=TW9uLTktRmViLTIwMDktMTg6MTk6NDItVVRD&po=0&pp=dir; skftc=ftc_ret=0&ftc_ac4=0&ftc_ord=0&ftc_ac2=0&ftc_ac3=0&ftc_ac1=0&ftc_scr=0&ftc_pst=0; wz_uid=064B9D8FC2E35395434C8EE245276B5C; wz_scnt=1; ptid=3488|0~3116|0~3117|0~3683|0~3686|0~3487|0~3684|0~3685|0; jss=1; wz_ref=www.google.com%2Fsearch; user=o=0&l=dir; AUID=zsIHdOWqw2ntEcd66dAlRw==|blowery@gmail.com; nname=blowery; SUID=eZfzcpQAc98qg3AzLoTvninPF6RohVDp4+NIiDoJ9at92x9U/iNY04Jl+VV6owb97ZLY63gIGZ6H4ODinzoITHSiTammpndp|1; autosave=on
+
+Jagan
+nathansmj@yahoo.co.in
+wz_uid=00499D83CEE9A1602E4D01A5CA131E03; wz_scnt=2; tbe=1; accepting=1; puser=pt=TW9uLTktRmViLTIwMDktMTg6NTM6MTktVVRD&po=0&pp=dir; skftc=ftc_ret=0&ftc_ac4=0&ftc_ord=0&ftc_ac2=0&ftc_ac3=0&ftc_ac1=0&ftc_scr=0&ftc_pst=0; wz_sid=04479B90047C62E01E4D01A5CA131E03; ptid=3488|0~3116|0~3117|0~3683|0~3686|0~3487|0~3684|0~3685|0; tid=-1; jss=1; inttb=1; ptnrS=P0; UID=b1bff05c-36d1-4c80-ab62-a83ab2a29ff2; askIntOrgId=101745; SAUID=7426dae7-f42c-4e10-8860-3f90521b9603; wz_tid=b1bff05c36d14c80ab62a83ab2a29ff2; user=l=dir; AUID="Br C/Ppep6zccMGtgY0PMw==|nathansmj@yahoo.co.in"; nname=Jagan; SUID=8oyI2fWMX9+DyPYvrovhwbtWTLvYgNp34DsO3+sFw+Notko5eYZgCLLi0he1VwOd3z+epk//bKMyZC53gYZvaN5Ox0nfOzcI|1; autosave=on
+
+didarong
+didarong@126.com
+tbe=1; accepting=1; puser=pt=VGh1LTEyLUZlYi0yMDA5LTA1OjU2OjM5LVVUQw%3D%3D&po=0&pp=dir; skftc=ftc_ret=0&ftc_ac4=0&ftc_ord=0&ftc_ac2=0&ftc_ac3=0&ftc_ac1=0&ftc_scr=0&ftc_pst=0; wz_uid=0F439997308A0D8A570CAC7A8F0A4F51; wz_scnt=2; ptid=3690|0~3689|0~3488|0~3116|0~3117|0~3487|0; user=o=0&l=dir; tid=3101; jss=1; wz_sid=0644939B3BBE4263DBDC3494B2ECB66F; wz_ref=dsc.discovery.com%2Fanthology%2Funsolvedhistory%2Fkingtut%2Fkingtut.html; AUID=njs5CBC5039yDFTFswTFOg==|didarong@126.com; nname=didarong; SUID=AU++aSSaZM5fPnBtWGtKLJCp2nQN/dGrKebqpC73JUhxsOIk1KpLToIQ58XvUxagfmeIA5AM7ZnsYb/sizj4xwQQ1eRzbLHTF5IHjY1pClg=|1
+
