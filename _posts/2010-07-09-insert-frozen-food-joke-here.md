@@ -12,7 +12,7 @@ categories:
 
 I am signed up for [cryonics](http://en.wikipedia.org/wiki/Cryonics). I applied in April of 2009 and finished the paperwork in September. I am [Alcor](http://alcor.org/) member A-2447; signed up for whole-body cryopreservation and funded by a whole life insurance policy.
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/05/tags1-500x225.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/05/tags1.jpg)
+[![](/images/tags1-500x225.jpg)](/images/tags1.jpg)
 
 Many of my friends, family, and coworkers know this already. If you didn't know, you're probably wondering, "Why?"
 
