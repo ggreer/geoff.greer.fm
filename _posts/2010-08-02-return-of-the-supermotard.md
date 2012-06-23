@@ -31,7 +31,7 @@ The thief made a few modifications to my bike.
 
 Keyless ignition!
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7730_resized-500x332.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7730_resized.jpg)
+[![](/images/DSC_7730_resized-500x332.jpg)](/images/DSC_7730_resized.jpg)
 
 The thief removed the ignition. There's no place to insert my key. Now if I want to ride, I just flip the kill switch and hit the starter.
 
@@ -41,18 +41,18 @@ I don't have a picture of these yet, but the pegs were attached with **wood scre
 
 Aftermarket gas cap! 
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7726-500x394.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7726.jpg)
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7727-500x374.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7727.jpg)
+[![](/images/DSC_7726-500x394.jpg)](/images/DSC_7726.jpg)
+[![](/images/DSC_7727-500x374.jpg)](/images/DSC_7727.jpg)
 
 The original gas cap had a key lock. The thief did not have a key. Improvisation ensued.
 
 Broken turn signals!
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7728_resized-500x332.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7728_resized.jpg)
+[![](/images/DSC_7728_resized-500x332.jpg)](/images/DSC_7728_resized.jpg)
 
 Fender eliminator kit!
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7729_resized-500x751.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7729_resized.jpg)
+[![](/images/DSC_7729_resized-500x751.jpg)](/images/DSC_7729_resized.jpg)
 
 (The thief hacksawed off part of the fender and moved the license plate up.)
 
@@ -60,8 +60,8 @@ Other minor changed included removing the tool pouch, removing all reflectors, a
 
 This morning I noticed one more thing...
 
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7734_resized-500x751.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7734_resized.jpg)
-[![](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7735_resized-500x751.jpg)](http://geoff.greer.fm/rambling/wp-content/uploads/2010/08/DSC_7735_resized.jpg)
+[![](/images/DSC_7734_resized-500x751.jpg)](/images/DSC_7734_resized.jpg)
+[![](/images/DSC_7735_resized-500x751.jpg)](/images/DSC_7735_resized.jpg)
 
 The thief wrecked my bike and cracked part of the engine case. He "fixed" it with some JB weld. It leaks oil when running.
 
