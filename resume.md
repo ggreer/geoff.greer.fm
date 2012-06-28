@@ -10,7 +10,7 @@ Geoff Greer
 ## Skills
 
 ---
-I am more than proficient in C and Python. I also know C++, JavaScript, Twisted Python, and some Lua. In the past I have written Java, PHP, Perl, and Ruby.
+I am more than proficient in C and Python. I also know, JavaScript, Twisted Python, and some Ruby. In the past I have written C++, Java, PHP, Perl, and Lua.
 
 I know Django and Node.js. In the past I have used Rails.
 
