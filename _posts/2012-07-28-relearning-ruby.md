@@ -1,5 +1,5 @@
 ---
-date: '2012-06-28 00:11:15'
+date: '2012-07-28 00:11:15'
 layout: post
 slug: relearning-ruby
 title: 'Relearning Ruby'
