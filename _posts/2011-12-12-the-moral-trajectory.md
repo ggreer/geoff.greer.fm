@@ -20,32 +20,33 @@ The fact that morals have improved over time should strike people as extraordina
 
 It's great that people have become more moral over the millennia. Now what are the odds that after thousands of years, we suddenly got morality right? What are the chances that we won't improve upon our current ideas about right and wrong?
 
-  
+<br />
 
-  
+<br />
 
 
 Yeah, pretty damn small.
 
-  
+<br />
 
 
 OK, so if we're wrong, we should ask the question, "What are some things that future societies might condemn us for?"
 
 Stop here and think about them. I don't want to contaminate your initial ideas.
 
-  
+<br />
 
-  
+<br />
 
-  
+<br />
 
 ...
-  
 
-  
+<br />
 
-  
+<br />
+
+<br />
 
 
 There are some obvious ones that are already in political discourse. Recreational drugs. LGBT rights. [Border and immigration laws.](http://elidourado.com/blog/smash-the-new-aristocracy/) Religious indoctrination of children. Other things that [You Can't Say](http://www.paulgraham.com/say.html)... yet. 
