@@ -47,3 +47,5 @@ After that, the journey was easy. There were some [problems with simplejson](htt
 While I have summarized the problems and solutions, I certainly wasn't the only one involved in this saga. My coworkers' contributions were just as important as my own. My thanks to [Matt](https://github.com/kans), [Brad](https://github.com/morgabra), [cyli](https://github.com/cyli), [Dried](https://github.com/dreid), [Mark](https://github.com/mynnx), and more. Without you, life would be darkness and chaos.
 
 I had to work around some bugs in WEBrick, libcloud, and Amazon S3 to post this. Apparently, a lot of software can't handle &#x1D49C;wesomeness. The most prominent example I could find is Github. Try to comment on [this pull request](https://github.com/ggreer/the_silver_searcher/pull/47). You can't. I can't even close it. I notified Github, but I fear they face a journey as long as mine before they can fix the problem.
+
+Test your own applications. See how &#x1D49C;wesome they are. You may have a similar journey ahead of you. Godspeed.
