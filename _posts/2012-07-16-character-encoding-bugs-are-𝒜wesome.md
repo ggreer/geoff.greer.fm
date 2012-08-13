@@ -38,7 +38,7 @@ Records: 0  Duplicates: 0  Warnings: 0
 CREATE INDEX foo_1234 ON foo (`baz`(191));
 {% endhighlight %}
 
-You might say, "OK, now we're finished, right?" Had I been talking to you in person, you would have just seen me inhale through my teeth while rubbing the back of my neck. It's not so simple. MySQL's utf8 charset is case-insensitive. The utf8mb4 charset is case-*sensitive*. The implications are vast. This change in constraints forces you to sanitize the data currently in your database, then make sure you don't insert anything with the wrong casing. At work, there was much weeping and gnashing of teeth.
+You might say, "OK, now we're finished, right?" Ehh... it's not so simple. MySQL's utf8 charset is case-insensitive. The utf8mb4 charset is case-*sensitive*. The implications are vast. This change in constraints forces you to sanitize the data currently in your database, then make sure you don't insert anything with the wrong casing. At work, there was much weeping and gnashing of teeth.
 
 Once *that* problem was taken care of, there was only the small matter of monkey-patching Django to support MySQL's utf8mb4 charset. Currently, [Django doesn't support it](https://code.djangoproject.com/ticket/18392). Unfortunately, I forgot to ask my manager for permission to release that code. You'll have to use your imagination.
 
