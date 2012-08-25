@@ -47,7 +47,11 @@ This script runs three benchmarks on each revision: Case-sensitive string matchi
 
 For comparison, grep -r takes 11 seconds on the same data and spits out tons of useless matches. Ack takes 20 seconds.
 
-This graph makes the performance changes obvious. I can see that [43886f9b](https://github.com/ggreer/the_silver_searcher/commit/43886f9b08d0772b54f21a291a0794d060f700f7) improved string-matching performance as intended. Most importantly, I can see that all my hard work improving performance was negated by a single commit: [13f1ab69](https://github.com/ggreer/the_silver_searcher/commit/13f1ab693ca056698a370c65b8d139faed782261). This commit caused `fnmatch()` to be called twice as often. This was particularly punishing since over 50% of execution time was already spent in `fnmatch()`.
+This graph makes the performance changes obvious. 
+
+Looking at specific changes, I can see that [43886f9b](https://github.com/ggreer/the_silver_searcher/commit/43886f9b08d0772b54f21a291a0794d060f700f7) improved string-matching performance as intended. 
+
+Most importantly, I can see that all my hard work improving performance was negated by a single commit: [13f1ab69](https://github.com/ggreer/the_silver_searcher/commit/13f1ab693ca056698a370c65b8d139faed782261). This commit caused `fnmatch()` to be called twice as often. This was particularly punishing since over 50% of execution time was already spent in `fnmatch()`.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
@@ -378,7 +382,7 @@ This graph makes the performance changes obvious. I can see that [43886f9b](http
       ["48e91ae16f914ad204c8509c2af65e8cb87a60d8", 0, 0, 0],
       ["80340e87ac1c764555f26a16d7ac4dfd39b66313", 2.868917, 2.213983, 3.403983],
       ["214a354b219f351a9fb16e87a067bbf29dda1a2c", 2.955770, 2.022342, 3.745777],
-      ["86ca7d442f50bcbfdfa91c9338821b437041a353", 5.011925, 2.023495, 3.739375],
+      ["86ca7d442f50bcbfdfa91c9338821b437041a353", 2.967951, 2.023495, 3.739375],
       ["f116277043ebad7c0814d7b1a3e1d75f2ddece39", 2.869251, 2.226534, 3.407933],
       ["497d967ce5727f6ac41380a96904e95f6d14c5ba", 2.895776, 2.223309, 3.411666],
       ["d4b298b37b83733490f70807991fdf0b44eb1a62", 2.860245, 2.218334, 3.407665],
