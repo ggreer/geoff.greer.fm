@@ -1,5 +1,4 @@
 ---
-
 date: '2012-08-25 00:05:59'
 layout: post
 slug: the-silver-searcher-benchmarking-revisions
