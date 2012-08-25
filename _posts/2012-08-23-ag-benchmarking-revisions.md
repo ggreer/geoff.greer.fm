@@ -9,7 +9,7 @@ categories:
 - The Silver Searcher
 ---
 
-I was curious about the performance of versions of Ag over time, so I wrote a script to benchmark every revision from January to now.
+I was curious about the performance of versions of [Ag](https://github.com/ggreer/the_silver_searcher) over time, so I wrote a script to benchmark every revision from January to present.
 
 {% highlight bash %}
 #!/bin/bash
@@ -41,17 +41,19 @@ for rev in $REV_LIST; do
 done
 {% endhighlight %}
 
-This script runs three benchmarks on each revision: Case-sensitive string matching, regular expression matching, and case-insensitive string matching. The results surprised me. (For comparison, grep -r takes 11 seconds on the same data and spits out tons of useless matches. Ack takes 20 seconds.)
+This script runs three benchmarks on each revision: Case-sensitive string matching, regular expression matching, and case-insensitive string matching. The results surprised me.
 
 <div id="chart_div" style="width: 672px; height: 500px;"> </div>
 
-This graph makes the performance changes obvious. There are some interesting general trends. Most changes don't affect performance. Some changes affect performance in all benchmarks. Some affect a subset.
+Hover over the lines and annotations for more information about each revision. Zero values are due to incorrect behavior or failed builds. For personal projects, I don't spend as much effort making sure master is always deployable.
 
-I can see that all my hard work improving performance was negated by a single commit: [13f1ab69](https://github.com/ggreer/the_silver_searcher/commit/13f1ab693ca056698a370c65b8d139faed782261). This commit called `fnmatch()` twice as much as previous versions. Since over 50% of execution time was already spent in `fnmatch()`, it hurt performance significantly. The drop in time at the end of the graph is from me backing-out the change until I can write something that doesn't slow things down.
+Graphing the performance over time makes regressions obvious. One change made the benchmarks double in execution time, from 2 seconds to 4. (For comparison, grep -r takes 11 seconds and spits out tons of useless matches. Ack takes 20 seconds.)
 
-Looking at other specific changes, I can also see that [43886f9b](https://github.com/ggreer/the_silver_searcher/commit/43886f9b08d0772b54f21a291a0794d060f700f7) improved string-matching performance by 30%. This was not intended. I was cleaning up some code and fixing an off-by-one error that slightly impacted performance. A git-blame later, I had found the commit introducing the problem: [01ce38f7](https://github.com/ggreer/the_silver_searcher/commit/01ce38f7f578b6b6141385688ff3c068390635df). This was quite a stealthy performance regression. It was caused by my brain mixing up Python and C. In Python, `3 or 1` is `3`. In C, `3 || 1` evaluates to `1`. Using `f_len - 1 || 1` filled the `skip_lookup` array with 1's, causing `boyer_moore_strnstr()` to only skip 1 character instead of up to `f_len - 1` characters. 
+The first thing that caught my eye was the spike labelled B. I found that all my hard work improving performance was negated by a single commit: [13f1ab69](https://github.com/ggreer/the_silver_searcher/commit/13f1ab693ca056698a370c65b8d139faed782261). This commit called `fnmatch()` twice as much as previous versions. Over 50% of execution time was already spent in `fnmatch()`, so it really hurt performance. The drop at D is from me backing-out the change until I can write something that doesn't slow things down.
 
-This mistake cut performance in half, and I fixed it three days ago.
+Looking at other specific changes, I can also see that [43886f9b](https://github.com/ggreer/the_silver_searcher/commit/43886f9b08d0772b54f21a291a0794d060f700f7) (annotation C) improved string-matching performance by 30%. This was not intended. I was cleaning up some code and fixed an off-by-one error that slightly impacted performance. It certainly wasn't going to cause a 30% difference. After git-blaming, I found the commit that introduced the problem: [01ce38f7](https://github.com/ggreer/the_silver_searcher/commit/01ce38f7f578b6b6141385688ff3c068390635df) (annotation A). This was quite a stealthy performance regression. It was caused by my brain mixing up Python and C. In Python, `3 or 1` is `3`. In C, `3 || 1` evaluates to `1`. Using `f_len - 1 || 1` filled the `skip_lookup` array with 1's, causing `boyer_moore_strnstr()` to only skip 1 character instead of up to `f_len - 1` characters.
+
+This mistake cut performance in half, and I fixed it three days ago without intending to. Yet again, I am humbled by the mindless computer.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
@@ -471,7 +473,8 @@ This mistake cut performance in half, and I fixed it three days ago.
                       'position': 'top'
                     },
                     'hAxis': {
-                      'title': 'Revision'
+                      'title': 'Revisions',
+                      'textPosition': 'none'
                     },
                     'vAxis': {
                       'gridlines': {
