@@ -75,19 +75,21 @@ h1, h2, h3, h4, h5, h6 {
 .year {
     color: #aaa;
     font-size: 140%;
-    line-height: 200%;
 }
 .month {
     font-size: 125%;
     color: #777;
-    line-height: 150%;
 }
 .day {
     float: left;
-    line-height: 125%;
+    clear: both;
+    text-align: center;
 }
 .date {
     width: 4em;
+}
+.index_post_title {
+    padding-left: 4em;
 }
 
 .gallery-image-wrapper {

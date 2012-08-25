@@ -8,13 +8,13 @@ title: ~/
 {% capture post_month %}{{ post.date | date: "%b" }}{% endcapture %}
     {% if last_post_year != post_year %}
 {% capture last_post_year %}{{ post_year }}{% endcapture %}
-<p><div class="year date">{{ last_post_year }}</div></p>
+<br /><div class="year date">{{ last_post_year }}</div>
     {% endif %}
     {% if last_post_month != post_month %}
 {% capture last_post_month %}{{ post_month }}{% endcapture %}
-<p><div class="month date">{{ last_post_month }}</div></p>
+<br /><div class="month date">{{ last_post_month }}</div><br />
     {% endif %}
-<p>
-<div class="day date">{{ post.date|date:"%d" }}</div><a href="{{ post.url }}">{{ post.title }}</a>
-</p>
+<div class="day date">{{ post.date|date:"%d" }}</div>
+<div class="index_post_title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+<br />
 {% endfor %}
