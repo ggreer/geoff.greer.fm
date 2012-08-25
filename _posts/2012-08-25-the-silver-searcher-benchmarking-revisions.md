@@ -6,7 +6,7 @@ title: 'The Silver Searcher: Benchmarking Revisions'
 published: true
 categories:
 - Computers
-- The Silver Searcher
+- the_silver_searcher
 ---
 
 I was curious about the performance of versions of [Ag](https://github.com/ggreer/the_silver_searcher) over time, so I wrote a script to benchmark every revision from January to present.

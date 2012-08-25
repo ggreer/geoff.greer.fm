@@ -7,6 +7,7 @@ title: Building for Others
 wordpress_id: '1065'
 categories:
 - Computers
+- the_silver_searcher
 ---
 
 I like to write new code. Unfortunately, writing new code is only a small part of building something useful. The [Pareto principle](http://en.wikipedia.org/wiki/Pareto_principle) applies. Once you've written 80% of the code in a short, fun-filled period, you spend much longer finishing up little things. You have to debug some odd edge case, clean up messy stuff that mostly works, and get it to build and run on some [obscure Linux distribution](http://www.ubuntu.com/).

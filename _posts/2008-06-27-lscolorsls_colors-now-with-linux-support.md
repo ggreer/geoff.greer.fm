@@ -7,6 +7,7 @@ title: 'LSCOLORS/LS_COLORS: Now with Linux Support'
 wordpress_id: '58'
 categories:
 - Computers
+- ls_colors
 ---
 
 A while back I made a [little web page to spruce up ls output](/2006/08/01/lscolorsexfxcxdxbxegedabagacad/). Of course I completely forgot about it until recently. Some of Ubuntu's default colors were hard to see in Terminal.app, so I added mostly-working LS_COLORS for Linux. The string format is completely different, and harder to go from text to preview, so I ditched that feature. Linux people will have to copy-paste the color string and type ls in their terminals. Life's tough, I know. 

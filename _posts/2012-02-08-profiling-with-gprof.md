@@ -7,7 +7,7 @@ title: Profiling with Gprof
 wordpress_id: '1165'
 categories:
 - Computers
-- The Silver Searcher
+- the_silver_searcher
 ---
 
 [I said I'd post about gprof](/2012/01/23/making-programs-faster-profiling/), so here goes.

@@ -7,7 +7,7 @@ title: 'The Silver Searcher: Better than Ack'
 wordpress_id: '962'
 categories:
 - Computers
-- The Silver Searcher
+- the_silver_searcher
 ---
 
 A lot of my time spent "writing" code is actually spent reading code. And a decent chunk of my time spent reading code is actually spent searching code. Lately I've started working with a larger codebase.[\[1\]](#ref_1) Both grep and ack take a non-negligible amount of time to search it. Both are slow, but for different reasons. [Grep](http://www.gnu.org/s/grep/) is fast, but doesn't ignore files.[\[2\]](#ref_2) [Ack](http://betterthangrep.com/) is very good at ignoring files, but it's written in Perl instead of C. What I really want is something that's fast _and_ ignores files.

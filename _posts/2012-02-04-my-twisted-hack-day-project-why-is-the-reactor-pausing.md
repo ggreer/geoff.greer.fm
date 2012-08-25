@@ -7,6 +7,8 @@ title: 'My Twisted Hack Day Project: Why is the Reactor Pausing?'
 wordpress_id: '1316'
 categories:
 - Computers
+- Twisted
+- twisted_hang
 ---
 
 Last week we had a [twisted](http://twistedmatrix.com/trac/) hack day at work. The project I work on has over a dozen twisted services, so this was right up my alley. I knew a couple of services were doing dumb things (like DB calls in the main thread) but nobody had gotten around to fixing the issues.[\[1\]](#ref_1) It's pretty easy to find most instances of Django calls in the main thread, but there are many other ways to hang the reactor. I wanted to find every instance of pausing, so that's what I decided to make for my hack day project.

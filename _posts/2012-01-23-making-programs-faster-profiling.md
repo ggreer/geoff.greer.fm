@@ -7,6 +7,7 @@ title: 'Making Ag Faster: Profiling with Valgrind'
 wordpress_id: '1070'
 categories:
 - Computers
+- the_silver_searcher
 ---
 
 These days, a lot of software is written to be "fast enough". Since code bases can be very large, there's no such thing as "fast enough" for [The Silver Searcher](https://github.com/ggreer/the_silver_searcher). In fact, my main goal with Ag is speed.
