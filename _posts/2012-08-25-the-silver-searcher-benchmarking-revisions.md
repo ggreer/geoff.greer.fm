@@ -54,7 +54,7 @@ The first thing that caught my eye was the spike labelled B. I found that all my
 
 Looking at other specific changes, I can also see that [43886f9b](https://github.com/ggreer/the_silver_searcher/commit/43886f9b08d0772b54f21a291a0794d060f700f7) (annotation C) improved string-matching performance by 30%. This was not intended. I was cleaning up some code and fixed an off-by-one error that slightly impacted performance. It certainly wasn't going to cause a 30% difference. After git-blaming, I found the commit that introduced the problem: [01ce38f7](https://github.com/ggreer/the_silver_searcher/commit/01ce38f7f578b6b6141385688ff3c068390635df) (annotation A). This was quite a stealthy performance regression. It was caused by my brain mixing up Python and C. In Python, `3 or 1` is `3`. In C, `3 || 1` evaluates to `1`. Using `f_len - 1 || 1` filled the `skip_lookup` array with 1's, causing `boyer_moore_strnstr()` to only skip 1 character instead of up to `f_len - 1` characters.
 
-This mistake cut performance in half, and I fixed it three days ago without intending to. Yet again, I am humbled by the mindless computer.
+This mistake cut performance in half, and I fixed it three days ago without intending to. Once again, I am humbled by the mindless computer. On the bright side, now I'll quickly notice performance regressions.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
