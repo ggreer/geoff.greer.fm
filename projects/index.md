@@ -4,27 +4,27 @@ title: Projects
 ---
 
 ## [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
-Faster than [Ack]("http://betterthangrep.com/"). Better than grep.
+Faster than [Ack](http://betterthangrep.com/). Better than grep.
 {% for post in site.categories.the_silver_searcher %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
 <br />
 
-## [FSEvents tools]("https://github.com/ggreer/fsevents-tools")
-Some command-line tools for working with OS X's filesystem events. Similar to [inotify-tools]("https://github.com/rvoicilas/inotify-tools").
+## [FSEvents tools](https://github.com/ggreer/fsevents-tools)
+Some command-line tools for working with OS X's filesystem events. Similar to [inotify-tools](https://github.com/rvoicilas/inotify-tools).
 
 <br />
 
-## [LS_COLORS generator]("/lscolors")
-For Linux, OS X, and *BSD.
+## [LS_COLORS generator](/lscolors)
+For Linux, OS X, and \*BSD.
 {% for post in site.categories.ls_colors %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
 <br />
 
-## [Twisted hang detector]("https://github.com/ggreer/twisted_hang")
+## [Twisted hang detector](https://github.com/ggreer/twisted_hang)
 Find out what's causing the reactor thread to hang.
 {% for post in site.categories.twisted_hang %}
 * [{{ post.title }}]({{ post.url }})
@@ -32,5 +32,5 @@ Find out what's causing the reactor thread to hang.
 
 <br />
 
-## [Memex Trails]("https://github.com/ggreer/memex_trails")
+## [Memex Trails](https://github.com/ggreer/memex_trails)
 A Chrome extension to help you figure out the path you took to get to a site.
