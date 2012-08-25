@@ -46,7 +46,7 @@ This script runs three benchmarks on each revision: Case-sensitive string matchi
 
 <div id="chart_div" style="width: 672px; height: 500px;"> </div>
 
-Hover over the lines and annotations for more information about each revision. Zero values are due to incorrect behavior or failed builds. For personal projects like Ag, I don't spend as much effort making sure master is always deployable. Tagged releases are another matter, of course.
+Hover over the lines and annotations for more information about each revision. Zero values are due to incorrect behavior or failed builds. For personal projects like Ag, I don't spend much effort making sure master is always deployable. Tagged releases are another matter, of course.
 
 Graphing the performance over time makes regressions obvious. One change made the benchmarks double in execution time, from 2 seconds to 4. (For comparison, grep -r takes 11 seconds and spits out tons of useless matches. Ack takes 20 seconds.)
 
