@@ -1,8 +1,9 @@
 ---
-date: '2012-08-23 17:48:50'
+
+date: '2012-08-25 00:05:59'
 layout: post
-slug: ag-benchmarking-revisions
-title: 'Ag: Benchmarking Revisions'
+slug: the-silver-searcher-benchmarking-revisions
+title: 'The Silver Searcher: Benchmarking Revisions'
 published: true
 categories:
 - Computers
