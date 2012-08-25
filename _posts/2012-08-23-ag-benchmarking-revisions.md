@@ -41,17 +41,17 @@ for rev in $REV_LIST; do
 done
 {% endhighlight %}
 
-This script runs three benchmarks on each revision: Case-sensitive string matching, regular expression matching, and case-insensitive string matching. The results surprised me.
+This script runs three benchmarks on each revision: Case-sensitive string matching, regular expression matching, and case-insensitive string matching. The results surprised me. (For comparison, grep -r takes 11 seconds on the same data and spits out tons of useless matches. Ack takes 20 seconds.)
 
 <div id="chart_div" style="width: 672px; height: 500px;"> </div>
 
-For comparison, grep -r takes 11 seconds on the same data and spits out tons of useless matches. Ack takes 20 seconds.
+This graph makes the performance changes obvious. There are some interesting general trends. Most changes don't affect performance. Some changes affect performance in all benchmarks. Some affect a subset.
 
-This graph makes the performance changes obvious. 
+I can see that all my hard work improving performance was negated by a single commit: [13f1ab69](https://github.com/ggreer/the_silver_searcher/commit/13f1ab693ca056698a370c65b8d139faed782261). This commit called `fnmatch()` twice as much as previous versions. Since over 50% of execution time was already spent in `fnmatch()`, it hurt performance significantly. The drop in time at the end of the graph is from me backing-out the change until I can write something that doesn't slow things down.
 
-Looking at specific changes, I can see that [43886f9b](https://github.com/ggreer/the_silver_searcher/commit/43886f9b08d0772b54f21a291a0794d060f700f7) improved string-matching performance as intended. 
+Looking at other specific changes, I can also see that [43886f9b](https://github.com/ggreer/the_silver_searcher/commit/43886f9b08d0772b54f21a291a0794d060f700f7) improved string-matching performance by 30%. This was not intended. I was cleaning up some code and fixing an off-by-one error that slightly impacted performance. A git-blame later, I had found the commit introducing the problem: [01ce38f7](https://github.com/ggreer/the_silver_searcher/commit/01ce38f7f578b6b6141385688ff3c068390635df). This was quite a stealthy performance regression. It was caused by my brain mixing up Python and C. In Python, `3 or 1` is `3`. In C, `3 || 1` evaluates to `1`. Using `f_len - 1 || 1` filled the `skip_lookup` array with 1's, causing `boyer_moore_strnstr()` to only skip 1 character instead of up to `f_len - 1` characters. 
 
-Most importantly, I can see that all my hard work improving performance was negated by a single commit: [13f1ab69](https://github.com/ggreer/the_silver_searcher/commit/13f1ab693ca056698a370c65b8d139faed782261). This commit caused `fnmatch()` to be called twice as often. This was particularly punishing since over 50% of execution time was already spent in `fnmatch()`.
+This mistake cut performance in half, and I fixed it three days ago.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
@@ -66,8 +66,12 @@ Most importantly, I can see that all my hard work improving performance was nega
   // draws it.
   function drawChart() {
     // Create the data table.
-    var data = new google.visualization.arrayToDataTable([
-      ["Revision", "ag blahblahblah", "ag blah.*blah", "ag -i blahblahblah"],
+    var data = new google.visualization.DataTable();
+    data.addColumn("string", "Revision");
+    data.addColumn("number", "ag blahblahblah");
+    data.addColumn("number", "ag blah.*blah");
+    data.addColumn("number", "ag -i blahblahblah");
+    data.addRows([
       ["44181463797348858cd784fe7ec6ba9595974f87", 2.447125, 2.453592, 2.527203],
       ["9926c63c704a0afc2b0ea7f6313393b764806038", 2.473893, 2.454713, 2.563011],
       ["91e4b6e1e5fe74b4db17123c513fb0c06a92f594", 2.436783, 2.450894, 2.541754],
@@ -475,8 +479,20 @@ Most importantly, I can see that all my hard work improving performance was nega
                     'height':500
                   };
 
+    var formatter = new google.visualization.PatternFormat("<a href='https://github.com/ggreer/the_silver_searcher/commit/{0}'>{0}</a>");
+    formatter.format(data, [0], 0);
+
     // Instantiate and draw our chart, passing in some options.
-    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
+    var chart = new google.visualization.ChartWrapper({
+      'chartType': 'LineChart',
+      'containerId': 'chart_div',
+      'options': options,
+      'dataTable': data,
+      'view': {
+        'columns': [0,1,2,3]
+      }
+    });
+//    new google.visualization.LineChart(document.getElementById('chart_div'));
+    chart.draw();
   }
 </script>
