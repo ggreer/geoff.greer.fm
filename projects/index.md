@@ -5,6 +5,9 @@ title: Projects
 
 ## [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 Faster than [Ack]("http://betterthangrep.com/"). Better than grep.
+{% for post in site.categories.the_silver_searcher %}
+* [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
 ---
 ## [FSEvents tools]("https://github.com/ggreer/fsevents-tools")
@@ -13,10 +16,16 @@ Some command-line tools for working with OS X's filesystem events. Similar to [i
 ---
 ## [LS_COLORS generator]("/lscolors")
 For Linux, OS X, and *BSD.
+{% for post in site.categories.ls_colors %}
+* [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
 ---
 ## [Twisted hang detector]("https://github.com/ggreer/twisted_hang")
 Find out what's causing the reactor thread to hang.
+{% for post in site.categories.twisted_hang %}
+* [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
 ---
 ## [Memex Trails]("https://github.com/ggreer/memex_trails")
