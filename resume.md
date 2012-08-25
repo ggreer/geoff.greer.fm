@@ -14,13 +14,13 @@ I am more than proficient in C and Python. I also know, JavaScript, Twisted Pyth
 
 I know Django and Node.js. In the past I have used Rails.
 
-I have operational experience with MySQL, Cassandra, and BerkeleyDB.
+I have operational experience with MySQL, Cassandra, and BerkeleyDB. I have been in on-call rotations at Bloglines and Cloudkick.
 
 ## Employment History
 
 ---
 
-Cloudkick/Rackspace: March 2010 - Present  
+Cloudkick/Rackspace: March 2010 - August 2012  
 Software Engineer
 
 Bloglines/Ask.com: April 2007 - February 2010  
