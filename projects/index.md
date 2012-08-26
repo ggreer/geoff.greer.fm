@@ -3,6 +3,8 @@ layout: page
 title: Projects
 ---
 
+See [GitHub](https://github.com/ggreer) for more.
+
 ## [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 Faster than [Ack](http://betterthangrep.com/). Better than grep.
 {% for post in site.categories.the_silver_searcher %}
@@ -12,7 +14,7 @@ Faster than [Ack](http://betterthangrep.com/). Better than grep.
 <br />
 
 ## [FSEvents tools](https://github.com/ggreer/fsevents-tools)
-Some command-line tools for working with OS X's filesystem events. Similar to [inotify-tools](https://github.com/rvoicilas/inotify-tools).
+Some command-line tools for working with [OS X's filesystem events](http://en.wikipedia.org/wiki/FSEvents). Similar to [inotify-tools](https://github.com/rvoicilas/inotify-tools).
 
 <br />
 

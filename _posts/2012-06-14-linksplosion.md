@@ -13,7 +13,7 @@ After coming home from work this evening, I sat down and wrote a little browser 
 
 ![](/images/linksplosion_screenshot.png)
 
-If you don't want to [install the extension](https://chrome.google.com/webstore/detail/kobgjacjhaakkgpakjkocgoemmcgcjkj) from the Chrome store, you can grab the source on [Github](https://github.com/ggreer/linksplosion). Like pretty much everything else I write in my spare time, the license is Apache 2.0.
+If you don't want to [install the extension](https://chrome.google.com/webstore/detail/kobgjacjhaakkgpakjkocgoemmcgcjkj) from the Chrome store, you can grab the source on [GitHub](https://github.com/ggreer/linksplosion). Like pretty much everything else I write in my spare time, the license is Apache 2.0.
 
 You might be asking, "Why make this thing?"
 
