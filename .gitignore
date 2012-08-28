@@ -6,3 +6,6 @@ photos
 videos
 *.zip
 *.gz
+stats
+coolcpu
+code/evil_wget/
