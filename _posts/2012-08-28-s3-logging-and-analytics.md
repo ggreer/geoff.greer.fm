@@ -1,22 +1,25 @@
 ---
 date: '2012-08-28 02:23:33'
 layout: post
-slug: generating-analytics-from-s3-logs
-title: 'Generating Analytics from S3 Logs'
+slug: s3-logging-and-analytics
+title: 'S3 Logging and Analytics'
 published: true
 categories:
 - Computers
 ---
 
-I'm quite glad I moved my site to Amazon S3, but the transition left me lacking a couple of features. The biggest gap for me was log analytics. DreamHost automatically runs [Analog](http://www.analog.cx/) on your site's logs. Analog certainly isn't the most advanced log stats tool, but it's better than nothing. I find it very useful for catching hot-linkers and other bandwidth hogs.
+I'm quite glad I moved my site to Amazon S3, but the transition left me lacking a couple of features. My most-missed feature was log analytics. DreamHost automatically runs [Analog](http://www.analog.cx/) on your site's logs. Analog certainly isn't a cutting-edge tool, but it's better than nothing. It's also important to note that log analytics can see things Google Analytics can't: clients without JavaScript. This category includes bots, hot-links, and other potential bandwidth hogs.
 
-Anywho, what follows is a half-baked guide to getting logs and stats generation working for any S3-hosted site.
+What follows is a half-baked guide to getting logs and stats generation working for any S3-hosted site.
 
-The first step is to [enable S3 logging](http://docs.amazonwebservices.com/AmazonS3/latest/dev/LoggingHowTo.html). Instead of following that guide like I did, you can save yourself a lot of time by using the [S3 Management Console](https://console.aws.amazon.com/s3/home). Take a look at a bucket's properties and click on the logging tab:
+The first step is to enable S3 logging. Instead of following [this guide](http://docs.amazonwebservices.com/AmazonS3/latest/dev/LoggingHowTo.html) like I did, you can save yourself a lot of time by using the [S3 Management Console](https://console.aws.amazon.com/s3/home). Take a look at a bucket's properties and click on the logging tab:
 
 ![](/images/enable_s3_logging.png)
 
-Ta-da! Much easier than using `s3curl.pl`.
+Ta-da! I just saved you an hour of dealing with `s3curl.pl`.
+
+Enable logging and choose a bucket to save logs to. I suggest you set a target prefix with a slash in the name. If you don't, there will be no easy way to select all logs in the AWS management console. This makes batch-changes much harder.
+
 
 At this point, S3 should start saving log files to your logging bucket. Now the trick is to download and parse them. With the help of [libcloud](https://libcloud.apache.org/), I wrote a little Python script to download all logs.
 
@@ -58,7 +61,6 @@ for obj in container_objects:
             obj.download(obj.name)
         if delete_files:
             obj.delete()
-
 {% endhighlight %}
 
 Typically, S3's log files are small. I didn't want to make things more complicated by using Twisted, so this script doesn't download them in parallel. That means the first run can take a while. Be patient, and add some `print`s if you want to see progress. The script only downloads files that aren't already saved locally, so future runs should be much faster.
@@ -69,4 +71,5 @@ With the logs saved locally, it's time to parse them. [S3's log format](http://d
 LOGFORMAT (%j %j [%d/%M/%Y:%h:%n:%j %j] %s %j %j %j %j "%j %r %j" %c %j %b %j %T %j "%f" "%B" %j)
 {% endhighlight %}
 
-Add that to your `analog.cfg`. Then edit the `LOGFILE`, `OUTFILE`, and `HOSTNAME` config lines, and you should be good to go.
+Add that to your `analog.cfg`. Then edit the `LOGFILE`, `OUTFILE`, and `HOSTNAME` config lines, and you should be good to go. The final result should look [something like this](/stats/). Nothing amazing, but it 
+
