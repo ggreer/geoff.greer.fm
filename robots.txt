@@ -1,5 +1,5 @@
 ---
 ---
 User-agent: *
-Disallow:
+Disallow: /stats
 Sitemap: {{ site.url }}/sitemap.xml
