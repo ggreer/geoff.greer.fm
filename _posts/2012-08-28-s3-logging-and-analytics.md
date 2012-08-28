@@ -10,7 +10,7 @@ categories:
 
 I'm quite glad I moved my site from DreamHost to Amazon S3, but the transition left me missing one feature: [log analytics](http://en.wikipedia.org/wiki/Web_log_analysis_software). DreamHost automatically runs [Analog](http://www.analog.cx/) on your site's logs. Analog certainly isn't a cutting-edge tool, but it compensates for one of Google Analytics's blind spots: clients without JavaScript. This category includes bots, hot-links, and other potential bandwidth hogs. 
 
-S3 doesn't have analytics built-in, but it's not hard to add it yourself. What follows is a half-baked guide to getting logs and stats generation working for any S3-hosted site.
+S3 doesn't have log analytics built-in, but it's not hard to add it yourself. What follows is a half-baked guide to getting logs and stats generation working for any S3-hosted site.
 
 The first step is to enable S3 logging. Instead of following [this guide](http://docs.amazonwebservices.com/AmazonS3/latest/dev/LoggingHowTo.html) like I did, you can save a lot of time by using the [S3 Management Console](https://console.aws.amazon.com/s3/home). Take a look at a bucket's properties and click on the logging tab:
 
