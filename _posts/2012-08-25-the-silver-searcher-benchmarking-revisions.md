@@ -456,6 +456,12 @@ This mistake cut performance in half, and I fixed it three days ago without inte
       ["4e73903f7033ae0808cc00a217c4608dd8da4931", null, null, 3.944441, 4.271839, 3.977377],
       ["a87aa8f822d9029243423ef0725ec03ca347141b", null, null, 3.981451, 4.266946, 3.959043],
       ["e344ca087099431c1bcf733b3ae28316f6932683", "D", "e344ca08: Fixed fnmatch() regression", 1.948765, 2.282791, 1.950637],
+      ["adb4204429f91cb87e357248d3408013dffa9dcb", null, null, 1.969877, 2.282663, 1.977277],
+      ["1c354196690d4e008097a13a2efdb27f04ffaf69", null, null, 1.977199, 2.298581, 1.976674],
+      ["2f5b36d295bff6bfe4fb97c9d8250ada6a29a189", null, null, 1.969435, 2.276320, 1.974810],
+      ["e1c7deddd303764954cab14608e43c9143b5aab7", null, null, 1.970863, 2.327553, 1.987714],
+      ["096db9dc7ddf05de1294bf90d6c65f2dca532e81", null, null, 1.972133, 2.292678, 1.980176],
+      ["bd5fe392a51f4f4b047cdd33b2604e8fa7864e02", null, null, 1.962583, 2.301243, 1.977359]
     ]);
 
     // Set chart options
@@ -473,7 +479,7 @@ This mistake cut performance in half, and I fixed it three days ago without inte
                       'position': 'top'
                     },
                     'hAxis': {
-                      'title': 'Revisions',
+                      'title': 'Versions over time',
                       'textPosition': 'none'
                     },
                     'vAxis': {
