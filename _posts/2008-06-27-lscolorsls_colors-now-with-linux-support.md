@@ -30,6 +30,6 @@ export LS_COLORS
 alias ls="ls --color"
 {% endhighlight %}
 
-Apparently just setting an environment variable called `LS_COLORS` doesn't mean you actually want ls to print in color. You have to set up the aliases as well. Add the lines above to `~/.bash_profile` (or `.profile` if you're a ksh user) to make the change permanent.
+Apparently just setting an environment variable called `LS_COLORS` doesn't mean you actually want `ls` to print in color. You have to set up the aliases as well. Add the lines above to `~/.bash_profile` (or `.profile` if you're a ksh user) to make the change permanent.
 
 One thing I learned: Linux's color string is much more powerful than BSD's. Linux's `ls` lets you choose more colors, blinking text, and backwards text. It even lets you specify color settings for specific file extensions in addition to general types of files. Support for all those extra features will have to wait until forever. I use color information sparingly. Too many colors is just as useless as no color. If you want to get fancy, [this guy](http://linux-sxs.org/housekeeping/lscolors.html) has some helpful info. 
