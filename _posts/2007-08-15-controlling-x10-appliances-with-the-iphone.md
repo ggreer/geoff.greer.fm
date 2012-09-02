@@ -14,7 +14,7 @@ Last week I ordered some [X10](http://en.wikipedia.org/wiki/X10_%28industry_stan
 
 Anyone who wants to can check out the source [here](/repos/x10/). It's nowhere near done. There is no way to add houses or units short of making a migration or modifying the database directly. Also it requires that you have Heyu installed and in your path. Turning stuff on and off works though, as demonstrated by me in this video:
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/UcsLqet4zK8" frameborder="0" allowfullscreen="true">
+<iframe width="640" height="480" src="http://www.youtube.com/embed/UcsLqet4zK8" frameborder="0" allowfullscreen="true">
 </iframe>
 
 You can [download the video](/videos/x10/x10.mov) if for some reason you want to.
