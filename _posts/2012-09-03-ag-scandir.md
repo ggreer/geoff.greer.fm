@@ -1,8 +1,7 @@
 ---
 date: '2012-09-03 23:38:06'
 layout: post
-slug: ag-scandir
-title: 'Profiling Ag, Writing My Own Scandir'
+title: 'Profiling Ag. Writing My Own Scandir'
 published: true
 categories:
 - Computers
