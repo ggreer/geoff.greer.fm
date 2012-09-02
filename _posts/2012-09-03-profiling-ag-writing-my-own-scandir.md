@@ -32,7 +32,7 @@ This set-up had several problems:
 
 Fixing these issues required rejiggering some things. First, [I wrote my own `scandir()`](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/scandir.c#L7). This version lets you pass a pointer to the filter function. This pointer could be to... say... a struct containing a hierarchy of ignore patterns. 
 
-The next thing I did was make [a struct for ignore patterns](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/ignore.h#L11).
+The next thing I did was make [a struct for ignore patterns](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/ignore.h#L11):
 
 {% highlight c %}
 struct ignores {
@@ -44,6 +44,8 @@ struct ignores {
 };
 {% endhighlight %}
 
-This is sort of an unusual structure; the parents don't have pointers to their children. 
+This is sort of an unusual structure; the parents don't have pointers to their children. That's because they don't need to. I simply allocate and set the ignore struct, search the directory, then free the struct. This is done around [line 340 of search.c](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/search.c#L341). Searching is recursive, so really the frame pointer is what keeps 
+
+The final change was to [rewrite `filename_filter()`](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/ignore.c#L204). Now, it calls `fnmatch()` on every entry in the ignore struct. If none of those match and `ig->parent` isn't `NULL`, it repeats the process with the parent ignore struct.
 
 Finally, I'd like to give a shout-out to [Instruments.app](http://developer.apple.com/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html). I've found it invaluable for finding the causes of any memory leaks or performance issues.
