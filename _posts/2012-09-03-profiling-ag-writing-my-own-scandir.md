@@ -43,7 +43,7 @@ struct ignores {
 
 This is sort of an unusual structure. Parents don't have pointers to their children, but they don't need to. I simply allocate the ignore struct, search the directory, then free the struct. This is done around [line 340 of search.c](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/search.c#L341). Searching is recursive, so children are freed before their parents.
 
-The final change was to [rewrite `filename_filter()`](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/ignore.c#L204). Now, it calls `fnmatch()` on every entry in the ignore struct passed to it. If none of those match and `ig->parent` isn't `NULL`, it repeats the process with the parent ignore struct.
+The final change was to [rewrite `filename_filter()`](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/ignore.c#L204). It calls `fnmatch()` on every entry in the ignore struct passed to it. If none of those match and `ig->parent` isn't `NULL`, it repeats the process with the parent ignore struct, and so-on until it reaches the top.
 
 All-in-all, not a bad change-set. I fixed a lot of things I'd been meaning to fix for a while. I also managed to clean up quite a bit of code. If not for my re-implementation of `scandir()`, the pull request would have removed more lines than it added.
 
