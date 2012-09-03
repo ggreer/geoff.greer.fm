@@ -38,14 +38,16 @@ hr {
 #header {
     text-align: center;
     font-family: @header-font;
-}
-#header ul, div#header ul li {
-    display: inline;
-    list-style: none;
-}
-#header ul li {
-    line-height: 200%;
-    margin: 0 1em;
+    ul {
+        display: inline;
+        list-style: none;
+        li {
+            display: inline;
+            line-height: 200%;
+            list-style: none;
+            margin: 0 1em;
+        }
+    }
 }
 #menu {
     padding-left: 0;
@@ -71,12 +73,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post {
     line-height: 165%;
-}
-.post img {
-    max-width: 100%;
-}
-.post a, .post a:link {
-    text-decoration: underline;
+    img {
+        max-width: 100%;
+    }
+    a, a:link {
+        text-decoration: underline;
+    }
 }
 
 .highlight {
