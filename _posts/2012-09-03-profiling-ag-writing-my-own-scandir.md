@@ -16,23 +16,20 @@ This is a run of revision a87aa8f8; right before I [reverted the performance reg
 
 
 [![](/images/ag_profile_0.9.png)](/images/ag_profile_0.9.png)
-Tagged release 0.9. Much faster, and it only spends about half the time in `fnmatch()`.
+This is tagged release 0.9. Much faster, and it only spends about half the time in `fnmatch()`.
 
 
 [![](/images/ag_profile_ag_scandir.png)](/images/ag_profile_ag_scandir.png)
-Finally, here's a run after merging [pull request #56](https://github.com/ggreer/the_silver_searcher/pull/56). This fixed [issue #43](https://github.com/ggreer/the_silver_searcher/issues/43) and improved performance for many cases.
+Finally, here's a run after merging [pull request #56](https://github.com/ggreer/the_silver_searcher/pull/56). This fixed [issue #43](https://github.com/ggreer/the_silver_searcher/issues/43) and improved performance for many cases. I'm rather proud of that pull request, since it fixed a lot of issues. The rest of this post explains the specific changes I made to get everything working the way I wanted.
 
-
-I should explain Ag's behavior before I merged that pull request. It called [`scandir()`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man3/scandir.3.html) on each directory. Then `scandir()` called `filename_filter()` on every entry in the directory. To figure out if a file should be ignored, `filename_filter()` called `fnmatch()` on every entry in the global `char *ignore_patterns[]`.
-
-This set-up had several problems:
+First, I should explain Ag's old behavior. Before I merged that pull request, Ag called [`scandir()`](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man3/scandir.3.html) on each directory. Then `scandir()` called `filename_filter()` on every entry in the directory. To figure out if a file should be ignored, `filename_filter()` called `fnmatch()` on every entry in the global `char *ignore_patterns[]`. This set-up had several problems:
 
 1. `scandir()` didn't let me pass any useful state to `filename_filter()`. The filter could only base its decision on the `dirent` and any globals.
 1. `ignore_patterns` was just an array of strings. It couldn't keep track of a hierarchy of ignore files in subdirectories. This made some ignore entries behave incorrectly (issue #43). This also hurt performance.
 
-Fixing these issues required rejiggering some things. First, [I wrote my own `scandir()`](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/scandir.c#L7). This version lets you pass a pointer to the filter function. This pointer could be to... say... a struct containing a hierarchy of ignore patterns. 
+Fixing these issues required rejiggering some things. First, [I wrote my own `scandir()`](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/scandir.c#L7). The differenc is that my version lets you pass a pointer to the filter function. This pointer could be to... say... a struct containing a hierarchy of ignore patterns.
 
-The next thing I did was make [a struct for ignore patterns](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/ignore.h#L11):
+Surprise surprise, the next thing I did was make [a struct for ignore patterns](https://github.com/ggreer/the_silver_searcher/blob/3deff34b45fa7e41bb9d7219029d8126c201bda5/src/ignore.h#L11):
 
 {% highlight c %}
 struct ignores {
@@ -50,4 +47,4 @@ The final change was to [rewrite `filename_filter()`](https://github.com/ggreer/
 
 
 
-Finally, I'd like to praise one piece of software and criticize another. I tip my hat to [Instruments.app](http://developer.apple.com/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html). I've found it invaluable for finding the causes of any memory leaks or performance issues. But I wag my finger at git. Git allows `.gitignore` files in any directory, and it allows these files to contain regular expressions. Worse, these regexes can reference sub-directories. For example, `foo/*/bar` is a valid ignore pattern. Regular expressions plus directory hierarchies translate to complicated implementations and confusing behavior for users.
+I'd like to praise one piece of software and criticize another. I tip my hat to [Instruments.app](http://developer.apple.com/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html). I've found it invaluable for finding the causes of any memory leaks or performance issues. But I wag my finger at git. Git allows `.gitignore` files in any directory, and it allows these files to contain regular expressions. Worse, these regexes can reference sub-directories. For example, `foo/*/bar` is a valid ignore pattern. Regular expressions plus directory hierarchies translate to complicated implementations and confusing behavior for users.
