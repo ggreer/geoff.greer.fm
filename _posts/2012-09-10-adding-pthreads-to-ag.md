@@ -2,7 +2,7 @@
 date: '2012-09-10 18:18:50'
 layout: post
 title: 'Adding Pthreads to Ag'
-published: false
+published: true
 categories:
 - Computers
 - the_silver_searcher
@@ -64,9 +64,9 @@ du -sh ~/code  0.09s user 1.42s system 95% cpu 1.572 total
 %
 {% endhighlight %}
 
-Ag doesn't actually search through 5.8 gigabytes in 1.4 seconds, but it's still surprising that it's faster than `du`.
+Ag doesn't actually search through 5.8 gigabytes in 1.4 seconds. The total amount of data searched is around 400MB. Still, it's surprising that it's faster than `du`.
 
-I think this project is starting to wrap up. It'll be mostly feature requests and bug fixes from here on out. It was a fun journey. I learned a lot of things about a lot of things. I'm sure I'll use these skills elsewhere.
+I think this project is starting to wrap up. Now that I've gotten things as fast as I can, it'll be mostly feature requests and bug fixes. It was a fun journey. I learned a lot of things about a lot of things, and I'm sure I'll use that knowledge elsewhere.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
