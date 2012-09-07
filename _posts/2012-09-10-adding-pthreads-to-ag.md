@@ -10,9 +10,7 @@ categories:
 
 In my quest to make Ag as fast as possible, I spent some time making it multi-threaded. This meant learning [Pthreads](http://en.wikipedia.org/wiki/POSIX_Threads), which was easier than I expected.
 
-Although the Pthreads API isn't too hard to pick up, other architectural decisions took more effort to get right. My first attempt at multithreaded search was rather naïve. The plan was simple: For each file, create a new thread, search the file, then exit the thread. It didn't require a huge change in the code, but I also wasn't sure what kind of performance benefit I'd get. A typical run of Ag searches a lot of files, and spawning a thread for each file could incur some significant overhead. I figured it was worth a shot. It wasn't long before I had things working.
-
-But my initial results were discouraging.
+Although the Pthreads API isn't too hard to pick up, other architectural decisions took more effort to get right. My first attempt at multithreaded search was rather naïve. The plan was simple: For each file, create a new thread, search the file, then exit the thread. It didn't require a huge change in the code, but I also wasn't sure what kind of performance benefit I'd get. A typical run of Ag searches a lot of files, and spawning a thread for each file could incur some significant overhead. I figured it was worth a shot. It wasn't long before I had things working, but my initial results were discouraging.
 
 {% highlight text %}
 % time ./ag blahblahblah ~/code
@@ -66,7 +64,7 @@ du -sh ~/code  0.09s user 1.42s system 95% cpu 1.572 total
 
 That's right, my benchmark data set is 5.8 gigabytes. Ag doesn't actually search through the whole 5.8 gigabytes in 1.4 seconds. The total amount of data searched is around 400MB. Still, I'm surprised that it's faster than `du`.
 
-I think this project is starting to wrap up. Now that I've gotten things as fast as I can, it'll be mostly feature requests and bug fixes. It was a fun journey. I learned a lot of things about a lot of things, and I'm sure I'll use that knowledge elsewhere.
+I think this project is starting to wrap up. Now that I've gotten things as fast as I can, most changes will be feature requests and bug fixes. It was a fun journey. I learned a lot of things about a lot of things, and I'm sure I'll use that knowledge elsewhere.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
