@@ -8,7 +8,7 @@ categories:
 - the_silver_searcher
 ---
 
-In my quest to make Ag as fast as possible, I spent some time making it multi-threaded. This meant learning [Pthreads](http://en.wikipedia.org/wiki/POSIX_Threads), which was easier than I expected.
+In my quest to improve Ag's speed, I spent some time making it multi-threaded. This meant learning [Pthreads](http://en.wikipedia.org/wiki/POSIX_Threads), which was easier than I expected.
 
 Although the Pthreads API isn't too hard to pick up, other architectural decisions took more effort to get right. My first attempt at multithreaded search was rather naïve. The plan was simple: For each file, create a new thread, search the file, then exit the thread. It didn't require a huge change in the code, but I also wasn't sure what kind of performance benefit I'd get. A typical run of Ag searches a lot of files, and spawning a thread for each file could incur some significant overhead. I figured it was worth a shot. It wasn't long before I had things working, but my initial results were discouraging.
 
@@ -27,6 +27,8 @@ Creating a new thread isn't free. I knew there was overhead, and now I knew how 
 
 Next I tried a different model: [Worker threads](http://en.wikipedia.org/wiki/Thread_pool_pattern). 
 
+
+
 {% highlight text %}
 % time ./ag blahblahblah ~/code
 ...
@@ -41,7 +43,7 @@ Tweaking the number of worker threads significantly affected performance. I assu
 
 <div id="chart_div" style="width: 100%; height: 500px;"> </div>
 
-For comparison: non-threaded Ag takes 2.0 seconds.
+For comparison: non-threaded Ag takes 2.0 seconds on my OS X machine and 2.2 seconds on my Ubuntu server.
 
 There are a couple of quick takeaways from this graph.
 
