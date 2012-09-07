@@ -1,4 +1,4 @@
-[![](/icons/resume_icon.png) Resume](/resume.html){:rel=me}  
+[![](/icons/resume_icon.png) Resume](/resume/){:rel=me}  
 [![](/icons/github_favicon.ico) GitHub](https://github.com/ggreer){:rel=me}  
 [![](/icons/lw.png) LessWrong](http://lesswrong.com/user/AngryParsley){:rel=me}  
 [![](/icons/hn.png) Hacker News](http://news.ycombinator.com/threads?id=AngryParsley){:rel=me}  
