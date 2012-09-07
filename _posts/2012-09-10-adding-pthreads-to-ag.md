@@ -64,7 +64,7 @@ du -sh ~/code  0.09s user 1.42s system 95% cpu 1.572 total
 %
 {% endhighlight %}
 
-Ag doesn't actually search through 5.8 gigabytes in 1.4 seconds. The total amount of data searched is around 400MB. Still, it's surprising that it's faster than `du`.
+That's right, my benchmark data set is 5.8 gigabytes. Ag doesn't actually search through the whole 5.8 gigabytes in 1.4 seconds. The total amount of data searched is around 400MB. Still, I'm surprised that it's faster than `du`.
 
 I think this project is starting to wrap up. Now that I've gotten things as fast as I can, it'll be mostly feature requests and bug fixes. It was a fun journey. I learned a lot of things about a lot of things, and I'm sure I'll use that knowledge elsewhere.
 
