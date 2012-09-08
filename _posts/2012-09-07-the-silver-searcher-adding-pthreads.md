@@ -1,5 +1,5 @@
 ---
-date: '2012-09-07 18:18:50'
+date: '2012-09-07 18:38:50'
 layout: post
 title: 'The Silver Searcher: Adding Pthreads'
 published: true
@@ -69,7 +69,7 @@ du -sh ~/code  0.09s user 1.42s system 95% cpu 1.572 total
 
 That's right, my benchmark data set is 5.8 gigabytes. Ag doesn't actually search through the whole 5.8 gigabytes in 1.4 seconds. The total amount of data searched is around 400MB. Still, I'm surprised Ag is faster than `du`.
 
-It looks like this project is starting to wrap up. Now that I've maxed-out performance, most changes should be feature requests and bug fixes. That said, it's been a fun journey. I learned a lot of things about a lot of things, and I'm sure I'll use that knowledge elsewhere.
+It looks like this project is starting to wrap up. Now that I've maxed-out performance, most changes should be feature requests and bug fixes. That said, it's been a fun journey. I learned a lot of things about a lot of things. 
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
