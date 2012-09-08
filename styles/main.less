@@ -34,6 +34,25 @@ hr {
     font-size: 115%;
     margin: 0 auto;
     width: 80%;
+    .year {
+        color: #aaa;
+        font-size: 140%;
+    }
+    .month {
+        font-size: 125%;
+        color: #777;
+    }
+    .day {
+        float: left;
+        clear: both;
+        text-align: center;
+    }
+    .date {
+        width: 4em;
+    }
+    .index_post_title {
+        padding-left: 4em;
+    }
 }
 
 #title {
@@ -67,15 +86,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .post_header {
     font-family: @header-font;
-}
-.post_title {
-    margin-top: 0.75em;
-    font-size: 2em;
-}
-.post_date {
-    line-height: 150%;
-    text-align: right;
-    width: 100%;
+    .post_title {
+        margin-top: 0.75em;
+        font-size: 2em;
+    }
+    .post_date {
+        line-height: 150%;
+        text-align: right;
+        width: 100%;
+    }
 }
 .post {
     line-height: 150%;
@@ -89,26 +108,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .highlight {
     -webkit-overflow-scrolling: touch;
-}
-
-.year {
-    color: #aaa;
-    font-size: 140%;
-}
-.month {
-    font-size: 125%;
-    color: #777;
-}
-.day {
-    float: left;
-    clear: both;
-    text-align: center;
-}
-.date {
-    width: 4em;
-}
-.index_post_title {
-    padding-left: 4em;
 }
 
 .gallery-image-wrapper {
