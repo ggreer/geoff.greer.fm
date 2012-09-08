@@ -123,6 +123,10 @@ function drawChart() {
                     'minValue': 0,
                     'title': 'Seconds'
                   },
+                  'colors': [
+                    '#43d',
+                    '#396'
+                  ],
                   'width': "100%",
                   'height': 500
                 };
