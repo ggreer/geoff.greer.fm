@@ -108,19 +108,25 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-overflow-scrolling: touch;
 }
 
-.gallery-image-wrapper {
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    margin: 1em;
-    position: relative;
+.gallery {
     text-align: center;
-}
-.gallery-image {
-    margin: auto;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    max-height: 100%;
-    max-width: 100%;
+    .gallery-image-wrapper {
+        height: 300px;
+        width: 300px;
+        display: inline-block;
+        margin: 1em;
+        padding: 1em;
+        position: relative;
+        background-color: @black;
+    }
+    .gallery-image {
+        margin: auto;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        max-height: 100%;
+        max-width: 100%;
+    }
 }

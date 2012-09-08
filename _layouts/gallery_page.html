@@ -9,12 +9,15 @@
 <div class="post_title"><a href="/{{ site.gallery_dir }}">{{ page.title }}</a></div>
 <hr />
 </div>
+<div class="gallery">
 {% for image in page.images %}
     <div class="gallery-image-wrapper">
-        <a name="{{ image }}" />
-        <a href="{{ image }}"><img class="gallery-image" src="thumbs/{{ image }}" /></a>
+        <a name="{{ image }}" href="{{ image }}">
+          <img class="gallery-image" src="thumbs/{{ image }}" />
+        </a>
     </div>
 {% endfor %}
+</div>
 {% include footer.html %}
 </div>
 {% include ga.html %}
