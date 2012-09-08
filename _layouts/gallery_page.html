@@ -5,8 +5,10 @@
 <body>
 <div id="wrapper" style="max-width: 100%;">
 {% include header.html %}
-<h1><a href="/{{ site.gallery_dir }}">{{ page.title }}</a></h1>
+<div class="post_header">
+<div class="post_title"><a href="/{{ site.gallery_dir }}">{{ page.title }}</a></div>
 <hr />
+</div>
 {% for image in page.images %}
     <div class="gallery-image-wrapper">
         <a name="{{ image }}" />
