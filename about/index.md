@@ -10,8 +10,12 @@ My name is Geoff Greer. I live in San Francisco. I like to mess with computers a
 
 Works speak louder than words, so look at [my GitHub activity](https://github.com/ggreer).
 
-## Me on the web
-{% include links.md %}
+<br />
 
 ## Contact
-{% include contact.md %}
+* {% include contact.md %}{: style="list-style: none;"}
+
+<br />
+
+## Me on the web
+* {% include links.md %}{: style="list-style: none;"}
