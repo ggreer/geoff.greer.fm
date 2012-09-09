@@ -3,10 +3,11 @@ layout: page
 title: Projects
 ---
 
-See [GitHub](https://github.com/ggreer) for more.
+Here are some things I've made. See [GitHub](https://github.com/ggreer) for more.
 
 ## [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
-Faster than [Ack](http://betterthangrep.com/). Better than grep.
+A tool for searching code. Faster than [Ack](http://betterthangrep.com/). Better than grep.  
+#### Related posts
 {% for post in site.categories.the_silver_searcher %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
@@ -19,7 +20,8 @@ Some command-line tools for working with [OS X's filesystem events](http://en.wi
 <br />
 
 ## [LS_COLORS generator](/lscolors)
-For Linux, OS X, and \*BSD.
+For Linux, OS X, and \*BSD. I made this many years ago. I would destroy it out of embarrassment, but people  still seem to use it.  
+#### Related posts
 {% for post in site.categories.ls_colors %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
@@ -28,6 +30,7 @@ For Linux, OS X, and \*BSD.
 
 ## [Twisted hang detector](https://github.com/ggreer/twisted_hang)
 Find out what's causing the reactor thread to hang.
+#### Related posts
 {% for post in site.categories.twisted_hang %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
