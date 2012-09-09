@@ -1,10 +1,11 @@
 @white: #fff;
 @black: #000;
+@gallery-background: #222;
+
 .header-font() {
-    font-family: "HelveticaNeue-light","HelveticaNeue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-light", "HelveticaNeue", Helvetica, Verdana, Arial, sans-serif;
     font-weight: lighter;
 }
-@gallery-background: #222;
 
 body {
     background: @white;
@@ -25,6 +26,19 @@ hr {
     background-color: @black;
     border: 0;
 }
+
+// Nav thingy at the bottom of posts.
+.nav {
+    height: 3em;
+}
+.nav(@direction) {
+    float: @direction;
+    line-height: 150%;
+    text-align: center;
+    max-width: 40%;
+}
+.nav-left { .nav(left); }
+.nav-right { .nav(right); }
 
 #wrapper {
     margin: 0 auto;
@@ -111,9 +125,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-overflow-scrolling: touch;
 }
 
-.image-border() {
-    border: 1em #111 solid;
-}
+.image-border() { border: 1em #111 solid; }
 
 #gallery-list {
     text-align: center;
@@ -123,7 +135,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #555;
     a, a:link { color: #aaa; text-decoration: none; }
     a:visited { color: #777; }
-    a:hover { text-decoration: underline; }
     a:active { color: #fff; }
 }
 .gallery-index {

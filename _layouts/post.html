@@ -14,20 +14,14 @@
 {{ content }}
 </div>
 <hr />
-<table class="nav" style="line-height: 130%; width: 100%;">
-    <tr>
-        <td style="text-align: center; width: 50%;">
-            {% if page.previous %}
-            <div style="width: 80%; float: left;"><a href="{{ page.previous.url }}">« {{ page.previous.title }}</a></div>
-            {% endif %}
-        </td>
-        <td style="text-align: center; width: 50%;">
-            {% if page.next %}
-            <div style="width: 80%; float: right;"><a href="{{ page.next.url }}">{{ page.next.title }} »</a></div>
-            {% endif %}
-        </td>
-    </tr>
-</table>
+<div class="nav">
+{% if page.previous %}
+<a class="nav-left" href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
+{% endif %}
+{% if page.next %}
+<a class="nav-right" href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
+{% endif %}
+</div>
 <hr />
 {% include disqus.html %}
 {% include footer.html %}
