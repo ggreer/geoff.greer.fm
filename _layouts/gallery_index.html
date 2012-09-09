@@ -1,12 +1,26 @@
----
-layout: page
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+{% include head.html %}
+<body>
+<div id="wrapper" style="max-width: 100%;">
+{% include header.html %}
+<div class="post_header">
+<div class="post_title">{{ page.title }}</div>
+</div>
+</div>
+<div id="gallery-list">
 {% for gallery in page.galleries %}
-<div style="text-align: center; padding: 1em 0 4em 0;">
+<div class="gallery-index">
     <a href="{{ gallery['gallery'] }}">
-        <img style="max-height: 20em; max-width: 20em;" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+        <img src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
     </a>
     <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
     {{ gallery["images"] | size }} images
 </div>
 {% endfor %}
+</div>
+{% include footer.html %}
+{% include ga.html %}
+</body>
+</html>
