@@ -1,4 +1,5 @@
-pre { line-height: 125%; padding: 0.5em; overflow: auto }
+pre { line-height: 120%; padding: 0.5em; overflow: auto }
+code { font-size: 12pt; font-family: "Deja Vu Sans Mono", Menlo, Monaco, Consolas, monospace; }
 .highlight { background: #ffffcc; }
 
 /* Generated with pygments using the solarized style: */
