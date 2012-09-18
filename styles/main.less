@@ -3,12 +3,15 @@
     font-weight: lighter;
 }
 
+@min_width: 27em;
+@body_margin: 10px;
+
 body {
     background: #fff;
     font-family: georgia, times, serif;
     font-size: 115%;
     color: #000;
-    margin: 8px;
+    margin: @body_margin;
     text-rendering: optimizeLegibility;
 }
 
@@ -38,16 +41,15 @@ hr {
 
 #wrapper {
     margin: 0 auto;
-    max-width: 37em;
-    min-width: 27em;
-    width: 90%;
+    max-width: 40em;
+    min-width: @min_width;
 }
 
 // Main page list
 #post_list {
     font-size: 115%;
     margin: 0 auto;
-    width: 80%;
+    max-width: 25em;
     .year {
         color: #aaa;
         font-size: 140%;
@@ -75,6 +77,7 @@ hr {
         display: inline;
         list-style: none;
         padding-left: 0;
+        white-space: nowrap;
         li {
             display: inline;
             line-height: 200%;
@@ -115,8 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 #gallery-list {
     text-align: center;
     background-color: #222;
-    margin: 1em -8px -8px -8px;
-    min-width: 28em;
+    margin: 1em -@body_margin -@body_margin -@body_margin;
+    min-width: @min_width;
     color: #555;
     a, a:link { color: #aaa; text-decoration: none; }
     a:visited { color: #777; }
