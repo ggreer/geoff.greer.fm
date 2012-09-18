@@ -7,6 +7,8 @@ author: Geoff Greer
 title: Geoff's Site
 exclude: new_post.sh
 
+disqus_shortname: ggreer
+
 gallery_dir: photos
 galleries:
   chile_trip:
