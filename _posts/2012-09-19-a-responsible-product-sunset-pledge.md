@@ -14,7 +14,7 @@ This problem doesn't just affect the customers of these products, it poisons the
 Because of this, I'd like to suggest that startups have a responsible product sunset pledge. Here are some guidelines:
 
 * If acquired, keep everything running for a while. For most products, a year makes sense.
-* Give plenty of notice before shutting things down. The first number that pops into my head is 6 months.
+* Give plenty of notice before shutting things down. 6 months seems reasonable.
 * Make it possible for anyone to run a fully-featured instance of the product. This means releasing the source code and documenting how to set-up and run your product. I realize startup code and architectures are seldom clean, but you should work to make set-up reasonably painless.
 * Liberate customers' data. Build export APIs and scripts to consume them.
 
