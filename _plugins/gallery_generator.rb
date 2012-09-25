@@ -17,7 +17,7 @@ module Jekyll
     def initialize(site, base, dir, galleries)
       @site = site
       @base = base
-      @dir = dir
+      @dir = "/#{dir}"
       @name = "index.html"
 
       self.process(@name)
@@ -37,7 +37,7 @@ module Jekyll
     def initialize(site, base, dir, gallery_name)
       @site = site
       @base = base
-      @dir = dir
+      @dir = "/#{dir}"
       @name = "index.html"
       @images = []
 
