@@ -25,18 +25,11 @@ In a final bit of ridiculousness, [UK Yahoo News reported](http://uk.news.yahoo.
 
 What have I learned from this? 
 
-
-
-
 * People on Twitter are dumber than I thought.
-
 * A small group can add any relatively-unpopular site to the Firefox phishing blacklist.
-
 * Some "reporter" couldn't be troubled to click the about link on the front page of the site he wrote an article about.
-
-
 
 Quite a few people have reported the site as being incorrectly flagged, but it hasn't done any good. I doubt it will ever be removed from the phishing blacklist. Oh well, it was fun while it lasted. And since Paul bought the domain I'm not out any money.
 
 
-
+Update: I was wrong to be so pessimistic. It's removed from the phishing blacklist!
