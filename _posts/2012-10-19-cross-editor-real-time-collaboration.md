@@ -12,7 +12,7 @@ It's been almost two months since I quit my job at Rackspace. I spent a few week
 
 I think I've finally settled on one.
 
-I like to [pair program](http://en.wikipedia.org/wiki/Pair_programming), but that requires being in front of the same screen as someone else. Remote collaboration tools exist, but they're all web-based. If I want to edit the same code in real-time with others, I have to pick a web-based editor like Collabedit, Stypi, or Cloud9. None of these are as good as my highly-customized TextMate.
+I like to [pair program](http://en.wikipedia.org/wiki/Pair_programming), but that requires being in front of the same screen as someone else. Remote collaboration tools exist, but they're all web-based. If I want to edit the same code in real-time with others, I have to pick a web-based editor like [Collabedit](http://collabedit.com/), [Stypi](https://www.stypi.com/), or [Cloud9](https://c9.io/). None of these are as good as my highly-customized TextMate.
 
 Web-based editors have significant disadvantages. The biggest one is that users pay the cost of switching to a new editor. Developers spend years learning and customizing their editors. They hardly ever switch, because doing so means they lose all those customizations. Worse, the experience and knowledge of their old editor becomes useless. These high costs of switching are why developers usually end up choosing an [extensible, maintained, popular editor](http://www.gwern.net/Choosing%20Software) and sticking with it for their careers.
 
