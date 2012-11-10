@@ -6,7 +6,7 @@ title: Projects
 Here are some things I've made. See [GitHub](https://github.com/ggreer) for more.
 
 ## [Floobits](https://flobits.com/)
-The plan is to make it so Vim and Emacs users can edit the same files at the same time. Think EtherPad, but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration." It's not ready for general use yet.
+Like EtherPad, but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration." It's not ready for general use yet, but I promise it will be super-cool in the near future.
 #### Related posts
 {% for post in site.categories.Floobits %}
 * [{{ post.title }}]({{ post.url }})
