@@ -5,7 +5,9 @@ pygments: true
 url: http://geoff.greer.fm
 author: Geoff Greer
 title: Geoff's Site
-exclude: new_post.sh
+exclude:
+  - new_post.sh
+  - less.sh
 
 disqus_shortname: ggreer
 
