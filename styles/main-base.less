@@ -136,19 +136,20 @@ code {
 #beast-mode {
     font-size: 50%;
     .fixed-font;
-    max-width: 20em;
+    max-width: 12em;
     margin: 0 auto;
     padding: 2em 0;
     cursor: pointer;
     text-align: center;
 }
+#beast-mode:hover { text-decoration: underline; }
 
 .image-border { border: 1em #111 solid; }
 
 #gallery-list {
     text-align: center;
     background-color: #222;
-    margin: 1em -@body_margin -@body_margin -@body_margin;
+    margin: 1em -@body_margin 0px -@body_margin;
     min-width: @min_width;
     color: @link_visited;
     a, a:link { color: @gallery_link; text-decoration: none; }
