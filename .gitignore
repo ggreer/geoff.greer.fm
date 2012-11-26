@@ -7,6 +7,7 @@ videos
 *.zip
 *.gz
 stats
+ammocase
 coolcpu
 code/evil_wget/
 styles/main*.css
