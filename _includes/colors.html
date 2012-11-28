@@ -22,6 +22,7 @@ function invert_colors() {
     code_css.attributes.href.value = "/styles/solarized-light.css";
   }
   main_css.attributes.href.value = css_file;
+  document.body.style.background = "";
   var date = new Date();
   date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
   document.cookie = "main-css=" + css_file + "; expires=" + date.toGMTString() + "; path=/";
