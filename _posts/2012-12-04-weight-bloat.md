@@ -11,11 +11,11 @@ Here's a graph showing the weight of some car models over the years:
 
 <div id="car_weight_chart_div" style="width: 100%; height: 500px;"> </div>
 
-I've noticed this trend across many fields. The Boeing 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons.
+This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons.
 
 Is this weight bloat a bad thing? Engineers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 carries more passengers and cargo. It can fly farther.
 
-But it's still important to recognize that weight is a trade-off.
+Still, it's important to notice the trade-off between weight and other features.
 
 What about trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago.
 
@@ -25,7 +25,15 @@ Why am I talking about airframes and cars?
 
 Here's another graph:
 
-<div id="cloc_chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="httpd_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
+
+...and another:
+
+<div id="nodejs_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
+
+...and another:
+
+<div id="_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
 Code bases get bigger. Worse, binaries get bigger.
 
@@ -111,10 +119,10 @@ function drawCharts() {
   });
   car_chart.draw();
 
-  var cloc_data = new google.visualization.DataTable();
-  cloc_data.addColumn("date", "Year");
-  cloc_data.addColumn("number", "Apache httpd");
-  cloc_data.addRows([
+  var httpd_cloc_data = new google.visualization.DataTable();
+  httpd_cloc_data.addColumn("date", "Year");
+  httpd_cloc_data.addColumn("number", "Apache httpd");
+  httpd_cloc_data.addRows([
     [new Date("Wed Nov 7 19:26:48 2012 +0000"), 151569],
     [new Date("Sun Oct 7 00:07:05 2012 +0000"), 151348],
     [new Date("Wed Sep 19 07:44:53 2012 +0000"), 149758],
@@ -416,10 +424,11 @@ function drawCharts() {
     [new Date("Fri May 30 19:33:04 1997 +0000"), 10891],
     [new Date("Wed Apr 16 12:43:20 1997 +0000"), 9929],
     [new Date("Sun Jan 26 01:31:14 1997 +0000"), 7917],
-    [new Date("Tue Nov 26 06:02:02 1996 +0000"), 5668],
+    [new Date("Tue Nov 26 06:02:02 1996 +0000"), 5668]
   ]);
-  var cloc_options = {
-                  'title':'Lines of Code',
+
+  var httpd_cloc_options = {
+                  'title':'Httpd: Lines of Code',
                   'fontSize': 20,
                   'backgroundColor': {
                     'fill': '#eef'
@@ -428,16 +437,11 @@ function drawCharts() {
                     'left': '15%',
                     'width': '80%'
                   },
-                  'legend': {
-                    'position': 'top',
-                    'textStyle': {
-                      'fontSize': 14
-                    }
-                  },
+                  'legend': {},
                   'hAxis': {},
                   'vAxis': {
                     'gridlines': {
-                      'count': 6
+                      'count': 8
                     },
                     'minValue': 0,
                     'title': 'Lines'
@@ -450,12 +454,354 @@ function drawCharts() {
                   'width': "100%",
                   'height': 500
                 };
-  var cloc_chart = new google.visualization.ChartWrapper({
+  var httpd_cloc_chart = new google.visualization.ChartWrapper({
     'chartType': 'LineChart',
-    'containerId': 'cloc_chart_div',
-    'options': cloc_options,
-    'dataTable': cloc_data
+    'containerId': 'httpd_cloc_chart_div',
+    'options': httpd_cloc_options,
+    'dataTable': httpd_cloc_data
   });
-  cloc_chart.draw();
+  httpd_cloc_chart.draw();
+
+  var nodejs_cloc_data = new google.visualization.DataTable();
+  nodejs_cloc_data.addColumn("date", "Year");
+  nodejs_cloc_data.addColumn("number", "Node.js");
+  nodejs_cloc_data.addRows([
+    [new Date("Thu Nov 1 01:36:41 2012 +0100"), 11935],
+    [new Date("Wed Oct 24 02:42:57 2012 +0200"), 11842],
+    [new Date("Tue Oct 23 19:54:22 2012 -0400"), 12062],
+    [new Date("Mon Oct 22 00:18:14 2012 +0200"), 12413],
+    [new Date("Fri Oct 12 08:57:12 2012 -0700"), 12409],
+    [new Date("Sun Oct 7 11:27:14 2012 -0700"), 12388],
+    [new Date("Mon Sep 24 11:18:05 2012 +0300"), 12361],
+    [new Date("Wed Sep 19 14:37:08 2012 +0200"), 12351],
+    [new Date("Fri Sep 14 01:59:44 2012 +0200"), 12348],
+    [new Date("Wed Sep 12 02:46:45 2012 +0200"), 12333],
+    [new Date("Sat Sep 8 02:08:22 2012 +0200"), 12352],
+    [new Date("Thu Sep 6 15:58:09 2012 +0200"), 12333],
+    [new Date("Thu Aug 30 17:28:02 2012 +0200"), 12335],
+    [new Date("Mon Aug 27 12:51:25 2012 -0700"), 12232],
+    [new Date("Wed Aug 22 15:18:45 2012 -0400"), 12335],
+    [new Date("Sun Aug 19 11:11:47 2012 -0700"), 12321],
+    [new Date("Wed Aug 15 02:10:02 2012 +0200"), 12320],
+    [new Date("Tue Aug 7 12:02:49 2012 -0700"), 12305],
+    [new Date("Sat Aug 4 11:06:14 2012 -0700"), 12305],
+    [new Date("Thu Aug 2 15:00:57 2012 -0700"), 12305],
+    [new Date("Tue Jul 31 13:45:16 2012 +0200"), 12305],
+    [new Date("Wed Jul 25 10:28:03 2012 -0700"), 12302],
+    [new Date("Thu Jul 19 14:27:31 2012 -0700"), 12274],
+    [new Date("Tue Jul 17 12:02:57 2012 -0700"), 12288],
+    [new Date("Sat Jul 14 01:43:34 2012 +0200"), 12288],
+    [new Date("Fri Jul 6 21:36:53 2012 -0700"), 12286],
+    [new Date("Thu Jul 5 18:46:09 2012 +0200"), 12282],
+    [new Date("Tue Jul 3 15:14:33 2012 +0200"), 12282],
+    [new Date("Thu Jun 28 04:14:24 2012 +0200"), 12282],
+    [new Date("Mon Jun 25 18:53:35 2012 +0200"), 12282],
+    [new Date("Thu Jun 21 19:44:58 2012 -0700"), 12282],
+    [new Date("Mon Jun 18 11:03:32 2012 +0200"), 12267],
+    [new Date("Tue Jun 19 17:48:07 2012 +0200"), 12267],
+    [new Date("Sun Jun 17 12:04:35 2012 -0700"), 12274],
+    [new Date("Thu Jun 14 16:59:02 2012 -0700"), 12274],
+    [new Date("Wed Jun 13 11:58:18 2012 +0000"), 12280],
+    [new Date("Mon Jun 11 23:46:17 2012 +0200"), 13042],
+    [new Date("Sat Jun 9 00:33:25 2012 -0700"), 12197],
+    [new Date("Wed Jun 6 09:58:46 2012 -0700"), 13040],
+    [new Date("Sat Jun 2 16:01:18 2012 +0200"), 12171],
+    [new Date("Sun May 27 23:29:00 2012 +0200"), 12150],
+    [new Date("Mon May 21 21:09:40 2012 +0400"), 12238],
+    [new Date("Tue May 15 14:21:22 2012 -0700"), 12336],
+    [new Date("Mon May 14 17:34:33 2012 +0200"), 13050],
+    [new Date("Tue May 8 16:07:14 2012 +0200"), 12988],
+    [new Date("Sat May 5 00:06:24 2012 +0200"), 12122],
+    [new Date("Fri May 4 11:21:08 2012 -0700"), 12885],
+    [new Date("Tue May 1 15:51:29 2012 -0700"), 12159],
+    [new Date("Sun Apr 29 18:53:41 2012 -0700"), 12145],
+    [new Date("Tue Apr 24 04:01:28 2012 +0200"), 12121],
+    [new Date("Wed Apr 18 12:24:41 2012 -0700"), 12121],
+    [new Date("Thu Apr 12 00:59:38 2012 +0200"), 12007],
+    [new Date("Wed Apr 11 22:28:44 2012 -0700"), 12015],
+    [new Date("Mon Apr 2 15:12:23 2012 -0700"), 12856],
+    [new Date("Mon Apr 2 14:36:23 2012 -0700"), 12002],
+    [new Date("Mon Mar 26 05:45:23 2012 -0700"), 11943],
+    [new Date("Wed Mar 28 19:54:01 2012 -0700"), 11981],
+    [new Date("Sat Mar 24 01:39:39 2012 -0700"), 12827],
+    [new Date("Tue Mar 20 17:21:32 2012 +0100"), 11959],
+    [new Date("Sat Mar 17 15:50:43 2012 +0100"), 12827],
+    [new Date("Mon Mar 12 17:24:39 2012 -0700"), 11928],
+    [new Date("Fri Mar 9 09:20:29 2012 -0800"), 11980],
+    [new Date("Mon Mar 5 17:53:15 2012 +0000"), 11959],
+    [new Date("Mon Mar 5 13:20:13 2012 -0800"), 11934],
+    [new Date("Sat Mar 3 12:18:24 2012 +0900"), 11934],
+    [new Date("Mon Feb 27 11:18:10 2012 -0800"), 12817],
+    [new Date("Mon Feb 27 11:09:33 2012 -0800"), 12817],
+    [new Date("Tue Feb 28 18:11:48 2012 +0100"), 11934],
+    [new Date("Mon Feb 27 11:18:10 2012 -0800"), 11934],
+    [new Date("Mon Feb 27 11:09:33 2012 -0800"), 11934],
+    [new Date("Fri Feb 24 09:37:16 2012 -0700"), 11934],
+    [new Date("Thu Feb 23 01:52:45 2012 +0100"), 11940],
+    [new Date("Mon Feb 20 19:55:37 2012 +0100"), 11897],
+    [new Date("Fri Feb 17 12:41:39 2012 -0800"), 11857],
+    [new Date("Wed Feb 15 23:50:04 2012 +0100"), 12777],
+    [new Date("Sun Feb 12 21:53:43 2012 +0600"), 11857],
+    [new Date("Tue Feb 7 16:50:05 2012 -0800"), 12856],
+    [new Date("Mon Feb 6 23:01:17 2012 -0800"), 11818],
+    [new Date("Thu Feb 2 15:37:59 2012 -0800"), 12755],
+    [new Date("Tue Jan 31 14:46:23 2012 +0100"), 12421],
+    [new Date("Thu Jan 26 17:14:16 2012 -0800"), 12769],
+    [new Date("Mon Jan 23 13:53:11 2012 -0800"), 12770],
+    [new Date("Thu Jan 19 18:56:23 2012 -0800"), 12349],
+    [new Date("Tue Jan 17 11:32:58 2012 -0800"), 12716],
+    [new Date("Mon Jan 16 20:18:37 2012 +0600"), 12262],
+    [new Date("Wed Jan 11 09:02:51 2012 +0100"), 12243],
+    [new Date("Mon Jan 9 02:28:49 2012 +0100"), 12099],
+    [new Date("Sat Dec 31 00:30:42 2011 -0800"), 11910],
+    [new Date("Thu Dec 29 14:57:53 2011 +0100"), 12653],
+    [new Date("Thu Dec 22 13:40:26 2011 -0800"), 11830],
+    [new Date("Tue Dec 27 17:43:58 2011 +0900"), 12657],
+    [new Date("Wed Dec 21 12:17:23 2011 -0800"), 11639],
+    [new Date("Mon Dec 19 13:06:19 2011 -0800"), 11633],
+    [new Date("Fri Dec 16 18:04:39 2011 -0800"), 12652],
+    [new Date("Wed Dec 14 17:02:15 2011 -0800"), 12737],
+    [new Date("Mon Dec 12 09:19:30 2011 -0800"), 12666],
+    [new Date("Fri Dec 9 21:14:00 2011 +0100"), 11726],
+    [new Date("Tue Dec 6 11:50:54 2011 -0800"), 12707],
+    [new Date("Fri Dec 2 02:31:41 2011 +0100"), 12653],
+    [new Date("Fri Nov 25 09:29:06 2011 +0100"), 12620],
+    [new Date("Tue Nov 22 12:43:55 2011 -0800"), 12553],
+    [new Date("Thu Nov 17 23:48:40 2011 +0100"), 12495],
+    [new Date("Mon Nov 14 17:17:23 2011 -0800"), 12489],
+    [new Date("Thu Nov 10 13:04:34 2011 -0800"), 12489],
+    [new Date("Mon Nov 7 11:37:05 2011 -0800"), 12427],
+    [new Date("Fri Nov 4 15:11:19 2011 -0700"), 12433],
+    [new Date("Thu Nov 3 05:15:09 2011 +0100"), 12630],
+    [new Date("Wed Nov 2 18:27:43 2011 -0700"), 12443],
+    [new Date("Sun Oct 30 21:22:46 2011 +0100"), 12450],
+    [new Date("Thu Oct 27 16:47:37 2011 -0700"), 12332],
+    [new Date("Tue Oct 25 19:18:41 2011 +0000"), 12426],
+    [new Date("Fri Oct 21 14:54:11 2011 -0700"), 12401],
+    [new Date("Mon Oct 17 18:24:12 2011 -0700"), 12410],
+    [new Date("Tue Oct 11 20:54:55 2011 -0400"), 12350],
+    [new Date("Tue Oct 11 13:21:30 2011 -0700"), 13058],
+    [new Date("Mon Oct 10 13:52:18 2011 -0700"), 15390],
+    [new Date("Fri Oct 7 15:17:51 2011 +0700"), 15391],
+    [new Date("Fri Sep 30 16:49:30 2011 -0700"), 15594],
+    [new Date("Tue Sep 27 16:13:43 2011 +0200"), 15593],
+    [new Date("Sun Sep 25 03:31:39 2011 +0200"), 12159],
+    [new Date("Wed Sep 21 16:10:34 2011 -0700"), 15332],
+    [new Date("Wed Sep 21 13:19:22 2011 +0900"), 12458],
+    [new Date("Mon Sep 19 16:28:22 2011 +0200"), 15269],
+    [new Date("Wed Sep 14 13:27:44 2011 -0700"), 15020],
+    [new Date("Mon Sep 12 14:59:51 2011 -0700"), 15012],
+    [new Date("Sat Sep 10 19:18:36 2011 +0700"), 15004],
+    [new Date("Thu Sep 8 23:04:37 2011 +0700"), 15004],
+    [new Date("Thu Sep 8 11:47:32 2011 +0900"), 15000],
+    [new Date("Mon Sep 5 01:01:53 2011 +0200"), 14831],
+    [new Date("Wed Aug 31 14:33:40 2011 +0200"), 14807],
+    [new Date("Wed Aug 24 13:42:20 2011 -0700"), 14812],
+    [new Date("Tue Aug 23 00:19:39 2011 +0900"), 12142],
+    [new Date("Mon Aug 15 18:26:48 2011 -0700"), 14519],
+    [new Date("Sat Aug 13 03:09:34 2011 +0900"), 14526],
+    [new Date("Fri Aug 12 13:20:24 2011 -0600"), 14829],
+    [new Date("Thu Aug 11 17:41:30 2011 +0200"), 13851],
+    [new Date("Tue Aug 9 17:46:29 2011 -0700"), 13833],
+    [new Date("Mon Aug 8 14:14:47 2011 -0700"), 13830],
+    [new Date("Sat Aug 6 19:11:39 2011 -0700"), 13826],
+    [new Date("Fri Aug 5 10:03:38 2011 +0200"), 13866],
+    [new Date("Tue Aug 2 00:10:53 2011 -0700"), 14133],
+    [new Date("Mon Aug 1 18:16:27 2011 +0200"), 14634],
+    [new Date("Wed Jul 27 17:33:04 2011 -0700"), 14387],
+    [new Date("Tue Jul 26 23:20:29 2011 +0200"), 14511],
+    [new Date("Sun Jul 24 17:18:33 2011 -0700"), 12137],
+    [new Date("Thu Jul 21 15:42:08 2011 -0700"), 14267],
+    [new Date("Tue Jul 19 10:46:40 2011 -0700"), 12160],
+    [new Date("Sat Jul 16 14:51:45 2011 +0200"), 14140],
+    [new Date("Thu Jul 14 16:56:39 2011 -0700"), 14143],
+    [new Date("Sun Jul 10 02:04:56 2011 +0900"), 12148],
+    [new Date("Wed Jul 6 17:13:17 2011 -0700"), 14084],
+    [new Date("Tue Jul 5 14:40:13 2011 -0700"), 14053],
+    [new Date("Mon Jul 4 15:56:56 2011 -0700"), 14045],
+    [new Date("Sun Jul 3 11:05:03 2011 -0700"), 13594],
+    [new Date("Wed Jun 29 15:06:40 2011 +0200"), 13654],
+    [new Date("Fri Jun 17 14:27:02 2011 +0200"), 13542],
+    [new Date("Thu Jun 9 15:31:51 2011 +0200"), 13253],
+    [new Date("Mon May 23 13:10:00 2011 +0200"), 12117],
+    [new Date("Thu May 19 17:50:13 2011 -0700"), 13032],
+    [new Date("Fri May 13 07:09:28 2011 -0700"), 13028],
+    [new Date("Mon May 2 12:13:06 2011 -0700"), 12064],
+    [new Date("Wed Apr 13 17:54:50 2011 -0600"), 12050],
+    [new Date("Mon Apr 11 16:07:54 2011 -0700"), 11917],
+    [new Date("Sat Apr 2 00:53:07 2011 -0400"), 12380],
+    [new Date("Tue Mar 29 10:47:14 2011 -0700"), 11949],
+    [new Date("Tue Mar 22 13:18:57 2011 -0700"), 12221],
+    [new Date("Fri Mar 18 10:01:45 2011 -0700"), 11951],
+    [new Date("Fri Mar 11 17:11:46 2011 -0500"), 11931],
+    [new Date("Wed Mar 2 21:04:37 2011 -0800"), 11917],
+    [new Date("Sat Feb 19 18:45:34 2011 -0800"), 11908],
+    [new Date("Fri Feb 18 13:44:20 2011 -0800"), 11915],
+    [new Date("Wed Feb 16 21:09:43 2011 -0500"), 11906],
+    [new Date("Mon Feb 14 09:36:28 2011 -0800"), 11906],
+    [new Date("Tue Feb 8 21:15:46 2011 -0800"), 11721],
+    [new Date("Fri Feb 4 16:00:08 2011 -0800"), 11622],
+    [new Date("Thu Jan 27 16:35:35 2011 -0800"), 11525],
+    [new Date("Tue Jan 25 03:49:03 2011 +0100"), 11511],
+    [new Date("Thu Jan 20 19:07:15 2011 -0800"), 11342],
+    [new Date("Tue Jan 18 03:57:14 2011 +0100"), 11521],
+    [new Date("Tue Jan 18 03:57:14 2011 +0100"), 10540],
+    [new Date("Fri Jan 14 03:44:05 2011 +0100"), 11348],
+    [new Date("Wed Jan 12 16:43:05 2011 -0800"), 10549],
+    [new Date("Mon Jan 10 17:25:48 2011 -0800"), 10460],
+    [new Date("Wed Jan 5 11:53:56 2011 -0800"), 10441],
+    [new Date("Sun Jan 2 01:54:19 2011 -0800"), 9326],
+    [new Date("Thu Dec 30 11:54:49 2010 -0800"), 9232],
+    [new Date("Tue Dec 21 19:14:29 2010 -0800"), 9232],
+    [new Date("Sat Dec 18 18:44:04 2010 -0800"), 8425],
+    [new Date("Mon Dec 13 22:03:33 2010 -0800"), 8418],
+    [new Date("Wed Dec 8 13:22:12 2010 -0800"), 8387],
+    [new Date("Sat Dec 4 16:11:57 2010 -0800"), 8367],
+    [new Date("Fri Dec 3 01:44:09 2010 +0100"), 9626],
+    [new Date("Thu Dec 2 17:48:00 2010 +1100"), 8310],
+    [new Date("Tue Nov 30 16:28:50 2010 -0800"), 8312],
+    [new Date("Mon Nov 29 11:39:13 2010 -0600"), 8200],
+    [new Date("Thu Nov 25 16:08:24 2010 +0100"), 8805],
+    [new Date("Thu Nov 25 01:21:30 2010 +0100"), 8666],
+    [new Date("Tue Nov 23 12:16:56 2010 +0530"), 8194],
+    [new Date("Sun Nov 21 00:28:19 2010 -0500"), 8159],
+    [new Date("Thu Nov 18 22:33:31 2010 -0500"), 8429],
+    [new Date("Thu Nov 18 16:22:11 2010 -0800"), 8166],
+    [new Date("Mon Nov 15 20:26:46 2010 -0800"), 8235],
+    [new Date("Sat Nov 13 15:18:10 2010 -0800"), 8235],
+    [new Date("Mon Nov 1 16:03:32 2010 -0700"), 8176],
+    [new Date("Fri Oct 29 09:00:16 2010 +1100"), 8197],
+    [new Date("Tue Oct 26 11:31:32 2010 -0700"), 8191],
+    [new Date("Sat Oct 23 14:11:30 2010 -0700"), 8163],
+    [new Date("Tue Oct 19 11:36:10 2010 -0700"), 8103],
+    [new Date("Wed Oct 13 02:45:37 2010 -0700"), 8074],
+    [new Date("Mon Oct 11 01:22:24 2010 -0700"), 8056],
+    [new Date("Wed Oct 6 23:05:23 2010 -0400"), 7999],
+    [new Date("Wed Sep 29 16:11:00 2010 -0700"), 7983],
+    [new Date("Sun Sep 19 10:05:01 2010 +0200"), 7980],
+    [new Date("Thu Sep 16 15:27:25 2010 -0700"), 8012],
+    [new Date("Sun Sep 12 21:58:06 2010 -0700"), 8027],
+    [new Date("Mon Sep 6 12:16:47 2010 -0700"), 8127],
+    [new Date("Mon Aug 23 13:12:57 2010 -0700"), 8069],
+    [new Date("Fri Aug 20 18:59:33 2010 +0200"), 8068],
+    [new Date("Thu Aug 19 23:29:06 2010 -0700"), 8047],
+    [new Date("Tue Aug 17 00:10:49 2010 -0400"), 8041],
+    [new Date("Wed Aug 11 12:44:35 2010 -0700"), 7831],
+    [new Date("Thu Aug 5 11:38:11 2010 +0200"), 7678],
+    [new Date("Fri Jul 30 09:42:36 2010 -0700"), 7712],
+    [new Date("Fri Jul 23 12:14:51 2010 -0700"), 7556],
+    [new Date("Sat Jul 17 23:26:58 2010 -0700"), 7503],
+    [new Date("Wed Jul 14 18:07:17 2010 -0500"), 7454],
+    [new Date("Tue Jul 13 00:43:09 2010 +0200"), 7450],
+    [new Date("Tue Jun 22 15:46:55 2010 -0500"), 7431],
+    [new Date("Thu Jun 24 05:17:05 2010 -0500"), 7383],
+    [new Date("Mon Jun 21 13:53:17 2010 -0500"), 7231],
+    [new Date("Tue Jun 15 20:04:29 2010 -0700"), 7201],
+    [new Date("Fri Jun 11 12:45:17 2010 -0700"), 7310],
+    [new Date("Fri Jun 4 08:29:10 2010 -0700"), 7253],
+    [new Date("Fri May 28 14:48:37 2010 -0700"), 7157],
+    [new Date("Sat May 22 13:02:30 2010 -0700"), 7121],
+    [new Date("Mon May 17 15:22:09 2010 -0700"), 7185],
+    [new Date("Wed May 12 12:17:45 2010 -0700"), 7035],
+    [new Date("Thu May 6 14:15:16 2010 -0700"), 7025],
+    [new Date("Mon May 3 11:41:30 2010 -0700"), 6957],
+    [new Date("Wed Apr 28 23:28:52 2010 -0700"), 6960],
+    [new Date("Mon Apr 26 18:53:30 2010 -0700"), 6835],
+    [new Date("Wed Apr 21 13:16:46 2010 -0700"), 8063],
+    [new Date("Thu Apr 15 02:01:49 2010 -0700"), 5915],
+    [new Date("Mon Apr 12 14:29:49 2010 -0700"), 5864],
+    [new Date("Thu Apr 8 00:05:37 2010 +0800"), 6218],
+    [new Date("Fri Apr 2 16:02:48 2010 -0700"), 5644],
+    [new Date("Tue Mar 30 23:12:15 2010 -0700"), 5870],
+    [new Date("Thu Mar 25 15:01:59 2010 -0700"), 5633],
+    [new Date("Fri Mar 19 21:25:29 2010 -0700"), 5623],
+    [new Date("Wed Mar 17 16:24:43 2010 -0700"), 5553],
+    [new Date("Mon Mar 15 08:00:19 2010 -0700"), 4166],
+    [new Date("Fri Mar 12 15:14:54 2010 +0800"), 4104],
+    [new Date("Tue Mar 9 11:59:42 2010 -0800"), 5586],
+    [new Date("Sun Mar 7 16:33:21 2010 +0100"), 4106],
+    [new Date("Thu Mar 4 11:51:39 2010 -0800"), 4066],
+    [new Date("Mon Mar 1 16:05:28 2010 +0100"), 4064],
+    [new Date("Tue Feb 23 13:08:04 2010 -0800"), 4042],
+    [new Date("Sat Feb 20 22:30:56 2010 -0800"), 3880],
+    [new Date("Wed Feb 17 18:41:46 2010 -0800"), 3851],
+    [new Date("Wed Feb 17 02:33:36 2010 +1100"), 3844],
+    [new Date("Tue Feb 9 10:50:05 2010 -0600"), 3825],
+    [new Date("Wed Feb 3 10:00:39 2010 -0800"), 4994],
+    [new Date("Tue Jan 26 20:48:51 2010 +0100"), 3766],
+    [new Date("Wed Jan 20 21:39:10 2010 +0100"), 3642],
+    [new Date("Tue Jan 12 01:09:50 2010 -0800"), 3529],
+    [new Date("Tue Jan 5 22:28:03 2010 +0100"), 3485],
+    [new Date("Wed Dec 30 00:57:55 2009 -0800"), 4258],
+    [new Date("Tue Dec 29 20:31:56 2009 +0100"), 3433],
+    [new Date("Thu Dec 17 18:27:48 2009 -0800"), 3432],
+    [new Date("Sun Dec 6 23:58:16 2009 +0100"), 3337],
+    [new Date("Sat Nov 28 01:49:11 2009 +0100"), 3322],
+    [new Date("Tue Nov 17 14:52:18 2009 +0100"), 2968],
+    [new Date("Fri Nov 6 13:42:56 2009 +0100"), 2863],
+    [new Date("Sat Oct 31 19:14:24 2009 +0100"), 2787],
+    [new Date("Mon Oct 26 23:07:37 2009 +0100"), 2790],
+    [new Date("Sat Oct 10 11:58:36 2009 +0200"), 2704],
+    [new Date("Wed Oct 7 11:53:03 2009 +0200"), 2658],
+    [new Date("Sat Oct 3 22:42:03 2009 +0200"), 2543],
+    [new Date("Mon Sep 28 16:13:33 2009 +0200"), 2520],
+    [new Date("Wed Sep 23 16:39:43 2009 +0200"), 2521],
+    [new Date("Wed Sep 16 23:28:31 2009 -0700"), 2531],
+    [new Date("Fri Sep 11 20:05:22 2009 +0200"), 2672],
+    [new Date("Fri Sep 4 17:35:38 2009 +0200"), 2710],
+    [new Date("Mon Aug 31 18:15:27 2009 +0200"), 2714],
+    [new Date("Tue Aug 25 01:18:44 2009 +0200"), 2598],
+    [new Date("Thu Aug 13 15:06:34 2009 +0200"), 2519],
+    [new Date("Thu Aug 6 13:17:30 2009 +0200"), 2520],
+    [new Date("Fri Jul 24 20:42:54 2009 +0200"), 2210],
+    [new Date("Tue Jul 14 18:31:50 2009 +0200"), 2209],
+    [new Date("Mon Jun 29 14:11:26 2009 +0200"), 2286],
+    [new Date("Wed Jun 24 16:43:37 2009 +0200"), 2289],
+    [new Date("Sun Jun 21 13:41:03 2009 +0200"), 2168],
+    [new Date("Tue Jun 16 17:43:40 2009 +0200"), 1784],
+    [new Date("Wed Jun 10 15:24:28 2009 +0200"), 1744],
+    [new Date("Thu Jun 4 12:36:08 2009 +0200"), 1712],
+    [new Date("Tue May 26 19:48:49 2009 +0200"), 1710],
+    [new Date("Tue May 19 21:53:26 2009 +0200"), 1457],
+    [new Date("Fri May 15 01:47:17 2009 +0200"), 1342],
+    [new Date("Mon May 11 17:16:14 2009 +0200"), 1307],
+    [new Date("Wed Apr 29 14:12:24 2009 +0200"), 1552],
+    [new Date("Wed Apr 22 14:09:17 2009 +0200"), 1663],
+    [new Date("Fri Apr 17 18:54:29 2009 +0200"), 1547]
+  ]);
+  var nodejs_cloc_options = {
+                  'title':'Node.js: Lines of Code',
+                  'fontSize': 20,
+                  'backgroundColor': {
+                    'fill': '#eef'
+                  },
+                  'chartArea': {
+                    'left': '15%',
+                    'width': '80%'
+                  },
+                  'legend': {},
+                  'hAxis': {},
+                  'vAxis': {
+                    'gridlines': {
+                      'count': 8
+                    },
+                    'minValue': 0,
+                    'title': 'Lines'
+                  },
+                  'colors': [
+                    '#43d',
+                    '#396',
+                    '#668'
+                  ],
+                  'width': "100%",
+                  'height': 500
+                };
+  var nodejs_cloc_chart = new google.visualization.ChartWrapper({
+    'chartType': 'LineChart',
+    'containerId': 'nodejs_cloc_chart_div',
+    'options': nodejs_cloc_options,
+    'dataTable': nodejs_cloc_data
+  });
+  nodejs_cloc_chart.draw();
 }
 </script>
