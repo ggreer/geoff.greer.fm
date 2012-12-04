@@ -7,25 +7,29 @@ categories:
 - Computers
 ---
 
-Here is the weight of some car models over the years.
+Here's a graph showing the weight of some car models over the years:
 
 <div id="car_weight_chart_div" style="width: 100%; height: 500px;"> </div>
 
-I've noticed many disciplines share this trend. 
+I've noticed this trend across many fields. The Boeing 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons.
 
-The Boeing 737 has increased in weight by 50% since it was first made. The first 737s weighed 30 tons. A modern one is 44 tons. 
+Is this weight bloat a bad thing? Engineers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 carries more passengers and cargo. It can fly farther.
 
-Is this weight bloat a bad thing? Usually, no. Cars are *much* safer than they used to be. 
+But it's still important to recognize that weight is a trade-off.
 
-But it's something to keep in mind.
+What about trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago.
 
-Code bases get bigger
+Something like the Lotus Elise.
+
+Why am I talking about airframes and cars?
+
+Here's another graph:
+
+Code bases get bigger. Worse, binaries get bigger.
 
 
 As a model increases in weight, capabilities, and price, manufacturers often introduce a new low-end model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. 
 
-
-<div id="plane_weight_chart_div" style="width: 100%; height: 500px;"> </div>
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
@@ -104,50 +108,5 @@ function drawCharts() {
     'dataTable': car_data
   });
   car_chart.draw();
-
-
-  var plane_data = new google.visualization.DataTable();
-  plane_data.addColumn("date", "Year");
-  plane_data.addColumn("number", "Boeing 737");
-  plane_data.addRows([
-    [new Date(1967, 3, 9), 28100],
-    [new Date(1968, 10, 18), 31600],
-    [new Date(1988, 1, 19), 33600],
-    [new Date(1997, 6, 31), 44700]
-  ]);
-
-  var plane_options = {
-                  'title':'Boeing 737 Weight (empty)',
-                  'fontSize': 20,
-                  'backgroundColor': {
-                    'fill': '#eef'
-                  },
-                  'chartArea': {
-                    'left': '15%',
-                    'width': '80%'
-                  },
-                  'legend': {},
-                  'hAxis': {},
-                  'vAxis': {
-                    'gridlines': {
-                      'count': 6
-                    },
-                    'minValue': 0,
-                    'title': 'Kilograms'
-                  },
-                  'colors': [
-                    '#43d',
-                    '#396'
-                  ],
-                  'width': "100%",
-                  'height': 500
-                };
-  var plane_chart = new google.visualization.ChartWrapper({
-    'chartType': 'LineChart',
-    'containerId': 'plane_weight_chart_div',
-    'options': plane_options,
-    'dataTable': plane_data
-  });
-  plane_chart.draw();
 }
 </script>
