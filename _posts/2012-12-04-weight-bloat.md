@@ -23,11 +23,11 @@ Here's another graph:
 
 <div id="httpd_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-...and another:
+...and another...
 
 <div id="nodejs_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-...and another:
+...and another...
 
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
@@ -1129,7 +1129,7 @@ function drawCharts() {
                   'hAxis': {},
                   'vAxis': {
                     'gridlines': {
-                      'count': 8
+                      'count': 6
                     },
                     'minValue': 0,
                     'title': 'Lines'
