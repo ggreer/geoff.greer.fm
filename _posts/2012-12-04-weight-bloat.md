@@ -15,11 +15,7 @@ This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and w
 
 Is this weight bloat a bad thing? Engineers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 carries more passengers and cargo. It can fly farther.
 
-Still, it's important to notice the trade-off between weight and other features.
-
-What about trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago.
-
-Something like the Lotus Elise.
+What about trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise).
 
 Why am I talking about airframes and cars?
 
@@ -33,7 +29,7 @@ Here's another graph:
 
 ...and another:
 
-<div id="_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
 Code bases get bigger. Worse, binaries get bigger.
 
@@ -803,5 +799,84 @@ function drawCharts() {
     'dataTable': nodejs_cloc_data
   });
   nodejs_cloc_chart.draw();
+
+  var cass_cloc_data = new google.visualization.DataTable();
+  cass_cloc_data.addColumn("date", "Year");
+  cass_cloc_data.addColumn("number", "Cassandra");
+  cass_cloc_data.addRows([
+    [new Date("Wed Nov 28 00:35:50 2012 +0900"), 87339],
+    [new Date("Fri Nov 23 15:50:49 2012 -0600"), 87404],
+    [new Date("Wed Nov 21 20:16:50 2012 +0100"), 87282],
+    [new Date("Mon Nov 19 21:54:18 2012 +0300"), 87079],
+    [new Date("Sat Nov 17 20:47:24 2012 -0500"), 87033],
+    [new Date("Fri Nov 9 22:33:37 2012 -0600"), 87070],
+    [new Date("Tue Nov 13 20:10:50 2012 +0100"), 87054],
+    [new Date("Mon Nov 12 15:59:28 2012 -0600"), 87058],
+    [new Date("Thu Nov 8 22:40:04 2012 -0500"), 86960],
+    [new Date("Sat Nov 3 15:42:40 2012 -0500"), 86801],
+    [new Date("Thu Nov 1 14:32:35 2012 -0500"), 70638],
+    [new Date("Tue Oct 30 10:22:22 2012 -0500"), 70622],
+    [new Date("Thu Oct 25 11:10:51 2012 -0500"), 70606],
+    [new Date("Tue Oct 23 15:16:03 2012 -0500"), 85619],
+    [new Date("Thu Oct 18 17:44:53 2012 -0500"), 85470],
+    [new Date("Mon Oct 15 12:31:51 2012 -0500"), 84700],
+    [new Date("Tue Oct 9 22:07:08 2012 -0400"), 84746],
+    [new Date("Mon Oct 8 10:31:08 2012 -0500"), 84774],
+    [new Date("Thu Oct 4 09:45:29 2012 -0500"), 70451],
+    [new Date("Fri Sep 28 13:27:20 2012 -0500"), 84150],
+    [new Date("Wed Sep 26 10:03:57 2012 -0500"), 70187],
+    [new Date("Mon Sep 24 10:08:48 2012 -0500"), 58352],
+    [new Date("Tue Sep 18 13:47:56 2012 -0500"), 83303],
+    [new Date("Thu Sep 13 15:47:26 2012 -0500"), 70146],
+    [new Date("Tue Sep 11 11:02:41 2012 +0200"), 82685],
+    [new Date("Fri Sep 7 16:14:58 2012 +0200"), 58333],
+    [new Date("Wed Aug 1 08:40:50 2012 +0200"), 81519],
+    [new Date("Mon Sep 3 12:19:08 2012 +0300"), 69650],
+    [new Date("Tue Aug 28 15:52:24 2012 -0500"), 79111],
+    [new Date("Mon Aug 20 15:45:54 2012 -0500"), 78701],
+    [new Date("Fri Aug 10 10:33:12 2012 -0500"), 78640],
+    [new Date("Fri Jul 27 17:14:32 2012 +0200"), 69559],
+    [new Date("Sat Jul 28 14:01:57 2012 -0500"), 69538],
+    [new Date("Thu Jul 26 13:37:24 2012 -0400"), 58340],
+    [new Date("Mon Jul 23 11:22:37 2012 -0500"), 77868],
+    [new Date("Mon Jul 16 18:27:24 2012 +0200"), 77311],
+    [new Date("Tue Jul 10 15:33:11 2012 -0500"), 75742],
+    [new Date("Thu Jul 5 20:41:06 2012 -0400"), 75470],
+
+  ]);
+  var cass_cloc_options = {
+                  'title':'Cassandra: Lines of Code',
+                  'fontSize': 20,
+                  'backgroundColor': {
+                    'fill': '#eef'
+                  },
+                  'chartArea': {
+                    'left': '15%',
+                    'width': '80%'
+                  },
+                  'legend': {},
+                  'hAxis': {},
+                  'vAxis': {
+                    'gridlines': {
+                      'count': 8
+                    },
+                    'minValue': 0,
+                    'title': 'Lines'
+                  },
+                  'colors': [
+                    '#43d',
+                    '#396',
+                    '#668'
+                  ],
+                  'width': "100%",
+                  'height': 500
+                };
+  var cass_cloc_chart = new google.visualization.ChartWrapper({
+    'chartType': 'LineChart',
+    'containerId': 'cass_cloc_chart_div',
+    'options': cass_cloc_options,
+    'dataTable': cass_cloc_data
+  });
+  cass_cloc_chart.draw();
 }
 </script>
