@@ -13,9 +13,9 @@ Here's a graph showing the weight of some car models over the years:
 
 This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons.
 
-Is this weight bloat a bad thing? Engineers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 carries more passengers and cargo. It can fly farther.
+Is this weight bloat a bad thing? Engineering involves trade-offs. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther, carrying more passengers and cargo. 
 
-What about trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise).
+So what about making the same trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's amazing in its niche.
 
 Why am I talking about airframes and cars?
 
