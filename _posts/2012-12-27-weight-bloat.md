@@ -1,5 +1,5 @@
 ---
-date: '2012-12-04 05:12:59'
+date: '2012-12-27 05:12:59'
 layout: post
 title: 'Weight Bloat'
 published: true
