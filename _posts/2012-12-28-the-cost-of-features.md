@@ -15,9 +15,7 @@ Here's a graph showing the weight of some car models over the years:
 
 This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons.
 
-Is this weight bloat a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther while carrying more passengers and cargo.
-
-So what about making the same trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's spectacular in its niche.
+Is this weight bloat a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther while carrying more passengers and cargo. It's a trade-off: more weight for more features.
 
 Why am I talking about airframes and cars?
 
@@ -52,8 +50,14 @@ It's a hard bullet to bite.
 
 How do we stop software projects from collapsing under the weight of their own code?
 
-As a model increases in weight, capabilities, and price, manufacturers often introduce a new low-end model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. 
+Again, we can look to cars. As a model increases in weight, capabilities, and price, manufacturers often introduce a new low-end model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit.
 
+A similar process happens to software. As a piece of software becomes more complicated and bloated, newer projects come along to fill the old niche.
+
+
+So what about making the same trade-offs in the opposite direction?
+
+Going back to cars: What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's spectacular in its niche.
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
