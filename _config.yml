@@ -13,6 +13,8 @@ disqus_shortname: ggreer
 
 gallery_dir: photos
 galleries:
+  christmas_vacation_2012:
+    best_image: DSC_0226.JPG
   chile_trip:
     best_image: IMG_1068.JPG
   japan_trip:
