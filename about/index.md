@@ -13,9 +13,9 @@ Works speak louder than words, so look at [my GitHub activity](https://github.co
 <br />
 
 ## Contact
-* {% include contact.md %}{: style="list-style: none;"}
+{% include contact.md %}
 
 <br />
 
 ## Me on the web
-* {% include links.md %}{: style="list-style: none;"}
+{% include links.md %}
