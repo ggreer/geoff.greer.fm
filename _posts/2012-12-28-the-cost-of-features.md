@@ -15,29 +15,42 @@ Here's a graph showing the weight of some car models over the years:
 
 This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons.
 
-Is this weight bloat a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther, carrying more passengers and cargo. 
+Is this weight bloat a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther while carrying more passengers and cargo.
 
 So what about making the same trade-offs in the opposite direction? What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's spectacular in its niche.
 
 Why am I talking about airframes and cars?
 
-Here's another graph:
+These graphs show [line counts](http://en.wikipedia.org/wiki/Source_lines_of_code) for some popular open source projects. Here's [httpd](http://httpd.apache.org/):
 
 <div id="httpd_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-...and another...
+[Node.js](http://nodejs.org/):
 
 <div id="nodejs_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-...and another...
+and [Cassandra](http://cassandra.apache.org/):
 
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-Code bases get bigger. Binaries get bigger. 
 
-Engineering involves trade-offs. 
+These examples aren't cherry-picked. I ran the numbers on other code bases, but generating graphs for them all wasn't worth the effort.
 
-All else equal, more code means more bugs.
+Why do cars, airframes, and software grow? Naively, we should expect some of them to shrink over time.
+
+Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More code usually means more features. More code can mean better performance through the use of caching layers, indexes, and efficient data structures.
+
+We have some good reasons for adding code, but why should we avoid removing it? Several issues come to mind:
+
+* **It can break dependent software.** While the feature on the chopping block may not be popular with users, other popular software might be dependent on it.
+* **Disgruntled users.** Removing a feature used by only 1% of users guarantees a deluge of hate mail. 10,000 users means 100 angry emails. At the same time, it causes the other 99% to wonder if their pet feature is next.
+* **Removing things isn't fun.** If your code is clean, it's trivial and boring. If your code is ugly, it's a giant pain. Either way, building something new is more enjoyable.
+* **It doesn't impress colleagues.** "I removed some old code" is rarely said with pride in a stand-up. People don't brag about removing features or old code.
+
+It's a hard bullet to bite.
+
+
+How do we stop software projects from collapsing under the weight of their own code?
 
 As a model increases in weight, capabilities, and price, manufacturers often introduce a new low-end model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. 
 
