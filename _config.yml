@@ -12,29 +12,34 @@ exclude:
 
 disqus_shortname: ggreer
 
-gallery_dir: photos
-galleries:
-  christmas_vacation_2012:
-    best_image: DSC_0226.jpg
-  chile_trip:
-    best_image: IMG_1068.JPG
-  japan_trip:
-    best_image: IMG_0690.JPG
-  best:
-    best_image: snaileo_gonzales.jpg
-  sf_from_bernal_heights:
-    best_image: DSC_7861.JPG
-  thermite:
-    best_image: P1010014_crop.jpg
-  burning_man_2010:
-    best_image: DSC_8021.JPG
-  burning_man_2009:
-    best_image: DSC_4302.JPG
-  china_trip:
-    best_image: IMG_0288.JPG
-  "my_new_used_SV-650-S":
-    best_image: FILE0042.JPG
-  marathon:
-    best_image: 04.jpg
-  ammo_case:
-    best_image: DSCF0006.JPG
+gallery:
+  title_prefix: "Photos: "
+  dir: photos
+  galleries:
+    christmas_vacation_2012:
+      best_image: DSC_0226.jpg
+    chile_trip:
+      best_image: IMG_1068.JPG
+    japan_trip:
+      best_image: IMG_0690.JPG
+    best:
+      best_image: snaileo_gonzales.jpg
+    sf_from_bernal_heights:
+      best_image: DSC_7861.JPG
+    thermite:
+      best_image: P1010014_crop.jpg
+    burning_man_2010:
+      best_image: DSC_8021.JPG
+    burning_man_2009:
+      best_image: DSC_4302.JPG
+    china_trip:
+      best_image: IMG_0288.JPG
+    "my_new_used_SV-650-S":
+      best_image: FILE0042.JPG
+    marathon:
+      best_image: 04.jpg
+    ammo_case:
+      best_image: DSCF0006.JPG
+  thumbnail_size:
+    x: 800
+    y: 800
