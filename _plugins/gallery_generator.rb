@@ -42,8 +42,8 @@ module Jekyll
       @images = []
 
       best_image = nil
-      max_size_x = 800
-      max_size_y = 800
+      max_size_x = 400
+      max_size_y = 400
       begin
         max_size_x = site.config["gallery"]["thumbnail_size"]["x"]
       rescue
