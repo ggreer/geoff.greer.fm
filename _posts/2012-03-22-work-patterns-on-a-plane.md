@@ -28,5 +28,6 @@ As [Russell](http://russellhaering.com/) [says](https://twitter.com/#!/russell_h
 ---
 <a name="ref_1"> </a>
 1. Lack of Internet access, phone, or friends nearby.
+
 <a name="ref_2"> </a>
 2. I realize this is a huge range. The CPU and screen seem to be the biggest power hogs. If I don't pay any attention to power consumption and just run the screen bright, the battery will last about 4 hours. Keeping brightness low and CPU usage to a minimum can almost double that.

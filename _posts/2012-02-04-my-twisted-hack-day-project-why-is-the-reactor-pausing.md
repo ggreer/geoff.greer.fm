@@ -26,7 +26,9 @@ That's two production issues identified and fixed because of a silly hack day pr
 ---
 <a name="ref_1"> </a>
 1. We got around performance issues by running multiple instances of these services. The problems were never fixed because they were in really old code that was written before anyone at Cloudkick knew how to write twisted.
+
 <a name="ref_2"> </a>
 2. A stats [defaultdict](http://docs.python.org/library/collections.html#collections.defaultdict), to be precise. If you haven't used defaultdict before, check it out. It will save you from writing some dumb boilerplate code.
+
 <a name="ref_3"> </a>
 3. I wasn't the only person to do a hack day project. [Here's the full list.](https://github.com/HackThePlanet/TwistedPython-HackDay)

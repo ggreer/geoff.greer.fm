@@ -144,7 +144,9 @@ Of course, this isn't _real_ science. These apparati make programming a cakewalk
 ---
 <a name="ref_1"> </a>
 1. You forgot this fact not because you suck at Python, but because you usually write clean code with no globals. At least, that's what you keep telling yourself.
+
 <a name="ref_2"> </a>
 2. Just so nobody freaks out: This thing is non-customer-facing and currently under heavy development. I'm also over-simplifying the process. The actual changes happened in a development branch and weren't merged until things were hunky-dory.
+
 <a name="ref_3"> </a>
 3. [Cosmic rays](http://en.wikipedia.org/wiki/Single_event_upset) notwithstanding.

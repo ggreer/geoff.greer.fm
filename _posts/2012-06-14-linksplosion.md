@@ -24,5 +24,6 @@ I've been tinkering with Chrome extensions for a while now, and I think there's 
 ---
 <a name="ref_1"> </a>
 1. A significant portion of the time wasn't even coding. Finding an appropriate icon and submitting the extension to the Chrome Web Store took at least an hour.
+
 <a name="ref_2"> </a>
 2. Thanks to [Bjorn](http://bjorn.tipling.com/) for telling me about querySelectorAll.

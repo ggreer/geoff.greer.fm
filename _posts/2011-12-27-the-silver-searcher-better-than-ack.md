@@ -71,9 +71,12 @@ There's still plenty of stuff I want to add,[\[4\]](#ref_4) but it's good enough
 ---
 <a name="ref_1"> </a>
 1. The decision was made to put all python dependencies into extern/ instead of using pip. A good call, in my opinion.
+
 <a name="ref_2"> </a>
 2. At least not without a bunch of pipes and find and xargs. Yes I know there are aliases but it's annoying to keep those up-to-date.
+
 <a name="ref_3"> </a>
 3. Yes, I know it's bad form to put generated files in revision control. 
+
 <a name="ref_4"> </a>
 4. Ctags support, for one. Also inverted matching, accepting piped input, and basic stuff like retrying a search with fewer ignores and no case-sensitivity.
