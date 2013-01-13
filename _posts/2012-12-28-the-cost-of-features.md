@@ -13,9 +13,9 @@ Here's a graph showing the weight of some car models over the years:
 
 <div id="car_weight_chart_div" style="width: 100%; height: 500px;"> </div>
 
-This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons.
+Over the past 40 years, these cars have gained weight. The trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons. The Spitfire MkIA weighed 1,953kg empty. [The Mk24 weighed 3,247kg](http://en.wikipedia.org/wiki/Supermarine_Spitfire_variants:_specifications,_performance_and_armament#Dimensions.2C_performance_and_armament).
 
-Is this weight bloat a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther while carrying more passengers and cargo. It's a trade-off: more weight for more features.
+Is this weight increase a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther while carrying more passengers and cargo. It's a trade-off: more weight for more features.
 
 Why am I talking about airframes and cars?
 
@@ -32,7 +32,7 @@ and [Cassandra](http://cassandra.apache.org/):
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
 
-These examples aren't cherry-picked. I ran the numbers on other code bases, but generating graphs for them all wasn't worth the effort.
+These examples aren't cherry-picked. I ran the numbers on other code bases, but these graphs take up a lot of space.
 
 Why do cars, airframes, and software grow? Naively, we should expect some of them to shrink over time.
 
@@ -484,11 +484,25 @@ function drawCharts() {
   nodejs_cloc_data.addColumn("date", "Year");
   nodejs_cloc_data.addColumn("number", "Node.js");
   nodejs_cloc_data.addRows([
+    [new Date("Tue Jan 8 04:27:34 2013 +0100"), 12434],
+    [new Date("Mon Jan 7 18:07:37 2013 -0800"), 12508],
+    [new Date("Sat Jan 5 01:46:59 2013 +0900"), 12467],
+    [new Date("Thu Dec 27 13:03:59 2012 -0800"), 12461],
+    [new Date("Wed Dec 19 09:19:06 2012 -0800"), 12502],
+    [new Date("Tue Dec 18 10:59:07 2012 +0900"), 12502],
+    [new Date("Tue Dec 18 09:56:57 2012 +0100"), 12565],
+    [new Date("Wed Dec 12 21:18:57 2012 -0800"), 12561],
+    [new Date("Mon Dec 10 18:07:23 2012 +0900"), 12549],
+    [new Date("Wed Nov 28 22:09:28 2012 -0800"), 12552],
+    [new Date("Tue Nov 20 17:15:17 2012 +0100"), 12063],
+    [new Date("Sun Nov 4 01:25:06 2012 +0100"), 12009],
     [new Date("Thu Nov 1 01:36:41 2012 +0100"), 11935],
     [new Date("Wed Oct 24 02:42:57 2012 +0200"), 11842],
     [new Date("Tue Oct 23 19:54:22 2012 -0400"), 12062],
     [new Date("Mon Oct 22 00:18:14 2012 +0200"), 12413],
     [new Date("Fri Oct 12 08:57:12 2012 -0700"), 12409],
+    [new Date("Mon Oct 8 19:51:59 2012 -0500"), 12426],
+    [new Date("Sun Oct 7 13:12:21 2012 -0700"), 12552],
     [new Date("Sun Oct 7 11:27:14 2012 -0700"), 12388],
     [new Date("Mon Sep 24 11:18:05 2012 +0300"), 12361],
     [new Date("Wed Sep 19 14:37:08 2012 +0200"), 12351],
