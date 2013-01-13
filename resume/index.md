@@ -18,6 +18,9 @@ I have extensive operational experience with MySQL, Cassandra, and BerkeleyDB. I
 ## Employment History
 ---
 
+Floobits: September 2012 - Present  
+Co-founder
+
 Cloudkick/Rackspace: March 2010 - August 2012  
 Software Engineer
 
