@@ -7,4 +7,5 @@
 <h4><img src="/icons/flickr.ico" alt="" /> <a href="http://www.flickr.com/photos/ggreer/" rel="me">Flickr</a></h4>
 <h4><img src="/icons/google_favicon.png" alt="" /> <a href="http://www.google.com/reader/shared/AngryParsley" rel="me">Google Reader</a></h4>
 <h4><img src="/icons/google_favicon.png" alt="" /> <a href="https://plus.google.com/104249632091829167509/posts" rel="me">Google+</a></h4>
+<h4><img src="/icons/lastfm.png" alt="" /> <a href="http://www.last.fm/user/ggreer" rel="me">Last.fm</a></h4>
 <h4><img src="/icons/twitter.ico" alt="" /> <a href="https://twitter.com/#!/ggreer" rel="me">Twitter</a></h4>
