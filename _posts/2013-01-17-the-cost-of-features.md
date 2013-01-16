@@ -31,11 +31,11 @@ and [Cassandra](http://cassandra.apache.org/):
 
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-These examples aren't cherry-picked. I ran the numbers on other code bases, but showing them all would take up a lot of space and increase the page load time. Software projects get heavier over time. This shouldn't surprise any developers. [Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment) was coined decades ago.
+These examples aren't cherry-picked. I ran the numbers on other code bases, but showing them all would take up a lot of space and increase the page load time. The data is pretty clear: software projects get heavier over time. This shouldn't surprise any developers. [Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment) was coined decades ago.
 
 Why do cars, airframes, and software grow? Naively, we should expect some of them to shrink over time.
 
-I don't know the answer, but I do have hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More code usually means more features. More code can mean better performance through the use of complex cache hierarchies, indexes, and efficient data structures. So we have some good reasons for adding code, but why should we avoid removing it? Several reasons come to mind:
+I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More code usually means more features. More code can mean better performance through the use of complex cache hierarchies, indexes, and efficient data structures. So we have some good reasons for adding code, but why should we avoid removing it? Several reasons come to mind:
 
 * **It can break dependent software.** While the feature on the chopping block may not be popular with users, other popular software might be dependent on it.
 * **Disgruntled users.** Removing a feature used by only 1% of users guarantees a deluge of hate mail. 10,000 users means 100 angry emails. At the same time, it causes the other 99% to wonder if their pet feature is next.
@@ -45,7 +45,7 @@ I don't know the answer, but I do have hypotheses. Engineering involves trade-of
 All of these make removing code a tough bullet to bite.
 
 
-How do we stop software projects from collapsing under the weight of their own code?
+How then do we stop software projects from collapsing under the weight of their own code?
 
 Again, we can look to cars. As a model increases in weight, capabilities, and price, manufacturers often introduce a new low-end model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit.
 
