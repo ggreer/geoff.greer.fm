@@ -1,8 +1,8 @@
 ---
-date: '2012-12-28 05:12:59'
+date: '2013-01-17 05:12:59'
 layout: post
 title: 'The Cost of Features'
-published: true
+published: false
 categories:
 - Computers
 ---
@@ -32,7 +32,9 @@ and [Cassandra](http://cassandra.apache.org/):
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
 
-These examples aren't cherry-picked. I ran the numbers on other code bases, but to show them all would take up a lot of space.
+These examples aren't cherry-picked. I ran the numbers on other code bases, but to show them all would take up a lot of space and increase the page load time.
+
+[Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment)
 
 Why do cars, airframes, and software grow? Naively, we should expect some of them to shrink over time.
 
@@ -43,7 +45,7 @@ I don't know the answer, but I do have hypotheses. Engineering involves trade-of
 * **Removing things isn't fun.** If your code is clean, it's trivial and boring. If your code is ugly, it's a giant pain. Either way, building something new is more enjoyable.
 * **It doesn't impress colleagues.** "I removed some old code" is rarely said with pride in a stand-up. People don't brag about removing features or old code.
 
-All of these make removing code a hard bullet to bite. 
+All of these make removing code a tough bullet to bite.
 
 
 How do we stop software projects from collapsing under the weight of their own code?
