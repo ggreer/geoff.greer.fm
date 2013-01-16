@@ -2,7 +2,7 @@
 date: '2013-01-17 05:12:59'
 layout: post
 title: 'The Cost of Features'
-published: false
+published: true
 categories:
 - Computers
 ---
