@@ -23,7 +23,7 @@ These graphs show [line counts](http://en.wikipedia.org/wiki/Source_lines_of_cod
 
 <div id="httpd_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-[Node.js](http://nodejs.org/):
+[Node.js](http://nodejs.org/) (this one was a bit of an outlier):
 
 <div id="nodejs_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
@@ -31,10 +31,7 @@ and [Cassandra](http://cassandra.apache.org/):
 
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-
-These examples aren't cherry-picked. I ran the numbers on other code bases, but to show them all would take up a lot of space and increase the page load time.
-
-[Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment)
+These examples aren't cherry-picked. I ran the numbers on other code bases, but showing them all would take up a lot of space and increase the page load time. Software projects get heavier over time. This shouldn't surprise any developers. [Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment) was coined decades ago.
 
 Why do cars, airframes, and software grow? Naively, we should expect some of them to shrink over time.
 
