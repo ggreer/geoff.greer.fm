@@ -1,5 +1,5 @@
 ---
-date: '2013-01-17 05:12:59'
+date: '2013-01-27 05:12:59'
 layout: post
 title: 'The Cost of Features'
 published: true
@@ -13,7 +13,7 @@ Here's a graph showing the weight of some car models over the years:
 
 <div id="car_weight_chart_div" style="width: 100%; height: 500px;"> </div>
 
-These cars have gained a lot of weight over the past 40 years. The trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons. Even fighter planes gain weight. The Spitfire MkIA weighed 1,953kg empty. Seven years later, [the Mk24 weighed 3,247kg](http://en.wikipedia.org/wiki/Supermarine_Spitfire_variants:_specifications,_performance_and_armament#Dimensions.2C_performance_and_armament).
+These cars have gained a lot of weight over the past 40 years. This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons. Even fighter planes gain weight. The Spitfire MkIA weighed 1,953kg empty. Seven years later, [the Mk24 weighed 3,247kg](http://en.wikipedia.org/wiki/Supermarine_Spitfire_variants:_specifications,_performance_and_armament#Dimensions.2C_performance_and_armament).
 
 Is this weight increase a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther while carrying more passengers and cargo. A heavier Spitfire can carry more armament and fuel for a bigger engine. It's a trade-off: more weight for more features.
 
@@ -31,18 +31,20 @@ and [Cassandra](http://cassandra.apache.org/):
 
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
-These examples aren't cherry-picked. I ran the numbers on other code bases, but showing them all would take up a lot of space and increase the page load time. The data is pretty clear: software projects get heavier over time. This shouldn't surprise any developers. [Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment) was coined decades ago.
+These examples aren't cherry-picked. I ran the numbers on other code bases, but showing them all would take up a lot of space and increase the page load time. The data is pretty clear: software projects get heavier over time. This shouldn't surprise many developers. [Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment) was coined decades ago.
 
-Why do cars, airframes, and software grow? Naively, we should expect some of them to shrink over time.
+But *why* do cars, airframes, and software grow? Naively, we should expect at least some of them to shrink over time.
 
-I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More code usually means more features. More code can mean better performance through the use of complex cache hierarchies, indexes, and efficient data structures. So we have some good reasons for adding code, but why should we avoid removing it? Several reasons come to mind:
+I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More features usually means more code. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software redundant, distributed, and scalable takes boatloads of code. 
+
+So we have some good reasons for adding code, but we can also remove it. Why do we avoid that? Several reasons come to mind:
 
 * **It can break dependent software.** While the feature on the chopping block may not be popular with users, other popular software might be dependent on it.
 * **Disgruntled users.** Removing a feature used by only 1% of users guarantees a deluge of hate mail. 10,000 users means 100 angry emails. At the same time, it causes the other 99% to wonder if their pet feature is next.
 * **Removing things isn't fun.** If your code is clean, it's trivial and boring. If your code is ugly, it's a giant pain. Either way, building something new is more enjoyable.
 * **It doesn't impress colleagues.** "I removed some old code" is rarely said with pride in a stand-up. People don't brag about removing features or old code.
 
-All of these make removing code a tough bullet to bite.
+In short, removing code a tough bullet to bite.
 
 
 How then do we stop software projects from collapsing under the weight of their own code?
