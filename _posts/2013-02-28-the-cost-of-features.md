@@ -1,8 +1,8 @@
 ---
-date: '2013-01-27 05:12:59'
+date: '2013-02-28 05:12:59'
 layout: post
 title: 'The Cost of Features'
-published: true
+published: false
 categories:
 - Computers
 ---
@@ -31,11 +31,12 @@ and [Cassandra](http://cassandra.apache.org/):
 
 <div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
 
+
 These examples aren't cherry-picked. I ran the numbers on other code bases, but showing them all would take up a lot of space and increase the page load time. The data is pretty clear: software projects get heavier over time. This shouldn't surprise many developers. [Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment) was coined decades ago.
 
 But *why* do cars, airframes, and software grow? Naively, we should expect at least some of them to shrink over time.
 
-I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More features usually means more code. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software redundant, distributed, and scalable takes boatloads of code. 
+I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More features usually means more code. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software reliable, distributed, and scalable takes boatloads of code. 
 
 So we have some good reasons for adding code, but we can also remove it. Why do we avoid that? Several reasons come to mind:
 
@@ -44,19 +45,17 @@ So we have some good reasons for adding code, but we can also remove it. Why do 
 * **Removing things isn't fun.** If your code is clean, it's trivial and boring. If your code is ugly, it's a giant pain. Either way, building something new is more enjoyable.
 * **It doesn't impress colleagues.** "I removed some old code" is rarely said with pride in a stand-up. People don't brag about removing features or old code.
 
-In short, removing code a tough bullet to bite.
+In short, removing code a tough bullet to bite. But then how do we stop software projects from collapsing under the weight of their own code? The best answer I can come up with is: You can't. The battle is lost as soon as you type `git init`. Why?
+
+Again, we can look to cars. Car companies have massive budgets for designing cars, but they don't reduce weight. They have a different strategy. As a model increases in weight, capabilities, and price, manufacturers often introduce a new, smaller model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. Volkswagen's Polo filled the role of the old Golf.
+
+A similar process happens to software. As a piece of software becomes more complicated and bloated, newer projects come along to fill the old niche. Firefox replaced Netscape and Internet Explorer. On Debian and Ubuntu, [dash](http://en.wikipedia.org/wiki/Debian_Almquist_shell) replaced [bash](http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29).
 
 
-How then do we stop software projects from collapsing under the weight of their own code?
 
-Again, we can look to cars. As a model increases in weight, capabilities, and price, manufacturers often introduce a new low-end model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit.
+I said before that engineering involves trade-offs: more code for features, performance, and scalability. So what about making the same trade-offs in the opposite direction? Going back to cars: What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's spectacular in its niche.
 
-A similar process happens to software. As a piece of software becomes more complicated and bloated, newer projects come along to fill the old niche.
-
-
-So what about making the same trade-offs in the opposite direction?
-
-Going back to cars: What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's spectacular in its niche.
+There are software projects that follow the same pattern: use modern languages, libraries, and techniques to build a small piece of software that does one thing well. This the [Unix philosophy](http://en.wikipedia.org/wiki/Unix_philosophy#McIlroy:_A_Quarter_Century_of_Unix). Not all Unix programs have followed it, but the ones that have are . 
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
