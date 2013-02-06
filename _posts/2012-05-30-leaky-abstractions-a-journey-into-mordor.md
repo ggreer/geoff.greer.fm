@@ -54,6 +54,6 @@ To summarize: I went from a bug in a program, to a bug in the test suite for tha
 
 As [Douglas Crockford](http://www.crockford.com/) [says](http://www.youtube.com/watch?v=taaEzHI9xyY#t=26m50s):
 
->I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, \"I'm done. This is stupid. I'm going to do something else.\" But not us, 'cause there's something really wrong with us.
+>I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, "I'm done. This is stupid. I'm going to do something else." But not us, 'cause there's something really wrong with us.
 
 I'm surprised I haven't gone insane from dealing with these sorts of bugs. OK, I'll admit I'm a little wacky. I'm surprised I haven't gone *more* insane.
