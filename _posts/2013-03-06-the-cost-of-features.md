@@ -1,8 +1,8 @@
 ---
-date: '2013-02-28 05:12:59'
+date: '2013-03-06 15:37:29'
 layout: post
 title: 'The Cost of Features'
-published: false
+published: true
 categories:
 - Computers
 ---
@@ -13,7 +13,7 @@ Here's a graph showing the weight of some car models over the years:
 
 <div id="car_weight_chart_div" style="width: 100%; height: 500px;"> </div>
 
-These cars have gained a lot of weight over the past 40 years. This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons. Even fighter planes gain weight. The Spitfire MkIA weighed 1,953kg empty. Seven years later, [the Mk24 weighed 3,247kg](http://en.wikipedia.org/wiki/Supermarine_Spitfire_variants:_specifications,_performance_and_armament#Dimensions.2C_performance_and_armament).
+It's taken a while, but these cars have gained a lot of weight. This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons. Even fighter planes gain weight. The Spitfire MkIA weighed 1,953kg empty. Seven years later, [the Mk24 weighed 3,247kg](http://en.wikipedia.org/wiki/Supermarine_Spitfire_variants:_specifications,_performance_and_armament#Dimensions.2C_performance_and_armament).
 
 Is this weight increase a bad thing? Usually not. Designers don't add weight without a reason. Cars are *much* safer than they used to be. They're more comfortable. They have more features: air-conditioning, power steering, automatic transmissions, airbags. Likewise, a modern 737 can fly farther while carrying more passengers and cargo. A heavier Spitfire can carry more armament and fuel for a bigger engine. It's a trade-off: more weight for more features.
 
@@ -36,26 +36,27 @@ These examples aren't cherry-picked. I ran the numbers on other code bases, but 
 
 But *why* do cars, airframes, and software grow? Naively, we should expect at least some of them to shrink over time.
 
-I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More features usually means more code. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software reliable, distributed, and scalable takes boatloads of code. 
+I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. Adding features involves increasing software complexity. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software reliable, distributed, and scalable takes boatloads of code. Until recently, rounded corners on a web page required comical amounts of code.
 
-So we have some good reasons for adding code, but we can also remove it. Why do we avoid that? Several reasons come to mind:
+So we have some good reasons for adding code, but that's not enough to cause software bloat. We can also remove code. Why do we avoid that? Several reasons come to mind:
 
 * **It can break dependent software.** While the feature on the chopping block may not be popular with users, other popular software might be dependent on it.
 * **Disgruntled users.** Removing a feature used by only 1% of users guarantees a deluge of hate mail. 10,000 users means 100 angry emails. At the same time, it causes the other 99% to wonder if their pet feature is next.
 * **Removing things isn't fun.** If your code is clean, it's trivial and boring. If your code is ugly, it's a giant pain. Either way, building something new is more enjoyable.
 * **It doesn't impress colleagues.** "I removed some old code" is rarely said with pride in a stand-up. People don't brag about removing features or old code.
 
-In short, removing code a tough bullet to bite. But then how do we stop software projects from collapsing under the weight of their own code? The best answer I can come up with is: You can't. The battle is lost as soon as you type `git init`. Why?
+So removing code is a tough bullet to bite. But then how do we stop software projects from collapsing under their own weight? The best answer I can come up with is: You can't. The battle is lost as soon as you type `git init`. Why?
 
-Again, we can look to cars. Car companies have massive budgets for designing cars, but they don't reduce weight. They have a different strategy. As a model increases in weight, capabilities, and price, manufacturers often introduce a new, smaller model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. Volkswagen's Polo filled the role of the old Golf.
+Again, we can look to cars. Car companies have massive budgets for designing cars, but they don't reduce weight. They have a different strategy. As a model increases in weight, capabilities, and price, manufacturers often introduce a smaller model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. Volkswagen's Polo filled the role of the old Golf.
 
-A similar process happens to software. As a piece of software becomes more complicated and bloated, newer projects come along to fill the old niche. Firefox replaced Netscape and Internet Explorer. On Debian and Ubuntu, [dash](http://en.wikipedia.org/wiki/Debian_Almquist_shell) replaced [bash](http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29).
-
-
+A similar process happens to software. As a piece of software becomes more complicated and bloated, newer projects come along to fill the old niche. Firefox replaced Netscape and Internet Explorer. On Debian and Ubuntu, [dash](http://en.wikipedia.org/wiki/Debian_Almquist_shell) replaced [bash](http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29). Nginx, Node.js, and others have encroached on what used to be the territory of httpd.
 
 I said before that engineering involves trade-offs: more code for features, performance, and scalability. So what about making the same trade-offs in the opposite direction? Going back to cars: What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's spectacular in its niche.
 
-There are software projects that follow the same pattern: use modern languages, libraries, and techniques to build a small piece of software that does one thing well. This the [Unix philosophy](http://en.wikipedia.org/wiki/Unix_philosophy#McIlroy:_A_Quarter_Century_of_Unix). Not all Unix programs have followed it, but the ones that have are . 
+There are software projects that follow the same pattern: use modern languages, libraries, and techniques to build a small piece of software that does one thing well. This is the [Unix philosophy](http://en.wikipedia.org/wiki/Unix_philosophy#McIlroy:_A_Quarter_Century_of_Unix). Not all Unix programs have followed it, but the ones that have are .
+
+This whole post is not even close to scientific. Not even worthy of being called "a brief summary," it's more of a drive-by shooting of the topic. I would delve into this topic more, but I'm rather busy with <a href="https://floobits.com/">work</a> these days. On the bright side, never before have I been this productive, as <a href="/images/Screen%20Shot%202013-03-05%20at%205.26.38%20PM.png">my GitHub stats show</a>.
+
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
