@@ -1,15 +1,20 @@
 <script type="text/javascript">
+var _gaq = _gaq || [];
 var main_css = document.getElementById("main-css");
 var code_css = document.getElementById("code-css");
-var light_style = ["", "/styles/main.css", "/styles/solarized-light.css"];
-var dark_style = ["#000", "/styles/main-inverted.css", "/styles/solarized-dark.css"];
+var styles = {
+  light: ["Light", "", "/styles/main.css", "/styles/solarized-light.css"],
+  dark: ["Dark", "#000", "/styles/main-inverted.css", "/styles/solarized-dark.css"]
+};
 function set_style(style) {
   var date = new Date();
-  document.body.style.background = style[0];
-  main_css.attributes.href.value = style[1];
-  code_css.attributes.href.value = style[2];
+  _gaq.push(["_setCustomVar", 1, "Color", style[0], 1]);
+  document.body.style.background = style[1];
+  main_css.attributes.href.value = style[2];
+  code_css.attributes.href.value = style[3];
   date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
   document.cookie = "main-css=" + main_css.attributes.href.value + "; expires=" + date.toGMTString() + "; path=/";
+  return style;
 }
 function set_colors() {
   document.cookie.split("; ").forEach(function (cookie) {
@@ -26,7 +31,8 @@ function set_colors() {
   }
 }
 function invert_colors() {
-  main_css.attributes.href.value === "/styles/main.css" ? set_style(dark_style) : set_style(light_style);
+  var style = main_css.attributes.href.value === "/styles/main.css" ? set_style(styles.dark) : set_style(styles.light);
+  _gaq.push(["_trackEvent", "Color", "Set style", style[0]]);
 }
 set_colors();
 </script>
