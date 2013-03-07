@@ -36,9 +36,9 @@ These examples aren't cherry-picked. I ran the numbers on other code bases, but 
 
 But *why* do cars, airframes, and software grow? Naively, we should expect at least some of them to shrink over time.
 
-I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. Adding features involves increasing software complexity. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software reliable, distributed, and scalable takes boatloads of code. Until recently, rounded corners on a web page required comical amounts of code.
+I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More features means more code. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software reliable, distributed, and scalable takes boatloads of code. Until recently, rounded corners on a web page required comical amounts of code.
 
-So we have some good reasons for adding code, but that's not enough to cause software bloat. We can also remove code. Why do we avoid that? Several reasons come to mind:
+So we have some good reasons for adding code, but that's not enough to cause software bloat. We could prevent bloat by removing code about as much code as we add over time. Why don't we do that? Several reasons come to mind:
 
 * **It can break dependent software.** While the feature on the chopping block may not be popular with users, other popular software might be dependent on it.
 * **Disgruntled users.** Removing a feature used by only 1% of users guarantees a deluge of hate mail. 10,000 users means 100 angry emails. At the same time, it causes the other 99% to wonder if their pet feature is next.
@@ -47,15 +47,15 @@ So we have some good reasons for adding code, but that's not enough to cause sof
 
 So removing code is a tough bullet to bite. But then how do we stop software projects from collapsing under their own weight? The best answer I can come up with is: You can't. The battle is lost as soon as you type `git init`. Why?
 
-Again, we can look to cars. Car companies have massive budgets for designing cars, but they don't reduce weight. They have a different strategy. As a model increases in weight, capabilities, and price, manufacturers often introduce a smaller model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. Volkswagen's Polo filled the role of the old Golf.
+Again, we can look to cars. Car companies have massive budgets for designing cars, but they don't reduce weight. They have a different strategy: as a model increases in weight, capabilities, and price, manufacturers introduce a smaller model. The Honda Civic used to be Honda's smallest car in the US market. A decade ago, they introduced the Fit. Volkswagen's Polo filled the role of the old Golf.
 
-A similar process happens to software. As a piece of software becomes more complicated and bloated, newer projects come along to fill the old niche. Firefox replaced Netscape and Internet Explorer. On Debian and Ubuntu, [dash](http://en.wikipedia.org/wiki/Debian_Almquist_shell) replaced [bash](http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29). Nginx, Node.js, and others have encroached on what used to be the territory of httpd.
+A similar process happens to software. As a piece of software becomes more complicated and bloated, newer projects come along to fill the old niche. Firefox replaced Netscape and Internet Explorer. On Debian and Ubuntu, [dash](http://en.wikipedia.org/wiki/Debian_Almquist_shell) replaced [bash](http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29). Nginx, Node.js, and others have encroached on the territory of httpd.
 
 I said before that engineering involves trade-offs: more code for features, performance, and scalability. So what about making the same trade-offs in the opposite direction? Going back to cars: What do you get if you remove features to save weight? Even with modern emissions and safety requirements, it's possible to build a car with the weight of a compact car from 30 years ago. The result is the [Lotus Elise](http://en.wikipedia.org/wiki/Lotus_Elise). It's not a car for everyone, but it's spectacular in its niche.
 
-There are software projects that follow the same pattern: use modern languages, libraries, and techniques to build a small piece of software that does one thing well. This is the [Unix philosophy](http://en.wikipedia.org/wiki/Unix_philosophy#McIlroy:_A_Quarter_Century_of_Unix). Not all Unix programs have followed it, but the ones that have are .
+Are there are software projects that follow the same pattern? Do people use modern languages, libraries, and techniques to build a small piece of software that does one thing well? This is the [Unix philosophy](http://en.wikipedia.org/wiki/Unix_philosophy#McIlroy:_A_Quarter_Century_of_Unix), but when I try to think of examples, not much comes to mind. Even [Ag](https://github.com/ggreer/the_silver_searcher) has grown to incorporate more features (although this hasn't made it slower).
 
-This whole post is not even close to scientific. Not even worthy of being called "a brief summary," it's more of a drive-by shooting of the topic. I would delve into this topic more, but I'm rather busy with <a href="https://floobits.com/">work</a> these days. On the bright side, never before have I been this productive, as <a href="/images/Screen%20Shot%202013-03-05%20at%205.26.38%20PM.png">my GitHub stats show</a>.
+This post is pretty long and I don't have any overarching conclusion to wrap-up with, so I'll just end it here. I know it's bad form, but this isn't getting published in The New Yorker. Just a reminder: This rambling is not even close to scientific. I would delve into the topic more, but I'm rather busy with <a href="https://floobits.com/">work</a> these days. On the bright side, never before have I been this productive, as <a href="/images/Screen%20Shot%202013-03-05%20at%205.26.38%20PM.png">my GitHub stats show</a>.
 
 
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
