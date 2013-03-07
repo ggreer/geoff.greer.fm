@@ -1,5 +1,7 @@
 auto: true
 markdown: rdiscount
+rdiscount:
+  extensions: [smart]
 paginate: 10
 permalink: /:year/:month/:day/:title/
 pygments: true
