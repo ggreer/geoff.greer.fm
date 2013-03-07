@@ -46,7 +46,7 @@ function binary_search(min, max, depth) {
 binary_search(0, 1, 0);
 </script>
 
-Inspect the top box (the div with id "stupid") with Web Inspector or Firebug or whatever. You'll notice the padding is close to zero, but not quite. Still, the div behaves as if its padding is zero.
+Inspect the top box (the div with id "stupid") using Web Inspector or Firebug or whatever. You'll notice the padding is close to zero, but not quite. Still, the div behaves as if its padding is zero.
 
-The exact number depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The details are explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel. I have no idea why. Safari doesn't care about anything less than 0.99 pixels. 
+The exact padding depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The reason for this is explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel, but I have no idea why. Safari doesn't care about anything less than 0.99 pixels.
 
