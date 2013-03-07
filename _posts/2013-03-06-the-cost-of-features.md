@@ -38,7 +38,7 @@ But *why* do cars, airframes, and software grow? Naively, we should expect at le
 
 I don't know the answer, but I do have some hypotheses. Engineering involves trade-offs. All else equal, more code means more bugs. Of course, all else isn't equal. More features means more code. Improving performance through the use of complex cache hierarchies, indexes, and efficient data structures requires more code. Making software reliable, distributed, and scalable takes boatloads of code. Until recently, rounded corners on a web page required comical amounts of code.
 
-So we have some good reasons for adding code, but that's not enough to cause software bloat. We could prevent bloat by removing code about as much code as we add over time. Why don't we do that? Several reasons come to mind:
+So we have some good reasons for adding code, but that's not enough to cause software bloat. We could prevent bloat by removing about as much code as we add over time. Why don't we do that? Several reasons come to mind:
 
 * **It can break dependent software.** While the feature on the chopping block may not be popular with users, other popular software might be dependent on it.
 * **Disgruntled users.** Removing a feature used by only 1% of users guarantees a deluge of hate mail. 10,000 users means 100 angry emails. At the same time, it causes the other 99% to wonder if their pet feature is next.
