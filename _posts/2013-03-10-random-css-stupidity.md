@@ -1,7 +1,7 @@
 ---
 date: '2013-03-10 00:58:29'
 layout: post
-status: publish
+published: true
 title: Random CSS Stupidity
 categories:
 - Computers
