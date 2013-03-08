@@ -7,7 +7,7 @@ categories:
 - Computers
 ---
 
-A few days ago, I noticed [Bjorn](http://bjorn.tipling.com/) complaining about some weird CSS behavior. If you have a child element with margins and you set the parent's padding to zero, the child's margins will collapse. This is apparently part of the CSS spec. I thought it unlikely that browsers would implement arbitrary-precision decimal arithmetic for styling calculations, so I was curious to see how close I could set the padding to zero before browsers rounded down.
+A few days ago, [Bjorn](http://bjorn.tipling.com/) showed me some weird CSS behavior: if you have a child element with margins and you set the parent's padding to zero, the child's margins will collapse. This is apparently part of the CSS spec. I thought it unlikely that browsers would implement arbitrary-precision decimal arithmetic for styling calculations, so I was curious to see how close I could set the padding to zero before browsers rounded down.
 
 Assuming you have JavaScript enabled, you'll know the answer for your own browser below.
 
@@ -31,7 +31,7 @@ var elem = document.getElementById("stupid");
 var initial_height = elem.offsetHeight;
 function binary_search(min, max, depth) {
   if (depth > 100) {
-    document.getElementById("result").innerHTML = "Your browser’s pixel precision is " + max.toFixed(8) + " pixels or 1/" +  Math.round(1/max) + " of a pixel";
+    document.getElementById("result").innerHTML = "Your browser’s pixel precision is " + max.toFixed(8) + " pixels or 1/" +  Math.round(1/max) + " of a pixel.";
     elem.style.padding = min + "px 10px";
     return true;
   }
@@ -46,7 +46,8 @@ function binary_search(min, max, depth) {
 binary_search(0, 1, 0);
 </script>
 
-Inspect the top box (the div with id "stupid") using Web Inspector or Firebug or whatever. You'll notice the padding is close to zero, but not quite. Still, the div behaves as if its padding is zero.
+Inspect the top green box (the div with id "stupid") using Web Inspector or Firebug or whatever. You'll notice the padding is close to zero, but not quite. Still, the div behaves as if its padding is zero.
 
-The exact padding depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The reason for this is explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel, but I have no idea why. Safari doesn't care about anything less than 0.99 pixels.
+The exact padding depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The reason for this is explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel, but I have no idea why. Safari doesn't care about anything less than 0.99 pixels. This seems fitting for a browser made by Apple.
 
+It shouldn't need mentioning, but do **not** use this for browser detection. Browser detection is bad, but there are much more reliable ways to do it.
