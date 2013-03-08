@@ -15,7 +15,7 @@ Assuming you have JavaScript enabled, you'll know the answer for your own browse
   <div style="outline: 1px solid green; padding: 0px 10px;" id="stupid">
     <div style="outline: 1px solid brown; margin: 10px 0px;">
       I am a red div with <code>margin: 10px 0px;</code><br />
-      My parent div is green. It has <code>padding: <span id="padding">1px 10px</span>;</code>
+      My parent div is green. It has <code>padding: <span id="padding">0px 10px</span>;</code>
     </div>
   </div>
   <div style="outline: 1px solid green; padding: 1px 10px;">
@@ -25,7 +25,7 @@ Assuming you have JavaScript enabled, you'll know the answer for your own browse
     </div>
   </div>
   <div id="result" style="padding: 1em;">
-      JS hasn't run yet?
+    JS hasn't run yet. Do you have JavaScript disabled? <code>:(</code>
   </div>
 </div>
 <script type="text/javascript">
