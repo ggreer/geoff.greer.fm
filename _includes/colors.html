@@ -21,13 +21,13 @@ function set_colors() {
     var key = cookie.split("=")[0];
     var value = cookie.split("=")[1];
     if (key === "main-css" && value === "/styles/main-inverted.css") {
-      set_style(dark_style);
+      set_style(styles.dark);
     }
   });
   if (window.location.hash.slice(1) === "dark") {
-    set_style(dark_style);
+    set_style(styles.dark);
   } else if (window.location.hash.slice(1) === "light") {
-    set_style(light_style);
+    set_style(styles.light);
   }
 }
 function invert_colors() {
