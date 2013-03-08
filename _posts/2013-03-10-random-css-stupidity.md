@@ -11,15 +11,17 @@ A few days ago, [Bjorn](http://bjorn.tipling.com/) showed me some weird CSS beha
 
 Assuming you have JavaScript enabled, you'll know the answer for your own browser below.
 
-<div style="width: 35em; margin: 0 auto;">
+<div style="width: 37em; margin: 0 auto; font-size: 90%; line-height: 120%;">
   <div style="outline: 1px solid green; padding: 0px 10px;" id="stupid">
     <div style="outline: 1px solid brown; margin: 10px 0px;">
-      Here is some example text.
+      I am a red div with <code>margin: 10px 0px;</code><br />
+      My parent div is green. It has <code>padding: <span id="padding">1px 10px</span>;</code>
     </div>
   </div>
   <div style="outline: 1px solid green; padding: 1px 10px;">
     <div style="outline: 1px solid brown; margin: 10px 0px;">
-      Here is some example text.
+      I am a red div with <code>margin: 10px 0px;</code><br />
+      My parent div is green. It has <code>padding: 1px 10px;</code>
     </div>
   </div>
   <div id="result" style="padding: 1em;">
@@ -33,6 +35,7 @@ function binary_search(min, max, depth) {
   if (depth > 100) {
     document.getElementById("result").innerHTML = "Your browser’s pixel precision is " + max.toFixed(8) + " pixels or 1/" +  Math.round(1/max) + " of a pixel.";
     elem.style.padding = min + "px 10px";
+    document.getElementById("padding").innerHTML = min + "px 10px";
     return true;
   }
   var mid = (min + max) / 2;
@@ -50,4 +53,4 @@ Inspect the top green box (the div with id "stupid") using Web Inspector or Fire
 
 The exact padding depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The reason for this is explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel, but I have no idea why. Safari doesn't care about anything less than 0.99 pixels. This seems fitting for a browser made by Apple.
 
-It shouldn't need mentioning, but do **not** use this for browser detection. Browser detection is bad, but there are much more reliable ways to do it.
+It shouldn't need mentioning, but do **not** use this for browser detection. Browser detection is bad, but there are many better ways to do it.
