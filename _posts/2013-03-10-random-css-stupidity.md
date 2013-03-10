@@ -12,19 +12,19 @@ A few days ago, [Bjorn](http://bjorn.tipling.com/) showed me some weird CSS beha
 Assuming you have JavaScript enabled, you'll know the answer for your own browser below.
 
 <div style="width: 37em; margin: 0 auto; font-size: 90%; line-height: 120%;">
-  <div style="outline: 1px solid green; padding: 0px 10px;" id="collapsed">
-    <div style="outline: 1px solid brown; margin: 10px 0px;">
-      I am a red div with <code>margin: 10px 0px;</code><br />
-      My parent div is green. It has <code>padding: <span id="c_padding">0px 10px</span>;</code>
+  <div style="outline: 2px solid #0af; padding: 0px 10px;" id="collapsed">
+    <div style="outline: 2px solid orange; margin: 10px 0px;">
+      I am an orange div with <code>margin: 10px 0px;</code><br />
+      My parent div is blue. It has <code>padding: <span id="c_padding">0px 10px</span>;</code>
     </div>
   </div>
-  <div style="outline: 1px solid green; padding: 1px 10px;" id="uncollapsed">
-    <div style="outline: 1px solid brown; margin: 10px 0px;">
-      I am a red div with <code>margin: 10px 0px;</code><br />
-      My parent div is green. It has <code>padding: <span id="u_padding">1px 10px</span>;</code>
+  <div style="outline: 2px solid #0af; padding: 1px 10px;" id="uncollapsed">
+    <div style="outline: 2px solid orange; margin: 10px 0px;">
+      I am an orange div with <code>margin: 10px 0px;</code><br />
+      My parent div is blue. It has <code>padding: <span id="u_padding">1px 10px</span>;</code>
     </div>
   </div>
-  <div id="result" style="padding: 1em;">
+  <div id="result" style="padding: 1em 0.5em 0 0.5em;">
     JS hasn't run yet. Do you have JavaScript disabled? <code>:(</code>
   </div>
 </div>
@@ -37,6 +37,7 @@ function binary_search(min, max, depth) {
     document.getElementById("result").innerHTML = "Your browser’s pixel precision is " + max.toFixed(8) + " pixels or 1/" +  Math.round(1/max) + " of a pixel.";
     ce.style.padding = min + "px 10px";
     document.getElementById("c_padding").innerHTML = min + "px 10px";
+    ue.style.padding = max + "px 10px";
     document.getElementById("u_padding").innerHTML = max + "px 10px";
     return true;
   }
@@ -51,8 +52,8 @@ function binary_search(min, max, depth) {
 binary_search(0, 1, 0);
 </script>
 
-Use Web Inspector or Firebug or whatever to verify my claims. You'll notice the top green box's padding is close to zero, but not quite. The bottom green box's padding is slightly larger, putting it over the threshold and not collapsing the child's margins.
+Use Web Inspector or Firebug or whatever to verify my claims. You'll notice the top blue box's padding is close to zero, but not quite. The bottom box's padding is slightly larger, putting it over the threshold and not collapsing the child's margins.
 
-The exact padding depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The reason for this is explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel, but I have no idea why. Safari doesn't care about anything less than 0.99 pixels. This seems fitting for a browser made by Apple.
+The exact padding depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The reason for this is explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel, but I have no idea why. Safari doesn't care about anything less than 0.99 pixels. This seems fitting for a browser made by Apple. Surprisingly, Internet Explorer 8's resolution is 1/100th of a pixel.
 
-It shouldn't need mentioning, but do **not** use this for browser detection. Browser detection is bad, but there are many better ways to do it.
+It shouldn't need mentioning, but do **not** use this for browser detection. [Browser detection is bad](http://www.quirksmode.org/js/support.html), but if you're going to do it, [use a more reliable method](http://www.quirksmode.org/js/detect.html).
