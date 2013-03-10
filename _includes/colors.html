@@ -17,13 +17,15 @@ function set_style(style) {
   return style;
 }
 function set_colors() {
-  document.cookie.split("; ").forEach(function (cookie) {
-    var key = cookie.split("=")[0];
-    var value = cookie.split("=")[1];
+  var i, cookies, key, value;
+  cookies = document.cookie.split("; ");
+  for (i = 0; i < cookies.length; i++) {
+    key = cookies[i].split("=")[0];
+    value = cookies[i].split("=")[1];
     if (key === "main-css" && value === "/styles/main-inverted.css") {
       set_style(styles.dark);
     }
-  });
+  }
   if (window.location.hash.slice(1) === "dark") {
     set_style(styles.dark);
   } else if (window.location.hash.slice(1) === "light") {
