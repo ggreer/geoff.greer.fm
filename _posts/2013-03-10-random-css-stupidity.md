@@ -12,16 +12,16 @@ A few days ago, [Bjorn](http://bjorn.tipling.com/) showed me some weird CSS beha
 Assuming you have JavaScript enabled, you'll know the answer for your own browser below.
 
 <div style="width: 37em; margin: 0 auto; font-size: 90%; line-height: 120%;">
-  <div style="outline: 1px solid green; padding: 0px 10px;" id="stupid">
+  <div style="outline: 1px solid green; padding: 0px 10px;" id="collapsed">
     <div style="outline: 1px solid brown; margin: 10px 0px;">
       I am a red div with <code>margin: 10px 0px;</code><br />
-      My parent div is green. It has <code>padding: <span id="padding">0px 10px</span>;</code>
+      My parent div is green. It has <code>padding: <span id="c_padding">0px 10px</span>;</code>
     </div>
   </div>
-  <div style="outline: 1px solid green; padding: 1px 10px;">
+  <div style="outline: 1px solid green; padding: 1px 10px;" id="uncollapsed">
     <div style="outline: 1px solid brown; margin: 10px 0px;">
       I am a red div with <code>margin: 10px 0px;</code><br />
-      My parent div is green. It has <code>padding: 1px 10px;</code>
+      My parent div is green. It has <code>padding: <span id="u_padding">1px 10px</span>;</code>
     </div>
   </div>
   <div id="result" style="padding: 1em;">
@@ -29,18 +29,20 @@ Assuming you have JavaScript enabled, you'll know the answer for your own browse
   </div>
 </div>
 <script type="text/javascript">
-var elem = document.getElementById("stupid");
-var initial_height = elem.offsetHeight;
+var ce = document.getElementById("collapsed");
+var ue = document.getElementById("uncollapsed");
+var initial_height = ce.offsetHeight;
 function binary_search(min, max, depth) {
   if (depth > 100) {
     document.getElementById("result").innerHTML = "Your browser’s pixel precision is " + max.toFixed(8) + " pixels or 1/" +  Math.round(1/max) + " of a pixel.";
-    elem.style.padding = min + "px 10px";
-    document.getElementById("padding").innerHTML = min + "px 10px";
+    ce.style.padding = min + "px 10px";
+    document.getElementById("c_padding").innerHTML = min + "px 10px";
+    document.getElementById("u_padding").innerHTML = max + "px 10px";
     return true;
   }
   var mid = (min + max) / 2;
-  elem.style.padding = mid + "px 10px";
-  if (elem.offsetHeight > initial_height) {
+  ce.style.padding = mid + "px 10px";
+  if (ce.offsetHeight > initial_height) {
     return binary_search(min, mid, depth + 1);
   } else {
     return binary_search(mid, max, depth + 1);
@@ -49,7 +51,7 @@ function binary_search(min, max, depth) {
 binary_search(0, 1, 0);
 </script>
 
-Inspect the top green box (the div with id "stupid") using Web Inspector or Firebug or whatever. You'll notice the padding is close to zero, but not quite. Still, the div behaves as if its padding is zero.
+Use Web Inspector or Firebug or whatever to verify my claims. You'll notice the top green box's padding is close to zero, but not quite. The bottom green box's padding is slightly larger, putting it over the threshold and not collapsing the child's margins.
 
 The exact padding depends on your browser. Chrome's [Planck length](http://en.wikipedia.org/wiki/Planck_length) is 1/64th of a pixel. The reason for this is explained on [Webkit's LayoutUnit page](http://trac.webkit.org/wiki/LayoutUnit). Firefox uses about 1/120th of a pixel, but I have no idea why. Safari doesn't care about anything less than 0.99 pixels. This seems fitting for a browser made by Apple.
 
