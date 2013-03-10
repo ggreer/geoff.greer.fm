@@ -1,5 +1,5 @@
 ---
-date: '2013-03-10 00:58:29'
+date: '2013-03-10 03:58:29'
 layout: post
 published: true
 title: Random CSS Stupidity
