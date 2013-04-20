@@ -3,13 +3,14 @@
     font-weight: lighter;
 }
 
+@max_width: 37em;
 @min_width: 27em;
 @body_margin: 10px;
 
 body {
     background: @body_background;
     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", georgia, Garamond, times, serif;
-    font-size: 117%;
+    font-size: 121%;
     color: @body_color;
     margin: @body_margin;
     text-rendering: optimizeLegibility;
@@ -43,7 +44,7 @@ hr {
 
 #wrapper {
     margin: 0 auto;
-    max-width: 40em;
+    max-width: @max_width;
     min-width: @min_width;
 }
 
@@ -74,7 +75,7 @@ hr {
 #header {
     .header-font;
     text-align: center;
-    font-size: 125%;
+    font-size: 120%;
     ul {
         display: inline;
         list-style: none;
@@ -110,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 .post {
-    line-height: 150%;
+    line-height: 145%;
     img { max-width: 100%; }
     a, a:link { text-decoration: underline; }
 }
