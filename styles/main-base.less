@@ -24,11 +24,11 @@ hr {
     height: 1px;
     background-color: @body_color;
     border: 0;
+    clear: both;
 }
 
 // Nav thingy at the bottom of posts.
 .nav {
-    height: 3em;
 }
 .nav(@direction) {
     float: @direction;
@@ -36,6 +36,7 @@ hr {
     text-align: center;
     max-width: 40%;
     .header-font;
+    padding-bottom: 0.67em;
 }
 .nav-left { .nav(left); }
 .nav-right { .nav(right); }
