@@ -144,8 +144,17 @@ code {
     padding: 2em 0;
     cursor: pointer;
     text-align: center;
+    opacity: 0.2;
+    &:hover {
+      text-decoration: underline;
+      opacity: 1.0;
+    }
+    span {
+      color: @body_background;
+      background-color: @body_color;
+      padding: 0.5em;
+    }
 }
-#beast-mode:hover { text-decoration: underline; }
 
 .image-border { left: -4em; border: 2em #111 solid; }
 
