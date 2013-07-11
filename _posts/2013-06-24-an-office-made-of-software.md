@@ -2,7 +2,7 @@
 date: '2013-06-24 20:52:01'
 layout: post
 slug: an-office-made-of-software
-published: true
+published: false
 title: An Office Made of Software
 categories:
 ---
