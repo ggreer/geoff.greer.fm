@@ -8,7 +8,7 @@ Here are some things I've made. See [GitHub](https://github.com/ggreer) for more
 ## [Floobits](https://floobits.com/)
 Like [Etherpad](http://en.wikipedia.org/wiki/Etherpad), but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration platform." (Excuse me while I wash my mouth out with soap.) It's not ready for general use yet, but I promise it will be super-cool in the near future. Most of the code I write these days is under the [Floobits GitHub organization](https://github.com/Floobits).
 #### Related posts
-{% for post in site.categories.Floobits %}
+{% for post in site.categories.floobits %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
