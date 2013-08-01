@@ -31,3 +31,5 @@ Although I've been working on this for over a month, I never thought of a good n
 So if you were wondering what I've been up to, now you know. I've also applied to [Y Combinator](http://ycombinator.com/)'s winter 2013 batch. I doubt I'll be accepted, but it's worth a shot.
 
 Wish me luck!
+
+Update: [It's taken a while, but things are coming together](/2013/08/01/floobits-update-10-months-later/).
