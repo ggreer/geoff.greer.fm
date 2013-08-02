@@ -192,8 +192,8 @@
 <div id="container">
   <h1>404 NOT FOUND</h1>
   <p>
-    NOT SURE WHAT A 404 CODE IS? <a href="http://en.wikipedia.org/wiki/HTTP_404">SEE WIKIPEDIA</a>.<br /><br />
-    OR GO TO <a href="/">THE FRONT PAGE</a>.
+    PLEASE <a href="javascript:history.go(-1);">GO BACK</a><br />
+    OR GO TO <a href="/">THE FRONT PAGE</a>
   </p>
 </div>
 
@@ -256,7 +256,7 @@ for (i = 0; i < (height() / 222) + 2; i++) {
     inner_hex.className = "hex_inner";
     text = document.createElement("div");
     text.className = "hex_text";
-    text.innerHTML = "&#x25B2;<br/>WARNING<br/>&#x25BC;";
+    text.innerHTML = "&#x25B2;<br/>NOT FOUND<br/>&#x25BC;";
     inner_hex.appendChild(text);
     small_hex.appendChild(inner_hex);
     col.appendChild(small_hex);
