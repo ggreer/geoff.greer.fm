@@ -9,34 +9,27 @@ categories:
 - Floobits
 ---
 
-[10 months ago, I wrote about starting Floobits](/2012/10/19/cross-editor-real-time-collaboration/). In it, I mentioned that Matt and I applied to [Y Combinator](http://ycombinator.com/). We did not get in.
+10 months ago, [I started working on Floobits](/2012/10/19/cross-editor-real-time-collaboration/). Back then, Matt and I applied to [Y Combinator](http://ycombinator.com/). The result? We didn't even get an interview.
 
 <br />
 ...that time.
 
-We applied again in the spring and got an interview for Y Combinator's summer 2013 batch. This was quite a surprise. I was so confident we wouldn't get an interview that I had booked a week-long vacation to Japan with [Ed](http://edrooth.com/). As I cancelled my hotel reservation and plane ticket, I wondered how crazy my decision was. The interview only lasts 10 minutes, and maybe 1/5th of interviewees get into YC. The [expected value](http://en.wikipedia.org/wiki/Expected_value) calculation vastly favored doing the interview, so I ignored my gut feeling. Still, I planned on getting rejected.
+We applied again in the spring and got an interview for Y Combinator's summer 2013 batch. I did not expect this. In fact I was so confident we *wouldn't* get an interview that I had booked a vacation to Japan with [Ed](http://edrooth.com/). As I cancelled my hotel reservation and plane tickets, I reconsidered on my decision. YC interviews only last 10 minutes, and maybe 20% of interviewees are accepted. After a little more deliberation, I went with my gut. And my gut told me to go with the [expected value](http://en.wikipedia.org/wiki/Expected_value) calculation, which greatly favored doing the interview.
 
-<!-- Matt and I spent a couple of days preparing for the interview. Neither of us are good at selling stuff, so we figured we should have a great demo of Floobits. To make sure there were no hiccups with network access, we connected our laptops with an ethernet cable and ran a local instance of Floobits. It was rather amusing to walk into the interview room with two laptops connected by a wire. -->
+Still, I planned on getting rejected.
 
-<!-- The interview was absurdly fast. We answered questions to varying levels of satisfaction. Our demo went well. We drove back to San Francisco in rush hour traffic and talked about our chances. I put our odds at 50%. I dropped off Matt and managed to return the Zipcar with one minute to spare.
+Matt and I spent a couple of days preparing for the interview. We knew we weren't good at selling stuff, so we focused on having a great demo. To make sure there were no problems with network access, I ran a local instance of Floobits and connected our laptops with an ethernet cable. I felt a little silly walking into the interview room with two laptops connected by a wire. Other candidates were working on all kinds of cool new mobile wireless things. Meanwhile, we were using a copper conductor to demo plugins for text editors that were created a quarter-century ago. A few minutes before the interview, I thought "How did I delude myself into thinking this idea could work?"
 
-As soon as I walked into my apartment, I got a phone call.
+The interview went absurdly quickly. We answered questions to varying levels of satisfaction. Our demo went well. We drove back to San Francisco in rush hour traffic and discussed our chances. I put our odds at 50%.
 
-In order I contacted:
+Right after I walked into my apartment, I got the phone call. We celebrated that evening by going to Zeke's. We started with beer, but the night ended with shots of tequila.
 
-1. Matt
-1. My parents
-1. Friends and former coworkers who knew we had applied to YC. (To coordinate logistics for becoming inebriated.)
--->
+Since then Matt and I have spent almost every day writing code, talking to users, and exercising.
 
-But somehow, we got accepted. That evening we went to Zeke's for beers, which turned into beers and shots of tequila. It was a fun night.
+About a month ago, we turned on billing. In the last two weeks, we started publicizing ourselves. First, we [showed Hacker News](https://news.ycombinator.com/item?id=6064608). The reaction was unexpectedly positive. Our poor Node.js server died under the immense load. This week, [we launched on TechCrunch](http://techcrunch.com/2013/07/30/floobits-debuts-remote-pair-programming-tool-where-you-can-collaborate-in-your-favorite-native-editor/). And of course, [Y Combinator posted about us](http://blog.ycombinator.com/floobits-yc-s13-lets-you-write-code-with-others-directly-in-sublime-text-emacs-vim-pair-programming-done-right). Since the TechCrunch launch, word of mouth has been our main source of growth. Apparently Floobits is useful enough that people tell their friends about it. Some of them even pay us money!
 
-Then Matt and I spent every day writing code, talking to users, and exercising.
+This journey has been satisfying so far, but it hasn't been easy. I'm working like crazy. I have spent 2% of my life in an uninterrupted streak of writing code *every day*. Some people would find such an existence pitiable, but I consider myself incredibly lucky. Lucky to have gotten into Y Combinator. Lucky to have met my co-founder, Matt. Lucky to have friends who give me good advice. Lucky to have been interested in computers at a young age. Lucky to live in a wealthy, stable country.
 
-About a month ago, we turned on billing. In the past two weeks, we started to get our name out there. First, we [showed Hacker News](https://news.ycombinator.com/item?id=6064608). The reaction was unexpectedly positive. Our poor Node.js server died under the immense load. This week, [we launched on TechCrunch](http://techcrunch.com/2013/07/30/floobits-debuts-remote-pair-programming-tool-where-you-can-collaborate-in-your-favorite-native-editor/). And of course, [Y Combinator posted about us](http://blog.ycombinator.com/floobits-yc-s13-lets-you-write-code-with-others-directly-in-sublime-text-emacs-vim-pair-programming-done-right).
-
-I have spent 2% of my life in an uninterrupted streak of writing code every day. And yet, I consider myself incredibly lucky. Lucky to get into Y Combinator. Lucky to have met Matt. Lucky to have friends who give good advice. Lucky I was interested in computers instead of French literature.
-
-Most of all, I'm lucky to have the genes and upbringing that caused me to be a rather intelligent, hard-working person.
+Most of all, I'm lucky to have the genes and upbringing largely responsible for making me who I am today.
 
 In other words, thanks Mom & Dad!
