@@ -5,6 +5,8 @@ slug: an-office-made-of-software
 published: true
 title: An Office Made of Software
 categories:
+- Computers
+- Floobits
 ---
 
 I often think of how crazy offices are. I'm talking about the idea of offices, not the environment in them (although that can be just as crazy). 
@@ -17,12 +19,12 @@ I must digress a little to address this point. Many organizations make incredibl
 
 Most of the time, these decisions aren't even explicit. Of *course* you're going to have an office. How else would people work together? Companies have had offices for centuries. When would it ever make sense to change that?
 
-It's often wise to re-evaluate these implicit decisions, because sometimes they no longer make sense. While offices make sense for many jobs today, there is one specific case where I think they're no longer beneficial: software companies.
+It's often wise to re-evaluate these implicit decisions, because sometimes they no longer make sense. While offices do make sense for many jobs today, there is one specific case where I think they're no longer beneficial: software companies.
 
 What do programmers do all day? They read code. They write code. They read docs. They (hopefully) write docs. They communicate with coworkers through IRC, e-mail, instant messenger, phone calls (*ugh*), group meetings, and face-to-face interactions. 
 
 In short, programmers are either writing code or communicating with each other. At no point are they shaping matter. Communication across the globe can be practically instantaneous, so there's no fundamental reason why software has to be written in a single location. Any disadvantage of remote working is a software problem.
 
-Offices hinder software companies in many ways. They limit companies to nearby talent. Foreigners have to get visas. They force employees to live in areas they would otherwise not want to live. Different office plans can cause problems. An open office plan creates noise and distraction. Giving everyone their own private room is expensive. An in-between solution can breed jealousy and resentment. 
+Offices hinder software companies in many ways. They limit companies to nearby talent. They force employees to live in areas they would otherwise not want to live. Different office plans can cause problems. Foreigners have to get visas. An open office plan creates noise and distraction. Giving everyone their own private room is expensive. An in-between solution can breed jealousy and resentment. 
 
-
+With the right software, remote working can strictly dominate offices. I'm trying to do this at [Floobits](https://floobits.com/). But even if Floobits fails, something like this *will* come along eventually. There are simply too many good reasons to ditch offices.
