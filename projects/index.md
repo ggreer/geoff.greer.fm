@@ -6,7 +6,9 @@ title: Projects
 Here are some things I've made. See [GitHub](https://github.com/ggreer) for more.
 
 ## [Floobits](https://floobits.com/)
-Like [Etherpad](http://en.wikipedia.org/wiki/Etherpad), but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration platform." (Excuse me while I wash my mouth out with soap.) It's not ready for general use yet, but I promise it will be super-cool in the near future. Most of the code I write these days is under the [Floobits GitHub organization](https://github.com/Floobits).
+Like [Etherpad](http://en.wikipedia.org/wiki/Etherpad), but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration platform." (Excuse me while I wash my mouth out with soap.) Basically, it lets developers pair program when they're not in the same room. It's super-cool. My co-founder and I use Floobits to develop Floobits.
+
+Much of the code I write these days is under the [Floobits GitHub organization](https://github.com/Floobits).
 #### Related posts
 {% for post in site.categories.floobits %}
 * [{{ post.title }}]({{ post.url }})
