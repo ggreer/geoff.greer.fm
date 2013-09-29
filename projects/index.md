@@ -16,8 +16,9 @@ Much of the code I write these days is under the [Floobits GitHub organization](
 
 <br />
 
-## [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
+## [The Silver Searcher](/ag/) ([GitHub project](https://github.com/ggreer/the_silver_searcher))
 A tool for searching code. Faster than [Ack](http://betterthangrep.com/). Better than grep.  
+
 #### Related posts
 {% for post in site.categories.the_silver_searcher %}
 * [{{ post.title }}]({{ post.url }})
