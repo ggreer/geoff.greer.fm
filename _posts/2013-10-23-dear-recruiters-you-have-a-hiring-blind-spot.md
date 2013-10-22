@@ -1,5 +1,5 @@
 ---
-date: '2013-10-16 08:29:45'
+date: '2013-10-23 08:29:45'
 layout: post
 slug: dear-recruiters-you-have-a-hiring-blind-spot
 published: true
