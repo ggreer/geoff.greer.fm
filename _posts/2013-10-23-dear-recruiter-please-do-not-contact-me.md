@@ -7,7 +7,7 @@ title: Dear Recruiter, Please Do Not Contact Me
 categories:
 ---
 
-I'm often contacted by recruiters. I feel bad not replying to them. Worse, I know they'll continue their behavior if I don't correct it. Unfortunately, I can't take the time to reply to each one individually. It would take up too much of my time. I wrote this post so that I could link to it when recruiters contact me. If you think this accurately reflects your own views, feel free to do the same. If you are not a recruiter, you may still wish to read it.
+I'm often contacted by recruiters. Unfortunately, I can't take the time to reply to each one individually. Worse, I know they'll continue their behavior if I don't correct it. I wrote this post so that I could link to it when recruiters contact me. If you think this accurately reflects your own views, feel free to do the same.
 
 <hr style="margin-bottom: 4em;"/>
 
