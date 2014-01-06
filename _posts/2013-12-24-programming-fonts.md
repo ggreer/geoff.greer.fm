@@ -8,9 +8,9 @@ categories:
 - Computers
 ---
 
-If you're going to spend a significant fraction of your life using something, it's worth spending more money on it than you might think. Chairs, beds, and [computers]({% post_url 2010-10-30-expensive-computers-are-worth-the-price %}) all fall in this category. 
+If you're going to spend a significant fraction of your life using something, it's worth spending more money on than you might think. Chairs, beds, and [computers]({% post_url 2010-10-30-expensive-computers-are-worth-the-price %}) all fall in this category. 
 
-A similar principle applies when toolsmithing, although with time instead of money. Taking the time to customize your development environment can improve your productivity and reduce frustration. Many developers go hog-wild. They tweak their editors with various plugins and set up [fancy shells](https://github.com/robbyrussell/oh-my-zsh). But one thing developers often overlook is fonts. Typically, developers use the default font for their terminals and editors. Some will choose one from the list of pre-installed fonts. This is a problem, since few fonts are optimized for development.
+A similar principle applies when toolsmithing, although with time instead of money. Taking the time to customize your development environment can improve your productivity and reduce frustration. Many developers go hog-wild. They tweak their editors with [various plugins](https://sublime.wbond.net/browse/popular) and set up [fancy shells](https://github.com/robbyrussell/oh-my-zsh). But one thing developers often overlook is fonts. Typically, developers use the default font for their terminals and editors. Some will choose one from the list of pre-installed fonts. This is a problem, since few fonts are optimized for development.
 
 A font meant for developers should have certain properties:
 
@@ -21,7 +21,7 @@ A font meant for developers should have certain properties:
 1. Centered operators such as `=`, and `*`.
 1. Conspicuous parentheses `()`, brackets `[]`, and braces `{}`. Syntax highlighters reduce the need for this, but not everything has syntax highlighting. It's also nice if these symbols are horizontally centered.
 
-The most useful group of fonts I've found for programming are the Proggy fonts. Sadly, the site hosting these fonts has died. Fortunately, I had backups of most of the fonts. I've listed them below, along with screenshots.
+The most useful group of fonts I've found for programming are the Proggy fonts. Sadly, the site hosting these fonts has died. Fortunately, I had backups. I've listed the fonts below, along with screenshots.
 
 <br />
 
@@ -67,15 +67,13 @@ The most useful group of fonts I've found for programming are the Proggy fonts. 
 <br />
 
 ## All fonts
-[proggy.zip](/fonts/proggy.zip)
+[Proggy.zip](/fonts/proggy.zip)
 
 <br />
 
 <br />
 
-The author of the these fonts is someone named Tristan Grimmer. He was kind enough to release these fonts under the [MIT License](/fonts/License.txt).
-
-I would link to Tristan's site, but he doesn't have an online presence. Still, I'd like to thank him for designing these fonts. I have found them extremely useful.
+The author of the these fonts is Tristan Grimmer. He was kind enough to release his work under the [MIT License](/fonts/License.txt). I would link to Tristan's site, but he doesn't seem to have an online presence. Still, I'd like to thank him for designing these fonts. I have found them extremely useful.
 
 
 Personally, I like [ProggyTiny](/fonts/ProggyTiny.ttf) the most:
