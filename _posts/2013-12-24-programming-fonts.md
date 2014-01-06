@@ -25,7 +25,8 @@ The most useful group of fonts I've found for programming are the Proggy fonts. 
 
 <br />
 
-## Proggy Fonts
+<a id="fonts"></a>
+## Proggy Fonts [#](#fonts)
 
 ### Crisp
 [<img alt="Crisp in Sublime Text" style="max-width: none; width: 320px; height: 240px;" src="/fonts/Crisp.png" />](/fonts/Crisp.png)
