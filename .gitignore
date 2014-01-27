@@ -1,7 +1,6 @@
 *.gz
 *.zip
 .DS_Store
-ag/releases/
 ammocase
 code/evil_wget/
 coolcpu
