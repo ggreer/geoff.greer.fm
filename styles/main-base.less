@@ -142,23 +142,19 @@ code {
   padding-right: 2em;
 }
 
-#beast-mode {
-    font-size: 50%;
+#invert-colors {
     .fixed-font;
-    max-width: 20em;
-    margin: 0 auto;
-    padding: 2em 0;
+    background-color: @body_color;
+    color: @body_background;
     cursor: pointer;
-    text-align: center;
+    font-size: 50%;
+    margin: 0 auto;
+    max-width: 20em;
     opacity: 0.2;
+    padding: 0.2em 0;
+    text-align: center;
     &:hover {
-      text-decoration: underline;
       opacity: 1.0;
-    }
-    span {
-      color: @body_background;
-      background-color: @body_color;
-      padding: 0.5em;
     }
 }
 
