@@ -9,7 +9,7 @@ Geoff Greer
 
 ## Skills
 ---
-I am more than proficient in C and Python. I also know JavaScript, Twisted Python, and some Ruby. In the past I have written C++, Java, PHP, Perl, and Lua.
+I am more than proficient in C, JavaScript, and Python. I also have experience with C++, Java, Lua, Ruby, PHP, Perl, and Twisted Python.
 
 I know Django and Node.js. In the past I have used Rails.
 
@@ -19,7 +19,7 @@ I have extensive operational experience with MySQL, Cassandra, and BerkeleyDB. I
 ---
 
 Floobits: September 2012 - Present  
-Co-founder
+CEO & Co-founder
 
 Cloudkick/Rackspace: March 2010 - August 2012  
 Software Engineer
@@ -35,3 +35,6 @@ Web Developer
 
 Iona College  
 Gonzaga University  
+
+---
+<sub>Note: If you are a recruiter, [please do not contact me]({% post_url 2013-10-23-dear-recruiter-please-do-not-contact-me %}).</sub>
