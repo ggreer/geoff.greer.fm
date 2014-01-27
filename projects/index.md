@@ -16,7 +16,7 @@ Much of the code I write these days is under the [Floobits GitHub organization](
 
 <br />
 
-## [The Silver Searcher](/ag/) ([GitHub project](https://github.com/ggreer/the_silver_searcher))
+## [The Silver Searcher](/ag/) &nbsp;<small>([GitHub project](https://github.com/ggreer/the_silver_searcher))</small>
 A tool for searching code. Faster than [Ack](http://betterthangrep.com/). Better than grep.  
 
 #### Related posts
@@ -26,8 +26,15 @@ A tool for searching code. Faster than [Ack](http://betterthangrep.com/). Better
 
 <br />
 
-## [FSEvents tools](https://github.com/ggreer/fsevents-tools)
+## [FSEvents tools](/fsevents/) &nbsp;<small>([GitHub project](https://github.com/ggreer/fsevents-tools))</small>
 Some command-line tools for working with [OS X's filesystem events](http://en.wikipedia.org/wiki/FSEvents). Similar to [inotify-tools](https://github.com/rvoicilas/inotify-tools).
+
+{% if site.categories.fsevents|size %}
+#### Related posts
+{% endif %}
+{% for post in site.categories.fsevents %}
+* [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
 <br />
 

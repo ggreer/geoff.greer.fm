@@ -14,7 +14,7 @@ Release tarballs are signed with [my public key](/ggreer_gpg_key.asc) (3F0A04B6)
 
     gpg --import ggreer_gpg_key.asc
 
-Then after downloading the tarball and signature, run:
+After downloading the tarball and signature, run:
 
     gpg --verify the_silver_searcher-{{ page.releases|first }}.tar.gz.asc \
                  the_silver_searcher-{{ page.releases|first }}.tar.gz
