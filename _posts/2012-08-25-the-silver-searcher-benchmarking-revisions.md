@@ -43,7 +43,7 @@ done
 
 This script runs three benchmarks on each revision: Case-sensitive string matching, regular expression matching, and case-insensitive string matching. The results surprised me.
 
-<div id="chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="chart_div" class="chart" style="width: 100%; height: 500px;"> </div>
 
 Hover over the lines and annotations for more information about each revision. Zero values are due to incorrect behavior or failed builds. For personal projects like Ag, I don't spend much effort making sure master is always deployable. Tagged releases are another matter, of course.
 

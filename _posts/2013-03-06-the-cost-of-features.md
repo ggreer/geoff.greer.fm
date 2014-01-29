@@ -11,7 +11,7 @@ Fair warning: this is a car analogy.
 
 Here's a graph showing the weight of some car models over the years:
 
-<div id="car_weight_chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="car_weight_chart_div" class="chart" style="width: 100%; height: 500px;"> </div>
 
 It's taken a while, but these cars have gained a lot of weight. This trend doesn't just apply to cars. Boeing's 737-100 first flew in 1968 and weighed 30 tons empty. A modern 737-900 is 44 tons. Even fighter planes gain weight. The Spitfire MkIA weighed 1,953kg empty. Seven years later, [the Mk24 weighed 3,247kg](http://en.wikipedia.org/wiki/Supermarine_Spitfire_variants:_specifications,_performance_and_armament#Dimensions.2C_performance_and_armament).
 
@@ -21,15 +21,15 @@ Why am I talking about airframes and cars?
 
 These graphs show [line counts](http://en.wikipedia.org/wiki/Source_lines_of_code) for some popular open source projects. Here's [httpd](http://httpd.apache.org/):
 
-<div id="httpd_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="httpd_cloc_chart_div" class="chart" style="width: 100%; height: 500px;"> </div>
 
 [Node.js](http://nodejs.org/) (this one was a bit of an outlier):
 
-<div id="nodejs_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="nodejs_cloc_chart_div" class="chart" style="width: 100%; height: 500px;"> </div>
 
 and [Cassandra](http://cassandra.apache.org/):
 
-<div id="cass_cloc_chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="cass_cloc_chart_div" class="chart" style="width: 100%; height: 500px;"> </div>
 
 
 These examples aren't cherry-picked. I ran the numbers on other code bases, but showing them all would take up a lot of space and increase the page load time. The data is pretty clear: software projects get heavier over time. This shouldn't surprise many developers. [Zawinski's Law](http://en.wikipedia.org/wiki/Jamie_Zawinski#Zawinski.27s_law_of_software_envelopment) was coined decades ago.

@@ -40,7 +40,7 @@ Much better, but it was only 0.3 seconds faster than non-threaded Ag. Searching 
 
 So I started tweaking things. Most changes didn't help, but performance was significantly affected by the number of worker threads. I assumed 3-4 workers would be ideal, but I ran benchmarks with up to 32 threads just to make sure. I graphed the results. For comparison: non-threaded Ag takes 2.0 seconds on my MacBook Air and 2.2 seconds on my Ubuntu server.
 
-<div id="chart_div" style="width: 100%; height: 500px;"> </div>
+<div id="chart_div" class="chart" style="width: 100%; height: 500px;"> </div>
 
 There are a couple of takeaways from this graph.
 
