@@ -18,7 +18,8 @@ Because of this, I'd like to suggest that startups have a responsible product su
 * Make it possible for anyone to run a fully-featured instance of the product. This means releasing the source code and documenting how to set-up and run your product. I realize startup code and architectures are seldom clean, but you should work to make set-up reasonably painless.
 * Liberate customers' data. Build export APIs and scripts to consume them.
 
-Pledge to do these things and you'll probably help your own business. If enough companies have pledges, it will raise customers' expectations for acquired startups. Of course none of this would be legally binding[\[1\]](#ref_1), but it's better than no pledge. People don't like to break their promises.
+Pledge to do these things and you'll probably help your own business. If enough companies have pledges, it will raise customers' expectations for acquired startups. Of course none of this would be legally binding,<sup>[\[1\]](#ref_1)</sup> but it's better than no pledge. People don't like to break their promises.
 
-<a name="ref_1"> </a>
-1. I am not a lawyer and this is not legal advice. `:P`
+---
+
+1. <span id="ref_1"></span>I am not a lawyer and this is not legal advice. `:P`

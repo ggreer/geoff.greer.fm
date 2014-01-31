@@ -10,7 +10,7 @@ categories:
 - the_silver_searcher
 ---
 
-A lot of my time spent "writing" code is actually spent reading code. And a decent chunk of my time spent reading code is actually spent searching code. Lately I've started working with a larger codebase.[\[1\]](#ref_1) Both grep and ack take a non-negligible amount of time to search it. Both are slow, but for different reasons. [Grep](http://www.gnu.org/s/grep/) is fast, but doesn't ignore files.[\[2\]](#ref_2) [Ack](http://betterthangrep.com/) is very good at ignoring files, but it's written in Perl instead of C. What I really want is something that's fast _and_ ignores files.
+A lot of my time spent "writing" code is actually spent reading code. And a decent chunk of my time spent reading code is actually spent searching code. Lately I've started working with a larger codebase.<sup>[\[1\]](#ref_1)</sup> Both grep and ack take a non-negligible amount of time to search it. Both are slow, but for different reasons. [Grep](http://www.gnu.org/s/grep/) is fast, but doesn't ignore files.<sup>[\[2\]](#ref_2)</sup> [Ack](http://betterthangrep.com/) is very good at ignoring files, but it's written in Perl instead of C. What I really want is something that's fast _and_ ignores files.
 
 So I built it. I call it [The Silver Searcher](https://github.com/ggreer/the_silver_searcher), or [Ag](http://en.wikipedia.org/wiki/Symbol_(chemical_element)) for short. Ag is like ack, but better. It's fast. It's damn fast. The only thing faster is stuff that builds indicies beforehand, like [Exuberant Ctags](http://ctags.sourceforge.net/).
 
@@ -58,7 +58,7 @@ ggreer@carbon:~/cloudkick/reach% time git grep -i SOLR ~/cloudkick/reach | wc -l
 
 
 
-...except git grep only works in git repos. And it doesn't ignore stuff in the repository like extern or generated files.[\[3\]](#ref_3)
+...except git grep only works in git repos. And it doesn't ignore stuff in the repository like extern or generated files.<sup>[\[3\]](#ref_3)</sup>
 
 The bottom line: Grep's output was the least useful. It dutifully reported matches in .pyc files and other things I don't care about. Ack's results were better and faster than grep. Ag had more results than ack, but **took half as long.** With a couple of clever ignores (like the extern directory), Ag took a mere half-second and gave even more pertinent results.
 
@@ -66,17 +66,11 @@ I can already hear someone saying, "Big deal. It's only a second faster. What do
 
 Since it behaves like ack, Ag can be used by many fancy ack GUI front-ends. This makes searching convenient as well as fast. After I got Ag sorta-working, I forked [AckMate](https://github.com/protocool/AckMate/) so that I could use Ag in [my favorite editor](http://macromates.com/). [My fork](https://github.com/ggreer/AckMate/) bundles both AckMate's Ack and my own Ag. You can switch between them with a simple check box. The tmbundle is on the [downloads page](https://github.com/ggreer/AckMate/downloads). Be warned: it replaces your current AckMate.
 
-There's still plenty of stuff I want to add,[\[4\]](#ref_4) but it's good enough for my own daily use so I figured I should tell others about it. And of course, patches are welcome!
+There's still plenty of stuff I want to add,<sup>[\[4\]](#ref_4)</sup> but it's good enough for my own daily use so I figured I should tell others about it. And of course, patches are welcome!
 
 ---
-<a name="ref_1"> </a>
-1. The decision was made to put all python dependencies into extern/ instead of using pip. A good call, in my opinion.
 
-<a name="ref_2"> </a>
-2. At least not without a bunch of pipes and find and xargs. Yes I know there are aliases but it's annoying to keep those up-to-date.
-
-<a name="ref_3"> </a>
-3. Yes, I know it's bad form to put generated files in revision control. 
-
-<a name="ref_4"> </a>
-4. Ctags support, for one. Also inverted matching, accepting piped input, and basic stuff like retrying a search with fewer ignores and no case-sensitivity.
+1. <span id="ref_1"></span>The decision was made to put all python dependencies into extern/ instead of using pip. A good call, in my opinion.
+2. <span id="ref_2"></span>At least not without a bunch of pipes and find and xargs. Yes I know there are aliases but it's annoying to keep those up-to-date.
+3. <span id="ref_3"></span>Yes, I know it's bad form to put generated files in revision control. 
+4. <span id="ref_4"></span>Ctags support, for one. Also inverted matching, accepting piped input, and basic stuff like retrying a search with fewer ignores and no case-sensitivity.
