@@ -23,12 +23,22 @@ style.appendChild(document.createTextNode("\
 document.head.appendChild(style);
 </script>
 
-Today marks my 365<sup>th</sup> day of consecutive commits.
+Today marks my 365<sup>th</sup> consecutive day of commits.
 
-<div id="github_streak_365"></div>
+<div id="github_streak_365" class="chart"></div>
 
-This isn't as impressive as it might seem at first. It doesn't mean I worked like crazy every day. I did do *some* work every day, but I also took time off to read, exercise, socialize, and just have fun. Writing code is part of my life.
+This isn't as impressive as it might first seem. I did at least *some* work every day, but I also took time off to read, exercise, socialize, and generally have fun. Writing code is part of my life, not all of it.
 
-To those who want to try something similar, I'll try to offer some advice.
+To those who want to try something similar, I offer some advice.
 
-First and most importantly, you have to want to do it. If you don't Notice I didn't say you have to *enjoy* it. There's a difference between liking and wanting.
+First and most importantly, you have to *want* to do it. Without an innate desire, only inhuman willpower could sustain a year-long streak. Notice that I said *want* instead of *like*. There's a difference between [liking and wanting](http://lesswrong.com/lw/6kx/wanting_vs_liking_revisited/). I rarely enjoy writing code, but I find myself compelled to do it.<sup>[\[1\]](#ref_1)</sup> If you like doing this stuff, more power to you.
+
+Make it a habit.
+
+Second, brag about your streak.
+
+http://paulgraham.com/identity.html
+
+---
+
+1. <span id="ref_1"></span>This has been the case for as long as I can remember. When I was 12, I spent two days trying to fix a bug in a CS121 assignment. I was almost in tears by the end of it. Finally, I asked my dad for help. He saw the `if (a = b)` immediately. A modern compiler would warn about an assignment in a conditional, but I was writing this in 1998 on an HP-UX machine.
