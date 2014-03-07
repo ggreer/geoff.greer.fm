@@ -2,7 +2,7 @@
 date: '2014-01-06 10:38:10'
 layout: post
 slug: 365-days-of-github
-published: false
+published: true
 title: 365 Days of GitHub
 categories:
 - Computers
@@ -35,9 +35,8 @@ First and most importantly, you have to *want* to do it. Without an innate desir
 
 Make it a habit.
 
-Second, brag about your streak.
+Second, brag about your streak. While it's usually good adice to [keep your identity small](http://paulgraham.com/identity.html), identity can sometimes work for you. If you view yourself as a prodigious committer, you'll be more motivated to continue your streak.
 
-http://paulgraham.com/identity.html
 
 ---
 
