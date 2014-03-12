@@ -37,10 +37,9 @@ When you're starting off, it's easy to forget and miss a day. A simple alarm or 
 
 While it's usually a good idea to [keep your identity small](http://paulgraham.com/identity.html), identity psychology can occasionally work *for* you. If you view yourself as a prodigious committer, you'll be more motivated to continue your streak.
 
-It can also be helpful to brag about your streak<sup>[\[2\]](#ref_2)</sup>. You'll be motivated to continue the streak simply to avoid future embarrassment by your peers.
+It can also be helpful to brag about your streak. You'll be motivated to continue the streak simply to avoid future embarrassment by your peers.<sup>[\[2\]](#ref_2)</sup>
 
 I know I'll break the streak eventually, but it's fun to see how long I can go. If you're unsure you want to try something like this, I recommend giving it a shot. GitHub has made it extremely easy to get into the habit of being productive every day.
-
 
 ---
 
