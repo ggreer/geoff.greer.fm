@@ -8,8 +8,8 @@ fi
 POST_DATE=`date +%Y-%m-%d`
 POST_TIME=`date +%H:%M:%S`
 
-# Replace spaces with dashes, convert to lower case
-TITLE=`echo "$@" | sed -E 's/ /-/g' | tr '[A-Z]' '[a-z]'`
+# Replace spaces with dashes. Remove all punctuation. Convert to lower case.
+TITLE=`echo "$@" | sed -E 's/ +/-/g' | sed -E 's/[^[:alnum:]\-]//g' | tr '[A-Z]' '[a-z]'`
 
 POST_DIR=./_posts
 
@@ -36,4 +36,4 @@ categories:
 #create file, print utc date & local time
 #open it in textmate
 
-mate $POST_FILE
+$EDITOR $POST_FILE
