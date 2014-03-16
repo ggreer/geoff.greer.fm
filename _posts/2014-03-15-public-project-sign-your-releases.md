@@ -2,7 +2,7 @@
 date: '2014-03-15 15:26:29'
 layout: post
 slug: public-project-sign-your-releases
-published: true
+published: false
 title: Public Project? Sign Your Releases
 categories:
 - Computers
@@ -32,7 +32,7 @@ ggreer@carbon:~/code/ag% ls *.gz
 the_silver_searcher-0.20.0.tar.gz
 {% endhighlight %}
 
-...which you can now sign:
+...which you can sign:
 
 {% highlight text %}
 ggreer@carbon:~/code/ag% gpg --detach-sign --armor the_silver_searcher-0.20.0.tar.gz
@@ -59,5 +59,5 @@ Tada, you're done! Be sure to upload the `asc` file as well as the tarball. It m
 
 ---
 
-1. <span id="ref_1"></span>Admittedly, this would be difficult. My site is hosted entirely on [Amazon S3](). The credentials for my AWS account (and S3 bucket) are only in three places: A truecrypt image on my personal laptop, an encrypted backup in my apartment, and an encrypted backup in a different S3 bucket. The most plausible attack vector to get at these credentials would be to install malware on my laptop.
-2. <span id="ref_2"></span>A reference to [Raising the Sanity Waterline]().
+1. <span id="ref_1"></span>Admittedly, this would be difficult. My site is hosted entirely on Amazon S3. The credentials for my AWS account (and S3 bucket) are only in three places: A TrueCrypt volume on my personal laptop, an encrypted backup in my apartment, and an offsite encrypted backup. The most plausible attack vector to get my credentials would be to install malware on my laptop.
+2. <span id="ref_2"></span>A reference to [Raising the Sanity Waterline](http://lesswrong.com/lw/1e/raising_the_sanity_waterline/).
