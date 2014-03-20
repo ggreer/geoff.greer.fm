@@ -8,9 +8,9 @@ categories:
 - Computers
 ---
 
-Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's say (hypothetically) that someone gained access to my site and uploaded a release of [Ag](/ag/) containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and end up with infected computers. But if users were in the habit of verifying signatures, they would see that the new release had no signature or (even more alarming) a bad signature. They could then avoid installing the malicious release, and possibly contact me or warn others.
+Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's say (hypothetically) that I didn't sign my releases of [The Silver Searcher](/ag/). Let's also say that someone gained access to my site and uploaded a release of Ag containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and end up with infected computers. But if users were in the habit of verifying signatures, they would see that the new release had no signature or (even more alarming) a bad signature. They could then avoid installing the malicious release, and possibly contact me or warn others.
 
-Unfortunately, I rarely find projects with signed releases. This hurts *all* projects. If signed releases are uncommon, users will be less likely to know about signatures and verify them. This defeats the entire purpose of signing releases. A signature that nobody verifies is like [a tree falling in the woods](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest).
+Unfortunately, I rarely find projects with signed releases. This hurts *all* projects. Since signed releases are uncommon, users are be less likely to know about signatures and verify them. This defeats the entire purpose of signing releases. A signature that nobody verifies is like [a tree falling in the woods](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest).
 
 With the goal of raising the security waterline<sup>[\[2\]](#ref_2)</sup>, I've outlined how to create, sign, and verify release tarballs. Once you know how to do it, the process is neither difficult nor time-consuming. These instructions assume you have a GPG key. If you don't, [Fedora's instructions](http://fedoraproject.org/wiki/Creating_GPG_Keys) are a good starting point. Even if you're not going to be signing tarballs, it's a good idea to have a GPG key.
 
@@ -18,7 +18,7 @@ With the goal of raising the security waterline<sup>[\[2\]](#ref_2)</sup>, I've 
 
 ### How to Sign a Release
 
-Step zero is to build a release. Here's my build procedure for [Ag](/ag/):
+Step zero is to build a release. Here's my build procedure for Ag:
 
 {% highlight text %}
 ggreer@carbon:~/code/ag% make distclean
@@ -47,7 +47,7 @@ ggreer@carbon:~/code/ag% ls *.tar.gz*
 the_silver_searcher-0.20.0.tar.gz      the_silver_searcher-0.20.0.tar.gz.asc
 {% endhighlight %}
 
-The newly-generated `.asc` file is an ASCII-armored GPG signature. Without the `--armor` option, GPG would create a binary `.gpg` file. The ASCII-armored version is more versatile. It can be transmitted in any text-only medium: e-mail, forum posts, chat, etc.
+The newly-generated `.asc` file is an ASCII-armored GPG signature. Without the `--armor` option, GPG would create a binary `.gpg` file. The ASCII-armored version is more versatile. It can be transmitted in any text-only medium: e-mail bodies, forum posts, chat, etc.
 
 Once you've generated your signature, be sure to verify it:
 
@@ -58,7 +58,7 @@ gpg: Good signature from "Geoff Greer <xxxxx@xxxxx.x>"
 ggreer@carbon:~/code/ag% 
 {% endhighlight %}
 
-At this point, you're done! Be sure to upload the `.asc` file as well as the release tarball. It can also be helpful to include instructions on how to verify signatures.
+At this point, you're done! Be sure to upload the `.asc` file as well as the release tarball. It can also be helpful to include instructions on how to verify signatures. Feel free to rip-off the instructions on my release pages for [The Silver Searcher](/ag/) and [FSEvents Tools](/fsevents/).
 
 <br />
 
