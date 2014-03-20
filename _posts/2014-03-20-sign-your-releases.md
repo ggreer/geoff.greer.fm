@@ -64,7 +64,7 @@ At this point, you're done! Be sure to upload the `.asc` file as well as the rel
 
 <br />
 
-Remember, [security is a process, not a product](https://www.schneier.com/crypto-gram-0005.html). If you distribute software, you have to constantly asses threats to your users and ameliorate them. Signing releases makes users safer. The more of us who sign and verify releases, the safer we'll all be.
+Remember, [security is a process, not a product](https://www.schneier.com/crypto-gram-0005.html). If you distribute software, you have to constantly assess threats to your users and ameliorate them. Signing releases makes users safer. The more of us who sign and verify releases, the safer we'll all be.
 
 ---
 
