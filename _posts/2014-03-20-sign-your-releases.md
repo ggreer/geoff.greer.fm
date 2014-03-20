@@ -8,9 +8,11 @@ categories:
 - Computers
 ---
 
-Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's say (hypothetically) that I didn't sign my releases of [The Silver Searcher](/ag/). Let's also say that someone gained access to my site and uploaded a release of Ag containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and end up with infected computers. But if users were in the habit of verifying signatures, they would see that the new release had no signature or (even more alarming) a bad signature. They could then avoid installing the malicious release, and possibly contact me or warn others.
+Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's say (hypothetically) that I didn't sign my releases of [The Silver Searcher](/ag/). Let's also say that someone gained access to my site and uploaded a release of Ag containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and get infected.
 
-Unfortunately, I rarely find projects with signed releases. This hurts *all* projects. Since signed releases are uncommon, users are be less likely to know about signatures and verify them. This defeats the entire purpose of signing releases. A signature that nobody verifies is like [a tree falling in the woods](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest).
+But I do sign my releases. If the scenario above actually happened, users would see that the new release had no signature or (even more alarming) a bad signature. They could then avoid installing the malicious release, and possibly contact me or warn others.
+
+Unfortunately, I rarely find projects with signed releases. This hurts *all* projects. Since signed releases are uncommon, users are less likely to know about signatures and how to verify them. This defeats the purpose of signing releases. A signature that nobody verifies is like [a tree falling in the woods](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest).
 
 With the goal of raising the security waterline<sup>[\[2\]](#ref_2)</sup>, I've outlined how to create, sign, and verify release tarballs. Once you know how to do it, the process is neither difficult nor time-consuming. These instructions assume you have a GPG key. If you don't, [Fedora's instructions](http://fedoraproject.org/wiki/Creating_GPG_Keys) are a good starting point. Even if you're not going to be signing tarballs, it's a good idea to have a GPG key.
 
@@ -58,7 +60,7 @@ gpg: Good signature from "Geoff Greer <xxxxx@xxxxx.x>"
 ggreer@carbon:~/code/ag% 
 {% endhighlight %}
 
-At this point, you're done! Be sure to upload the `.asc` file as well as the release tarball. It can also be helpful to include instructions on how to verify signatures. Feel free to rip-off the instructions on my release pages for [The Silver Searcher](/ag/) and [FSEvents Tools](/fsevents/).
+At this point, you're done! Be sure to upload the `.asc` file as well as the release tarball. I also recommend including instructions to verify signatures. Feel free to rip-off the instructions on my release pages for [The Silver Searcher](/ag/) and [FSEvents Tools](/fsevents/).
 
 <br />
 
