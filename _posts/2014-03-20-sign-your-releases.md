@@ -8,7 +8,7 @@ categories:
 - Computers
 ---
 
-Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's assume someone gained access to my site and uploaded a release of [Ag](/ag/) containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and end up with infected computers. But if users were in the habit of verifying signatures, they would see that the new release had no signature or (even more alarming) a bad signature. They could then avoid installing the malicious release, and possibly contact me or warn others.
+Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's say (hypothetically) that someone gained access to my site and uploaded a release of [Ag](/ag/) containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and end up with infected computers. But if users were in the habit of verifying signatures, they would see that the new release had no signature or (even more alarming) a bad signature. They could then avoid installing the malicious release, and possibly contact me or warn others.
 
 Unfortunately, I rarely find projects with signed releases. This hurts *all* projects. If signed releases are uncommon, users will be less likely to know about signatures and verify them. This defeats the entire purpose of signing releases. A signature that nobody verifies is like [a tree falling in the woods](https://en.wikipedia.org/wiki/If_a_tree_falls_in_a_forest).
 
@@ -62,7 +62,7 @@ At this point, you're done! Be sure to upload the `.asc` file as well as the rel
 
 <br />
 
-Remember, [security is a process, not a product](https://www.schneier.com/crypto-gram-0005.html). If you distribute software, you have to constantly asses threats to your users and ameliorate them. Signing releases makes users safer. The more of us who do it, the safer we'll all be.
+Remember, [security is a process, not a product](https://www.schneier.com/crypto-gram-0005.html). If you distribute software, you have to constantly asses threats to your users and ameliorate them. Signing releases makes users safer. The more of us who sign and verify releases, the safer we'll all be.
 
 ---
 
