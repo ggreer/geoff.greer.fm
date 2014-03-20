@@ -8,7 +8,7 @@ categories:
 - Computers
 ---
 
-Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's say (hypothetically) that I didn't sign my releases of [The Silver Searcher](/ag/). Let's also say that someone gained access to my site and uploaded a release of Ag containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and get infected.
+Cryptographic signatures are a great way to verify that software (or any data) has not been tampered with. Here's a concrete example of how they can be useful: Let's say (hypothetically) that I didn't sign my releases of [The Silver Searcher](/ag/). Let's also say that someone gained access to my site and uploaded a release of Ag containing malware.<sup>[\[1\]](#ref_1)</sup> Users would then blindly download the new release and become infected.
 
 But I do sign my releases. If the scenario above actually happened, users would see that the new release had no signature or (even more alarming) a bad signature. They could then avoid installing the malicious release, and possibly contact me or warn others.
 
