@@ -21,6 +21,8 @@ Much of the code I write these days is under the [Floobits GitHub organization](
 ## [The Silver Searcher](/ag/) &nbsp;<small>([GitHub project](https://github.com/ggreer/the_silver_searcher))</small>
 A tool for searching code. Faster than [Ack](http://betterthangrep.com/). Better than grep.  
 
+On GitHub, Ag now has over 3,000 stargazers, making it the [11th most popular project written in C](https://github.com/search?l=C&o=desc&p=2&q=stars%3A%3E1000&ref=advsearch&s=stars&type=Repositories). I'm glad so many people find this tool useful.
+
 #### Related posts
 {% for post in site.categories.the_silver_searcher %}
 * [{{ post.title }}]({{ post.url }})
