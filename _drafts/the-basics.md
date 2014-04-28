@@ -4,7 +4,8 @@ layout: post
 slug: the-basics-of-building-software
 status: publish
 title: The Basics of Building Software
-categories: computers
+categories:
+  - Computers
 ---
 
 I often forget how bad software development can be in inexperienced groups. Many of the development practices are quite primitive. Similar to [Hobbes's account of primitive man](http://en.wikisource.org/wiki/Leviathan/The_First_Part#Chapter_XIII:_Of_the_Natural_Condition_of_Mankind_as_Concerning_Their_Felicity_and_Misery), life is "...solitary, poor, nasty, brutish, and short." And just like primitive man, these people don't realize how much better life can be.
