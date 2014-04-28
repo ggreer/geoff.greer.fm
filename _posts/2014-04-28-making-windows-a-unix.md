@@ -15,7 +15,7 @@ Microsoft could do the following:
 1. Keep the Windows kernel, system services, libraries, and GUI. No big changes there.
 1. Add bash/zsh and the BSD userland to PowerShell.
 1. Make a `cc` front-end to Visual Studio's compiler.<sup>[\[1\]](#ref_1)</sup>
-1. Bundle a libc to provide support for [Pthreads](http://en.wikipedia.org/wiki/POSIX_Threads), `mmap()` and other POSIX system calls. It's probably worthwhile to imitate Android and fork the BSD libc.
+1. Bundle a libc to provide support for [pthreads](http://en.wikipedia.org/wiki/POSIX_Threads), `mmap()` and other POSIX system calls. It's probably worthwhile to imitate Android and fork the BSD libc.
 
 The result would be similar to [Cygwin](http://www.cygwin.com/) or [MinGW](http://www.mingw.org/), but bundled in the default install of Windows and (most importantly) fully supported by Microsoft. The crazy thing is, Microsoft actually got pretty close to building this with [Windows Services for UNIX](http://en.wikipedia.org/wiki/Windows_Services_for_UNIX). Unfortunately they didn't publicize it much<sup>[\[2\]](#ref_2)</sup>, didn't ship it as a default, and now they're discontinuing it.
 
