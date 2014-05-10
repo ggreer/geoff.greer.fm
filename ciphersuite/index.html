@@ -1,0 +1,88 @@
+---
+layout: page
+slug: ciphersuite
+status: publish
+title: Cipher Suite Generator
+---
+
+<h3>Key Exchange</h3>
+<ul>
+  <li>
+    <input id="key_rsa" name="key_rsa" type="checkbox" checked="checked" />
+    <label for="key_rsa">RSA</label>
+  </li>
+  <li>
+    <input id="key_dh" name="key_dh" type="checkbox" checked="checked" />
+    <label for="key_dh">Diffie-Hellman</label>
+  </li>
+  <li>
+    <input id="key_ecdh" name="key_ecdh" type="checkbox" checked="checked" />
+    <label for="key_ecdh">ECDH</label>
+  </li>
+  <li>
+    <input id="key_ecdhe" name="key_ecdhe" type="checkbox" checked="checked" />
+    <label for="key_ecdhe">ECDHE</label>
+  </li>
+</ul>
+
+
+<h3>Authentication</h3>
+<ul>
+  <li>
+    <input id="auth_rsa" name="auth_rsa" type="checkbox" checked="checked" />
+    <label for="auth_rsa">RSA</label>
+  </li>
+  <li>
+    <input id="auth_dsa" name="auth_dsa" type="checkbox" checked="checked" />
+    <label for="auth_dsa">DSA</label>
+  </li>
+  <li>
+    <input id="auth_ecdsa" name="auth_ecdsa" type="checkbox" checked="checked" />
+    <label for="auth_ecdsa">ECDSA</label>
+  </li>
+</ul>
+
+<h3>Encryption</h3>
+<ul>
+  <li>
+    <input id="enc_aes_cbc" name="enc_aes_cbc" type="checkbox" checked="checked" />
+    <label for="enc_aes_cbc">AES-CBC</label>
+  </li>
+  <li>
+    <input id="enc_aes_gcm" name="enc_aes_gcm" type="checkbox" checked="checked" />
+    <label for="enc_aes_gcm">AES-GCM</label>
+  </li>
+  <li>
+    <input id="enc_chacha20_poly1305" name="enc_chacha20_poly1305" type="checkbox" />
+    <label for="enc_chacha20_poly1305">ChaCha20-Poly1305</label>
+  </li>
+</ul>
+
+
+<h3>Message Authentication</h3>
+<ul>
+  <li>
+    <input id="mac_sha256" name="mac_sha256" type="checkbox" checked="checked" />
+    <label for="mac_sha256">SHA256</label>
+  </li>
+  <li>
+    <input id="mac_sha384" name="mac_sha384" type="checkbox" checked="checked" />
+    <label for="mac_sha384">SHA384</label>
+  </li>
+  <li>
+    <input id="mac_ccm" name="mac_ccm" type="checkbox" />
+    <label for="mac_ccm">CCM</label>
+  </li>
+</ul>
+
+<div class="highlight">
+<pre><code>CipherSuite </code><code id="cipher_suite"></code></pre>
+</div>
+
+<p>
+  Be sure to test your config! with <a href="https://www.ssllabs.com/ssltest/analyze.html">SSL Labs</a>.
+</p>
+
+<script type="text/javascript">
+
+</script>
