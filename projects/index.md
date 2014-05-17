@@ -40,7 +40,7 @@ Some command-line tools for working with [OS X's filesystem events](http://en.wi
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
-<br />
+<!-- <br />
 
 ## [CipherSuite config generator](/ciphersuite)
 It's not easy to configure nginx or httpd to use the right cipher suites. There are dozens of combinations of key exchange, encryption, and message authentication algorithms. Some combinations are secure, some aren't. This is a simple tool that lets you pick among the secure combinations to generate a `SSLCipherSuite` config directive.
@@ -50,7 +50,7 @@ It's not easy to configure nginx or httpd to use the right cipher suites. There 
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
 {% endif %}
-
+ -->
 <br />
 
 ## [LS_COLORS generator](/lscolors)
