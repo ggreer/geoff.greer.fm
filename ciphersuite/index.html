@@ -8,20 +8,20 @@ title: Cipher Suite Generator
 <h3>Key Exchange</h3>
 <ul>
   <li>
-    <input id="key_rsa" name="key_rsa" type="checkbox" checked="checked" />
-    <label for="key_rsa">RSA</label>
+    <input id="kx_rsa" name="kx_rsa" type="checkbox" checked="checked" />
+    <label for="kx_rsa">RSA</label>
   </li>
   <li>
-    <input id="key_dh" name="key_dh" type="checkbox" checked="checked" />
-    <label for="key_dh">Diffie-Hellman</label>
+    <input id="kx_dh" name="kx_dh" type="checkbox" checked="checked" />
+    <label for="kx_dh">Diffie-Hellman</label>
   </li>
   <li>
-    <input id="key_ecdh" name="key_ecdh" type="checkbox" checked="checked" />
-    <label for="key_ecdh">ECDH</label>
+    <input id="kx_ecdh" name="kx_ecdh" type="checkbox" checked="checked" />
+    <label for="kx_ecdh">ECDH</label>
   </li>
   <li>
-    <input id="key_ecdhe" name="key_ecdhe" type="checkbox" checked="checked" />
-    <label for="key_ecdhe">ECDHE</label>
+    <input id="kx_ecdhe" name="kx_ecdhe" type="checkbox" checked="checked" />
+    <label for="kx_ecdhe">ECDHE</label>
   </li>
 </ul>
 
@@ -84,9 +84,21 @@ title: Cipher Suite Generator
 </p>
 
 <script type="text/javascript">
-var cipher_suite = document.getElementById("cipher_suite");
+var cipher_suite,
+  all_cipher_suites;
 
-var all_cipher_suites = [
+function get_cipher_suite(kx, auth, enc, mac) {
+  var cs = "TLS_" + kx + "_" + auth + "_" + enc + "_" + mac;
+  console.log("Looking for", cs);
+  if (all_cipher_suites.indexOf(cs) > 0) {
+    return cs;
+  }
+  console.log(cs, "not found");
+}
+
+cipher_suite = document.getElementById("cipher_suite");
+
+all_cipher_suites = [
 "TLS_NULL_WITH_NULL_NULL",
 "TLS_RSA_WITH_NULL_MD5",
 "TLS_RSA_WITH_NULL_SHA",
