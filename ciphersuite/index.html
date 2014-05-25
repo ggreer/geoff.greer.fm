@@ -96,7 +96,41 @@ function get_cipher_suite(kx, auth, enc, mac) {
   console.log(cs, "not found");
 }
 
+function is_checked(id) {
+  var elem = document.getElementById(id);
+  return elem && elem.checked;
+}
+
+function is_cs_enabled(cs) {
+  var auth, enc, end, kx, mac, parts;
+  parts = cs.split("_WITH_");
+  kx = parts[0].split("_")[1];
+  auth = parts[0].split("_")[2];
+  end = parts[1].split("_");
+  mac = end.slice(-1)[0];
+  enc = end.slice(0, -1).join("_");
+  // console.log("cs:", cs);
+  // console.log("kx:", kx, "auth:", auth, "enc:", enc, "mac:", mac);
+  return is_checked("kx_" + kx) &&
+         is_checked("auth_" + auth) &&
+         is_checked("enc_" + enc) &&
+         is_checked("mac_" + mac);
+}
+
+function reevaluate() {
+  var cs, i;
+  cipher_suite.text = "";
+  for (i = 0; i <  all_cipher_suites.length; i++) {
+    cs = all_cipher_suites[i];
+    if (is_cs_enabled(cs)) {
+      cipher_suite.text += cs;
+      console.log(cs, "is enabled");
+    }
+  }
+}
+
 cipher_suite = document.getElementById("cipher_suite");
+document.getElementById("wrapper").onclick = reevaluate;
 
 all_cipher_suites = [
 "TLS_NULL_WITH_NULL_NULL",
@@ -241,7 +275,6 @@ all_cipher_suites = [
 "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256",
 "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256",
 "TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256",
-"TLS_EMPTY_RENEGOTIATION_INFO_SCSV",
 "TLS_ECDH_ECDSA_WITH_NULL_SHA",
 "TLS_ECDH_ECDSA_WITH_RC4_128_SHA",
 "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
@@ -418,4 +451,5 @@ all_cipher_suites = [
 "TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8",
 "TLS_ECDHE_ECDSA_WITH_AES_256_CCM_8"
 ];
+reevaluate();
 </script>
