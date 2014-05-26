@@ -45,7 +45,7 @@ title: Cipher Suite Generator
 <h3>Encryption</h3>
 <ul>
   <li>
-    <input id="enc_aes_cbc" name="enc_aes_cbc" type="checkbox" checked="checked" />
+    <input id="enc_aes_128_cbc" name="enc_aes_cbc" type="checkbox" checked="checked" />
     <label for="enc_aes_cbc">AES-CBC</label>
   </li>
   <li>
@@ -85,19 +85,19 @@ title: Cipher Suite Generator
 
 <script type="text/javascript">
 var cipher_suite,
-  all_cipher_suites;
+  ALL_CIPHER_SUITES;
 
 function get_cipher_suite(kx, auth, enc, mac) {
   var cs = "TLS_" + kx + "_" + auth + "_" + enc + "_" + mac;
   console.log("Looking for", cs);
-  if (all_cipher_suites.indexOf(cs) > 0) {
+  if (ALL_CIPHER_SUITES.indexOf(cs) > 0) {
     return cs;
   }
   console.log(cs, "not found");
 }
 
 function is_checked(id) {
-  var elem = document.getElementById(id);
+  var elem = document.getElementById(id.toLowerCase());
   return elem && elem.checked;
 }
 
@@ -119,11 +119,11 @@ function is_cs_enabled(cs) {
 
 function reevaluate() {
   var cs, i;
-  cipher_suite.text = "";
-  for (i = 0; i <  all_cipher_suites.length; i++) {
-    cs = all_cipher_suites[i];
+  cipher_suite.innerHTML = "";
+  for (i = 0; i <  ALL_CIPHER_SUITES.length; i++) {
+    cs = ALL_CIPHER_SUITES[i];
     if (is_cs_enabled(cs)) {
-      cipher_suite.text += cs;
+      cipher_suite.innerHTML += cs + " ";
       console.log(cs, "is enabled");
     }
   }
@@ -132,7 +132,7 @@ function reevaluate() {
 cipher_suite = document.getElementById("cipher_suite");
 document.getElementById("wrapper").onclick = reevaluate;
 
-all_cipher_suites = [
+ALL_CIPHER_SUITES = [
 "TLS_NULL_WITH_NULL_NULL",
 "TLS_RSA_WITH_NULL_MD5",
 "TLS_RSA_WITH_NULL_SHA",
