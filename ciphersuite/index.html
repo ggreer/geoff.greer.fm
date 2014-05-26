@@ -45,12 +45,26 @@ title: Cipher Suite Generator
 <h3>Encryption</h3>
 <ul>
   <li>
-    <input id="enc_aes_128_cbc" name="enc_aes_cbc" type="checkbox" checked="checked" />
-    <label for="enc_aes_cbc">AES-CBC</label>
-  </li>
-  <li>
-    <input id="enc_aes_gcm" name="enc_aes_gcm" type="checkbox" checked="checked" />
-    <label for="enc_aes_gcm">AES-GCM</label>
+    <input id="enc_aes" name="enc_aes" type="checkbox" checked="checked" />
+    <label for="enc_aes">AES</label>
+    <ul>
+      <li>
+        <input id="enc_aes_128" name="enc_aes_128" type="checkbox" checked="checked" />
+        <label for="enc_aes_128">128 bit</label>
+      </li>
+      <li>
+        <input id="enc_aes_256" name="enc_aes_256" type="checkbox" checked="checked" />
+        <label for="enc_aes_256">256 bit</label>
+      </li>
+      <li>
+        <input id="enc_aes_CBC" name="enc_aes_CBC" type="checkbox" checked="checked" />
+        <label for="enc_aes_CBC">CBC</label>
+      </li>
+      <li>
+        <input id="enc_aes_gcm" name="enc_aes_gcm" type="checkbox" checked="checked" />
+        <label for="enc_aes_gcm">GCM</label>
+      </li>
+    </ul>
   </li>
   <li>
     <input id="enc_chacha20_poly1305" name="enc_chacha20_poly1305" type="checkbox" />
@@ -70,13 +84,17 @@ title: Cipher Suite Generator
     <label for="mac_sha384">SHA384</label>
   </li>
   <li>
-    <input id="mac_ccm" name="mac_ccm" type="checkbox" />
+    <input id="mac_ccm" name="mac_ccm" type="checkbox" checked="checked" />
     <label for="mac_ccm">CCM</label>
+  </li>
+  <li>
+    <input id="mac_ccm_8" name="mac_ccm_8" type="checkbox" checked="checked" />
+    <label for="mac_ccm_8">CCM-8</label>
   </li>
 </ul>
 
 <div class="highlight">
-<pre><code>CipherSuite </code><code id="cipher_suite"></code></pre>
+  <code>CipherSuite </code><code id="cipher_suite"></code>
 </div>
 
 <p>
@@ -86,15 +104,6 @@ title: Cipher Suite Generator
 <script type="text/javascript">
 var cipher_suite,
   ALL_CIPHER_SUITES;
-
-function get_cipher_suite(kx, auth, enc, mac) {
-  var cs = "TLS_" + kx + "_" + auth + "_" + enc + "_" + mac;
-  console.log("Looking for", cs);
-  if (ALL_CIPHER_SUITES.indexOf(cs) > 0) {
-    return cs;
-  }
-  console.log(cs, "not found");
-}
 
 function is_checked(id) {
   var elem = document.getElementById(id.toLowerCase());
@@ -108,6 +117,9 @@ function is_cs_enabled(cs) {
   auth = parts[0].split("_")[2];
   end = parts[1].split("_");
   mac = end.slice(-1)[0];
+  if (mac === "8") {
+    mac = end.slice(-2).join("_");
+  }
   enc = end.slice(0, -1).join("_");
   // console.log("cs:", cs);
   // console.log("kx:", kx, "auth:", auth, "enc:", enc, "mac:", mac);
@@ -132,6 +144,7 @@ function reevaluate() {
 cipher_suite = document.getElementById("cipher_suite");
 document.getElementById("wrapper").onclick = reevaluate;
 
+// List of all cipher suites. Almost all of these are not exposed, since they're insecure or obscure or outright broken.
 ALL_CIPHER_SUITES = [
 "TLS_NULL_WITH_NULL_NULL",
 "TLS_RSA_WITH_NULL_MD5",
