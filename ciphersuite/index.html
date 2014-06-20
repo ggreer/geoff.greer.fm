@@ -117,6 +117,9 @@ function is_cs_enabled(cs) {
   auth = parts[0].split("_")[2];
   end = parts[1].split("_");
   mac = end.slice(-1)[0];
+  if (kx === "RSA" && auth === undefined) {
+    auth = "RSA";
+  }
   // CCM_8
   if (mac === "8") {
     mac = end.slice(-2).join("_");
@@ -142,9 +145,9 @@ function reevaluate() {
     cs = ALL_CIPHER_SUITES[i];
     if (is_cs_enabled(cs)) {
       cipher_suite.innerHTML += cs + " ";
-      console.log(cs, "is enabled");
     }
   }
+//  console.log("cipher_suite:", cipher_suite.innerHTML);
 }
 
 cipher_suite = document.getElementById("cipher_suite");
