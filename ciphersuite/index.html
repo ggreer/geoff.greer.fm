@@ -57,8 +57,8 @@ title: Cipher Suite Generator
         <label for="enc_aes_256">256 bit</label>
       </li>
       <li>
-        <input id="enc_aes_CBC" name="enc_aes_CBC" type="checkbox" checked="checked" />
-        <label for="enc_aes_CBC">CBC</label>
+        <input id="enc_aes_cbc" name="enc_aes_cbc" type="checkbox" checked="checked" />
+        <label for="enc_aes_cbc">CBC</label>
       </li>
       <li>
         <input id="enc_aes_gcm" name="enc_aes_gcm" type="checkbox" checked="checked" />
@@ -102,8 +102,8 @@ title: Cipher Suite Generator
 </p>
 
 <script type="text/javascript">
-var cipher_suite,
-  ALL_CIPHER_SUITES;
+var ALL_CIPHER_SUITES,
+  cipher_suite;
 
 function is_checked(id) {
   var elem = document.getElementById(id.toLowerCase());
@@ -111,21 +111,27 @@ function is_checked(id) {
 }
 
 function is_cs_enabled(cs) {
-  var auth, enc, end, kx, mac, parts;
+  var auth, auth_checked, enc, enc_checked, end, kx, mac, parts;
   parts = cs.split("_WITH_");
   kx = parts[0].split("_")[1];
   auth = parts[0].split("_")[2];
   end = parts[1].split("_");
   mac = end.slice(-1)[0];
+  // CCM_8
   if (mac === "8") {
     mac = end.slice(-2).join("_");
   }
   enc = end.slice(0, -1).join("_");
-  // console.log("cs:", cs);
-  // console.log("kx:", kx, "auth:", auth, "enc:", enc, "mac:", mac);
+  if (enc.slice(0,3) === "AES") {
+    enc = enc.split("_");
+    enc_checked = is_checked("enc_aes") && is_checked("enc_aes_" + enc[1]) && is_checked("enc_aes_" + enc[2]);
+  } else {
+    enc_checked = is_checked("enc_" + enc);
+  }
+  auth_checked = is_checked("auth_" + auth);
   return is_checked("kx_" + kx) &&
-         is_checked("auth_" + auth) &&
-         is_checked("enc_" + enc) &&
+         auth_checked &&
+         enc_checked &&
          is_checked("mac_" + mac);
 }
 
