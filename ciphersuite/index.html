@@ -5,6 +5,8 @@ status: publish
 title: TLS Cipher Suite Generator
 ---
 
+<div class="row">
+<div class="col c3">
 <h3>Key Exchange</h3>
 <ul>
   <li>
@@ -24,8 +26,7 @@ title: TLS Cipher Suite Generator
     <label for="kx_ecdhe">ECDHE</label>
   </li>
 </ul>
-
-
+</div><div class="col c3">
 <h3>Authentication</h3>
 <ul>
   <li>
@@ -41,7 +42,7 @@ title: TLS Cipher Suite Generator
     <label for="auth_ecdsa">ECDSA</label>
   </li>
 </ul>
-
+</div><div class="col c3">
 <h3>Encryption</h3>
 <ul>
   <li>
@@ -71,8 +72,7 @@ title: TLS Cipher Suite Generator
     <label for="enc_chacha20_poly1305">ChaCha20-Poly1305</label>
   </li>
 </ul>
-
-
+</div><div class="col c3">
 <h3>Message Authentication</h3>
 <ul>
   <li>
@@ -92,6 +92,8 @@ title: TLS Cipher Suite Generator
     <label for="mac_ccm_8">CCM-8</label>
   </li>
 </ul>
+</div>
+</div>
 
 <div class="highlight">
   <code>CipherSuite </code><code id="cipher_suite"></code>

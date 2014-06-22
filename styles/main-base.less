@@ -3,8 +3,8 @@
     font-weight: lighter;
 }
 
-@max_width: 37em;
-@min_width: 27em;
+@max_width: 720px;
+@min_width: 525px;
 @body_margin: 10px;
 
 body {
@@ -14,6 +14,11 @@ body {
     color: @body_color;
     margin: @body_margin;
     text-rendering: optimizeLegibility;
+}
+
+.nows {
+    margin: 0;
+    padding: 0;
 }
 
 a, a:link { color: @body_color; text-decoration: none; }
@@ -35,7 +40,7 @@ hr {
     float: @direction;
     line-height: 150%;
     .header-font;
-    padding-bottom: 0.67em;
+    padding-bottom: 12px;
     white-space: nowrap;
 }
 .nav-left { .nav(left); }
@@ -113,12 +118,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post {
     line-height: 145%;
-    sup {
-        line-height: 100%;
-    }
+    sup { line-height: 100%; }
     img { max-width: 100%; }
     a, a:link { text-decoration: underline; }
     padding-bottom: 1em;
+}
+
+div.row {
+    .nows;
+    max-width: @max_width;
+    min-width: @min_width;
+}
+div.col {
+    .nows;
+    display: inline-block;
+    vertical-align: top;
+    &.c1 { width: 120px; }
+    &.c2 { width: 240px; }
+    &.c3 { width: 360px; }
+    &.c4 { width: 480px; }
+    &.c5 { width: 600px; }
+    &.c6 { width: 720px; }
 }
 
 .fixed-font {
