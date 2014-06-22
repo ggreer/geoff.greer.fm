@@ -29,13 +29,13 @@ The most useful group of fonts I've found for programming are the Proggy fonts. 
 ## Proggy Fonts [#](#fonts)
 
 <div class="row">
-  <div class="col c3">
+  <div class="col w3">
     <h3>Crisp</h3>
     <a href="/fonts/Crisp.png">
       <img alt="Crisp in Sublime Text" style="max-width: none; width: 320px; height: 240px;" src="/fonts/Crisp.png" />
     </a>
     <a href="/fonts/Crisp.ttf">Crisp.ttf</a>
-  </div><div class="col c3">
+  </div><div class="col w3">
     <h3>ProggyClean</h3>
     <a href="/fonts/ProggyClean.png">
       <img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggyClean.png" />
@@ -43,14 +43,14 @@ The most useful group of fonts I've found for programming are the Proggy fonts. 
     <a href="/fonts/ProggyClean.ttf">ProggyClean.ttf</a><br />
     <a href="/fonts/ProggyCleanCE.ttf">ProggyCleanCE.ttf (centered punctuation)</a><br />
     <a href="/fonts/ProggyCleanSZBP.ttf">ProggyCleanSZBP.ttf (slashed zero, bold punctuation)</a><br />
-  </div><div class="col c3">
+  </div><div class="col w3">
     <h3>ProggySquare</h3>
     <a href="/fonts/ProggySquare.png">
       <img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggySquare.png" />
     </a>
     <a href="/fonts/ProggySquare.ttf">ProggySquare.ttf</a><br />
     <a href="/fonts/ProggySquareSZ.ttf">ProggySquareSZ.ttf (slashed zero)</a><br />
-  </div><div class="col c3">
+  </div><div class="col w3">
     <h3>ProggyTiny</h3>
     <a href="/fonts/ProggyTiny.png">
       <img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggyTiny.png" />
@@ -61,7 +61,7 @@ The most useful group of fonts I've found for programming are the Proggy fonts. 
 </div>
 
 <div class="row">
-  <div class="col c3">
+  <div class="col w3">
     <h2>All fonts</h2>
     <a href="/fonts/proggy.zip">Proggy.zip</a>
   </div>

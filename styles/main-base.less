@@ -47,17 +47,21 @@ hr {
 .nav-left { .nav(left); }
 .nav-right { .nav(right); }
 
-#wrapper {
+.wrapper {
     margin: 0 auto;
     max-width: @max_width;
     min-width: @min_width;
+}
+
+#wrapper {
+    .wrapper;
 }
 
 // Main page list
 #post-list {
     font-size: 115%;
     margin: 0 auto;
-    max-width: 25em;
+    max-width: @min_width;
     .year {
         color: @link_active;
         font-size: 140%;
@@ -70,10 +74,10 @@ hr {
         float: left;
         clear: both;
         text-align: center;
-        width: 4em;
+        width: @space*4;
     }
     .index-post-title {
-        padding-left: 4em;
+        padding-left: @space*4;
     }
 }
 
@@ -127,7 +131,6 @@ h1, h2, h3, h4, h5, h6 {
 
 div.row {
     .nows;
-    padding-bottom: @space;
     max-width: @max_width;
     min-width: @min_width;
 }
@@ -136,12 +139,12 @@ div.col {
     padding-bottom: @space;
     display: inline-block;
     vertical-align: top;
-    &.c1 { width: 120px; }
-    &.c2 { width: 240px; }
-    &.c3 { width: 360px; }
-    &.c4 { width: 480px; }
-    &.c5 { width: 600px; }
-    &.c6 { width: 720px; }
+    &.w1 { width: 120px; }
+    &.w2 { width: 240px; }
+    &.w3 { width: 360px; }
+    &.w4 { width: 480px; }
+    &.w5 { width: 600px; }
+    &.w6 { width: 720px; }
 }
 
 .fixed-font {
@@ -171,21 +174,21 @@ code {
     cursor: pointer;
     font-size: 50%;
     margin: 0 auto;
-    max-width: 20em;
+    max-width: @min_width;
     opacity: 0.2;
-    padding: 0.2em 0;
+    padding: 4px 0;
     text-align: center;
     &:hover {
       opacity: 1.0;
     }
 }
 
-.image-border { left: -4 * @space; border: @space * 2 #111 solid; }
+.image-border { left: -4*@space; border: @space*2 #111 solid; }
 
 #gallery-list {
     text-align: center;
     background-color: #222;
-    margin: 1em -@body_margin 0px -@body_margin;
+    margin: @space -@body_margin 0 -@body_margin;
     min-width: @min_width;
     color: @link_visited;
     a, a:link { color: @gallery_link; text-decoration: none; }
@@ -195,8 +198,8 @@ code {
 .gallery-index {
     display: inline-block;
     text-align: center;
-    padding: 2em 0 3em 0;
-    margin: 1em 2em;
+    padding: @space*2 0 @space*3 0;
+    margin: @space @space*2;
     min-width: 300px;
     min-height: 300px;
     img {
@@ -211,7 +214,7 @@ code {
         height: 400px;
         width: 400px;
         display: inline-block;
-        margin: 4em;
+        margin: @space*4;
         padding: 0;
         position: relative;
     }
@@ -228,6 +231,6 @@ code {
     }
     .disclaimer-cc-by-sa {
         font-size: 50%;
-        padding: 1em;
+        padding: @space;
     }
 }

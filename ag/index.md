@@ -30,9 +30,9 @@ After downloading the tarball and signature, run:
 
 {% for release in page.releases %}
 <div class="row">
-  <div class="col c4">
+  <div class="col w4">
     <a href="releases/the_silver_searcher-{{ release }}.tar.gz"><code>the_silver_searcher-{{ release }}.tar.gz</code></a>
-  </div><div class="col c2">
+  </div><div class="col w2">
     <a href="releases/the_silver_searcher-{{ release }}.tar.gz.asc"><code>GPG signature</code></a>
   </div>
 </div>
