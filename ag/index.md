@@ -23,13 +23,20 @@ After downloading the tarball and signature, run:
 
     gpg --verify the_silver_searcher-{{ page.releases|first }}.tar.gz.asc \
                  the_silver_searcher-{{ page.releases|first }}.tar.gz
+
 <br />
 
 ## Releases
-{% for release in page.releases %}
-* [`the_silver_searcher-{{ release }}.tar.gz`](releases/the_silver_searcher-{{ release }}.tar.gz) <span class="gpg_sig">[`GPG signature`](releases/the_silver_searcher-{{ release }}.tar.gz.asc)</span>
-{% endfor %}
 
+{% for release in page.releases %}
+<div class="row">
+  <div class="col c4">
+    <a href="releases/the_silver_searcher-{{ release }}.tar.gz"><code>the_silver_searcher-{{ release }}.tar.gz</code></a>
+  </div><div class="col c2">
+    <a href="releases/the_silver_searcher-{{ release }}.tar.gz.asc"><code>GPG signature</code></a>
+  </div>
+</div>
+{% endfor %}
 
 <br />
 

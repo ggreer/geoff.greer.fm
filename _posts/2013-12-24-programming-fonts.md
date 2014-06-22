@@ -28,51 +28,44 @@ The most useful group of fonts I've found for programming are the Proggy fonts. 
 <a id="fonts"></a>
 ## Proggy Fonts [#](#fonts)
 
-### Crisp
-[<img alt="Crisp in Sublime Text" style="max-width: none; width: 320px; height: 240px;" src="/fonts/Crisp.png" />](/fonts/Crisp.png)
+<div class="row">
+  <div class="col c3">
+    <h3>Crisp</h3>
+    <a href="/fonts/Crisp.png">
+      <img alt="Crisp in Sublime Text" style="max-width: none; width: 320px; height: 240px;" src="/fonts/Crisp.png" />
+    </a>
+    <a href="/fonts/Crisp.ttf">Crisp.ttf</a>
+  </div><div class="col c3">
+    <h3>ProggyClean</h3>
+    <a href="/fonts/ProggyClean.png">
+      <img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggyClean.png" />
+    </a>
+    <a href="/fonts/ProggyClean.ttf">ProggyClean.ttf</a><br />
+    <a href="/fonts/ProggyCleanCE.ttf">ProggyCleanCE.ttf (centered punctuation)</a><br />
+    <a href="/fonts/ProggyCleanSZBP.ttf">ProggyCleanSZBP.ttf (slashed zero, bold punctuation)</a><br />
+  </div><div class="col c3">
+    <h3>ProggySquare</h3>
+    <a href="/fonts/ProggySquare.png">
+      <img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggySquare.png" />
+    </a>
+    <a href="/fonts/ProggySquare.ttf">ProggySquare.ttf</a><br />
+    <a href="/fonts/ProggySquareSZ.ttf">ProggySquareSZ.ttf (slashed zero)</a><br />
+  </div><div class="col c3">
+    <h3>ProggyTiny</h3>
+    <a href="/fonts/ProggyTiny.png">
+      <img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggyTiny.png" />
+    </a>
+    <a href="/fonts/ProggyTiny.ttf">ProggyTiny.ttf</a><br />
+    <a href="/fonts/ProggyTinySZ.ttf">ProggyTinySZ.ttf (slashed zero)</a><br />
+  </div>
+</div>
 
-[Crisp.ttf](/fonts/Crisp.ttf)
-
-<br />
-
-
-### ProggyClean
-[<img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggyClean.png" />](/fonts/ProggyClean.png)
-
-[ProggyClean.ttf](/fonts/ProggyClean.ttf)
-
-[ProggyCleanCE.ttf (centered punctuation)](/fonts/ProggyCleanCE.ttf)
-
-[ProggyCleanSZBP.ttf (slashed zero, bold punctuation)](/fonts/ProggyCleanSZBP.ttf)
-
-<br />
-
-
-### ProggySquare
-[<img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggySquare.png" />](/fonts/ProggySquare.png)
-
-[ProggySquare.ttf](/fonts/ProggySquare.ttf)
-
-[ProggySquareSZ.ttf (slashed zero)](/fonts/ProggySquareSZ.ttf)
-
-<br />
-
-
-### ProggyTiny
-[<img alt="ProggyTiny in Sublime Text" style="width: 320px; height: 240px;" src="/fonts/ProggyTiny.png" />](/fonts/ProggyTiny.png)
-
-[ProggyTiny.ttf](/fonts/ProggyTiny.ttf)
-
-[ProggyTinySZ.ttf](/fonts/ProggyTinySZ.ttf)
-
-<br />
-
-## All fonts
-[Proggy.zip](/fonts/proggy.zip)
-
-<br />
-
-<br />
+<div class="row">
+  <div class="col c3">
+    <h2>All fonts</h2>
+    <a href="/fonts/proggy.zip">Proggy.zip</a>
+  </div>
+</div>
 
 The author of the these fonts is Tristan Grimmer. He was kind enough to release his work under the [MIT License](/fonts/License.txt). I would link to Tristan's site, but he doesn't seem to have an online presence. Still, I'd like to thank him for designing these fonts. I have found them extremely useful.
 
