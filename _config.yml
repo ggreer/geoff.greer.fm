@@ -17,6 +17,8 @@ gallery:
   title_prefix: "Photos: "
   dir: photos
   galleries:
+    banff_trip_2014:
+      best_image: IMG_0670.jpg
     christmas_vacation_2012:
       best_image: DSC_0226.jpg
     chile_trip:
