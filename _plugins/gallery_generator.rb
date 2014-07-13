@@ -80,6 +80,9 @@ module Jekyll
         @hidden = config_data["hidden"] || false
       rescue
       end
+      if @hidden
+        self.data["sitemap"] = false
+      end
 
       FileUtils.mkdir_p(thumbs_dir, :mode => 0755)
       Dir.foreach(dir) do |image|
