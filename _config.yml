@@ -13,6 +13,9 @@ exclude:
 
 disqus_shortname: ggreer
 
+gems:
+  - jekyll-sitemap
+
 gallery:
   title_prefix: "Photos: "
   dir: photos
