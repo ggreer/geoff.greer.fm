@@ -20,6 +20,8 @@ gallery:
   title_prefix: "Photos: "
   dir: photos
   galleries:
+    me:
+      hidden: true
     screenshots:
       hidden: true
       sort_reverse: true
