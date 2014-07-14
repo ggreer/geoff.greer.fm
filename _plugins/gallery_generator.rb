@@ -123,7 +123,7 @@ module Jekyll
       end
 
       self.data["images"] = @images
-      self.data["best_image"] = best_image || gallery_config["best_image"]
+      self.data["best_image"] = gallery_config["best_image"] || best_image
       begin
         self.data["date_time"] = EXIFR::JPEG.new("#{dir}/#{best_image}").date_time.to_i
       rescue Exception => e
