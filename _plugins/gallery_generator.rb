@@ -31,6 +31,9 @@ module Jekyll
         puts "Error sorting galleries: #{e}"
         puts e.backtrace
       end
+      if site.config["gallery"]["sort_reverse"]
+        galleries.reverse!
+      end
       galleries.each {|gallery|
         unless gallery.hidden
           self.data["galleries"].push(gallery.data)
