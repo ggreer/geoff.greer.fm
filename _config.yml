@@ -20,6 +20,9 @@ gallery:
   title_prefix: "Photos: "
   dir: photos
   galleries:
+    screenshots:
+      hidden: true
+      sort_reverse: true
     yc_slideshow:
       name: "YC Slideshow"
       best_image: 15.jpg
