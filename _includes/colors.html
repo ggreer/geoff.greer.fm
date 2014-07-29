@@ -5,8 +5,8 @@ var main_css;
 var code_css;
 var invert_text = null;
 var styles = {
-  light: ["Light", "#fff", "/styles/main.css", "/styles/solarized-light.css", "Go dark."],
-  dark: ["Dark", "#000", "/styles/main-inverted.css", "/styles/solarized-dark.css", "Brighten my day."]
+  light: ["Light", "#fff", "/styles/main-light.css", "/styles/solarized-light.css", "Go dark."],
+  dark: ["Dark", "#000", "/styles/main-dark.css", "/styles/solarized-dark.css", "Brighten my day."]
 };
 function set_style(style) {
   var date = new Date();
@@ -20,7 +20,7 @@ function set_style(style) {
   return style;
 }
 function invert_colors() {
-  var style = main_css.attributes.href.value === "/styles/main.css" ? set_style(styles.dark) : set_style(styles.light);
+  var style = main_css.attributes.href.value === "/styles/main-light.css" ? set_style(styles.dark) : set_style(styles.light);
   _gaq.push(["_trackEvent", "Color", "Set style", style[0]]);
 }
 document.addEventListener("DOMContentLoaded", function () {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   document.cookie.split("; ").forEach(function (cookie) {
     cookie = cookie.split("=");
-    if (cookie[0] === "main-css" && cookie[1] === "/styles/main-inverted.css") {
+    if (cookie[0] === "main-css" && cookie[1] === "/styles/main-dark.css") {
       set_style(styles.dark);
     }
   });
