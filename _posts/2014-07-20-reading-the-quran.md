@@ -17,5 +17,9 @@ When it comes to the structure of the text, there's very little to speak of besi
 
 In short, the Qur'an is a terrible guide for how to live one's life in the 21<sup>st</sup> century. It was clearly authored by a 7<sup>th</sup>-century human. But don't take my word for it. Read the text yourself and come to your own conclusions.
 
+### Postscript
+
+Please don't take what I've said here as insulting Muslims or Islam. I'm only talking about my impressions from reading the Qur'an. It's likely that the only reason I'm not saying similar things about other religious texts is that I haven't read them.
+
 1. <span id="ref_1"></span>The specific version was [M. A. S. Abdel Haleem's](http://en.wikipedia.org/wiki/Muhammad_Abdel-Haleem) [English translation of the Qur'an](http://www.amazon.com/Quran-Oxford-Worlds-Classics-ebook/dp/B001ODEPPI/), which is widely considered to be the best.
 2. <span id="ref_2"></span>I haven't read the Bible in its entirety, though I bet it's similar.
