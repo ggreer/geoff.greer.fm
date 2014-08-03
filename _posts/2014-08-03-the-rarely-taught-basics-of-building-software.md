@@ -2,7 +2,7 @@
 date: '2014-08-03 23:13:57'
 layout: post
 slug: the-rarely-taught-basics-of-building-software
-published: false
+published: true
 title: The Rarely-Taught Basics of Building Software
 categories:
   - Computers
@@ -16,15 +16,20 @@ What follows is an outline of what I consider the fundamentals. These are things
 
 ### Source Control
 
-Subversion. Git. Mercurial. It doesn't matter what you use. *Anything* is better than no source control. Even if you are the *only* person working on the code, **use version control!** It's not hard to set up. It's not hard to use.
+Subversion. Git. Mercurial. It doesn't matter what you use. *Anything* is better than no source control. Even if you are the *only* person working on the code, **use version control!** Compared to programming, source control isn't hard to learn.
 
-{% highlight text %}
-git init
-{% endhighlight %}
+* [Git]()
+* [Mercurial]()
+* [Subversion]()
+
 
 ### Backups
 
-I think everyone should experience a hard drive crash in elementary school. Better to learn the lesson of backups when one has little to lose. If you lack backups, you *will* lose important data. 
+I think everyone should experience a hard drive crash in elementary school. Better to learn the lesson of backups when one has little to lose. If you lack backups, you *will* lose important data eventually. 
+
+OS X: Time Machine
+Windows: File History
+Linux: ???
 
 
 ### SSH Keys
@@ -42,6 +47,6 @@ ssh-keygen
 
 Use sudo instead of root. This makes it a little bit easier to avoid expensive mistakes.
 
-While you're at it, disable root logins over ssh. It's common for people to scan for ssh servers and guess common root passwords.
+While you're at it, [disable root logins over ssh](). It's common for people to scan for ssh servers and guess common root passwords.
 
 
