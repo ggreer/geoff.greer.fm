@@ -14,16 +14,16 @@ It doesn't have to be this way. The tools I take for granted are software. Copyi
 
 What follows is an outline of what I consider the fundamentals. These are things I take for granted. Lacking them is like lacking electricity or flush toilets.
 
-### Source Control
+## Source Control
 
-Subversion. Git. Mercurial. It doesn't matter what you use. *Anything* is better than no source control. Even if you are the *only* person working on the code, **use version control!** Compared to programming, source control isn't hard to learn.
+Subversion. Git. Mercurial. It doesn't matter what you use. *Anything* is better than no source control. Even if you are the *only* person working on the code, **use version control!** Source control  Compared to programming, source control isn't hard to learn. Every popular source control software has a free book associated with it:
 
-* [Git]()
-* [Mercurial]()
-* [Subversion]()
+* [Pro Git Book](http://www.git-scm.com/book)
+* [Mercurial: The Definitive Guide](http://hgbook.red-bean.com/)
+* [Version Control with Subversion](http://svnbook.red-bean.com/)
 
 
-### Backups
+## Backups
 
 I think everyone should experience a hard drive crash in elementary school. Better to learn the lesson of backups when one has little to lose. If you lack backups, you *will* lose important data eventually. 
 
@@ -32,7 +32,7 @@ Windows: File History
 Linux: ???
 
 
-### SSH Keys
+## SSH Keys
 
 Using password auth with ssh is a bad idea. SSH keys 
 
@@ -43,7 +43,7 @@ ssh-keygen
 {% endhighlight %}
 
 
-### Avoid Root
+## Avoid Root
 
 Use sudo instead of root. This makes it a little bit easier to avoid expensive mistakes.
 
