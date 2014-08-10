@@ -1,5 +1,5 @@
 ---
-date: '2014-08-03 23:13:57'
+date: '2014-08-09 23:13:57'
 layout: post
 slug: the-rarely-taught-basics-of-building-software
 published: true
