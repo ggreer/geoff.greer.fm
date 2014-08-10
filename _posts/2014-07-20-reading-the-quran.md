@@ -5,6 +5,7 @@ slug: reading-the-quran
 published: true
 title: "Reading the Qur'an"
 categories:
+  - 'Everything/Nothing'
   - Religion
 ---
 
