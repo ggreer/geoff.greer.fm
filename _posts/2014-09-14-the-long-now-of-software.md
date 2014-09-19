@@ -9,7 +9,9 @@ categories:
   - Futurism
 ---
 
-What sort of software can be built today that would be useful a century from now?<sup>[\[1\]](#ref_1)</sup> Give it 60 seconds of thought before reading on. I'll wait.
+What sort of software can be built today that would be useful a century from now?<sup>[\[1\]](#ref_1)</sup> Before reading on, give it <span id="thought_countdown">60 seconds</span> of thought.
+
+Don't worry. I'll wait.
 
 <br />
 
@@ -29,7 +31,7 @@ What sort of software can be built today that would be useful a century from now
 
 <br />
 
-No matter what happens, I doubt that any executable compiled today will run on a computer a century hence. There are simply too many unpredictable ways in which computers will change. New CPU architectures and operating systems will arise. Protocols and encoding formats will change. New interaction paradigms will be invented.
+No matter what happens, I doubt that any executable compiled today will run on a computer a century hence. There are simply too many unpredictable ways in which computers will change. New CPU architectures and operating systems will arise. New protocols and encoding formats will be standardized. New interaction paradigms will be invented.
 
 So what, if anything, *won't change*? Which of today's programming languages will still be supported? Which file formats used today today will still be popular in 2114?
 
@@ -51,3 +53,22 @@ It's important to remember that software is like an [active structure](https://e
 1. <span id="ref_1"></span>This assumes no technological singularity or anything like that. Just people, software, and computers.
 
 2. <span id="ref_2"></span>Fortran and COBOL might still be around, but they're niche languages even today.
+
+
+<script type="text/javascript">
+setTimeout(function () {
+  var i = 60,
+    tc = document.getElementById("thought_countdown"),
+    tci;
+
+  tci = setInterval(function () {
+    i--;
+    if (i >= 0) {
+      tc.innerHTML = i + " second" + (i === 1 ? "" : "s");
+    } else {
+      clearInterval(tci);
+    }
+  }, 1000);
+}, 10000);
+
+</script>
