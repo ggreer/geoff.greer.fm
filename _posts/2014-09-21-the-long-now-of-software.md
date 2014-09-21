@@ -1,5 +1,5 @@
 ---
-date: '2014-09-14 18:44:34'
+date: '2014-09-21 18:44:34'
 layout: post
 slug: the-long-now-of-software
 published: true
