@@ -31,6 +31,21 @@ Don't worry. I'll wait.
 
 <br />
 
+My first (and [not unique](https://twitter.com/bjorntipling/status/513560354425556992)) idea was software for space probes. Interstellar probes last a long time. [The Voyagers](https://en.wikipedia.org/wiki/Voyager_program) have been running for over 40 years, and can be expected to remain active for another decade. Still, there are older software projects in use.
+
+BSD grep was written by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) in 1973. FreeBSD and OS X use its modern descendant. Hundreds of millions of Macs have software with roots going back over 40 years. (Sorry Linux users, GNU grep was created in 1999.)
+
+How has grep survived for so long? The original grep binary was for the [PDP-11](https://en.wikipedia.org/wiki/PDP-11). The file encodings it originally supported are long dead. 
+
+I think there are several reasons why grep has stuck around:
+
+1. The code is licensed permissively.
+1. The language it is written in (C) is still popular today.
+1. The problem it solves (searching text files & streams) is still a problem today.
+1. People maintain it, mostly due to the reasons above.
+
+
+
 No matter what happens, I doubt that any executable compiled today will run on a computer a century hence. There are simply too many unpredictable ways in which computers will change. New CPU architectures and operating systems will arise. New protocols and encoding formats will be standardized. New interaction paradigms will be invented.
 
 So what, if anything, *won't change*? Which of today's programming languages will still be supported? Which file formats used today today will still be popular in 2114?
