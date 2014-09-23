@@ -31,29 +31,32 @@ What sort of software can be built today that would be useful a century from now
 
 <br />
 
-My first ([though not unique](https://twitter.com/bjorntipling/status/513560354425556992)) idea was software for space probes. Interstellar probes last a long time. [The Voyagers](https://en.wikipedia.org/wiki/Voyager_program) have been running for over 40 years, and can be expected to remain active for another decade. Unfortunately, that only gets us halfway to our goal. There are older software projects still in use today, and they're a little easier to build than space probes.
+My first ([though not unique](https://twitter.com/bjorntipling/status/513560354425556992)) idea was software for space probes. Interstellar probes last a long time. [The Voyagers](https://en.wikipedia.org/wiki/Voyager_program) have been running for over 40 years, and can be expected to remain active for another decade. That only gets us halfway to our goal, but there are older software projects still in use today. Most of them can be built more easily than space probes.
 
-[Grep](https://en.wikipedia.org/wiki/Grep) was written by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) in 1973. FreeBSD and OS X use a descendant of the original code. That means tens of millions of Macs have software with roots going back over 40 years. (Sorry Linux users, GNU grep was created in 1999.)
+[Grep](https://en.wikipedia.org/wiki/Grep) was created by [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) in 1973. FreeBSD and OS X use a descendant of the original code. Every Mac has software with roots going back over 40 years. (Sorry Linux users, GNU grep was created in 1999.)
 
-The original grep was compiled for the [PDP-11](https://en.wikipedia.org/wiki/PDP-11). The file encodings it supported are long dead. Computers have gotten a million times faster since it was created. Considering all that has changed, how has grep survived for so long? I think there are several factors:
+Considering all that has changed, how has grep survived for so long? The original grep was compiled for the [PDP-11](https://en.wikipedia.org/wiki/PDP-11). The file encodings it supported are long dead. Computers have gotten a million times faster since it was created.
+
+I think there are several factors explaining grep's longevity:
 
 1. The code is licensed permissively.
 1. It was written in a language that is still popular today \(C\).
 1. The problem it solves (searching text files & streams) is still a problem today.
-1. People maintain it, mostly due to the reasons above.
+1. People maintain it, mostly because of the reasons above.
 
-Anything we build today should satisfy similar criteria. Just as a binary compiled on a PDP-11 in 1973 won't run on a modern computer, I doubt that anything compiled today will run on a computer a century hence. There are simply too many unpredictable ways in which computers will change. New CPU architectures and operating systems will arise. New protocols and encoding formats will be standardized. New interaction paradigms will be invented. Hardware will probably get a million times faster.
+Anything we build today should satisfy similar criteria.
 
-So what, if anything, *won't change*? Which of today's programming languages will still be supported? Which file formats used today today will still be popular in 2114?
+Just as a binary compiled on a PDP-11 in 1973 won't run on a modern computer, I doubt that anything compiled today will run on a computer a century hence. Even if the source code is available, it will require maintenance. There are simply too many unpredictable ways in which computers will change. New CPU architectures and operating systems will arise. New protocols and encoding formats will be standardized. New interaction paradigms will be invented. Hardware will probably get a million times faster.
 
-Any software still used in the future must work with the simplest file format: text. Text files have been around since the dawn of computing, but they're as popular as ever. The encoding format may change, but it will likely be a superset of ASCII (like UTF-8).
+So what, if anything, *won't change*? Which of today's programming languages will still be supported? Which file formats used today will still be popular in 2114?
 
-When it comes to language support in 2114, few of today's languages will survive. If I had to put my money on one, it would be C. Fortran and COBOL might still be used, but they're niche languages even today. Newer languages such as Python, Ruby, and especially JavaScript may still be around, but they evolve more quickly than C. Any software written in those languages will require more effort to maintain. Go and Java aren't terrible bets, but C has been around for longer and is simpler to implement.
+When it comes to language support in 2114, few of today's languages will survive. If I had to put my money on one, it would be C. Fortran and COBOL might still be used, but they're niche languages even today. Newer languages such as Python, Ruby, and JavaScript may still be around, but they evolve more quickly than C. Any software written in those languages will require more effort to maintain. Go and Java aren't terrible bets, but C has been around for longer and is simpler to implement.
 
-It's not crazy to believe that if humans are still around and using computers in 2114, they'll have text files and C compilers. It was only in after I'd come to this conclusion that I realized Ag fits the criteria.
+File formats come and go, but one has been around since the beginning: Text files, and they're as popular as ever. The encoding format may change, but it will likely be a superset of ASCII (like UTF-8).
+
+It's not crazy to believe that if humans are still around and using computers in 2114, they'll have text files and C compilers. It was only in after I'd come to this conclusion that I realized [Ag](/ag/) fits the criteria.
 
 I hope that one day, a software archeologist will read my code and think, "Jeez, people must have had a lot of lead in their brains back then."
-
 
 
 <script type="text/javascript">
