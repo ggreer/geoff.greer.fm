@@ -11,7 +11,7 @@ var styles = {
 function set_style(style) {
   var date = new Date();
   _gaq.push(["_setCustomVar", 1, "Color", style[0], 1]);
-  document.body.style.background = style[1];
+  document.body.style.backgroundColor = style[1];
   main_css.attributes.href.value = style[2];
   code_css.attributes.href.value = style[3];
   invert_text.textContent = style[4];
