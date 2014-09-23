@@ -9,7 +9,7 @@ categories:
   - Futurism
 ---
 
-What sort of software can be built today that would be useful a century from now? This assumes no technological singularity or Mayan apocalypse; just people, software, and computers. <span class="thought_countdown_hide">Before reading on, give it <span id="thought_countdown">60 seconds</span> of thought.</span>
+What sort of software can be written today that would still be in service a century from now? This assumes no technological singularity or Mayan apocalypse; just people, software, and computers. Also, it doesn't have to be the *exact* same code. Maintaining the codebase is allowed. <span class="thought_countdown_hide">Before reading on, give it <span id="thought_countdown">60 seconds</span> of thought.</span>
 
 <span class="thought_countdown_hide">Don't worry. I'll wait.</span>
 
@@ -39,8 +39,8 @@ Considering all that has changed, how has grep survived for so long? The origina
 
 I think there are several factors explaining grep's longevity:
 
-1. The code is licensed permissively.
-1. It was written in a language that is still popular today \(C\).
+1. The code is permissively licensed.
+1. It was written in a language that remains popular \(C\).
 1. The problem it solves (searching text files & streams) is still a problem today.
 1. People maintain it, mostly because of the reasons above.
 
@@ -54,9 +54,9 @@ When it comes to language support in 2114, few of today's languages will survive
 
 File formats come and go, but one has been around since the beginning: Text files, and they're as popular as ever. The encoding format may change, but it will likely be a superset of ASCII (like UTF-8).
 
-It's not crazy to believe that if humans are still around and using computers in 2114, they'll have text files and C compilers. It was only in after I'd come to this conclusion that I realized [Ag](/ag/) fits the criteria.
+It's not crazy to believe that if humans are still alive and using computers in 2114, they'll have text files and C compilers. It was only after I'd come to this conclusion that I realized [Ag](/ag/) fits the criteria.
 
-I hope that one day, a software archeologist will read my code and think, "Jeez, people must have had a lot of lead in their brains back then."
+I hope that one day, a software archeologist reads my code and thinks, "Jeez, people back then must have had a lot of lead in their brains."
 
 
 <script type="text/javascript">
