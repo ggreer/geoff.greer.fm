@@ -2,6 +2,7 @@
 layout: page
 title: The Silver Searcher
 releases:
+- 0.25.0
 - 0.24.1
 - 0.24.0
 - 0.23.0
