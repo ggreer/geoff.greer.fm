@@ -15,7 +15,7 @@ This is by far the most-reported class of issues. There are a few reasons why th
 
 1. I don't use many types of ignore patterns in my own repos.
 2. Correctly parsing patterns requires complicated code.
-3. Adding accurate ignore behavior will make Ag slower. In typical usage, Ag already spends more time figuring out which files to search than time actually searching files.
+3. Adding accurate ignore behavior will make Ag slower. In typical usage, Ag already spends more time figuring out which files to search than actually searching files.
 4. Some patterns are inherently slow. I don't want users to blame Ag when the true cause is their own ignore rules.
 
 Recently, I paired with [Theo Spears](https://github.com/theospears) to [fix](https://github.com/ggreer/the_silver_searcher/pull/501/files) some of the ignore pattern issues. Theo has a sharp mind and a great personality. Together, we were able to make significant progress on ignores. Hopefully our schedules will allow us to collaborate in the future. Theo was also kind enough to triage many duplicate issues, which I have been slowly closing.
