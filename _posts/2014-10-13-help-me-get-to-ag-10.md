@@ -1,9 +1,9 @@
 ---
-date: '2014-10-06 19:39:37'
+date: '2014-10-13 07:39:37'
 layout: post
-slug: getting-to-ag-10
+slug: help-me-get-to-ag-10
 published: true
-title: Getting to Ag 1.0 (and an invitation to pair with me)
+title: Help Me Get to Ag 1.0
 categories:
   - Computers
   - the_silver_searcher
@@ -24,4 +24,8 @@ There's only one other issue I want to fix before tagging a 1.0 release: `--cont
 
 If I had to bet on Ag 1.0's release date, I would say January. My real work consumes me. Any time I spend on Ag is time I don't spend working on Floobits. Progress on Ag happens when others want to pair with me, since that also gives me a chance to get feedback about Floobits.
 
-To that end, I extend an invitation: **If you know C and want to pair with me on Ag, [let me know](/about/#contact).** It doesn't matter where you live. [Floobits](https://floobits.com/) makes it possible to pair from anywhere, so long as one has the bandwidth for video chat.
+To that end, I extend an invitation: If you know C and want to pair with me on Ag, let me know<sup>[\[1\]](#ref_1)</sup>. It's fine if you don't live in San Francisco. [Floobits](https://floobits.com/) makes it possible to pair from anywhere, so long as one has the bandwidth for video chat. 
+
+---
+
+1. <span id="ref_1"></span> {% include contact.md %}
