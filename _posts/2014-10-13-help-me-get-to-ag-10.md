@@ -9,14 +9,14 @@ categories:
   - the_silver_searcher
 ---
 
-[My work](https://floobits.com/) has resulted in me neglecting [Ag](/ag/) over the past 18 months. There have been bug fixes, a few new features, and contributions by users. But one pernicious class of issuess remain: Ignore patterns aren't obeyed correctly.
+[My work](https://floobits.com/) has resulted in me neglecting [Ag](/ag/) for the past 18 months. There have been bug fixes, a few new features, and some contributions by users. But one pernicious class of issues remain: Ignore patterns aren't obeyed correctly.
 
 This is by far the most-reported class of issues. There are a few reasons why they persist:
 
 1. I don't use many types of ignore patterns in my own repos.
 2. Correctly parsing patterns requires complicated code.
-3. Many patterns are pathologically slow.
-4. Complicated patterns often don't do what people expect. In many cases, it may make sense for Ag to ignore them and print a few extra results.
+3. Adding accurate ignore behavior will make Ag slower. In typical usage, Ag already spends more time figuring out which files to search than time actually searching files.
+4. Some patterns are inherently slow. I don't want users to blame Ag when the true cause is their own ignore rules.
 
 Recently, I paired with [Theo Spears](https://github.com/theospears) to [fix](https://github.com/ggreer/the_silver_searcher/pull/501/files) some of the ignore pattern issues. Theo has a sharp mind and a great personality. Together, we were able to make significant progress on ignores. Hopefully our schedules will allow us to collaborate in the future. Theo was also kind enough to triage many duplicate issues, which I have been slowly closing.
 
