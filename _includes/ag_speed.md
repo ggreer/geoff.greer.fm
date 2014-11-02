@@ -71,7 +71,7 @@ function drawChart() {
 
   // Set chart options
   var options = {
-                  'title':'Core i7 4770k (4 x 4GHz Haswell), XGB directory, YGB code',
+                  'title':'Core i7 4770k (4 x 4GHz Haswell), 16 GB directory, 2.4 GB searched',
                   'fontSize': 20,
                   'backgroundColor': {
                     'fill': '#eef'
@@ -92,7 +92,10 @@ function drawChart() {
                       'count': 7
                     },
                     'minValue': 0,
-                    'title': 'Seconds'
+                    'title': 'Seconds',
+                    'viewWindow': {
+                      max: 30
+                    }
                   },
                   'colors': [
                     '#43d',
@@ -1272,7 +1275,10 @@ function drawChart() {
                   'count': 7
                 },
                 'minValue': 0,
-                'title': 'Seconds'
+                'title': 'Seconds',
+                'viewWindow': {
+                  max: 20
+                }
               },
               'colors': [
                 '#43d',
