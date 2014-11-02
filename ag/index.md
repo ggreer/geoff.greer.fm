@@ -45,6 +45,12 @@ After downloading the tarball and signature, run:
 
 <br />
 
+## Are we fast yet?
+
+{% include ag_speed.md %}
+
+<br />
+
 ## Related posts
 {% for post in site.categories.the_silver_searcher %}
 * [{{ post.title }}]({{ post.url }})
