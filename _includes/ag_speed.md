@@ -1151,7 +1151,7 @@ function drawChart() {
 
   // Set chart options
   var options = {
-                  'title':'Core i7 4770k (4 x 4GHz Haswell), 16 GB directory, 2.4 GB searched',
+                  'title':'Core i7 4770k (4 x 4GHz Haswell), 16GB directory, ≈2.4GB searched',
                   'fontSize': 20,
                   'backgroundColor': {
                     'fill': '#eef'
@@ -1164,7 +1164,7 @@ function drawChart() {
                     'position': 'top'
                   },
                   'hAxis': {
-                    'title': 'Versions over time',
+                    'title': 'Newer versions to the right. Lower scores are better.',
                     'textPosition': 'none'
                   },
                   'vAxis': {
@@ -1174,7 +1174,7 @@ function drawChart() {
                     'minValue': 0,
                     'title': 'Seconds',
                     'viewWindow': {
-                      max: 30
+                      max: 20
                     }
                   },
                   'colors': [
@@ -2332,7 +2332,7 @@ function drawChart() {
   ]);
 
   options = {
-              'title':'AMD A4-5000 (4 x 1.5Ghz Kabini), 8.3 GB directory, 0.7 GB searched',
+              'title':'AMD A4-5000 (4 x 1.5GHz Kabini), 8.3GB directory, ≈0.7GB searched',
               'fontSize': 20,
               'backgroundColor': {
                 'fill': '#eef'
@@ -2345,7 +2345,7 @@ function drawChart() {
                 'position': 'top'
               },
               'hAxis': {
-                'title': 'Versions over time',
+                'title': 'Newer versions to the right. Lower scores are better.',
                 'textPosition': 'none'
               },
               'vAxis': {

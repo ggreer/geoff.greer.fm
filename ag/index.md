@@ -45,7 +45,7 @@ After downloading the tarball and signature, run:
 
 <br />
 
-## Are we fast yet?
+## [Are we fast yet?](/ag/speed/)
 
 {% include ag_speed.md %}
 
