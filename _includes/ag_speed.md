@@ -165,7 +165,7 @@ function drawChart() {
   ]);
 
   options = {
-              'title':'Core i7 4770k (4 x 4GHz Haswell), 16GB directory, ≈2.4GB searched',
+              'title':'Core i7 4770K (4 x 4GHz Haswell), 16GB directory, ≈2.4GB searched',
               'fontSize': 20,
               'backgroundColor': {
                 'fill': '#eef'
@@ -2520,7 +2520,7 @@ function drawChart() {
   ]);
 
   options = {
-              'title':'Core i7 4770k (4 x 4GHz Haswell), 16GB directory, ≈2.4GB searched',
+              'title':'Core i7 4770K (4 x 4GHz Haswell), 16GB directory, ≈2.4GB searched',
               'fontSize': 20,
               'backgroundColor': {
                 'fill': '#eef'
