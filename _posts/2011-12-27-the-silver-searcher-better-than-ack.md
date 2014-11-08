@@ -12,7 +12,7 @@ categories:
 
 A lot of my time spent "writing" code is actually spent reading code. And a decent chunk of my time spent reading code is actually spent searching code. Lately I've started working with a larger codebase.<sup>[\[1\]](#ref_1)</sup> Both grep and ack take a non-negligible amount of time to search it. Both are slow, but for different reasons. [Grep](http://www.gnu.org/s/grep/) is fast, but doesn't ignore files.<sup>[\[2\]](#ref_2)</sup> [Ack](http://betterthangrep.com/) is very good at ignoring files, but it's written in Perl instead of C. What I really want is something that's fast _and_ ignores files.
 
-So I built it. I call it [The Silver Searcher](https://github.com/ggreer/the_silver_searcher), or [Ag](http://en.wikipedia.org/wiki/Symbol_(chemical_element)) for short. Ag is like ack, but better. It's fast. It's damn fast. The only thing faster is stuff that builds indicies beforehand, like [Exuberant Ctags](http://ctags.sourceforge.net/).
+So I built it. I call it [The Silver Searcher](https://github.com/ggreer/the_silver_searcher), or [Ag](https://en.wikipedia.org/wiki/Symbol_%28chemistry%29) for short. Ag is like ack, but better. It's fast. It's damn fast. The only thing faster is stuff that builds indicies beforehand, like [Exuberant Ctags](http://ctags.sourceforge.net/).
 
 Don't believe me? Here are some benchmarks. I ran them multiple times and grabbed the median for each.
 
