@@ -9,5 +9,6 @@ images
 photos
 stats
 styles/main*.css
+styles/*.css
 videos
 _site
