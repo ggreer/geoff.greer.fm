@@ -1,0 +1,164 @@
+@import "colors.less";
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(/static/oswald.woff) format('woff');
+}
+
+.hex_gen(@edge_length, @hex_margin, @hex_color) {
+  @hex_size: sqrt(pow(@edge_length, 2) - pow(@edge_length/2, 2));
+  .hex_base {
+    float: left;
+    width: 0;
+    content: "";
+    border-top: round(@hex_size) solid transparent;
+    border-bottom: round(@hex_size) solid transparent;
+  }
+  &:before {
+    .hex_base;
+    margin-left: -@edge_length/2;
+    border-right: @edge_length/2 solid @hex_color;
+  }
+  .hex_base;
+  margin-right: @hex_margin;
+  margin-bottom: -(@hex_size*2 - @hex_margin)/2;
+  margin-left: @edge_length/2;
+  width: @edge_length;
+  height: @hex_size*2;
+  background: @hex_color;
+  border: 0;
+  &.even {
+    margin-top: (@hex_size*2 + @hex_margin)/2;
+  }
+  &:after {
+    .hex_base;
+    margin-left: @edge_length;
+    border-left: @edge_length/2 solid @hex_color;
+  }
+}
+
+#hexes_gen(@color) {
+  #navbar_container {
+    border-bottom: 2px solid @color;
+  }
+  #nav_main_page {
+    a, a:hover {
+      color: @color;
+    }
+  }
+  #hexes {
+    z-index: -1;
+    position: absolute;
+    font-family: 'Oswald', Impact, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: black;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    #container {
+      line-height: normal;
+      font-size: 36px;
+      position: absolute;
+      top: 270px;
+      left: 160px;
+      width: 520px;
+      p {
+        margin: 1em 0;
+      }
+      h1 {
+        font-family: 'Oswald', Impact, sans-serif;
+        font-size: 48px;
+      }
+      a {
+        color: @color;
+      }
+      color: @color;
+      z-index: 5;
+      padding: 0;
+    }
+    .hex_row {
+      width: 10000px;
+      clear: left;
+      margin-left: -111px;
+      margin-top: -115px;
+    }
+    .hex {
+      .hex_gen(128px, 12px, @color);
+    }
+    .hex_small {
+      .hex_gen(120px, 0px, #000);
+      position: absolute;
+      margin-top: 7px;
+      margin-left: 5px;
+    }
+    .hex_inner {
+      .hex_gen(110px, 0px, @color);
+      position: absolute;
+      margin-top: 9px;
+      margin-left: 5px;
+    }
+    .hex_text {
+      position: absolute;
+      top: 8px;
+      width: 191px;
+      text-align: center;
+      font-family: 'Oswald', Impact, sans-serif;
+      margin-left: -40px;
+      font-size: 38px;
+      line-height: 57px;
+    }
+  }
+}
+
+body {
+  overflow-y: hidden;
+  &.blue {
+    #hexes_gen(@mid_blue);
+  }
+  &.dark_blue {
+    #hexes_gen(darken(@mid_blue, 40%));
+    #navbar_container {
+      border-bottom: 2px solid @mid_blue;
+    }
+    #nav_main_page {
+      a, a:hover {
+        color: @mid_blue;
+      }
+    }
+  }
+  &.green {
+    #hexes_gen(#2c3);
+  }
+  &.dark_green {
+    #hexes_gen(darken(#2c3, 50%));
+    #navbar_container {
+      border-bottom: 2px solid #2c3;
+    }
+    #nav_main_page {
+      a, a:hover {
+        color: #2c3;
+      }
+    }
+  }
+  &.red {
+    #hexes_gen(#a00);
+  }
+  &.dark_red {
+    #hexes_gen(darken(#a00, 17%));
+    #navbar_container {
+      border-bottom: 2px solid #a00;
+    }
+    #nav_main_page {
+      a, a:hover {
+        color: #a00;
+      }
+    }
+  }
+  &.yellow {
+    #hexes_gen(#f90);
+  }
+}
