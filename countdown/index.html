@@ -5,4 +5,36 @@ title: Countdown
 stylesheet: countdown
 ---
 
-test
+<div id="countdown_display"></div>
+
+<script type="text/javascript">
+var cd,
+  when;
+
+if (location.hash) {
+  when = new Date(location.hash);
+} else {
+  when = new Date();
+  when.setHours(0);
+  when.setMinutes(0);
+  when.setSeconds(0);
+  when.setMilliseconds(0);
+  when.setDate(when.getDate() + 1);
+}
+
+cd = document.getElementById("countdown_display");
+
+function lead_zero(i) {
+  return i < 10 ? "0" + i : "" + i;
+}
+
+function render() {
+  var r = new Date(when - Date.now());
+  cd.innerHTML = "" +
+    lead_zero(r.getHours()) + ":" +
+    lead_zero(r.getMinutes()) + ":" +
+    lead_zero(r.getSeconds());
+}
+
+setInterval(render, 100);
+</script>
