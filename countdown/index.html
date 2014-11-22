@@ -8,64 +8,154 @@ stylesheet: countdown
 <div id="countdown_display">
   <div id="hour" class="digits">
     <div class="digit">
-      <div class="segment a"></div>
-      <div class="segment b"></div>
-      <div class="segment c"></div>
-      <div class="segment d"></div>
-      <div class="segment e"></div>
-      <div class="segment f"></div>
-      <div class="segment g"></div>
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
     <div class="digit">
-      <div class="segment a"></div>
-      <div class="segment b"></div>
-      <div class="segment c"></div>
-      <div class="segment d"></div>
-      <div class="segment e"></div>
-      <div class="segment f"></div>
-      <div class="segment g"></div>
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
   </div>
-  h:
+  h
   <div id="minute" class="digits">
     <div class="digit">
-      <div class="segment a"></div>
-      <div class="segment b"></div>
-      <div class="segment c"></div>
-      <div class="segment d"></div>
-      <div class="segment e"></div>
-      <div class="segment f"></div>
-      <div class="segment g"></div>
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
     <div class="digit">
-      <div class="segment a"></div>
-      <div class="segment b"></div>
-      <div class="segment c"></div>
-      <div class="segment d"></div>
-      <div class="segment e"></div>
-      <div class="segment f"></div>
-      <div class="segment g"></div>
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
   </div>
-  m:
+  m
   <div id="second" class="digits">
     <div class="digit">
-      <div class="segment a"></div>
-      <div class="segment b"></div>
-      <div class="segment c"></div>
-      <div class="segment d"></div>
-      <div class="segment e"></div>
-      <div class="segment f"></div>
-      <div class="segment g"></div>
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
     <div class="digit">
-      <div class="segment a"></div>
-      <div class="segment b"></div>
-      <div class="segment c"></div>
-      <div class="segment d"></div>
-      <div class="segment e"></div>
-      <div class="segment f"></div>
-      <div class="segment g"></div>
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
     </div>
   </div>
   s
@@ -146,5 +236,17 @@ function render() {
   render_digit(seconds_1_s, r.getSeconds() % 10);
 }
 
-setInterval(render, 100);
+render_digit(hours_0_s, 8);
+render_digit(hours_1_s, 8);
+
+render_digit(minutes_0_s, 8);
+render_digit(minutes_1_s, 8);
+
+render_digit(seconds_0_s, 8);
+render_digit(seconds_1_s, 8);
+
+setTimeout(function () {
+  setInterval(render, 100);
+}, 1000);
+
 </script>
