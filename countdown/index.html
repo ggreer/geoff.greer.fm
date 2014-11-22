@@ -5,11 +5,97 @@ title: Countdown
 stylesheet: countdown
 ---
 
-<div id="countdown_display"></div>
+<div id="countdown_display">
+  <div id="hour" class="digits">
+    <div class="digit">
+      <div class="segment a"></div>
+      <div class="segment b"></div>
+      <div class="segment c"></div>
+      <div class="segment d"></div>
+      <div class="segment e"></div>
+      <div class="segment f"></div>
+      <div class="segment g"></div>
+    </div>
+    <div class="digit">
+      <div class="segment a"></div>
+      <div class="segment b"></div>
+      <div class="segment c"></div>
+      <div class="segment d"></div>
+      <div class="segment e"></div>
+      <div class="segment f"></div>
+      <div class="segment g"></div>
+    </div>
+  </div>
+  h:
+  <div id="minute" class="digits">
+    <div class="digit">
+      <div class="segment a"></div>
+      <div class="segment b"></div>
+      <div class="segment c"></div>
+      <div class="segment d"></div>
+      <div class="segment e"></div>
+      <div class="segment f"></div>
+      <div class="segment g"></div>
+    </div>
+    <div class="digit">
+      <div class="segment a"></div>
+      <div class="segment b"></div>
+      <div class="segment c"></div>
+      <div class="segment d"></div>
+      <div class="segment e"></div>
+      <div class="segment f"></div>
+      <div class="segment g"></div>
+    </div>
+  </div>
+  m:
+  <div id="second" class="digits">
+    <div class="digit">
+      <div class="segment a"></div>
+      <div class="segment b"></div>
+      <div class="segment c"></div>
+      <div class="segment d"></div>
+      <div class="segment e"></div>
+      <div class="segment f"></div>
+      <div class="segment g"></div>
+    </div>
+    <div class="digit">
+      <div class="segment a"></div>
+      <div class="segment b"></div>
+      <div class="segment c"></div>
+      <div class="segment d"></div>
+      <div class="segment e"></div>
+      <div class="segment f"></div>
+      <div class="segment g"></div>
+    </div>
+  </div>
+  s
+</div>
 
 <script type="text/javascript">
-var cd,
-  when;
+var hours,
+  hours_0_s,
+  hours_1_s,
+  minutes,
+  minutes_0_s,
+  minutes_1_s,
+  seconds,
+  seconds_0_s,
+  seconds_1_s,
+  when,
+  segment_lookup;
+
+segment_lookup = [
+  [1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 1, 0, 0, 0, 0],
+  [1, 1, 0, 1, 1, 0, 1],
+  [1, 1, 1, 1, 0, 0, 1],
+  [0, 1, 1, 0, 0, 1, 1],
+  [1, 0, 1, 1, 0, 1, 1],
+  [1, 0, 1, 1, 1, 1, 1],
+  [1, 1, 1, 0, 0, 0, 0],
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 0, 1, 1],
+];
 
 if (location.hash) {
   when = new Date(location.hash);
@@ -22,18 +108,42 @@ if (location.hash) {
   when.setDate(when.getDate() + 1);
 }
 
-cd = document.getElementById("countdown_display");
+hours = document.getElementById("hour").getElementsByClassName("digit");
+hours_0_s = hours[0].getElementsByClassName("segment");
+hours_1_s = hours[1].getElementsByClassName("segment");
 
-function lead_zero(i) {
-  return i < 10 ? "0" + i : "" + i;
+minutes = document.getElementById("minute").getElementsByClassName("digit");
+minutes_0_s = minutes[0].getElementsByClassName("segment");
+minutes_1_s = minutes[1].getElementsByClassName("segment");
+
+seconds = document.getElementById("second").getElementsByClassName("digit");
+seconds_0_s = seconds[0].getElementsByClassName("segment");
+seconds_1_s = seconds[1].getElementsByClassName("segment");
+
+function render_digit(segments, digit) {
+  var i,
+    values = segment_lookup[digit];
+
+  for (i = 0; i < values.length; i++) {
+    if (values[i]) {
+      segments[i].classList.add("on");
+    } else {
+      segments[i].classList.remove("on");
+    }
+  }
 }
 
 function render() {
   var r = new Date(when - Date.now());
-  cd.innerHTML = "" +
-    lead_zero(r.getHours()) + ":" +
-    lead_zero(r.getMinutes()) + ":" +
-    lead_zero(r.getSeconds());
+
+  render_digit(hours_0_s, Math.floor(r.getHours() / 10));
+  render_digit(hours_1_s, r.getHours() % 10);
+
+  render_digit(minutes_0_s, Math.floor(r.getMinutes() / 10));
+  render_digit(minutes_1_s, r.getMinutes() % 10);
+
+  render_digit(seconds_0_s, Math.floor(r.getSeconds() / 10));
+  render_digit(seconds_1_s, r.getSeconds() % 10);
 }
 
 setInterval(render, 100);
