@@ -6,6 +6,7 @@ stylesheet: countdown
 ---
 
 <div id="countdown_display">
+  <div id="sign">-</div>
   <div id="hour" class="digits">
     <div class="digit">
       <div class="segment a">
@@ -56,7 +57,6 @@ stylesheet: countdown
       </div>
     </div>
   </div>
-  h
   <div id="minute" class="digits">
     <div class="digit">
       <div class="segment a">
@@ -107,7 +107,6 @@ stylesheet: countdown
       </div>
     </div>
   </div>
-  m
   <div id="second" class="digits">
     <div class="digit">
       <div class="segment a">
@@ -158,7 +157,6 @@ stylesheet: countdown
       </div>
     </div>
   </div>
-  s
 </div>
 
 <script type="text/javascript">
@@ -172,7 +170,8 @@ var hours,
   seconds_0_s,
   seconds_1_s,
   when,
-  segment_lookup;
+  segment_lookup,
+  sign;
 
 segment_lookup = [
   [1, 1, 1, 1, 1, 1, 0],
@@ -197,6 +196,8 @@ if (location.hash) {
   when.setMilliseconds(0);
   when.setDate(when.getDate() + 1);
 }
+
+sign = document.getElementById("sign");
 
 hours = document.getElementById("hour").getElementsByClassName("digit");
 hours_0_s = hours[0].getElementsByClassName("segment");
@@ -234,6 +235,7 @@ function render() {
 
   render_digit(seconds_0_s, Math.floor(r.getSeconds() / 10));
   render_digit(seconds_1_s, r.getSeconds() % 10);
+  sign.innerHTML = (r.getTime() < 0 ? "+" : "-");
 }
 
 render_digit(hours_0_s, 8);

@@ -2,8 +2,8 @@
 @import "hexagons.less";
 
 @segment_border: 45px;
-@segment_height: 300px;
-@segment_width: 250px;
+@segment_height: 250px;
+@segment_width: 200px;
 
 @digit_height: @segment_height * 2;
 @digit_width: @segment_width;
@@ -22,10 +22,14 @@ body {
   right: 0;
 }
 
+#sign {
+  font-size: 196px;
+  display: none;
+}
+
 #countdown_display {
   color: @countdown;
   font-family: 'Oswald', Impact, sans-serif;
-  // font-size: 192px;
   margin: 0 auto;
   height: @digit_height;
   width: @digit_width * 7;
@@ -50,7 +54,6 @@ body {
 }
 
 .segment {
-  // display: inline-block;
   position: absolute;
   display: none;
   .bottom {
