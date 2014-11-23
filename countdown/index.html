@@ -5,9 +5,19 @@ title: Countdown
 stylesheet: countdown
 ---
 
-<div id="countdown_display">
-  <div id="sign">-</div>
-  <div id="hour" class="digits">
+<div class="countdown_display">
+  <div class="title">
+    Countdown
+  </div>
+  <div class="digits">
+    <div class="digit">
+      <div class="t">T</div>
+    </div>
+    <div class="digit">
+      <div class="sign">-</div>
+    </div>
+  </div>
+  <div class="digits hour">
     <div class="digit">
       <div class="segment a">
         <div class="bottom"></div>
@@ -57,7 +67,11 @@ stylesheet: countdown
       </div>
     </div>
   </div>
-  <div id="minute" class="digits">
+  <div class="colon">
+    <div class="top"></div>
+    <div class="bottom"></div>
+  </div>
+  <div class="digits minute">
     <div class="digit">
       <div class="segment a">
         <div class="bottom"></div>
@@ -107,7 +121,11 @@ stylesheet: countdown
       </div>
     </div>
   </div>
-  <div id="second" class="digits">
+  <div class="colon">
+    <div class="top"></div>
+    <div class="bottom"></div>
+  </div>
+  <div class="digits second">
     <div class="digit">
       <div class="segment a">
         <div class="bottom"></div>
@@ -157,12 +175,69 @@ stylesheet: countdown
       </div>
     </div>
   </div>
+  <div class="decimal">
+    <div class="bottom"></div>
+  </div>
+  <div class="digits millisecond">
+    <div class="digit">
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+    <div class="digit">
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script type="text/javascript">
 var hours,
   hours_0_s,
   hours_1_s,
+  milliseconds,
+  milliseconds_0_s,
+  milliseconds_1_s,
   minutes,
   minutes_0_s,
   minutes_1_s,
@@ -187,7 +262,7 @@ segment_lookup = [
 ];
 
 if (location.hash) {
-  when = new Date(location.hash);
+  when = new Date(location.hash.slice(1));
 } else {
   when = new Date();
   when.setHours(0);
@@ -197,19 +272,23 @@ if (location.hash) {
   when.setDate(when.getDate() + 1);
 }
 
-sign = document.getElementById("sign");
+sign = document.getElementsByClassName("sign")[0];
 
-hours = document.getElementById("hour").getElementsByClassName("digit");
+hours = document.getElementsByClassName("hour")[0].getElementsByClassName("digit");
 hours_0_s = hours[0].getElementsByClassName("segment");
 hours_1_s = hours[1].getElementsByClassName("segment");
 
-minutes = document.getElementById("minute").getElementsByClassName("digit");
+minutes = document.getElementsByClassName("minute")[0].getElementsByClassName("digit");
 minutes_0_s = minutes[0].getElementsByClassName("segment");
 minutes_1_s = minutes[1].getElementsByClassName("segment");
 
-seconds = document.getElementById("second").getElementsByClassName("digit");
+seconds = document.getElementsByClassName("second")[0].getElementsByClassName("digit");
 seconds_0_s = seconds[0].getElementsByClassName("segment");
 seconds_1_s = seconds[1].getElementsByClassName("segment");
+
+milliseconds = document.getElementsByClassName("millisecond")[0].getElementsByClassName("digit");
+milliseconds_0_s = milliseconds[0].getElementsByClassName("segment");
+milliseconds_1_s = milliseconds[1].getElementsByClassName("segment");
 
 function render_digit(segments, digit) {
   var i,
@@ -235,20 +314,24 @@ function render() {
 
   render_digit(seconds_0_s, Math.floor(r.getSeconds() / 10));
   render_digit(seconds_1_s, r.getSeconds() % 10);
+
+  render_digit(milliseconds_0_s, Math.floor(r.getMilliseconds() / 100));
+  render_digit(milliseconds_1_s, Math.floor((r.getMilliseconds() % 100) / 10));
+
   sign.innerHTML = (r.getTime() < 0 ? "+" : "-");
 }
 
 render_digit(hours_0_s, 8);
 render_digit(hours_1_s, 8);
-
 render_digit(minutes_0_s, 8);
 render_digit(minutes_1_s, 8);
-
 render_digit(seconds_0_s, 8);
 render_digit(seconds_1_s, 8);
+render_digit(milliseconds_0_s, 8);
+render_digit(milliseconds_1_s, 8);
 
 setTimeout(function () {
-  setInterval(render, 100);
+  setInterval(render, 10);
 }, 1000);
 
 </script>
