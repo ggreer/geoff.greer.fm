@@ -14,7 +14,8 @@ stylesheet: countdown
       <div class="t">T</div>
     </div>
     <div class="digit">
-      <div class="sign">-</div>
+      <div class="sign"></div>
+      <div class="plus"></div>
     </div>
   </div>
   <div class="digits hour">
@@ -241,6 +242,7 @@ var hours,
   minutes,
   minutes_0_s,
   minutes_1_s,
+  plus,
   seconds,
   seconds_0_s,
   seconds_1_s,
@@ -273,6 +275,7 @@ if (location.hash) {
 }
 
 sign = document.getElementsByClassName("sign")[0];
+plus = document.getElementsByClassName("plus")[0];
 
 hours = document.getElementsByClassName("hour")[0].getElementsByClassName("digit");
 hours_0_s = hours[0].getElementsByClassName("segment");
@@ -318,7 +321,11 @@ function render() {
   render_digit(milliseconds_0_s, Math.floor(r.getMilliseconds() / 100));
   render_digit(milliseconds_1_s, Math.floor((r.getMilliseconds() % 100) / 10));
 
-  sign.innerHTML = (r.getTime() < 0 ? "+" : "-");
+  if (r.getTime() < 0) {
+    plus.classList.add("on");
+  } else {
+    plus.classList.remove("on");
+  }
 }
 
 render_digit(hours_0_s, 8);
@@ -330,8 +337,13 @@ render_digit(seconds_1_s, 8);
 render_digit(milliseconds_0_s, 8);
 render_digit(milliseconds_1_s, 8);
 
-setTimeout(function () {
-  setInterval(render, 10);
-}, 1000);
+function rfa() {
+  render();
+  setTimeout(function () {
+    window.requestAnimationFrame(rfa);
+  }, 10);
+}
+
+setTimeout(rfa, 1000);
 
 </script>

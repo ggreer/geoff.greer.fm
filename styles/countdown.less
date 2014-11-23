@@ -1,9 +1,9 @@
 @import "colors.less";
 @import "hexagons.less";
 
-@segment_border: 24px;
+@segment_border: 28px;
 @segment_height: 128px;
-@segment_width: 96px;
+@segment_width: 108px;
 
 @digit_height: @segment_height * 2;
 @digit_width: @segment_width;
@@ -32,12 +32,28 @@ body {
     font-size: @segment_height / 2;
   }
   .t {
-    display: inline-block;
-    font-size: @segment_height;
+    font-size: @segment_height * 1.5;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .sign {
-    display: inline-block;
-    font-size: @segment_height;
+    background-color: @countdown;
+    height: @segment_border;
+    position: absolute;
+    top: @segment_height - (@segment_border / 2);
+    left: @segment_width * 0.05;
+    width: @segment_width * 0.9;
+  }
+  .plus {
+    &.on {
+      background-color: @countdown;
+    }
+    height: @segment_width * 0.9;
+    width: @segment_border;
+    position: absolute;
+    top: @segment_height - (@segment_width * 0.45);
+    left: (@segment_width - @segment_border) / 2;
   }
 }
 
@@ -61,10 +77,10 @@ body {
   width: @digit_width / 2;
   .bottom, .top {
     background-color: @countdown;
+    height: @segment_border * 1.5;
+    left: @segment_border / 2;
     position: absolute;
     width: @segment_border;
-    height: @segment_border;
-    left: @segment_border / 2;
   }
 }
 
@@ -88,6 +104,7 @@ body {
   .segment {
     opacity: 0.15;
   }
+  // TODO: make these units smaller
 }
 
 .segment {
