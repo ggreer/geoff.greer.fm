@@ -1,12 +1,14 @@
 @import "colors.less";
-@import "hexagons.less";
+// @import "hexagons.less";
 
 @segment_border: 28px;
 @segment_height: 128px;
 @segment_width: 108px;
+@segment_padding: 6px;
 
-@digit_height: @segment_height * 2;
-@digit_width: @segment_width;
+@digit_height: @segment_height * 2 + @segment_padding * 4;
+@digit_width: @segment_width + @segment_padding * 2;
+@digits_width: @digit_width * 2 + 10;
 
 body {
   background-color: black;
@@ -25,9 +27,9 @@ body {
 .countdown_display {
   color: @countdown;
   font-family: 'Oswald', Impact, sans-serif;
-  height: @digit_height * 2;
+  height: @digit_height * 1.5;
   margin: 0 auto;
-  width: @digit_width * 16;
+  width: @digits_width * 6;
   .title {
     font-size: @segment_height / 2;
   }
@@ -41,8 +43,8 @@ body {
     background-color: @countdown;
     height: @segment_border;
     position: absolute;
-    top: @segment_height - (@segment_border / 2);
-    left: @segment_width * 0.05;
+    top: @segment_height - (@segment_border / 2) + @segment_padding * 2;
+    left: (@segment_width) * 0.05 + @segment_padding;
     width: @segment_width * 0.9;
   }
   .plus {
@@ -52,15 +54,15 @@ body {
     height: @segment_width * 0.9;
     width: @segment_border;
     position: absolute;
-    top: @segment_height - (@segment_width * 0.45);
-    left: (@segment_width - @segment_border) / 2;
+    top: @segment_height - (@segment_width * 0.45) + @segment_padding * 2;
+    left: (@segment_width - @segment_border) / 2 + @segment_padding;
   }
 }
 
 .digits {
   display: inline-block;
   height: @digit_height;
-  width: @digit_width * 2 + 4;
+  width: @digits_width;
 }
 
 .digit {
@@ -78,7 +80,7 @@ body {
   .bottom, .top {
     background-color: @countdown;
     height: @segment_border * 1.5;
-    left: @segment_border / 2;
+    left: (@segment_border + @segment_padding) / 2;
     position: absolute;
     width: @segment_border;
   }
@@ -86,10 +88,10 @@ body {
 
 .colon {
   .bottom {
-    bottom: @segment_border;
+    bottom: @segment_border + @segment_padding;
   }
   .top {
-    top: @segment_border;
+    top: @segment_border + @segment_padding;
   }
 }
 
@@ -139,43 +141,43 @@ body {
   &.a {
     width: @segment_width;
     height: @segment_border;
-    top: 0;
-    left: 0;
+    top:  0;
+    left: @segment_padding;
   }
   &.b {
     width: @segment_border;
     height: @segment_height;
-    top: 0;
+    top: @segment_padding;
     right: 0;
   }
   &.c {
     width: @segment_border;
     height: @segment_height;
-    top: @segment_height;
+    top: @segment_height + @segment_padding * 3;
     right: 0;
   }
   &.d {
     width: @segment_width;
     height: @segment_border;
     bottom: 0;
-    left: 0;
+    left: @segment_padding;
   }
   &.e {
     width: @segment_border;
     height: @segment_height;
-    top: @segment_height;
+    top: @segment_height + @segment_padding * 3;
     left: 0;
   }
   &.f {
     width: @segment_border;
     height: @segment_height;
-    top: 0;
+    top: @segment_padding;
     left: 0;
   }
   &.g {
     width: @segment_width;
     height: @segment_border;
-    top: @segment_height - @segment_border;
-    left: 0;
+    top: @segment_height - @segment_border + @segment_padding * 2;
+    left: @segment_padding;
   }
 }
