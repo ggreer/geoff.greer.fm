@@ -7,7 +7,7 @@ stylesheet: countdown
 
 <div class="countdown_display">
   <div class="title">
-    Countdown
+    Countdown <span class="when"></span>
   </div>
   <div class="digits">
     <div class="digit">
@@ -43,7 +43,6 @@ stylesheet: countdown
         <div class="bottom"></div>
       </div>
     </div>
-    &nbsp;
     <div class="digit">
       <div class="segment a">
         <div class="bottom"></div>
@@ -98,7 +97,6 @@ stylesheet: countdown
         <div class="bottom"></div>
       </div>
     </div>
-    &nbsp;
     <div class="digit">
       <div class="segment a">
         <div class="bottom"></div>
@@ -153,7 +151,6 @@ stylesheet: countdown
         <div class="bottom"></div>
       </div>
     </div>
-    &nbsp;
     <div class="digit">
       <div class="segment a">
         <div class="bottom"></div>
@@ -207,7 +204,6 @@ stylesheet: countdown
         <div class="bottom"></div>
       </div>
     </div>
-    &nbsp;
     <div class="digit">
       <div class="segment a">
         <div class="bottom"></div>
@@ -278,6 +274,20 @@ if (location.hash) {
   when.setDate(when.getDate() + 1);
 }
 
+function lead_zero(i) {
+  return i < 10 ? "0" + i : i;
+}
+
+function date_format(d) {
+  var str = "";
+  str += d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+  str += " ";
+  str += lead_zero(d.getHours()) + ":" + lead_zero(d.getMinutes()) + ":" + lead_zero(d.getSeconds());
+  return str + " UTC";
+}
+
+document.getElementsByClassName("when")[0].innerHTML = date_format(when);
+
 sign = document.getElementsByClassName("sign")[0];
 plus = document.getElementsByClassName("plus")[0];
 
@@ -311,7 +321,16 @@ function render_digit(segments, digit) {
 }
 
 function render() {
-  var r = new Date(when - Date.now());
+  var now = Date.now(),
+    r;
+
+  if (now > when) {
+    r = new Date(now - when);
+    plus.classList.add("on");
+  } else {
+    r = new Date(when - now);
+    plus.classList.remove("on");
+  }
 
   render_digit(hours_0_s, Math.floor(r.getHours() / 10));
   render_digit(hours_1_s, r.getHours() % 10);
@@ -324,12 +343,6 @@ function render() {
 
   render_digit(milliseconds_0_s, Math.floor(r.getMilliseconds() / 100));
   render_digit(milliseconds_1_s, Math.floor((r.getMilliseconds() % 100) / 10));
-
-  if (r.getTime() < 0) {
-    plus.classList.add("on");
-  } else {
-    plus.classList.remove("on");
-  }
 }
 
 render_digit(hours_0_s, 8);

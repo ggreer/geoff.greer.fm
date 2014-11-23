@@ -1,14 +1,15 @@
 @import "colors.less";
 // @import "hexagons.less";
 
-@segment_border: 28px;
-@segment_height: 128px;
-@segment_width: 108px;
-@segment_padding: 6px;
+@segment_border: 16px;
+@segment_height: 76px;
+@segment_width: 64px;
+@segment_padding: 4px;
 
 @digit_height: @segment_height * 2 + @segment_padding * 4;
 @digit_width: @segment_width + @segment_padding * 2;
-@digits_width: @digit_width * 2 + 10;
+@digit_spacing: 6px;
+@digits_width: @digit_width * 2 + @digit_spacing + 4;
 
 body {
   background-color: black;
@@ -27,11 +28,13 @@ body {
 .countdown_display {
   color: @countdown;
   font-family: 'Oswald', Impact, sans-serif;
-  height: @digit_height * 1.5;
-  margin: 0 auto;
+  height: @digit_height * 1.3;
+  margin: @digit_height auto;
   width: @digits_width * 6;
+  white-space: nowrap;
   .title {
     font-size: @segment_height / 2;
+    padding-bottom: @segment_height;
   }
   .t {
     font-size: @segment_height * 1.5;
@@ -63,6 +66,7 @@ body {
   display: inline-block;
   height: @digit_height;
   width: @digits_width;
+  white-space: nowrap;
 }
 
 .digit {
@@ -70,6 +74,9 @@ body {
   height: @digit_height;
   position: relative;
   width: @digit_width;
+  &:first-child {
+    margin-right: @digit_spacing;
+  }
 }
 
 .colon, .decimal {
