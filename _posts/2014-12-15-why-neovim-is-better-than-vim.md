@@ -8,12 +8,11 @@ categories:
 - Computers
 ---
 
-I know Vim better than most. Vim was my first real editor (after [Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_(text_editor)))
+I should start by saying that I know Vim better than most. Vim was my first real editor (after [Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_%28text_editor%29)). I helped write the Floobits plugin for Vim. I've delved into Vim's source code. I even helped write a patch (which was rejected). Considering these credentials, I hope you'll agree that I know what I'm talking about. So it may come as a shock when I say:
 
+The only good part of Vim is its user interface. Every other aspect of Vim is irredeemable. The codebase is atrocious. The plugin API is buggy and restrictive. The community is apathetic. The benevolent dictator is averse to change.
 
-
-
-
+I wish it were otherwise, but it isn't.
 
 
 
