@@ -1,12 +1,23 @@
 ---
-date: '2013-10-25 05:36:39'
+date: '2014-12-15 05:36:39'
 layout: post
-slug: every-aspect-of-vim-is-insane
-published: false
-title: Every Aspect of Vim is Insane
+slug: why-neovim-is-better-than-vim
+published: true
+title: Why Neovim is Better than Vim
 categories:
 - Computers
 ---
+
+I know Vim better than most. Vim was my first real editor (after [Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_(text_editor)))
+
+
+
+
+
+
+
+
+
 
 Matt and I have worked for months to add asynchronous functionality to Vim. In this time, I have found nothing good to say about Vim or its community.
 
