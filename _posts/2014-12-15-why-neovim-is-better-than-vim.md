@@ -8,12 +8,11 @@ categories:
 - Computers
 ---
 
-I should start by saying that I know Vim better than most. Vim was my first real editor (after [Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_%28text_editor%29)). I helped write the Floobits plugin for Vim. I've delved into Vim's source code to figure out how its event loop worked. I even helped write a patch (which was rejected). Considering these credentials, I hope you'll accept that I know what I'm talking about. So it may come as a shock when I say: The only good part of Vim is its user interface.
+I know Vim better than most. Vim was my first real editor (after [Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_%28text_editor%29)). I used it for years. I helped write the Floobits plugin for Vim. I've delved into Vim's source code to figure out how its event loop worked. I even helped write a patch ([which was rejected](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J)). Considering these credentials, I hope you'll accept that I know what I'm talking about. So it may come as a shock when I say: The only good part of Vim is its user interface.
 
-Every other aspect of Vim is irredeemable. The codebase is atrocious. The plugin API is buggy and restrictive. The community is apathetic. The benevolent dictator is averse to change. There is no chance of fixing these problems. I wish it were otherwise.
+Every other aspect of Vim is irredeemable. The codebase is atrocious. The plugin API is buggy and restrictive. The community is apathetic. The benevolent dictator is averse to change. There is no chance of fixing these problems.
 
-
-
+I wish it were otherwise, but it isn't.
 
 
 Matt and I have worked for months to add asynchronous functionality to Vim. In this time, I have found nothing good to say about Vim or its community.
