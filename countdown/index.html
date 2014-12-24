@@ -267,11 +267,11 @@ if (location.hash) {
   when = new Date(location.hash.slice(1));
 } else {
   when = new Date();
-  when.setHours(0);
-  when.setMinutes(0);
-  when.setSeconds(0);
-  when.setMilliseconds(0);
-  when.setDate(when.getDate() + 1);
+  when.setUTCHours(0);
+  when.setUTCMinutes(0);
+  when.setUTCSeconds(0);
+  when.setUTCMilliseconds(0);
+  when.setUTCDate(when.getUTCDate() + 1);
 }
 
 function lead_zero(i) {
@@ -280,9 +280,9 @@ function lead_zero(i) {
 
 function date_format(d) {
   var str = "";
-  str += d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+  str += d.getUTCFullYear() + "-" + (d.getUTCMonth() + 1) + "-" + d.getUTCDate();
   str += " ";
-  str += lead_zero(d.getHours()) + ":" + lead_zero(d.getMinutes()) + ":" + lead_zero(d.getSeconds());
+  str += lead_zero(d.getUTCHours()) + ":" + lead_zero(d.getUTCMinutes()) + ":" + lead_zero(d.getUTCSeconds());
   return str + " UTC";
 }
 
@@ -321,7 +321,7 @@ function render_digit(segments, digit) {
 }
 
 function render() {
-  var now = Date.now(),
+  var now = new Date(),
     r;
 
   if (now > when) {
