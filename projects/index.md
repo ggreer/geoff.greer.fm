@@ -42,7 +42,7 @@ Some command-line tools for working with [OS X's filesystem events](http://en.wi
 
 <br />
 
-## [TLS CipherSuite config generator](/ciphersuite)
+## [TLS CipherSuite config generator](/ciphersuite/)
 It's not easy to configure nginx or httpd to use the right cipher suites. There are dozens of combinations of key exchange, encryption, and message authentication algorithms. Some combinations are secure, some aren't. This is a simple tool that lets you pick among the secure combinations to generate a `SSLCipherSuite` config directive.
 {% if site.categories.ciphersuite %}
 #### Related posts
@@ -53,7 +53,7 @@ It's not easy to configure nginx or httpd to use the right cipher suites. There 
 
 <br />
 
-## [LS_COLORS generator](/lscolors)
+## [LS_COLORS generator](/lscolors/)
 For Linux, OS X, and \*BSD. I made this many years ago. I would destroy it out of embarrassment, but people  still seem to use it.  
 #### Related posts
 {% for post in site.categories.ls_colors %}
