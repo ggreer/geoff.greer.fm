@@ -15,9 +15,6 @@ Every other aspect of Vim is irredeemable. The codebase is atrocious. The plugin
 I wish it were otherwise, but it isn't.
 
 
-Matt and I have worked for months to add asynchronous functionality to Vim. In this time, I have found nothing good to say about Vim or its community.
-
-
 ### The Plugin API
 
 Vim's plugin API is insane. 
@@ -25,18 +22,9 @@ Vim's plugin API is insane.
 
 ### The Codebase
 
-Vim is without question the worst codebase I have seen. I learned C 16 years ago. I have never seen such an abysmal, neglected codebase. Copy-pasted code abounds. Worse, there are many chunks of copy-pasted code that are subtly changed.
+I started programming almost 20 years ago, and Vim is without question the worst codebase I have seen. Subtly-changed, copy-pasted code abounds. Lines contain tabs mixed with spaces. There are almost 25,000 lines in `eval.c`. It contains over 500 `#ifdef`s and references globals defined in the 2,000 line `globals.h`. `eval.c` has functions named `eval1()`, `eval2()`, `eval3()`, all the way up to `eval7()`.
 
-Lines contain tabs mixed with spaces.
-
-There is a file called `eval.c`. It is almost 25,000 lines. It contains over 500 `#ifdef`s. It references globals defined in the 2,000 line `globals.h`.
-
-
-"NOTE: Don't use ANSI style function declarations.  A few people still have to use a compiler that doesn't support it."
-
-
-
-Not even the venerable [`file`](http://en.wikipedia.org/wiki/File_%28command%29) can figure out the encoding.
+Another fun fact: Some of Vim's source code isn't any valid encoding. It's not ASCII or UTF-8. Even the venerable [`file`](http://en.wikipedia.org/wiki/File_%28command%29) can't figure out the encoding.
 
     ggreer@carbon:~/code/vim% file -I src/digraph.c 
     src/digraph.c: text/x-c; charset=unknown-8bit
@@ -44,9 +32,15 @@ Not even the venerable [`file`](http://en.wikipedia.org/wiki/File_%28command%29)
 Amazingly, `eval.c` is pure ASCII.
 
 
+
 ### The Developer Community
 
-Vim's developer community is the most hostile I've encountered. 
+Vim's developer community is the most hostile I've encountered. Anything that isn't a bug fix is frowned upon.
+
+Matt and I worked for months to add asynchronous functionality to Vim. In this time, I have nothing good to say about Vim's community.
+
+"NOTE: Don't use ANSI style function declarations.  A few people still have to use a compiler that doesn't support it."
+
 
 
 ### The not-so-benevolent Dictator
