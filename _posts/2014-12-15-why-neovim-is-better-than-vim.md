@@ -32,15 +32,15 @@ Another fun fact: Some of Vim's source code isn't any valid encoding. It's not A
 Amazingly, `eval.c` is pure ASCII.
 
 
-
 ### The Developer Community
 
-Vim's developer community is the most hostile I've encountered. Anything that isn't a bug fix is frowned upon.
+Matt and I worked for months to add asynchronous functionality to Vim. From that experience, I have nothing good to say about Vim's community. In fact, Vim's developer community is the most hostile I've encountered. Anything that isn't a bug fix is frowned upon. 
 
-Matt and I worked for months to add asynchronous functionality to Vim. In this time, I have nothing good to say about Vim's community.
+The first reply to our patch was:
 
-"NOTE: Don't use ANSI style function declarations.  A few people still have to use a compiler that doesn't support it."
+> NOTE: Don't use ANSI style function declarations.  A few people still have to use a compiler that doesn't support it.
 
+C89 is a quarter-century old. The number of people stuck on older compilers can be counted on one hand. This is a non-concern.
 
 
 ### The not-so-benevolent Dictator
@@ -50,3 +50,8 @@ Bram Moolenar is inscrutable. Some patches he ignores. Some, he attacks. Others,
 Take a look at the thread where we submitted our patch:
 
 We did our best to cater to his every whim, but it was a waste of time. The man simply does not understand what he's talking about.
+
+
+### The Alternative
+
+A couple of months after my disillusionment with Vim, Thiago Arruguda submitted a similar patch. It was likewise rejected. Unlike me, Thiago didn't give up. He started NeoVim and created a Bountysource project for it.
