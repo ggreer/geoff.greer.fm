@@ -118,10 +118,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post {
     line-height: 145%;
+    padding-bottom: 1em;
     sup { line-height: 100%; }
     img { max-width: 100%; }
     a, a:link { text-decoration: underline; }
-    padding-bottom: 1em;
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        th, td {
+            border: 1px solid black;
+            padding: @space/4;
+        }
+    }
 }
 
 div.row {
