@@ -93,7 +93,14 @@ hr {
     }
     a#home-link {
         color: @body_color;
-        font-weight: bold;
+        span.background {
+            color: @home_link_background;
+        }
+        &:hover {
+            span.background {
+                color: inherit;
+            }
+        }
     }
 }
 
