@@ -8,7 +8,7 @@ categories:
 - Computers
 ---
 
-In 2010, <a href="{% post_url 2010-11-16-five-years-of-progress-in-laptops %}">I compared my 2005 laptop to my then-current laptop</a>. It's 2015 now, so let's see how much laptops have improved.
+In 2010, <a href="{% post_url 2010-11-16-five-years-of-progress-in-laptops %}">I compared my 2005 laptop to my then-current laptop</a>. It's now 2015, so let's see how much devices have improved.
 
 <table>
   <thead>
@@ -69,7 +69,7 @@ In 2010, <a href="{% post_url 2010-11-16-five-years-of-progress-in-laptops %}">I
 
 <br />
 
-The specs don't tell the full story, but they give you some idea of how little laptops have advanced in the past half-decade. My current laptop is significantly faster than the 2010 MacBook Air, but it's not the same leap up from the iBook. It's hard to distinguish the two Airs. The form factor is identical. The new Air has a backlit keyboard, a MagSafe 2 connector, and a dual-microphone for noise reduction. Welcome improvements, but not exactly revolutionary. This picture summarizes the progress:
+The specs don't tell the full story, but they give you some idea of how little laptops have advanced in the past half-decade. My current hardware is significantly faster than the 2010 MacBook Air, but it's not the same leap up from the iBook. It's hard to distinguish the two Airs without closely inspecting them. The form factor is identical. The new Air has a backlit keyboard, a MagSafe 2 connector, and a dual-microphone for noise reduction. Welcome improvements, but not exactly revolutionary. This picture summarizes the progress:
 
 <a href="/photos/pics/DSC_8832.JPG"><img alt="Ten years of progress in laptops" src="/photos/pics/thumbs/DSC_8832.JPG" /></a>
 
@@ -81,4 +81,4 @@ This stagnation worries me. It's not just Apple neglecting their laptop line. I'
 
 This ThinkPad isn't in the same price range as the Air, but more expensive models make the same design mistakes. It has three always-on LEDs. They were so distracting that I had to cover them with black nail polish. The microphone is in the *palm rest*, making it practically useless. The camera is washed-out. The fan is noisy. The trackpad is tiny and glitchy. The keyboard is a mess. There is no caps lock indicator. Print Screen sits between the right alt and control keys. Although the hardware is [certified by Ubuntu](http://www.ubuntu.com/certification/hardware/201309-14195/), I spent months fixing basic things like screen brightness. I still can't get Bluetooth to work.
 
-In summary: Apple laptops have stagnated, and non-Apple laptops are a joke. The state of the laptop in 2015 is worrisome.
+In summary: Apple's laptops have stagnated, and most non-Apple products are a joke. The state of the laptop in 2015 is worrisome.
