@@ -20,13 +20,13 @@ The last iteration of the iBook G4 came out in September of 2005 and was sold un
   <tbody>
     <tr>
       <td>Processor</td>
-      <td>1.6Ghz Core 2 Duo</td>
-      <td>1.42Ghz PowerPC G4</td>
+      <td>1.6GHz Core 2 Duo</td>
+      <td>1.42GHz PowerPC G4</td>
     </tr>
     <tr>
       <td>Memory</td>
-      <td>4GB 1067Mhz DDR3 RAM</td>
-      <td>512MB 333Mhz DDR2 RAM <sup>[1]</sup></td>
+      <td>4GB 1067MHz DDR3 RAM</td>
+      <td>512MB 333MHz DDR2 RAM <sup>[1]</sup></td>
     </tr>
     <tr>
       <td>Storage</td>
@@ -57,7 +57,7 @@ The last iteration of the iBook G4 came out in September of 2005 and was sold un
 </table>
 
 
-\[1\] Bottlenecked by 142Mhz front side bus.
+\[1\] Bottlenecked by 142MHz front side bus.
 
 There are a dozen things that don't show up in the numbers. The iBook's keyboard is spongy. It has a smaller trackpad that only supports two-finger scrolling. The iBook's display is much worse, although that may be due to age. The iBook's trackpad is plastic instead of glass. Even with a fresh install of Leopard, it feels slow. Yet somehow I used it as my main computer for two years.
 
