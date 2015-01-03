@@ -8,24 +8,9 @@ categories:
 - Computers
 ---
 
-<script type="text/javascript">
-var style = document.createElement("style");
-style.setAttribute("type", "text/css");
-style.appendChild(document.createTextNode("\
-#github_streak_365:hover {\
-  background: url(\"/images/github_streak_365.gif\");\
-}\
-#github_streak_365 {\
-  background: url(\"/images/github_streak_365.png\");\
-  width: 740px;\
-  height: 292px;\
-}"));
-document.head.appendChild(style);
-</script>
-
 Today marks my 365<sup>th</sup> consecutive day of commits.
 
-<div id="github_streak_365" class="chart"></div>
+<img alt="365 Days of GitHub" src="/images/github_streak_365.gif" />
 
 This isn't as impressive as it might first seem. I did do *some* work every day, but I also took time off to read, exercise, socialize, and generally have fun. Writing code is part of my life, not all of it.
 

@@ -72,12 +72,12 @@ The author of the these fonts is Tristan Grimmer. He was kind enough to release 
 
 Personally, I like [ProggyTiny](/fonts/ProggyTiny.ttf) the most:
 
-<img alt="Proggy Tiny in Sublime Text" style="margin-left: -56px; width: 833px; height: 860px; max-width: none;" src="/images/proggy_tiny_sublime.png" />
+<img alt="Proggy Tiny in Sublime Text" src="/images/proggy_tiny_sublime.png" />
 
 Although many find it too small, it lets me fit tons of information on my screen. Even on my tiny 11&rdquo; Air, I can have a terminal with 225 columns and 65 rows of text:
 
 <br />
 
-[<img alt="Proggy Tiny in Terminal.app" style="max-width: none; width: 780px; margin-left: -29px;" src="/images/Screen Shot 2014-01-05 at 7.49.55 PM.png" />](/images/Screen Shot 2014-01-05 at 7.49.55 PM.png)
+[<img alt="Proggy Tiny in Terminal.app" src="/images/Screen Shot 2014-01-05 at 7.49.55 PM.png" />](/images/Screen Shot 2014-01-05 at 7.49.55 PM.png)
 
 Ah, the advantages of keen eyesight!

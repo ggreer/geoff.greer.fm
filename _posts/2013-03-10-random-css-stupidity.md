@@ -11,7 +11,7 @@ A few days ago, [Bjorn](http://bjorn.tipling.com/) showed me some weird CSS beha
 
 Assuming you have JavaScript enabled, you'll know the answer for your own browser below.
 
-<div style="width: 37em; margin: 0 auto; font-size: 90%; line-height: 120%;">
+<div style="margin: 0 auto; font-size: 90%; line-height: 120%;">
   <div style="outline: 2px solid #0af; padding: 0px 10px;" id="collapsed">
     <div style="outline: 2px solid orange; margin: 10px 0px;">
       I am an orange div with <code>margin: 10px 0px;</code><br />
