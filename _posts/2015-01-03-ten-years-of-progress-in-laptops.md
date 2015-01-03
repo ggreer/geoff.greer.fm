@@ -73,7 +73,7 @@ The specs don't tell the full story, but they give you some idea of how little l
 
 <a href="/photos/pics/DSC_8832.JPG"><img alt="Ten years of progress in laptops" src="/photos/pics/thumbs/DSC_8832.JPG" /></a>
 
-In comparison, phones and tablets have made huge advances. In 2005, my phone was a [Motorola Razr](https://en.wikipedia.org/wiki/Motorola_Razr#V3). In 2010, I had an [iPhone 3G](https://en.wikipedia.org/wiki/IPhone_3G). In 2015, I have an [iPhone 6](https://en.wikipedia.org/wiki/IPhone_6). It's a similar story for tablets. The [original iPad](https://en.wikipedia.org/wiki/IPad_%281st_generation%29) was released in 2010. Today's [iPad Air 2](https://en.wikipedia.org/wiki/IPad_Air_2) puts the original to shame.
+Phones and tablets have made huge advances in comparison. In 2005, my phone was a [Motorola Razr](https://en.wikipedia.org/wiki/Motorola_Razr#V3). In 2010, I had an [iPhone 3G](https://en.wikipedia.org/wiki/IPhone_3G). Now I have an [iPhone 6](https://en.wikipedia.org/wiki/IPhone_6). It's a similar story for tablets. The [original iPad](https://en.wikipedia.org/wiki/IPad_%281st_generation%29) was released in 2010. Today's [iPad Air 2](https://en.wikipedia.org/wiki/IPad_Air_2) puts the original to shame.
 
 This stagnation worries me. It's not just Apple neglecting their laptop line. I've looked at other brands, and nothing seems enticing. I have a ThinkPad X140e. Though it's the smallest-screened ThinkPad, it looks monstrous next to the Air.
 
