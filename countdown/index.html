@@ -356,9 +356,7 @@ render_digit(milliseconds_1_s, 8);
 
 function rfa() {
   render();
-  setTimeout(function () {
-    window.requestAnimationFrame(rfa);
-  }, 10);
+  window.requestAnimationFrame(rfa);
 }
 
 setTimeout(rfa, 1000);
