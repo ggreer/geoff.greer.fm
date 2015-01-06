@@ -280,7 +280,7 @@ function lead_zero(i) {
 
 function date_format(d) {
   var str = "";
-  str += d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+  str += d.getFullYear() + "-" + lead_zero(d.getMonth() + 1) + "-" + lead_zero(d.getDate());
   str += " ";
   str += lead_zero(d.getHours()) + ":" + lead_zero(d.getMinutes()) + ":" + lead_zero(d.getSeconds());
   return str + " UTC";
