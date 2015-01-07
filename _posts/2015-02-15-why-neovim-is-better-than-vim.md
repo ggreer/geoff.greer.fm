@@ -1,8 +1,8 @@
 ---
-date: '2014-12-15 05:36:39'
+date: '2015-02-15 05:36:39'
 layout: post
 slug: why-neovim-is-better-than-vim
-published: true
+published: false
 title: Why Neovim is Better than Vim
 categories:
 - Computers
