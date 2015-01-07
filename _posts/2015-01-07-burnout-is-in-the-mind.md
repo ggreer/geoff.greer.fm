@@ -25,7 +25,7 @@ Another argument against burnout comes from biology. The brain is not a muscle. 
 
 I'm not saying those who claim to be burnt-out are faking. I don't doubt that burnout describes a real phenomenon. What I *do* doubt is the accepted cause (work) and the accepted cure (time off from work). It seems much more likely that burnout is a form of depression<sup>[\[3\]](#ref_3)</sup>, which has a myriad of causes and cures.
 
-It is only after making all this noise about burnout that I feel comfortable suggesting the following: Don't worry about working too much. The important thing is to avoid depression. People more knowledgable than me have written on that subject, but to sum up their advice: Get out. Exercise. Try to form healthy habits. And stay the hell away from negative media such as cable news and Tumblr.
+It is only after making all this noise about burnout that I feel comfortable suggesting the following: Don't worry about working too much. The important thing is to avoid depression. People more knowledgable than I have written on that subject, but to sum up their advice: Get out. Exercise. Try to form healthy habits. And stay the hell away from negative media such as cable news and Tumblr.
 
 ---
 
