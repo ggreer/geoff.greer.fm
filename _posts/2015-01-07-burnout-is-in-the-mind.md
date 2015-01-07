@@ -15,7 +15,7 @@ I don't consider myself very devoted to my work, but I've been writing code ever
 
 Similarly, some people have television habits. It would take them effort to stop watching TV rather than continue doing so. Nobody asks, "Aren't you worried about getting burnt out from watching so much TV?" Yet it's not uncommon for me to hear the equivalent when it comes to code. To my ears, both questions sound equally silly.
 
-Speaking of burnout...
+Speaking of which...
 
 <br />
 
@@ -31,6 +31,6 @@ It is only after making all this noise about burnout that I feel comfortable sug
 
 1. <span id="ref_1"></span>See Wikipedia's article on [working time](https://en.wikipedia.org/wiki/Working_time#Gradual_decrease_in_working_hours).
 
-2. <span id="ref_2"></span>In fact, thinking is practically all we do while awake. Only with [dedication and practice](https://en.wikipedia.org/wiki/Mindfulness) can one reduce the constant stream of thoughts impinging upon consciousness.
+2. <span id="ref_2"></span>In fact, thinking is practically all we do while awake. Only with [dedication and practice](https://en.wikipedia.org/wiki/Mindfulness) can one reduce the constant stream of thoughts impinging upon consciousness. Even if you only count deliberate thought, people seem to have no trouble spending all day deeply focused on a video game.
 
-3. <span id="red_3"></span>[Is burnout separable from depression in cluster analysis? A longitudinal study](/files/Bianchi_20R__20et_20al__20_28in_20press_29.pdf) by Renzo Bianchi, Irvin Sam Schonfeld, & Eric Laurent.
+3. <span id="red_3"></span>[Is burnout separable from depression in cluster analysis? A longitudinal study](/files/Bianchi_20R__20et_20al__20_28in_20press_29.pdf), by Renzo Bianchi, Irvin Sam Schonfeld, & Eric Laurent.
