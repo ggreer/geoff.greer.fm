@@ -17,12 +17,35 @@ I wish it were otherwise, but it isn't.
 
 ### The Plugin API
 
-Vim's plugin API is insane. 
+Vim's plugin API is insane. First, all plugin code runs synchronously. That means if a plugin's code is executing, Vim's UI is frozen. This makes many classes of plugins difficult or impossible. Linters have to finish
+
+Another annoyance is that writing plugins requires knowledge of vimscript. This is true even if you're using a Vim support for other languages. Sure, you'll have access to Python's libraries and syntax, but your code will be littered with calls to `vim.command()` and `vim.eval()`.
+
+{% highlight python %}
+import vim
+
+# Show current directory in Vim
+cwd = vim.eval('getcwd()')
+vim.command(':Explore %s | redraw' % cwd)
+{% endhighlight %}
+
 
 
 ### The Codebase
 
-I started programming almost 20 years ago, and Vim is without question the worst codebase I have seen. Subtly-changed, copy-pasted code abounds. Lines contain tabs mixed with spaces. There are almost 25,000 lines in `eval.c`. It contains over 500 `#ifdef`s and references globals defined in the 2,000 line `globals.h`. `eval.c` has functions named `eval1()`, `eval2()`, `eval3()`, all the way up to `eval7()`.
+I started programming almost 20 years ago, and Vim is without question the worst codebase I have seen. Subtly-changed, copy-pasted code abounds. Indentation is haphazard. Lines contain tabs mixed with spaces. There are almost 25,000 lines in `eval.c`. It contains over 500 `#ifdef`s and references globals defined in the 2,000 line `globals.h`.
+
+Even something as simple as reading keyboard input is a nightmare in Vim.
+
+inchar in getchar.c calls ui_inchar in ui.c calls mch_inchar in os_unix.c calls WaitForChar calls RealWaitForChar
+
+Here's a snippet from `os_unix.c`
+
+You can view the whole thing at my [Vim Hall of WTF](/vim/#realwaitforchar).
+
+Neovim 
+
+<!-- `eval.c` has functions named `eval1()`, `eval2()`, `eval3()`, all the way up to `eval7()`. -->
 
 Another fun fact: Some of Vim's source code isn't any valid encoding. It's not ASCII or UTF-8. Even the venerable [`file`](http://en.wikipedia.org/wiki/File_%28command%29) can't figure out the encoding.
 
@@ -42,10 +65,12 @@ The first reply to our patch was:
 
 C89 is a quarter-century old. The number of people stuck on older compilers can be counted on one hand. This is a non-concern.
 
+The developer community is fragmented. Some want Vim to be similar to Sublime Text: A flexible, extensible text editor for developers. Bram and others are afraid of Vim becoming an IDE.
+
 
 ### The not-so-benevolent Dictator
 
-Bram Moolenar is inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
+Bram Moolenar merge criteria inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
 
 Take a look at the thread where we submitted our patch:
 
