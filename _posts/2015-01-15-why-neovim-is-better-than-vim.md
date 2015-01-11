@@ -1,11 +1,12 @@
 ---
-date: '2015-02-15 05:36:39'
+date: '2015-01-15 05:36:39'
 layout: post
 slug: why-neovim-is-better-than-vim
 published: false
 title: Why Neovim is Better than Vim
 categories:
 - Computers
+- Rant
 ---
 
 I know Vim better than most. Vim was my first real editor (after [Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_%28text_editor%29)). I used it for years. I helped write the Floobits plugin for Vim. I've delved into Vim's source code to figure out how its event loop worked. I even helped write a patch ([which was rejected](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J)). Considering these credentials, I hope you'll accept that I know what I'm talking about. So it may come as a shock when I say: The only good part of Vim is its user interface.
