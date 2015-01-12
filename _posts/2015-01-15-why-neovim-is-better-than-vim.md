@@ -36,6 +36,12 @@ vim.command(':Explore %s | redraw' % cwd)
 
 I started programming almost 20 years ago, and Vim is without question the worst codebase I have seen. Subtly-changed, copy-pasted code abounds. Indentation is haphazard. Lines contain tabs mixed with spaces. There are almost 25,000 lines in `eval.c`. It contains over 500 `#ifdef`s and references globals defined in the 2,000 line `globals.h`.
 
+Many of these `#ifdef`s are for platforms that became irrelevant decades ago: BeOS, VMS, Amiga, Mac OS Classic, IRIX. These preprocessor statements may seem innocuous, but they slow development and inhibit new features. Also, most of these platforms don't work anymore. It's just that nobody has an ancient system with which to test them. Neovim analyzed many of the 
+
+
+
+
+
 Even something as simple as reading keyboard input is a nightmare in Vim.
 
 inchar in getchar.c calls ui_inchar in ui.c calls mch_inchar in os_unix.c calls WaitForChar calls RealWaitForChar
@@ -81,3 +87,9 @@ We did our best to cater to his every whim, but it was a waste of time. The man 
 ### The Alternative
 
 A couple of months after my disillusionment with Vim, Thiago Arruguda submitted a similar patch. It was likewise rejected. Unlike me, Thiago didn't give up. He started NeoVim and created a Bountysource project for it.
+
+
+
+Right now you can clone Neovim, compile it, and have an editor that works with all your existing plugins. Using Neovim also unlocks some plugins that were previously impossible.
+
+If you are a Vim user, I strongly recommend Neovim. It's everything you want, and more.
