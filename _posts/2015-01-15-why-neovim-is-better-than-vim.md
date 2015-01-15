@@ -2,25 +2,27 @@
 date: '2015-01-15 05:36:39'
 layout: post
 slug: why-neovim-is-better-than-vim
-published: false
+published: true
 title: Why Neovim is Better than Vim
 categories:
 - Computers
 - Rant
 ---
 
-I know Vim better than most. Vim was my first real editor (after [Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_%28text_editor%29)). I used it for years. I helped write the Floobits plugin for Vim. I've delved into Vim's source code to figure out how its event loop worked. I even helped write a patch ([which was rejected](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J)). Considering these credentials, I hope you'll accept that I know what I'm talking about. So it may come as a shock when I say: The only good part of Vim is its user interface.
+I know Vim better than most. Vim was my first real editor.<sup>[\[1\]](#ref_1)</sup> I used it for years. I helped write the [Floobits plugin for Vim](https://github.com/Floobits/floobits-vim). I've delved into Vim's source code to figure out how it worked. I even [helped write a patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J) (though it was rejected). Considering these credentials, I hope you'll accept that I know what I'm talking about.
 
-Every other aspect of Vim is irredeemable. The codebase is atrocious. The plugin API is buggy and restrictive. The community is apathetic. The benevolent dictator is averse to change. There is no chance of fixing these problems.
+It may come as a shock when I say: The only good part of Vim is its user interface.
+
+Every other aspect of Vim is irredeemable. The codebase is atrocious. The plugin API is cumbersome and restrictive. The dev community is apathetic. The benevolent dictator is averse to change. There is no chance of fixing these problems.
 
 I wish it were otherwise, but it isn't.
 
 
 ### The Plugin API
 
-Vim's plugin API is insane. First, all plugin code runs synchronously. That means if a plugin's code is executing, Vim's UI is frozen. This makes many classes of plugins difficult or impossible. Linters have to finish
+Vim's plugin API is insane. First, all plugin code runs synchronously. That means if a plugin's code is executing, Vim's UI is frozen. This makes many classes of plugins difficult or impossible to implement. Linters have to finish in milliseconds or risk annoying the user. External commands (such as `make`) can't be cancelled, and they must finish before the user can resume editing.
 
-Another annoyance is that writing plugins requires knowledge of vimscript. This is true even if you're using a Vim support for other languages. Sure, you'll have access to Python's libraries and syntax, but your code will be littered with calls to `vim.command()` and `vim.eval()`.
+Another annoyance is that writing plugins requires knowledge of vimscript. This is true even if you're using a Vim with support for other languages. Sure, you'll have access to Python's libraries and syntax, but your code will be littered with calls to `vim.command()` and `vim.eval()`. Here's an example:
 
 {% highlight python %}
 import vim
@@ -36,13 +38,9 @@ vim.command(':Explore %s | redraw' % cwd)
 
 I started programming almost 20 years ago, and Vim is without question the worst codebase I have seen. Subtly-changed, copy-pasted code abounds. Indentation is haphazard. Lines contain tabs mixed with spaces. There are almost 25,000 lines in `eval.c`. It contains over 500 `#ifdef`s and references globals defined in the 2,000 line `globals.h`.
 
-Many of these `#ifdef`s are for platforms that became irrelevant decades ago: BeOS, VMS, Amiga, Mac OS Classic, IRIX. These preprocessor statements may seem innocuous, but they slow development and inhibit new features. Also, most of these platforms don't work anymore. It's just that nobody has an ancient system with which to test them. Neovim analyzed many of the 
+Many of these `#ifdef`s are for platforms that became irrelevant decades ago: BeOS, VMS, Amiga, Mac OS Classic, IRIX. These preprocessor statements may seem innocuous, but they slow development and inhibit new features. Also, Vim doesn't even work on most of these platforms anymore. It's just that nobody has an ancient system with which to test Vim. Neovim developers analyzed many of the preprocessor statements and [found a significant number that could never be included in a working Vim](https://github.com/neovim/neovim/pull/814).
 
-
-
-
-
-Even something as simple as reading keyboard input is a nightmare in Vim.
+Complexity stemming from cross-platform support may be excused, but even something as simple as reading keyboard input is a nightmare in Vim.
 
 inchar in getchar.c calls ui_inchar in ui.c calls mch_inchar in os_unix.c calls WaitForChar calls RealWaitForChar
 
@@ -64,20 +62,21 @@ Amazingly, `eval.c` is pure ASCII.
 
 ### The Developer Community
 
-Matt and I worked for months to add asynchronous functionality to Vim. From that experience, I have nothing good to say about Vim's community. In fact, Vim's developer community is the most hostile I've encountered. Anything that isn't a bug fix is frowned upon. 
+Matt and I worked for months to [add asynchronous functionality to Vim](https://news.floobits.com/2013/09/17/adding-settimeout-to-vim/). From that experience, I have nothing good to say about Vim's community. In fact, Vim's developer community is the most hostile I've encountered. Anything that isn't a bug fix is frowned upon.
 
-The first reply to our patch was:
+After we [posted our patch to the Vim-dev mailing list](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J), the first reply was:
 
-> NOTE: Don't use ANSI style function declarations.  A few people still have to use a compiler that doesn't support it.
+> NOTE: Don't use ANSI style function declarations. A few people still have to use a compiler that doesn't support it.
 
-C89 is a quarter-century old. The number of people stuck on older compilers can be counted on one hand. This is a non-concern.
+Seriously? C89 is a quarter-century old. The number of people stuck on older compilers can be counted on one hand. This is a non-concern.
+
 
 The developer community is fragmented. Some want Vim to be similar to Sublime Text: A flexible, extensible text editor for developers. Bram and others are afraid of Vim becoming an IDE.
 
 
 ### The not-so-benevolent Dictator
 
-Bram Moolenar merge criteria inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
+Bram Moolenar's merge criteria are inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
 
 Take a look at the thread where we submitted our patch:
 
@@ -86,10 +85,19 @@ We did our best to cater to his every whim, but it was a waste of time. The man 
 
 ### The Alternative
 
-A couple of months after my disillusionment with Vim, Thiago Arruguda submitted a similar patch. It was likewise rejected. Unlike me, Thiago didn't give up. He started NeoVim and created a Bountysource project for it.
+A couple of months after my disillusionment with Vim, Thiago Arruguda [submitted a similar patch](https://groups.google.com/d/msg/vim_dev/QF7Bzh1YABU/02-YGr7_sCwJ). It was likewise rejected. But unlike me, Thiago didn't give up. He started NeoVim and [created a Bountysource project for it](https://www.bountysource.com/teams/neovim).
+
+Neovim's plugin API is backwards-compatible with Vim, but it allows for asynchronous execution. Already, users have made plugins that Vim can never have. [Neomake](https://github.com/benekastah/neomake) allows async linters. (insert more here)
 
 
+
+The only thing Neovim is missing is a blessed stable release.
 
 Right now you can clone Neovim, compile it, and have an editor that works with all your existing plugins. Using Neovim also unlocks some plugins that were previously impossible.
 
 If you are a Vim user, I strongly recommend Neovim. It's everything you want, and more.
+
+
+---
+
+1. <span id="ref_1"></span>[Edit](https://en.wikipedia.org/wiki/MS-DOS_Editor) and [pico](http://en.wikipedia.org/wiki/Pico_%28text_editor%29) don't count.
