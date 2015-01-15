@@ -100,11 +100,11 @@ The rest of that thread is me being as civil as possible, despite discouragement
 On a more general note: After reading random posts on the Vim-dev mailing list, I get the impression that the developer community is fragmented. Some want Vim to be similar to [Sublime Text](http://www.sublimetext.com/): A flexible, extensible text editor for developers. Some (including [BDFL](http://en.wikipedia.org/wiki/Benevolent_dictator_for_life) Bram Moolenar) are afraid of Vim becoming an IDE.
 
 
-### The not-so-benevolent Dictator for Life
+### The Overly Cautious Dictator for Life
 
 Speaking of Bram Moolenar: His merge criteria are inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
 
-Take a look again at [the thread where Matt and I submitted our patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J). We did our best to cater to Bram's every whim, but it was a waste of time. Had he immediately told us to give up, it would have been a better outcome for all involved. Instead, we were given hope and strung along, working on a patch that had no chance of getting merged. To finally realize this was immensely aggravating.
+Take a look again at [the thread where Matt and I submitted our patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J). We did our best to cater to Bram's every whim, but it was a waste of time. Had he immediately told us to give up, it would have been a better outcome for all involved. Instead, we were given hope and strung along, working on a patch that had no chance of getting merged.
 
 
 ### The Alternative
@@ -123,7 +123,7 @@ In fact, they're nice to everyone. The main dev team holds no enmity toward Bram
 
 The only thing Neovim is missing is a tagged stable release. But there's no need to wait. Right now you can clone Neovim, compile it, and have an editor that works with all your existing plugins.
 
-If you are a Vim user, I strongly recommend switching to Neovim. It's everything you want, and more.
+If you are a Vim user, I strongly recommend switching to Neovim. It's the Vim you're used to, but with plugins you never knew you wanted.
 
 ---
 
