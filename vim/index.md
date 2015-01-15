@@ -10,7 +10,7 @@ This function is over 400 lines and contains over 40 `#ifdef`s. Its job? To wait
 
 1. Vim tries to be compatible with every OS, including dead ones such as BeOS, VMS, and Amiga.
 1. Features that drastically change behavior are enabled/disabled with preprocessor flags.
-1. 
+1. Cross-platform libraries like [libuv](https://github.com/libuv/libuv) didn't exist when Vim was created.
 
 {% highlight c %}
 #ifndef VMS
