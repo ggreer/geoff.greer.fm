@@ -93,41 +93,38 @@ Patches are often criticized for ridiculous reasons. After we [posted our patch 
 
 > NOTE: Don't use ANSI style function declarations. A few people still have to use a compiler that doesn't support it.
 
-C89 is a quarter-century old. The number of people stuck on older compilers can be counted on one hand. This is a non-concern.
+C89 is a quarter-century old. The number of people stuck on older compilers can be counted on one hand. This is a non-concern. Still, I acquiesced. In many cases, it was easier to make the change than argue with the critic.
 
-The rest of that thread shows me being as civil as possible, despite discouragement at every turn.
+The rest of that thread is me being as civil as possible, despite discouragement at every turn. The replies might as well be a paint-by-numbers guide on how to alienate new contributors.
 
-On a more general note: The developer community is fragmented. Some want Vim to be similar to Sublime Text: A flexible, extensible text editor for developers. Bram and others are afraid of Vim becoming an IDE.
+On a more general note: After reading random posts on the Vim-dev mailing list, I get the impression that the developer community is fragmented. Some want Vim to be similar to [Sublime Text](http://www.sublimetext.com/): A flexible, extensible text editor for developers. Some (including [BDFL](http://en.wikipedia.org/wiki/Benevolent_dictator_for_life) Bram Moolenar) are afraid of Vim becoming an IDE.
 
 
 ### The not-so-benevolent Dictator for Life
 
 Speaking of Bram Moolenar: The man's merge criteria are inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
 
-Take a look again at [the thread where we submitted our patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J).
-
-We did our best to cater to Bram's every whim, but it was a waste of time. Had he immediately told us to give up, it would have been a better outcome for everyone involved. Instead, we were given hope and strung along, working on a .
+Take a look again at [the thread where we submitted our patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J). We did our best to cater to Bram's every whim, but it was a waste of time. Had he immediately told us to give up, it would have been a better outcome for all involved. Instead, we were given hope and strung along, working on a patch that had no chance of getting merged. To finally realize this was immensely aggravating.
 
 
 ### The Alternative
 
-A couple of months after my disillusionment with Vim, [Thiago Arruguda](https://github.com/tarruda) [submitted a similar patch](https://groups.google.com/d/msg/vim_dev/QF7Bzh1YABU/02-YGr7_sCwJ). It was likewise rejected. But unlike me, Thiago didn't give up. He started NeoVim and [created a Bountysource project for it](https://www.bountysource.com/teams/neovim).
+A couple of months after my disillusionment with Vim, [Thiago Arruguda](https://github.com/tarruda) [submitted a similar patch](https://groups.google.com/d/msg/vim_dev/QF7Bzh1YABU/02-YGr7_sCwJ). It was likewise rejected. But unlike me, Thiago didn't give up. He started [NeoVim](http://neovim.org/) and [created a Bountysource project for it](https://www.bountysource.com/teams/neovim).
 
-Neovim's plugin API is backwards-compatible with Vim, but it also allows for asynchronous execution. Users have already made plugins that Vim can never have. [Neomake](https://github.com/benekastah/neomake) allows async linters. (insert more here)
+Neovim is exactly what it claims to be. It fixes every issue I have with Vim: The plugin API. The codebase. The community. The BDFL.
 
-Neovim's codebase is a substantial improvement. They've replaced much of the hacky, platform-specific code with [libuv](https://github.com/libuv/libuv).
+Neovim's plugin API is backwards-compatible with Vim, but it also allows for asynchronous execution. Users have already made plugins that Vim can never have. For example, [Neomake](https://github.com/benekastah/neomake) allows async linters. That plugin alone is worth making the switch for.
 
-https://github.com/neovim/neovim/wiki/Porting-OS-layer-to-libuv
+Neovim's codebase is a substantial improvement. They've [replaced much of the hacky, platform-specific code with libuv](https://github.com/neovim/neovim/wiki/Porting-OS-layer-to-libuv). They've fixed the problems with indentation, style, and bad file encodings. They've removed old code for ancient, unused platforms. They've drastically increased test quality and coverage. There's still much to be done, but the difference is already worlds better.
 
-Neovim's development community is great. They respond to issues. They merge pull requests.
+Neovim's development community is excellent. They respond to issues. They merge pull requests. The give quality feedback.
+
+
 The main dev team holds no enmity toward Bram Moolenar. They recognize Vim's failings, but they're too nice to criticize it like I am doing.
 
+The only thing Neovim is missing is a tagged stable release. But there's no need to wait. Right now you can clone Neovim, compile it, and have an editor that works with all your existing plugins.
 
-The only thing Neovim is missing is a blessed stable release.
-
-Right now you can clone Neovim, compile it, and have an editor that works with all your existing plugins. Using Neovim also unlocks some plugins that were previously impossible.
-
-If you are a Vim user, I strongly recommend Neovim. It's everything you want, and more.
+If you are a Vim user, I strongly recommend switching to Neovim. It's everything you want, and more.
 
 
 ---
