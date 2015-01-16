@@ -97,12 +97,12 @@ Seriously? C89 is a quarter-century old. The number of people stuck on older com
 
 The rest of that thread is me being as civil as possible, despite discouragement at every turn. The replies might as well be a paint-by-numbers guide on how to alienate new contributors.
 
-On a more general note: After reading random posts on the Vim-dev mailing list, I get the impression that the developer community is fragmented. Some want Vim to be similar to [Sublime Text](http://www.sublimetext.com/): A flexible, extensible text editor for developers. Some (including [BDFL](http://en.wikipedia.org/wiki/Benevolent_dictator_for_life) Bram Moolenar) are afraid of Vim becoming an IDE.
+On a more general note: After reading random posts on the Vim-dev mailing list, I get the impression that the developer community is fragmented. Some want Vim to be similar to [Sublime Text](http://www.sublimetext.com/): A flexible, extensible text editor for developers. Some (including [BDFL](http://en.wikipedia.org/wiki/Benevolent_dictator_for_life) Bram Moolenaar) are afraid of Vim becoming an IDE.
 
 
 ### The Overly Cautious Dictator for Life
 
-Speaking of Bram Moolenar: His merge criteria are inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
+Speaking of Bram Moolenaar: His merge criteria are inscrutable. Some patches he ignores. Some, he attacks. Others, he merges.
 
 Take a look again at [the thread where Matt and I submitted our patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J). We did our best to cater to Bram's every whim, but it was a waste of time. Had he immediately told us to give up, it would have been a better outcome for all involved. Instead, we were given hope and strung along, working on a patch that had no chance of getting merged.
 
@@ -119,7 +119,7 @@ Neovim's codebase is a substantial improvement. They've [replaced much of the ha
 
 Neovim's development community is excellent. They respond to issues. They merge pull requests. The give quality feedback. And most importantly, they're nice to newbies.
 
-In fact, they're nice to everyone. The main dev team holds no enmity toward Bram Moolenar. They recognize Vim's failings, but they don't feel the need to criticize it.
+In fact, they're nice to everyone. The main dev team holds no enmity toward Bram Moolenaar. They recognize Vim's failings, but they don't feel the need to criticize it.
 
 The only thing Neovim is missing is a tagged stable release. But there's no need to wait. Right now you can clone Neovim, compile it, and have an editor that works with all your existing plugins.
 
