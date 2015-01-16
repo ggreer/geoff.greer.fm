@@ -9,7 +9,7 @@ categories:
 - Rant
 ---
 
-I know Vim better than most. Vim was my first real text editor.<sup>[\[1\]](#ref_1)</sup> I used it for years. I helped write the [Floobits plugin for Vim](https://github.com/Floobits/floobits-vim). I've delved into Vim's source code to figure out how it worked. I even [helped write a patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J) (though it was rejected). Considering these credentials, I hope you'll accept that I know what I'm talking about.
+I know Vim better than most. Vim was my first real text editor.<sup>[\[1\]](#ref_1)</sup> I used it for years. I helped write the [Floobits plugin for Vim](https://github.com/Floobits/floobits-vim). I've delved into Vim's source code to figure out its workings. I even [helped write a patch](https://groups.google.com/d/msg/vim_dev/-4pqDJfHCsM/LkYNCpZjQ70J) (though it was rejected). Considering these credentials, I hope you'll accept that I know what I'm talking about.
 
 It may come as a shock when I say: The only good part of Vim is its user interface.
 
