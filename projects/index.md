@@ -8,9 +8,9 @@ Here are some things I've made. See [GitHub](https://github.com/ggreer) for more
 <br />
 
 ## [Floobits](https://floobits.com/)
-Like [Etherpad](http://en.wikipedia.org/wiki/Etherpad), but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration platform." (Excuse me while I wash my mouth out with soap.) Basically, it lets developers pair program when they're not in the same room. It's super-cool. My co-founder and I use Floobits to develop Floobits.
+Like [Etherpad](http://en.wikipedia.org/wiki/Etherpad), but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration platform." Basically, it lets developers pair program when they're not in the same room. It's super-cool. At Floobits, we all work remotely, using Floobits to develop Floobits.
 
-Much of the code I write these days is under the [Floobits GitHub organization](https://github.com/Floobits).
+These days, much of the code I write is under the [Floobits GitHub organization](https://github.com/Floobits).
 #### Related posts
 {% for post in site.categories.floobits %}
 * [{{ post.title }}]({{ post.url }})
@@ -21,7 +21,7 @@ Much of the code I write these days is under the [Floobits GitHub organization](
 ## [The Silver Searcher](/ag/) &nbsp;<small>([GitHub project](https://github.com/ggreer/the_silver_searcher))</small>
 A tool for searching code. Faster than [Ack](http://betterthangrep.com/). Better than grep.  
 
-On GitHub, Ag now has over 3,000 stargazers, making it the [11th most popular project written in C](https://github.com/search?l=C&o=desc&p=2&q=stars%3A%3E1000&ref=advsearch&s=stars&type=Repositories). I'm glad so many people find this tool useful.
+Ag has over 4,000 stargazers on GitHub, making it the [9th most popular project written in C](https://github.com/search?l=C&o=desc&p=1&q=stars%3A%3E4000&ref=advsearch&s=stars&type=Repositories). I'm glad so many people find this tool useful.
 
 #### Related posts
 {% for post in site.categories.the_silver_searcher %}
