@@ -117,7 +117,7 @@ Neovim's plugin API is backwards-compatible with Vim, but it also allows asynchr
 
 Neovim's codebase is a substantial improvement. They've [replaced much of the hacky, platform-specific code with libuv](https://github.com/neovim/neovim/wiki/Porting-OS-layer-to-libuv). They've fixed the problems with indentation, style, and bad file encodings. They've removed old code for ancient, unused platforms. They've drastically increased test quality and coverage. There's still much to be done, but the difference is already worlds better.
 
-Neovim's development community is excellent. They respond to issues. They merge pull requests. The give quality feedback. And most importantly, they're nice to newbies.
+Neovim's development community is excellent. They respond to issues. They merge pull requests. They give quality feedback. And most importantly, they're nice to newbies.
 
 In fact, they're nice to everyone. The main dev team holds no enmity toward Bram Moolenaar. They recognize Vim's failings, but they don't feel the need to criticize it.
 
