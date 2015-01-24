@@ -19,6 +19,7 @@ gems:
 gallery:
   title_prefix: "Photos: "
   dir: photos
+  symlink: true
   galleries:
     pics:
       hidden: true
