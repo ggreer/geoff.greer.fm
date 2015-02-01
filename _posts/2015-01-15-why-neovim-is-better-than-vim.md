@@ -109,7 +109,7 @@ Take a look again at [the thread where Matt and I submitted our patch](https://g
 
 ### The Alternative
 
-A couple of months after my disillusionment with Vim, [Thiago Arruguda](https://github.com/tarruda) [submitted a similar patch](https://groups.google.com/d/msg/vim_dev/QF7Bzh1YABU/02-YGr7_sCwJ). It was likewise rejected. But unlike me, Thiago didn't give up. He started [NeoVim](http://neovim.org/) and [created a Bountysource for it](https://www.bountysource.com/teams/neovim).
+A couple of months after my disillusionment with Vim, [Thiago de Arruda](https://github.com/tarruda) [submitted a similar patch](https://groups.google.com/d/msg/vim_dev/QF7Bzh1YABU/02-YGr7_sCwJ). It was likewise rejected. But unlike me, Thiago didn't give up. He started [NeoVim](http://neovim.org/) and [created a Bountysource for it](https://www.bountysource.com/teams/neovim).
 
 Neovim is exactly what it claims to be. It fixes every issue I have with Vim: The plugin API. The codebase. The community. The BDFL.
 
