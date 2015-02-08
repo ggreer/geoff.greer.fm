@@ -55,6 +55,8 @@ Looking at other specific changes, I can also see that [43886f9b](https://github
 
 This mistake cut performance in half, and I fixed it three days ago without intending to. Once again, I am humbled by the mindless computer. On the bright side, now I'll quickly notice performance regressions.
 
+Update: I've created a page with [more detailed graphs for all releases](/ag/speed/).
+
 <script type="text/javascript" src="https://www.google.com/jsapi"> </script>
 <script type="text/javascript">
 // Load the Visualization API and the piechart package.
