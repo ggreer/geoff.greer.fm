@@ -22,7 +22,7 @@ releases:
 - 0.17
 ---
 
-The Silver Searcher is a tool for searching code. See [the GitHub page](https://github.com/ggreer/the_silver_searcher) for more info.
+The Silver Searcher is a tool for searching code. It started off as a clone of [Ack](http://beyondgrep.com/), but their feature sets have since diverged slightly. In typical usage, Ag is 5-10x faster than Ack. See [the GitHub page](https://github.com/ggreer/the_silver_searcher) for more info.
 
 Release tarballs are signed with [my public key](/ggreer_gpg_key.asc) (3F0A04B6). To verify a release, first download my public key and import it:
 
@@ -32,6 +32,12 @@ After downloading the tarball and signature, run:
 
     gpg --verify the_silver_searcher-{{ page.releases|first }}.tar.gz.asc \
                  the_silver_searcher-{{ page.releases|first }}.tar.gz
+
+<br />
+
+## Are we fast yet?
+
+See [graphs of performance across releases](/ag/speed/).
 
 <br />
 
@@ -46,12 +52,6 @@ After downloading the tarball and signature, run:
   </div>
 </div>
 {% endfor %}
-
-<br />
-
-## [Are we fast yet?](/ag/speed/)
-
-{% include ag_speed.md %}
 
 <br />
 
