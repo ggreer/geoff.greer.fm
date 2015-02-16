@@ -1,5 +1,5 @@
 ---
-date: '2015-02-15 01:53:50'
+date: '2015-02-18 01:53:50'
 layout: post
 slug: in-defense-of-ageism
 published: true
@@ -13,7 +13,7 @@ I've heard accusations of ageism throughout my career in silicon valley. While I
 
 Older programmers may not know the latest frameworks or languages. It doesn't take long to learn a new language, but many employers overvalue knowledge of specific skills.
 
-Also, there may be selection effects skewing the abilities of older programmers. Many talented programmers get promoted into management. Many find a company they like, then stay there forever (**cough** Google **cough**). Others switch professions after losing interest in programming. Considering programmer compensation, I wouldn't be surprised if a fair number retired early. All of these effects might create a bimodal distribution of older talent: Those who do it because they love it, and those who do it because it's the only way they can get paid.
+Also, there may be selection effects skewing the abilities of older programmers. Many talented programmers get promoted into management. Many find a company they like, then stay there forever (Google). Others switch professions after losing interest in programming. Considering programmer compensation, I wouldn't be surprised if a fair number retired early. All of these effects might create a bimodal distribution of older talent: Those who do it because they love it, and those who do it because it's the only way they can get paid.
 
 
 Dunning-Kruger
