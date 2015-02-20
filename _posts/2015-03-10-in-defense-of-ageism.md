@@ -1,15 +1,17 @@
 ---
-date: '2015-02-18 01:53:50'
+date: '2015-03-10 01:53:50'
 layout: post
 slug: in-defense-of-ageism
-published: true
+published: false
 title: In Defense of Ageism
 categories:
   - Unpopular Opinions
   - Productivity
 ---
 
-I've heard accusations of ageism throughout my career in silicon valley. While I do think older programmers often have a lower chance of being hired for a given job, I doubt the causes are often sinister. There are several explanations for the effect that don't involve any explicit discrimination.
+Throughout my career in silicon valley, I've heard accusations of ageism. These aren't just idle whisperings. I'm talking about concrete behavioral changes based on fear of age discrimination. I've had more than one colleague omit the year they graduated on their resume. The idea being that a 
+
+While I do think that, all else equal, older programmers often have a lower chance of being hired for a given job, I doubt the causes are often sinister. There are several plausible explanations for the effect, and they don't involve any explicit discrimination.
 
 Older programmers may not know the latest frameworks or languages. It doesn't take long to learn a new language, but many employers overvalue knowledge of specific skills.
 
