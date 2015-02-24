@@ -7,7 +7,7 @@ title: Visualizing Interstellar Distances
 categories:
 ---
 
-Few people truly appreciate the scale of interstellar space. Space is so big that astronomers had to invent new units of measure: the [astronomical unit](https://en.wikipedia.org/wiki/Astronomical_unit), the [light-year](https://en.wikipedia.org/wiki/Light-year), the [parsec](https://en.wikipedia.org/wiki/Parsec). People hear these words, they can do calculations with them, but rarely do these terms evoke a feeling as concrete "mile" or "kilometer." I discovered a way to correct this.
+Few people truly appreciate the scale of interstellar space. Space is so big that astronomers had to invent new units of measure: the [astronomical unit](https://en.wikipedia.org/wiki/Astronomical_unit), the [light-year](https://en.wikipedia.org/wiki/Light-year), the [parsec](https://en.wikipedia.org/wiki/Parsec). People hear these words, they can do calculations with them, but rarely do these terms evoke a feeling as concrete "mile" or "kilometer." I stumbled on a way to correct this.
 
 There are ≈63,240 AU in a light-year. In a fortunate coincidence, there are 63,360 inches in a mile. So if Sol was an inch from Terra, [Alpha Centauri](https://en.wikipedia.org/wiki/Alpha_Centauri) would be four **miles** away. Our farthest probes would be 100 inches away, traveling three inches per year. In this miniature model, light takes 8 minutes to move an inch. Space is vast, but it's not beyond our comprehension.
 
