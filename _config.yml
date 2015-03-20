@@ -32,6 +32,8 @@ gallery:
       name: "YC Slideshow"
       best_image: 15.jpg
       hidden: true
+    taiwan_2015:
+      best_image: IMG_1088.JPG
     tahoe_trip_2014:
       best_image: IMG_0786.jpg
       hidden: true
