@@ -95,17 +95,21 @@ module Jekyll
       end
 
       FileUtils.mkdir_p(thumbs_dir, :mode => 0755)
+      date_times = {}
       Dir.foreach(dir) do |image|
-        if image.chars.first != "."
-          return
-        end
-        unless image.downcase().end_with?(*$image_extensions)
-          return
-        end
+        next if image.chars.first == "."
+        next unless image.downcase().end_with?(*$image_extensions)
         @images.push(image)
         best_image = image
         @site.static_files << GalleryFile.new(site, base, File.join(@dest_dir, "thumbs"), image)
         image_path = File.join(dir, image)
+
+        begin
+          date_times[image] = EXIFR::JPEG.new(image_path).date_time.to_i
+        rescue Exception => e
+          date_times[image] = 0
+          puts "Error getting date_time for #{image}: #{e}"
+        end
 
         if symlink
           link_src = site.in_source_dir(image_path)
@@ -144,7 +148,13 @@ module Jekyll
       end
 
       begin
-        @images.sort!
+        @images.sort! {|a,b|
+          if date_times[a] == date_times[b]
+            a <=> b
+          else
+            date_times[a] <=> date_times[b]
+          end
+        }
         if gallery_config["sort_reverse"]
           @images.reverse!
         end
