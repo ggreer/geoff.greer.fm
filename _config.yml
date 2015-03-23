@@ -14,6 +14,7 @@ exclude:
 disqus_shortname: ggreer
 
 gems:
+  - jekyll-gallery-generator
   - jekyll-sitemap
 
 gallery:
