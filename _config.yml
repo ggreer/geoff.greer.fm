@@ -22,6 +22,8 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    backgrounds:
+      hidden: true
     pics:
       hidden: true
     me:
