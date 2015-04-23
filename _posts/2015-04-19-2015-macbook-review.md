@@ -26,3 +26,7 @@ Lastly, I really like the keyboard. It feels as if the keys are made of mouse bu
 <a href="/photos/pics/IMG_1133.jpg"><img src="/photos/pics/thumbs/IMG_1133.jpg" /></a>
 
 Bottom line: It's beautiful, light, and more than fast enough for my needs. If you have the cash, I say go for it.
+
+<br />
+
+**Addendum**: I've read comments to the effect of, "I'll wait for the next version with two USB ports." I doubt the MacBook will ever have more than one USB-C port. Remember, the keyboard abuts the side. The only areas where ports wouldn't intersect with the keyboard are already taken: USB-C on the left, headphone jack on the right. Adding another USB-C port would require sacrificing the headphone jack. I doubt that will happen any time soon.
