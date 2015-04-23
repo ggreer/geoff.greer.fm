@@ -13,7 +13,7 @@ I recently <a href="{% post_url 2015-01-03-ten-years-of-progress-in-laptops %}">
 
 I rescind my conclusion. The MacBook is my favorite computer ever.
 
-My previous favorite was the 11" Air. I've used various incarnations since its late 2010 release. The Air is a nice laptop: small, light, reasonably quick. But it has some issues, the biggest being the screen. Frankly, the Air's screen is hideous. A [TN](https://en.wikipedia.org/wiki/Thin-film-transistor_liquid-crystal_display#Twisted_nematic_.28TN.29) display in 1366x768 is tolerable, but that's pretty much all it is. The MacBook completely fixes that issue, while removing weight and adding style.
+My previous favorite was the 11" Air. I've used various incarnations since its late 2010 release. The Air is a nice laptop: small, light, reasonably quick. But it has some issues, the biggest being the screen. The Air's [TN](https://en.wikipedia.org/wiki/Thin-film-transistor_liquid-crystal_display#Twisted_nematic_.28TN.29) display in 1366x768 is tolerable, but that's pretty much all it is. The MacBook completely fixes that issue, while removing weight and adding style.
 
 The MacBook's display is gorgeous. Its native resolution is 2304x1440, but the default scaling isn't 2:1. Instead of a jumbo 1152x720 UI, the effective resolution is 1280x800. This gives the MacBook as much screen real estate as the 13" Retina MacBook Pro. Apple's display settings let you go to 1400x900. Things work fine at that resolution, though switching desktops isn't as smooth.
 
