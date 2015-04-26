@@ -10,6 +10,7 @@ title: Geoff's Site
 exclude:
   - new_post.sh
   - less.sh
+  - upload.py
 
 disqus_shortname: ggreer
 
