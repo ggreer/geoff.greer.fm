@@ -96,7 +96,7 @@ ggreer@carbon:~% file /private/var/db/DetachedSignatures
 /private/var/db/DetachedSignatures: SQLite 3.x database
 {% endhighlight %}
 
-Good ol' `file`, you never let me down. Except when you do. I'm relieved it's a a SQLite DB,but what sort of horrid schema lurks in that file?
+Good ol' `file`, you never let me down. Except when you do. I'm relieved it's a a SQLite DB, but what sort of horrid schema lurks inside?
 
 {% highlight sql %}
 ggreer@carbon:~% sudo sqlite3 /private/var/db/DetachedSignatures  
@@ -137,7 +137,7 @@ sqlite> SELECT * FROM code WHERE identifier LIKE "%iojs%";
 sqlite> 
 {% endhighlight %}
 
-Bingo. The table contains my band-aid signature *and* one from a week earlier. Though we shouldn't be too hasty to stop gathering information. Is there anything important in the `global` table?
+Bingo. The table contains my band-aid signature *and* one from a week earlier. Though we shouldn't be too hasty and stop gathering information. Is there anything important in the `global` table?
 
 {% highlight sql %}
 sqlite> SELECT * FROM global WHERE id IN (SELECT global FROM code WHERE identifier LIKE "%iojs%");
@@ -149,7 +149,7 @@ sqlite> SELECT * FROM global WHERE id IN (SELECT global FROM code WHERE identifi
 
 No, but it was worth checking.
 
-Now a hypothesis emerges. I'm still not sure how, but *somehow* an older version of io.js was signed on April 16th. When I upgraded, that signature was no longer valid. The second signature in the DB was created when I manually signed the binary. Not wanting to go further down this rabbit hole, I delete the signatures, restart my computer, and see if I'm back to normal behavior:
+Now a hypothesis emerges. I'm still not sure how, but *somehow* an older version of io.js was signed on April 16<sup>th</sup>. When I upgraded, that signature was no longer valid. The second signature in the DB was created when I manually signed the binary. Not wanting to go further down this rabbit hole, I delete the signatures, restart my computer, and see if I'm back to normal behavior:
 
 {% highlight sql %}
 sqlite> DELETE FROM global WHERE id IN (SELECT global FROM code WHERE identifier LIKE "%iojs%");
@@ -169,4 +169,4 @@ ggreer@carbon:~% codesign -vv /usr/local/bin/iojs
 /usr/local/bin/iojs: satisfies its Designated Requirement
 {% endhighlight %}
 
-I want to know why my old iojs signature failed, but I couldn't find many clues from April 16th. That was just after I'd gotten [my new laptop]({% post_url 2015-04-19-2015-macbook-review %}), but before I enabled Time Machine (April 21<sup>st</sup>).
+I want to know why my old iojs signature failed, but I couldn't find many clues from April 16<sup>th</sup>. That was just after I'd gotten [my new laptop]({% post_url 2015-04-19-2015-macbook-review %}), but before I enabled Time Machine (April 21<sup>st</sup>).
