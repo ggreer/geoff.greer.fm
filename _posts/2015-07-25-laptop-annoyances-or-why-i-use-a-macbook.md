@@ -21,16 +21,16 @@ In the infintesimal chance that a Lenovo exec reads this: Please consider it a l
 - [Suspend/Hibernate](#suspend)
 - [Fans](#fans)
 - [Drivers](#drivers)
-- [Other](#other)
+- [Other minor gripes](#other)
 
 ---
 
 <span id="battery"></span>
 ### Battery life
 
-I think most people need at least 9 hours of battery life in typical usage. Software developers probably need 12. This may sound like a lot, but let me explain.
+Most people need at least 9 hours of battery life in typical usage. For software developers, that number is closer to 12. This may sound like a lot, but let me explain.
 
-Nobody has ever said, "I wish this laptop's battery didn't last so long." Still, an astonishing fraction of laptops have terrible battery life. Below some threshold, battery logistics are a constant distraction. Carry a charger. Search for a seat near an outlet. Dim the screen. Close apps. Monitor battery percentage like it's the blood pressure of a cardiac patient.
+No sane person has ever said, "I wish this laptop's battery didn't last so long." Still, an astonishing fraction of laptops have terrible battery life. Below some threshold, battery logistics are a constant distraction. Carry a charger. Search for a seat near an outlet. Dim the screen. Close apps. Monitor battery percentage like it's the blood pressure of a cardiac patient.
 
 Longer battery life is liberating. Once it reaches a certain threshold, you can just plug in at night and stop worrying. After experiencing this, it's impossible to go back.
 
@@ -41,16 +41,21 @@ Longer battery life is liberating. Once it reaches a certain threshold, you can 
 
 <a href="/photos/pics/IMG_1241.jpg"><img alt="My MacBook next to an UltraBook" src="/photos/pics/thumbs/IMG_1241.jpg" /></a>
 
-Take a look at this UltraBook™®© next to my MacBook. It's ultra-huge. Sure, I *could* carry it around, but I don't *want* to. At the margins, bigger laptops will be left at home more often. Except when using netbooks, I've never thought, "This laptop is too small." And I've never thought, "This laptop is too light."
+Take a look at this UltraBook™®© next to my MacBook. It's ultra-huge. Sure, I *could* carry it around, but I don't *want* to. Most laptops are far larger than they need to be. Apple's largest laptop is the 15" MacBook Pro. Compared to a lot of stuff out there, it's positively miniscule.
 
-To borrow a photography phrase: The best computer is the one you have with you. That's why I get a small laptop and take it *everywhere*.
+At the margins, bigger laptops will be left at home more often. To borrow a photography phrase: The best computer is the one you have with you.
+
+That's why I get a small laptop and take it *everywhere*.
+
+Except when using netbooks, I've never thought, "This laptop is too small." And I've never thought, "This laptop is too light."
+
 
 
 ---
 <span id="screen"></span>
 ### Screen
 
-<a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:363px; float:left; padding-right:16px;" /></a>
+<a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:350px; float:left; padding-right:16px;" /></a>
 
 Skimping on a screen is like buying cheap glasses. Yes, you will save money. And then you'll spend thousands of hours constantly being reminded of your frugality. Inversely, a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) display will be a constant joy to use.
 
@@ -70,9 +75,11 @@ There's no secret formula to a good trackpad. Make it big. Make it glass. Make d
 <span id="keyboard"></span>
 ### Keyboard
 
-So many laptops get this wrong. Do not alter the layout! Don't try to be fancy with "smart" function keys. Just make a normal keyboa
+<a href="/photos/pics/DSC_0662.jpg"><img alt="ThinkPad x140e keyboard" src="/photos/pics/thumbs/DSC_0662.jpg" /></a>
 
-The keyboard is the part of the laptop users will interact with the most. Though opinions about keyboard "feel" are highly subjective, certain properties are disliked by everyone. Anything that's "squishy" or "wobbly" is a no-no.
+If you ever find yourself thinking, "PrintScreen should go between Ctrl and Alt.", put down the bottle of Kirkland Signature™ Tequila and go to bed.
+
+Given how important keyboards are at melding mind and machine, it makes sense that laptop makers would spend some R&D money on them. As far as I can tell, they seem to be spending that money on novel ways to *ruin* keyboards. I don't want an "innovative" new layout. I don't want fancy "smart" function keys. I just want a normal keyboard!
 
 
 ---
@@ -110,7 +117,7 @@ This stuff isn't rocket science. No new technology needs to be invented. It's pu
 <span id="other"></span>
 ### Other minor gripes
 
-- Build quality. Cheap plastic is a deal breaker. Lightweight alloys of aluminum or magnesium are ideal. Other materials might work.
+- Build quality. Cheap plastic is a deal breaker. Lightweight alloys of aluminum or magnesium are ideal.
 
 - LEDs. The only thing worse than an always-on LED is a constantly blinking LED. Double points if it's one of those insanely bright blue LEDs. You might as well have a laptop that comes with an automatic eye-poking machine.
 
