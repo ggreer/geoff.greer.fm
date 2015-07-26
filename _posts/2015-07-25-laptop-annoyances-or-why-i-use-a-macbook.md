@@ -1,9 +1,9 @@
 ---
 date: '2015-07-25 14:04:40'
 layout: post
-slug: laptop-annoyances-aka-why-i-use-a-macbook
+slug: laptop-annoyances-or-why-i-use-a-macbook
 published: true
-title: Laptop Annoyances (AKA why I use a MacBook)
+title: Laptop Annoyances (Or: Why I Use a MacBook)
 categories:
   - Computers
 ---
