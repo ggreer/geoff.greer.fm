@@ -43,12 +43,7 @@ Longer battery life is liberating. Once it reaches a certain threshold, you can 
 
 Take a look at this UltraBook™®© next to my MacBook. It's ultra-huge. Sure, I *could* carry it around, but I don't *want* to. Most laptops are far larger than they need to be. Apple's largest laptop is the 15" MacBook Pro. Compared to a lot of stuff out there, it's positively miniscule.
 
-At the margins, bigger laptops will be left at home more often. To borrow a photography phrase: The best computer is the one you have with you.
-
-That's why I get a small laptop and take it *everywhere*.
-
-Except when using netbooks, I've never thought, "This laptop is too small." And I've never thought, "This laptop is too light."
-
+Bigger laptops are more likely to be left at home. That's a problem, since (to steal a photography aphorism) the best computer is the one you have with you.
 
 
 ---
@@ -57,18 +52,18 @@ Except when using netbooks, I've never thought, "This laptop is too small." And 
 
 <a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:350px; float:left; padding-right:16px;" /></a>
 
-Skimping on a screen is like buying cheap glasses. Yes, you will save money. And then you'll spend thousands of hours constantly being reminded of your frugality. Inversely, a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) display will be a constant joy to use.
+Skimping on a screen is like buying cheap glasses. Yes, you will save money. And you'll be reminded of your frugality for thousands of hours. On the flip side, a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) display will be a constant joy to use.
 
-I used MacBook Airs from 2010 until this year. When the retina MacBook Pros came out, I avoided looking at their screens. I didn't want to be tempted into getting something larger and heavier. Now the 12" MacBook is out, and I can confirm: Once you use a nice screen, you can't go back. Everything else looks blurry, blocky, and washed-out.
+When the retina MacBook Pros came out, I avoided looking at their screens. I didn't want to be tempted into getting something larger and heavier. Now the 12" MacBook is out, and I can confirm: Once you use a nice screen, you can't go back. Everything else looks blurry, blocky, and washed-out.
 
 
 ---
 <span id="trackpad"></span>
 ### Trackpad
 
-Apple has a reputation for excellent trackpads. When I see someone using an external mouse with an Apple laptop, I think they're crazy. When I see the same thing with a Dell, I think, "That poor, poor soul."
+Apple has a reputation for excellent trackpads. When I see a MacBook user with an external mouse, I think they're crazy. When I see the same thing with a Dell, I think, "That poor, poor soul."
 
-There's no secret formula to a good trackpad. Make it big. Make it glass. Make decent drivers.
+There's no secret formula for a good trackpad. Make it big. Make it glass. Make decent drivers. It's a shame so few get this right.
 
 
 ---
@@ -77,7 +72,7 @@ There's no secret formula to a good trackpad. Make it big. Make it glass. Make d
 
 <a href="/photos/pics/DSC_0662.jpg"><img alt="ThinkPad x140e keyboard" src="/photos/pics/thumbs/DSC_0662.jpg" /></a>
 
-If you ever find yourself thinking, "PrintScreen should go between Ctrl and Alt.", put down the bottle of Kirkland Signature™ Tequila and go to bed.
+If you ever find yourself agreeing with the statement, "PrintScreen should go between Ctrl and Alt.", put down the bottle of Kirkland Signature™ Absinthe and go to bed.
 
 Given how important keyboards are at melding mind and machine, it makes sense that laptop makers would spend some R&D money on them. As far as I can tell, they seem to be spending that money on novel ways to *ruin* keyboards. I don't want an "innovative" new layout. I don't want fancy "smart" function keys. I just want a normal keyboard!
 
@@ -123,8 +118,8 @@ This stuff isn't rocket science. No new technology needs to be invented. It's pu
 
 - Camera. The camera must be centered above the screen. Any other position will make for some weird shots. Occasionally, I'll see a model with the camera near the hinge. That's great if you want to look up someone's nose while video chatting. When it comes to the actual camera hardware: Resolution doesn't matter much, but low-light performance is important.
 
-- Microphone placement is crucial. It must be away from noise-generating hardware such as the keyboard and fans. Ideally, the laptop can have multiple mics and use software to filter noise. Apple has dual-mic technology in all of their laptops. On the flip side, my ThinkPad x140e's microphone is in the palm rest.
+- Microphone placement is crucial. It must be away from noise-generating hardware such as the keyboard and fans. Ideally, the laptop can have multiple mics and use software to filter noise. Apple has dual-mic technology in all of their laptops. My ThinkPad x140e's microphone is in the palm rest, making it all but useless.
 
 ---
 
-I have yet to find any non-Apple laptop that gets *all* of these right. Even many Apple models miss the mark slightly.
+I have yet to find any non-Apple laptop that gets these right. Even many Apple models miss the mark slightly.
