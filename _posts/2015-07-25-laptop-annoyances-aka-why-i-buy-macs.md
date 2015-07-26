@@ -1,9 +1,9 @@
 ---
 date: '2015-07-25 14:04:40'
 layout: post
-slug: common-laptop-annoyances-aka-why-i-buy-macs
+slug: laptop-annoyances-aka-why-i-buy-macs
 published: true
-title: Common Laptop Annoyances (AKA why I use a MacBook)
+title: Laptop Annoyances (AKA why I use a MacBook)
 categories:
   - Computers
 ---
@@ -50,9 +50,11 @@ To borrow a photography phrase: the best laptop is the one you have with you. Th
 <span id="screen"></span>
 ### Screen
 
+
+
 The screen is the part of the laptop that users spend all their time staring at. A low-quality screen will constantly remind the owner of their poor purchase. A quality laptop will have a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) screen. Apple calls these Retina displays.
 
-Once you use such screens, you can't go back. Everything else looks blurry, blocky, and washed-out.
+Once you use such screens, you can't go back. Everything else looks blurry, blocky, and washed-out. Until the 12" MacBook came out, I deliberately avoided looking at 
 
 
 ---
