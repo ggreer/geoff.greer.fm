@@ -26,7 +26,7 @@ In the infintesimal chance that a Lenovo exec reads this: Please consider it a l
 ---
 
 <span id="battery"></span>
-### Battery life
+## Battery life
 
 Most people need at least 9 hours of battery life in typical usage. For software developers, that number is closer to 12. This may sound like a lot, but let me explain.
 
@@ -37,7 +37,7 @@ Longer battery life is liberating. Once it reaches a certain threshold, you can 
 
 ---
 <span id="size"></span>
-### Size
+## Size
 
 <a href="/photos/pics/IMG_1241.jpg"><img alt="My MacBook next to an UltraBook" src="/photos/pics/thumbs/IMG_1241.jpg" /></a>
 
@@ -48,7 +48,7 @@ Bigger laptops are more likely to be left at home. That's a problem, since (to s
 
 ---
 <span id="screen"></span>
-### Screen
+## Screen
 
 <a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:350px; float:left; padding-right:16px;" /></a>
 
@@ -59,7 +59,7 @@ When the retina MacBook Pros came out, I avoided looking at their screens. I did
 
 ---
 <span id="trackpad"></span>
-### Trackpad
+## Trackpad
 
 Apple has a reputation for excellent trackpads. When I see a MacBook user with an external mouse, I think they're crazy. When I see the same thing with a Dell, I think, "That poor, poor soul."
 
@@ -68,7 +68,7 @@ There's no secret formula for a good trackpad. Make it big. Make it glass. Make 
 
 ---
 <span id="keyboard"></span>
-### Keyboard
+## Keyboard
 
 <a href="/photos/pics/DSC_0662.jpg"><img alt="ThinkPad x140e keyboard" src="/photos/pics/thumbs/DSC_0662.jpg" /></a>
 
@@ -79,7 +79,7 @@ Given how important keyboards are at melding mind and machine, it makes sense th
 
 ---
 <span id="suspend"></span>
-### Suspend/Hibernate
+## Suspend/Hibernate
 
 Here is how suspend and hibernate should work:
 
@@ -92,14 +92,14 @@ Here is how suspend and hibernate should work:
 
 ---
 <span id="fans"></span>
-### Fans
+## Fans
 
 Except for the most advanced low-power hardware, laptop fans are a still necessity. 
 
 
 ---
 <span id="drivers"></span>
-### Drivers
+## Drivers
 
 Even the best hardware can be ruined by bad drivers.
 
@@ -110,7 +110,7 @@ This stuff isn't rocket science. No new technology needs to be invented. It's pu
 
 ---
 <span id="other"></span>
-### Other minor gripes
+## Other minor gripes
 
 - Build quality. Cheap plastic is a deal breaker. Lightweight alloys of aluminum or magnesium are ideal.
 
