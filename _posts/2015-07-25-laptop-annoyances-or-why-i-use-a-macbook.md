@@ -13,57 +13,28 @@ When asked why I use macs, I reply with something along the lines of, "Because m
 In the infintesimal chance that a Lenovo exec reads this: Please consider it a list of things to verify before shipping new models.
 
 ### Table of Contents
-- [Battery life](#battery)
-- [Size](#size)
-- [Screen](#screen)
 - [Trackpad](#trackpad)
 - [Keyboard](#keyboard)
+- [Screen](#screen)
+- [Battery life](#battery)
+- [Size](#size)
 - [Suspend/Hibernate](#suspend)
 - [Fans](#fans)
 - [Drivers](#drivers)
 - [Other minor gripes](#other)
-
----
-
-<span id="battery"></span>
-## Battery life
-
-Most people need at least 9 hours of battery life in typical usage. For software developers, that number is closer to 12. This may sound like a lot, but let me explain.
-
-No sane person has ever said, "I wish this laptop's battery didn't last so long." Still, an astonishing fraction of laptops have terrible battery life. Below some threshold, battery logistics are a constant distraction. Carry a charger. Search for a seat near an outlet. Dim the screen. Close apps. Monitor battery percentage like it's the blood pressure of a cardiac patient.
-
-Longer battery life is liberating. Once it reaches a certain threshold, you can just plug in at night and stop worrying. After experiencing this, it's impossible to go back.
-
-
----
-<span id="size"></span>
-## Size
-
-<a href="/photos/pics/IMG_1241.jpg"><img alt="My MacBook next to an UltraBook" src="/photos/pics/thumbs/IMG_1241.jpg" /></a>
-
-Take a look at this UltraBook™®© next to my MacBook. It's ultra-huge. Sure, I *could* carry it around, but I don't *want* to. Most laptops are far larger than they need to be. Apple's largest laptop is the 15" MacBook Pro. Compared to a lot of stuff out there, it's positively miniscule.
-
-Bigger laptops are more likely to be left at home. That's a problem, since (to steal a photography aphorism) the best computer is the one you have with you.
-
-
----
-<span id="screen"></span>
-## Screen
-
-<a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:350px; float:left; padding-right:16px;" /></a>
-
-Skimping on a screen is like buying cheap glasses. Yes, you will save money. And you'll be reminded of your frugality for thousands of hours. On the flip side, a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) display will be a constant joy to use.
-
-When the retina MacBook Pros came out, I avoided looking at their screens. I didn't want to be tempted into getting something larger and heavier. Now the 12" MacBook is out, and I can confirm: Once you use a nice screen, you can't go back. Everything else looks blurry, blocky, and washed-out.
 
 
 ---
 <span id="trackpad"></span>
 ## Trackpad
 
-Apple has a reputation for excellent trackpads. When I see a MacBook user with an external mouse, I think they're crazy. When I see the same thing with a Dell, I think, "That poor, poor soul."
+I sometimes wonder if laptop makers are controlled by a cabal of mouse manufacturers. Why else would so many companies churn out glitchy, barely-usable trackpads? It's the only explanation that makes sense: Make terrible trackpads so more people buy external mice. The alternative is that laptop makers are incompetent, and they can't *all* be incompetent, right?
 
-There's no secret formula for a good trackpad. Make it big. Make it glass. Make decent drivers. It's a shame so few get this right.
+Out of all the annoyances I run into, this is the most common. My 2014 ThinkPad's trackpad is inferior to the one on my 2005 iBook. Almost a decade separates the two machines, yet the newer one has a smaller, glitchier, worse-feeling trackpad. It's absurd.
+
+There's no secret formula for a good trackpad. Make it big. Make it glass. Make decent drivers. Outside of Apple gear, few models satisfy even one of those three.
+
+I long for the day when the only laptop users with mice are either gamers or psychotics. Judging from the current state of things, I doubt that day will ever come.
 
 
 ---
@@ -74,7 +45,40 @@ There's no secret formula for a good trackpad. Make it big. Make it glass. Make 
 
 If you ever find yourself agreeing with the statement, "PrintScreen should go between Ctrl and Alt.", put down the bottle of Kirkland Signature™ Absinthe and go to bed.
 
-Given how important keyboards are at melding mind and machine, it makes sense that laptop makers would spend some R&D money on them. As far as I can tell, they seem to be spending that money on novel ways to *ruin* keyboards. I don't want an "innovative" new layout. I don't want fancy "smart" function keys. I just want a normal keyboard!
+Given how important keyboards are at melding mind and machine, it makes sense that laptop makers would spend some R&D money on them. As far as I can tell, they are spending that money on novel ways to *ruin* keyboards. I don't want an "innovative" new layout. I don't want fancy "smart" function keys. I just want a normal keyboard!
+
+
+---
+<span id="screen"></span>
+## Screen
+
+<a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:350px; float:left; padding-right:16px;" /></a>
+
+Skimping on a screen is like buying cheap glasses. Yes, you will save money. And you'll be reminded of your frugality for thousands of hours. On the flip side, a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) display will be a constant joy to use.
+
+When the retina MacBook Pros came out, I avoided looking at their screens. I didn't want to be tempted into getting something larger and heavier. Now the 12" MacBook is out and my suspicion is confirmed: Once you use a nice screen, you can't go back. Everything else looks blurry, blocky, and washed-out.
+
+
+---
+<span id="battery"></span>
+## Battery life
+
+Most people need at least 9 hours of battery life. For software developers, that number is closer to 12. This may sound like a lot, but let me explain.
+
+No sane person has ever said, "I wish this laptop's battery didn't last so long." Still, an astonishing fraction of laptops have terrible battery life. Below some threshold, battery logistics are a constant distraction. Carry a charger. Search for a seat near an outlet. Dim the screen. Close apps. Monitor battery percentage like it's the blood pressure of a trauma patient.
+
+Longer battery life is liberating. Once it reaches a certain threshold, you just plug in at night and stop worrying. After experiencing this, it's impossible to go back.
+
+
+---
+<span id="size"></span>
+## Size
+
+Most laptops are far larger than they need to be. Apple's largest laptop is the 15" MacBook Pro. Compared to a lot of stuff out there, it's positively miniscule.
+
+<a href="/photos/pics/IMG_1241.jpg"><img alt="My MacBook next to an UltraBook" src="/photos/pics/thumbs/IMG_1241.jpg" /></a>
+
+Take a look at this UltraBook™®© next to my MacBook. It's ultra-huge. Sure, I *could* carry it around, but I don't *want* to. Bigger laptops are more likely to be left at home. That's a problem, since (to borrow a photography aphorism) the best computer is the one you have with you.
 
 
 ---
