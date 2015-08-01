@@ -102,7 +102,11 @@ Bonus points if Bluetooth input devices can wake the laptop from sleep.
 <span id="fans"></span>
 ## Fans
 
-Except for [high-end low-power designs]({% post_url 2015-04-19-2015-macbook-review %}), laptop fans are still a necessity. 
+Except for [high-end low-power designs]({% post_url 2015-04-19-2015-macbook-review %}), laptop fans are still a necessity. The easy part of laptop cooling is blowing air across a heatsink. The difficulty comes in designing something that works on all surfaces, (including blankets), and not distracting or annoying the user.
+
+It seems counterintuitive, but the hinge is only good location for ventilation. Every other place has disadvantages. Vents on the base can be blocked by blankets or bedding. The sides blow hot air on resting hands. Front vents direct noise straight at the user.
+
+Another common annoyance results from poorly-written fan control firmware. Many laptops run their fans at a few discrete speeds. People notice these discrete changes much more
 
 
 ---
