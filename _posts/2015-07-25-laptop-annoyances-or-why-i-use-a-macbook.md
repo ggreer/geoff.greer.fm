@@ -47,6 +47,8 @@ If you ever find yourself agreeing with the statement, "PrintScreen should go be
 
 Given how important keyboards are at melding mind and machine, it makes sense that laptop makers would spend some R&D money on them. As far as I can tell, they are spending that money on novel ways to *ruin* keyboards. I don't want an "innovative" new layout. I don't want fancy "smart" function keys. I just want a normal keyboard!
 
+<!-- NEEDS WORK -->
+
 
 ---
 <span id="screen"></span>
@@ -54,7 +56,7 @@ Given how important keyboards are at melding mind and machine, it makes sense th
 
 <a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:350px; float:left; padding-right:16px;" /></a>
 
-Skimping on a screen is like buying cheap glasses. Yes, you will save money. And you'll be reminded of your frugality for thousands of hours. On the flip side, a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) display will be a constant joy to use.
+Skimping on a screen is like buying cheap glasses. Yes, you will save money. And you'll be annoyed by your frugality for thousands of hours. On the flip side, a high-resolution [IPS](https://en.wikipedia.org/wiki/IPS_panel) display is a continual joy to use.
 
 When the retina MacBook Pros came out, I avoided looking at their screens. I didn't want to be tempted into getting something larger and heavier. Now the 12" MacBook is out and my suspicion is confirmed: Once you use a nice screen, you can't go back. Everything else looks blurry, blocky, and washed-out.
 
@@ -78,38 +80,38 @@ Most laptops are far larger than they need to be. Apple's largest laptop is the 
 
 <a href="/photos/pics/IMG_1241.jpg"><img alt="My MacBook next to an UltraBook" src="/photos/pics/thumbs/IMG_1241.jpg" /></a>
 
-Take a look at this UltraBook™®© next to my MacBook. It's ultra-huge. Sure, I *could* carry it around, but I don't *want* to. Bigger laptops are more likely to be left at home. That's a problem, since (to borrow a photography aphorism) the best computer is the one you have with you.
+Look at this UltraBook™®© next to my 12" MacBook. It's ultra-huge. Sure, most people *could* carry it around, but few would *want* to. Bigger laptops are more likely to be left at home. That's a problem, since (to borrow a photography aphorism) the best computer is the one you have with you.
 
 
 ---
 <span id="suspend"></span>
 ## Suspend/Hibernate
 
-Here is how suspend and hibernate should work:
+Like trackpads, this is another simple aspect of laptops that almost everyone gets wrong. Here is how suspend and hibernate should work:
 
 - When the lid closes, the laptop suspends to RAM. It consumes <1% battery per hour in this mode.
 
 - When the lid *starts to open*, the laptop resumes. The screen is on and ready to go before the user can finish opening the lid.
 
-- If the laptop is open but sleeping (often due to idle), hitting any key or clicking the trackpad will resume it. The screen must be on and ready to work within a second.
+- If the laptop is open but sleeping (often due to idle), hitting any key or clicking the trackpad will resume it. The screen should be on and ready to work within a second.
+
+Bonus points if Bluetooth input devices can wake the laptop from sleep.
 
 
 ---
 <span id="fans"></span>
 ## Fans
 
-Except for the most advanced low-power hardware, laptop fans are a still necessity. 
+Except for [high-end low-power designs]({% post_url 2015-04-19-2015-macbook-review %}), laptop fans are still a necessity. 
 
 
 ---
 <span id="drivers"></span>
 ## Drivers
 
-Even the best hardware can be ruined by bad drivers.
+Even the best hardware can be ruined by bad drivers. I would love to run Ubuntu on a Surface Pro, but the experience would be hell if it lacked decent drivers for the trackpad, camera, microphone, Bluetooth, WiFi, power saving, screen brightness, headphone switching, and a half-dozen other things that you only notice when they're broken.
 
-Bluetooth, WiFi, camera, mic, trackpad, power saving, screen brightness, 
-
-This stuff isn't rocket science. No new technology needs to be invented. It's purely attention to detail.
+This stuff isn't rocket science. No new technology needs to be invented. It just comes down to high standards and attention to detail.
 
 
 ---
