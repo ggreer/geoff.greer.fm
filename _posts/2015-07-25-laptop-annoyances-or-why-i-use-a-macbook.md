@@ -45,9 +45,9 @@ I long for the day when the only laptop users with mice are either gamers or psy
 
 If you ever find yourself agreeing with the statement, "PrintScreen should go between Ctrl and Alt.", put down the bottle of Kirkland Signature™ Absinthe and go to bed.
 
-Given how important keyboards are at melding mind and machine, it makes sense that laptop makers would spend some R&D money on them. As far as I can tell, they are spending that money on novel ways to *ruin* keyboards. I don't want an "innovative" new layout. I don't want fancy "smart" function keys. I just want a normal keyboard!
+Given how important keyboards are at melding mind and machine, it makes sense that laptop makers would spend some R&D money on them. As far as I can tell, they are spending that money on novel ways to *ruin* keyboards. Apple experiments with a lot of new technologies, but one thing they hardly ever mess with is the keyboard. Macs don't have "innovative" new layouts. They don't have fancy "smart" function keys. They're just normal keyboards.
 
-<!-- NEEDS WORK -->
+If it ain't broke, don't fix it.
 
 
 ---
@@ -132,4 +132,4 @@ This stuff isn't rocket science. No new technology needs to be invented. It just
 
 ---
 
-I have yet to find any non-Apple laptop that gets these right. Even many Apple models miss the mark slightly.
+I have yet to find any non-Apple laptop that gets these right. Even many Apple models miss the mark. But it's because I have such low tolerance for these annoyances that I keep coming back to the Mac. If you've found something else that you're happy with, great. Just don't disparage all the Apple owners for being sheep. There really are a lot of details that Apple reliably gets right.
