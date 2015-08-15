@@ -81,6 +81,7 @@ for root, dirs, files in os.walk(jekyll_site):
             cf_path = '%s/%s' % (cf_root, file_name)
         else:
             cf_path = file_name
+        cf_path = cf_path.decode('utf-8')
         if object_names.get(cf_path):
             file_md5 = md5(file_path)
             if object_names[cf_path].hash != file_md5:
