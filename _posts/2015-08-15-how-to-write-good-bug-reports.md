@@ -8,7 +8,7 @@ categories:
   - Computers
 ---
 
-I've created and maintained several open source projects over the years, and my biggest annoyance is bug reports. Not bugs themselves. Those are inevitable, and the actual process of fixing them is interesting. But bug reports are another matter. Far too often, I get reports that are all but useless. They waste time and cause frustration for everyone involved. In the hope that I can reduce this, I offer some guidelines for writing good bug reports.
+I've created and maintained several open source projects over the years, and my biggest annoyance with them is bug reports. Not bugs themselves. Those are inevitable, and the actual process of fixing them is interesting. But bug reports are another matter. Far too often, I get reports that are all but useless. They waste time and cause frustration for everyone involved. In the hope that I can reduce this, I offer some guidelines for writing good bug reports.
 
 The goal of a bug report is to make it possible for a developer to reproduce the bug. I cannot emphasize this enough. A developer that can reproduce a bug is halfway to fixing it. At that point, they can bring their entire toolset to bear: debuggers, profilers, test cases, and lowly (but useful) `printf()`s. Inversely, trying to fix an unreproducible bug is an exercise in futility. Often, one ends up flying blind, reduced to changing code based on hunches and guessing. Believe me, it is not fun.
 
