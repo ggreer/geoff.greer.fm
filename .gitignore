@@ -1,6 +1,8 @@
 *.gz
 *.zip
 .DS_Store
+.jekyll-metadata
+_site
 ammocase
 code/evil_wget/
 coolcpu
@@ -8,7 +10,6 @@ files
 images
 photos
 stats
-styles/main*.css
 styles/*.css
+styles/main*.css
 videos
-_site
