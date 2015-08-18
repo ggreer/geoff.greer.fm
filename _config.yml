@@ -16,6 +16,7 @@ disqus_shortname: ggreer
 
 gems:
   - jekyll-gallery-generator
+  - jekyll-paginate
   - jekyll-sitemap
 
 gallery:

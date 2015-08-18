@@ -26,9 +26,7 @@ After downloading the tarball and signature, run:
 
 <br />
 
-{% if site.categories.fsevents|size %}
 ## Related posts
-{% endif %}
 {% for post in site.categories.fsevents %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}

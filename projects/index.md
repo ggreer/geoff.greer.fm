@@ -33,9 +33,7 @@ Ag has over 4,000 stargazers on GitHub, making it the [9th most popular project 
 ## [FSEvents tools](/fsevents/) &nbsp;<small>([GitHub project](https://github.com/ggreer/fsevents-tools))</small>
 Some command-line tools for working with [OS X's filesystem events](http://en.wikipedia.org/wiki/FSEvents). Similar to [inotify-tools](https://github.com/rvoicilas/inotify-tools).
 
-{% if site.categories.fsevents|size %}
 #### Related posts
-{% endif %}
 {% for post in site.categories.fsevents %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
