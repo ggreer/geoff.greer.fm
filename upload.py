@@ -45,7 +45,7 @@ def md5(path):
 
 
 def upload_file(container, file_path, cf_path):
-    print('Uploading %s to %s/%s' % (file_path, container.name, cf_path))
+    print('Uploading %s to %s/%s' % (file_path, container.name, cf_path.encode('utf-8')))
     try:
         container.upload_object(file_path, cf_path)
     except AttributeError:
