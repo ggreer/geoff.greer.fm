@@ -24,6 +24,8 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    desolation_wilderness_2015:
+      best_image: IMG_1313.jpg
     pride_parade_2015:
       best_image: DSC_0165.jpg
     backgrounds:
