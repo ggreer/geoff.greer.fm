@@ -138,4 +138,4 @@ This stuff isn't rocket science. No new technology needs to be invented. It just
 
 It's because I have such low tolerance for these annoyances that I keep coming back to Apple. Some Apple models miss the mark, but I have yet to find any non-Apple laptop that gets these right.
 
-If you've found something else that you're happy with, great. I'm really am happy for you. But don't disparage mac owners for being sheep. There really are a lot of details that Apple reliably gets right.
+If you've found something else that you're happy with, great. I really am happy for you. But don't disparage mac owners for being sheep. There are a lot of details that Apple reliably gets right.
