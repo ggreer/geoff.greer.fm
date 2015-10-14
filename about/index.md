@@ -6,9 +6,9 @@ status: publish
 title: About Me
 ---
 
-<img alt="Me" src="/me-2015.jpg" style="float: left; padding-right: 1em; height: 316px; width: 210px;">
+<img alt="Me" src="/me-2015.jpg" style="float: left; padding-right: 1em; height: 300px; width: 300px;">
 
-My name is Geoff Greer. I live in San Francisco. I like to mess with computers and motorcycles.
+My name is Geoff Greer. I live in Oakland. I like to mess with computers and motorcycles.
 
 Works speak louder than words, so look at [my GitHub activity](https://github.com/ggreer).
 
