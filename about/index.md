@@ -6,12 +6,15 @@ status: publish
 title: About Me
 ---
 
-<img alt="Me" src="/me-2015.jpg" style="float: left; padding-right: 1em; height: 300px; width: 300px;">
+<img alt="Me" src="/me-2015.jpg" style="float: right; padding-left: 1em; height: 300px; width: 300px;">
 
 My name is Geoff Greer. I live in Oakland. I like to mess with computers and motorcycles.
 
 Works speak louder than words, so look at [my GitHub activity](https://github.com/ggreer).
 
+I'm available for contract work. Contact me (info below) if you'd like to take advantage of my expertise.
+
+<h4><img src="/icons/resume_icon.png" height="16" width="16" alt="" /> <a href="/resume/" rel="me">Resume</a></h4>
 
 <br style="clear: both;" />
 
