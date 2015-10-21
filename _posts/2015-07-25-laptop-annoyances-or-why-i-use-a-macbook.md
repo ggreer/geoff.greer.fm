@@ -97,14 +97,14 @@ Like trackpads, this is another simple aspect of laptops that almost everyone ge
 
 Bonus points if Bluetooth input devices can wake the laptop from sleep.
 
-In the past decade, the *only* laptops that have satisfied these criteria have been made by Apple. Others take multiple seconds to wake, or they consume 5% battery per hour, or they're only woken by lid-openining, not hitting keys. Phones and tablets never seem to have issues with suspend/hibernate, so I find it bizarre that laptops do.
+In the past decade, the *only* laptops that have satisfied these criteria have been made by Apple. Others take multiple seconds to wake, or they consume 5% battery per hour, or they're only woken by lid-opening, not hitting keys. Phones and tablets never seem to have issues with suspend/hibernate, so I find it bizarre that laptops do.
 
 
 ---
 <span id="fans"></span>
 ## Fans
 
-Except for [high-end low-power designs]({% post_url 2015-04-19-2015-macbook-review %}), laptop fans are still a necessity. The easy part of laptop cooling is blowing air across a heatsink. The difficulty comes in designing something that works on all surfaces, (including blankets), and not distracting or annoying the user.
+Except for [high-end low-power designs]({% post_url 2015-04-19-2015-macbook-review %}), laptop fans are still a necessity. The easy part of laptop cooling is blowing air across a heatsink. The difficulty comes in designing something that works on all surfaces (including blankets), and not distracting or annoying the user.
 
 It seems counterintuitive, but the only good location for ventilation is the hinge. Every other place has signifiacant disadvantages. Vents on the base can be blocked by blankets or bedding, causing overheating. Side vents blow hot air on things next to the laptop; usually resting hands. Front vents direct noise at the user and require long ducts, eating up space for the battery. In contrast, hinge vents can't be blocked. They direct fan noise away from the user, and they don't require long ducts.
 
