@@ -29,4 +29,4 @@ To that end, I extend an invitation: If you know C and want to pair on Ag, let m
 
 ---
 
-1. <span id="ref_1"></span> {% include contact.md %}
+1. <span id="ref_1"></span> {% include contact.html %} {% include public_key.md %}
