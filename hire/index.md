@@ -10,4 +10,4 @@ Want my help? I'm available for short-term remote work. What does "short-term re
 
 For more info on my skills, see [my resume](/resume/) and [about me](/about/).
 
-If you're interested in my services, please {% include contact.html %}.
+If you're interested in my services, please {% include contact.html %}
