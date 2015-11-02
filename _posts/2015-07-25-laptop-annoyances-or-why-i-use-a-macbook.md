@@ -26,6 +26,7 @@ In the infintesimal chance that a Lenovo exec reads this: Please consider it a l
 
 ---
 <span id="trackpad"></span>
+
 ## Trackpad
 
 I sometimes wonder if laptop makers are controlled by a cabal of mouse manufacturers. Why else would so many companies churn out glitchy, barely-usable trackpads? It's the only explanation that makes sense: Make terrible trackpads so more people buy external mice. The alternative is that laptop makers are incompetent, and they can't *all* be incompetent, right?
@@ -39,6 +40,7 @@ I long for the day when the only laptop users with mice are either gamers or psy
 
 ---
 <span id="keyboard"></span>
+
 ## Keyboard
 
 <a href="/photos/pics/DSC_0662.jpg"><img alt="ThinkPad x140e keyboard" src="/photos/pics/thumbs/DSC_0662.jpg" /></a>
@@ -50,6 +52,7 @@ Given how important keyboards are at melding mind and machine, it makes sense th
 
 ---
 <span id="screen"></span>
+
 ## Screen
 
 <a href="/photos/pics/retina_screen.jpg"><img alt="MacBook Air vs Retina MacBook" src="/photos/pics/thumbs/retina_screen.jpg" style="width:400px; height:350px; float:left; padding-right:16px;" /></a>
@@ -61,6 +64,7 @@ When the retina MacBook Pros came out, I avoided looking at their screens. I hea
 
 ---
 <span id="battery"></span>
+
 ## Battery life
 
 <a href="/photos/screenshots/Screen Shot 2015-08-03 at 00.17.16.png"><img alt="My MacBook's battery usage" src="/photos/screenshots/thumbs/Screen Shot 2015-08-03 at 00.17.16.png" style="width:400px; height:262px; float:left; padding-right:16px;" /></a>
@@ -74,6 +78,7 @@ Longer battery life is liberating. Once it reaches a certain threshold, you just
 
 ---
 <span id="size"></span>
+
 ## Size
 
 Most laptops are far larger than they need to be. Apple's largest laptop is the 15" MacBook Pro. Compared to a lot of stuff out there, it's positively miniscule.
@@ -85,6 +90,7 @@ Look at this UltraBook™®© next to my 12" MacBook. It's ultra-huge. Sure, mos
 
 ---
 <span id="suspend"></span>
+
 ## Suspend/Hibernate
 
 Like trackpads, this is another simple aspect of laptops that almost everyone gets wrong. Here is how suspend and hibernate should work:
@@ -102,9 +108,10 @@ In the past decade, the *only* laptops that have satisfied these criteria have b
 
 ---
 <span id="fans"></span>
+
 ## Fans
 
-Except for [high-end low-power designs]({% post_url 2015-04-19-2015-macbook-review %}), laptop fans are still a necessity. The easy part of laptop cooling is blowing air across a heatsink. The difficulty comes in designing something that works on all surfaces (including blankets), and not distracting or annoying the user.
+Except for [high-end low-power designs]({% post_url 2015-04-19-2015-macbook-review %}), laptop fans are still a necessity. The easy part of laptop cooling is blowing air across a heatsink. The difficulty comes in designing something that works on all surfaces (including blankets) without distracting or annoying the user.
 
 It seems counterintuitive, but the only good location for ventilation is the hinge. Every other place has signifiacant disadvantages. Vents on the base can be blocked by blankets or bedding, causing overheating. Side vents blow hot air on things next to the laptop; usually resting hands. Front vents direct noise at the user and require long ducts, eating up space for the battery. In contrast, hinge vents can't be blocked. They direct fan noise away from the user, and they don't require long ducts.
 
@@ -113,6 +120,7 @@ Another common fan annoyance results from poorly-written control firmware. Many 
 
 ---
 <span id="drivers"></span>
+
 ## Drivers
 
 Even the best hardware can be ruined by bad drivers. I would love to run Ubuntu on a Surface Pro, but the experience would be hell if it lacked decent drivers for the trackpad, camera, microphone, Bluetooth, WiFi, power saving, screen brightness, headphone switching, and a half-dozen other things that are only noticed when they're broken.
@@ -122,6 +130,7 @@ This stuff isn't rocket science. No new technology needs to be invented. It just
 
 ---
 <span id="other"></span>
+
 ## Other minor gripes
 
 - No SSD. Today, any laptop sold without one is a defective laptop. While spinning rust is cheaper and can store more, it is orders of magnitude slower than a modern SSD.
