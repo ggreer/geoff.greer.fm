@@ -8,19 +8,30 @@ categories:
 - Computers
 ---
 
-Browsers were originally for devs and other pros.
+Over the past few years, I've gradually become more frustrated with web browsers. Don't get me wrong. Today's browsers are faster, more stable, and more secure than ever. They have better debugging tools. They support more interesting technologies like [HTML5](https://en.wikipedia.org/wiki/HTML5) and [WebRTC](https://en.wikipedia.org/wiki/WebRTC). In almost every measurable way, browsers have improved.
 
-But have slowly become more geared toward consumers.
+Except one: User interfaces.
 
-This is a good thing.
+Originally, browsers were created by for developers for developers. Now Chrome and Firefox have focused on making things easier for normal users. 
+
+But have slowly become more geared toward consumers. It's the iOS-ization of browsers.
+
+This is a good thing... for most people. But it's caused quite a bit of frustration for myself and other devs.
 
 Examples of consumer-ization of browsers:
 
 http://stackoverflow.com/questions/21692646/how-does-facebook-disable-the-browsers-integrated-developer-tools
 https://code.google.com/p/chromium/issues/detail?id=345205#c21
 
-Annoying things devs have to deal with:
+removal of presentation mode
+google doodle
+removal of old new tab page
 
+These issues aren't just limited to UI annoyances. Some changes have really hurt developer productivity.
+
+paste javascript in url bar
+
+Can't override cert errors.
 node.js hsts header break localhost
 
 
