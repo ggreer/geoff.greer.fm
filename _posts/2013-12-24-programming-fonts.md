@@ -26,6 +26,7 @@ The most useful group of fonts I've found for programming are the Proggy fonts. 
 <br />
 
 <a id="fonts"></a>
+
 ## Proggy Fonts [#](#fonts)
 
 <div class="row">
