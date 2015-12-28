@@ -4,6 +4,8 @@ title: FSEvents Tools
 releases:
 - 0.2.1
 - 0.2.0
+- 0.3.0
+- 1.0.0
 ---
 
 FSEvents Tools are the OS X counterpart to Linux's [inotify-tools](https://github.com/rvoicilas/inotify-tools). See [the GitHub page](https://github.com/ggreer/fsevents-tools) for more info.
@@ -16,11 +18,19 @@ After downloading the tarball and signature, run:
 
     gpg --verify fsevents-tools-{{ page.releases|first }}.tar.gz.asc \
                  fsevents-tools-{{ page.releases|first }}.tar.gz
+
 <br />
 
 ## Releases
+
 {% for release in page.releases %}
-* [`fsevents-tools-{{ release }}.tar.gz`](releases/fsevents-tools-{{ release }}.tar.gz) <span class="gpg_sig">[`GPG signature`](releases/fsevents-tools-{{ release }}.tar.gz.asc)</span>
+<div class="row">
+  <div class="col w4">
+    <a href="releases/fsevents-tools-{{ release }}.tar.gz"><code>fsevents-tools-{{ release }}.tar.gz</code></a>
+  </div><div class="col w2">
+    <a href="releases/fsevents-tools-{{ release }}.tar.gz.asc"><code>GPG signature</code></a>
+  </div>
+</div>
 {% endfor %}
 
 
