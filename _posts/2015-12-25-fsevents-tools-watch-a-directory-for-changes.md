@@ -9,11 +9,11 @@ categories:
 - Computers
 ---
 
-Often, I want something to automatically happen when files in a certain directory change. For example: If I'm editing some source code locally, I might want to rsync it over to a remote server. Maybe I want to regenerate some CSS after changing some LESS or SASS, or minify some JavaScript after changing the uncompressed source. Sometimes, there's an application-specific solution to this problem. Sometimes, there isn't. In the latter case, it'd be nice to fall back on a general purpose tool.
+Often, when I modify files in a directory, I want some automated action to happen. For example: If I'm editing some source code locally, I might want it to be rsynced to a remote server. Or maybe I want to regenerate CSS after changing some [LESS](http://lesscss.org/) or [SASS](http://sass-lang.com/), or minify some JavaScript after changing the uncompressed source. Sometimes, there's an application-specific solution to this problem. Sometimes, there isn't. In the latter case, it would be nice to fall back on a general purpose tool.
 
 On Linux, this is a solved problem. You can install [`inotify-tools`](https://github.com/rvoicilas/inotify-tools) and wrap it with a couple of scripts. Unfortunately, that won't work on OS X, because operating systems have different APIs for monitoring filesystem changes.
 
-Enter `fsevents-tools`. As of this writing, it consists of three commands:
+[`fsevents-tools`](/fsevents/) is my attempt to solve this problem on OS X. As of this writing (v1.0), it consists of three commands:
 
 
 ### notifywait
