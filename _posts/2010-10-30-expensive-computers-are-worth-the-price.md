@@ -7,6 +7,7 @@ title: Expensive Computers are Worth the Price
 wordpress_id: '755'
 categories:
 - Computers
+- Laptops
 ---
 
 You should not be afraid to spend lots of money on a computer. All too often developers skimp on their computers. They balk at high price tags and try to save money by buying a less expensive model. 

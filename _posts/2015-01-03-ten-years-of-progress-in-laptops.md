@@ -6,6 +6,7 @@ status: publish
 title: Ten Years of Progress in Laptops
 categories:
 - Computers
+- Laptops
 ---
 
 In 2010, <a href="{% post_url 2010-11-16-five-years-of-progress-in-laptops %}">I compared my 2005 laptop to my then-current laptop</a>. It's now 2015, so let's see how much devices have improved.

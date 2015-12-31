@@ -5,7 +5,8 @@ slug: laptop-annoyances-or-why-i-use-a-macbook
 published: true
 title: 'Laptop Annoyances (Or: Why I Use a MacBook)'
 categories:
-  - Computers
+- Computers
+- Laptops
 ---
 
 When asked why I use macs, I reply with something along the lines of, "Because macs don't annoy me as much as other laptops." That response is immediately followed by a request for examples. If this conversation is face-to-face, I boggle for a moment. There are so *many* examples. I have trouble enumerating them. For future reference, I've taken the time to list and explain these common annoyances.

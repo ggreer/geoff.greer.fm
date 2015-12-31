@@ -7,6 +7,7 @@ title: Five Years of Progress in Laptops
 wordpress_id: '780'
 categories:
 - Computers
+- Laptops
 ---
 
 The last iteration of the iBook G4 came out in September of 2005 and was sold until mid-2006. 
