@@ -9,16 +9,16 @@ categories:
 - Computers
 ---
 
-Often, when I modify files in a directory, I want some automated action to happen. For example: If I'm editing some source code locally, I might want it to be rsynced to a remote server. Or maybe I want to regenerate CSS after changing some [LESS](http://lesscss.org/) or [SASS](http://sass-lang.com/), or minify some JavaScript after changing the uncompressed source. Sometimes, there's an application-specific solution to this problem. Sometimes, there isn't. In the latter case, it would be nice to fall back on a general purpose tool.
+Often, when I modify files in a directory, I want some action to happen afterwards. For example: If I'm editing some source code locally, I might want it to be rsynced to a remote server. Or maybe I want to regenerate CSS after changing some [LESS](http://lesscss.org/) or [SASS](http://sass-lang.com/), or minify some JavaScript after changing the uncompressed source. Sometimes, there's an application-specific solution to this problem. Sometimes, there isn't. In the latter case, it would be nice to fall back on a general purpose tool.
 
-On Linux, this is a solved problem. You can install [`inotify-tools`](https://github.com/rvoicilas/inotify-tools) and wrap it with a couple of scripts. Unfortunately, that won't work on OS X, because operating systems have different APIs for monitoring filesystem changes.
+On Linux, this is a solved problem. Just install [`inotify-tools`](https://github.com/rvoicilas/inotify-tools) and wrap it with a couple of scripts. Sadly, each operating system has its own unique API for monitoring filesystem changes. That means Windows and Mac users are out of luck.
 
-[`fsevents-tools`](/fsevents/) is my attempt to solve this problem on OS X. As of this writing (v1.0), it consists of three commands:
+[`fsevents-tools`](/fsevents/) is my attempt to solve this problem for OS X. As the name implies, it uses OS X's [FSEvents API](https://en.wikipedia.org/wiki/FSEvents) to monitor filesystem changes. The first release (v1.0) consists of three commands:
 
 
 ### notifywait
 
-`notifywait` is a simple tool that the other utilities depend on. It does one thing: Given path(s) to watch, it waits until something in them changes and exits. For example, if you have public file sharing enabled and you're expecting an incoming file, just run:
+`notifywait` is a simple tool that the other utilities depend on. It does one thing: Given path(s) to watch, it waits until something in them changes and exits. For example, if you have public file sharing enabled and you're expecting an incoming file, run:
 
 {% highlight text %}
 % notifywait ~/Public/Drop\ Box && say "Dropbox changed"
@@ -92,7 +92,7 @@ Watching /Users/ggreer/code/ag
 
 …and so on.
 
-Those who use GUI editors will likely recognize the value of `autorsync`. No longer will you have to ssh in and make changes using Vim or Emacs. Nor will you have to manually copy files or set up [sshfs](https://github.com/osxfuse/osxfuse/wiki/SSHFS). Just run one command and everything gets synced to the remote server.
+Those who use GUI editors will likely recognize the value of `autorsync`. No longer will you have to ssh in and make changes using Vim or Emacs. Nor will you have to manually copy files or set up [sshfs](https://github.com/osxfuse/osxfuse/wiki/SSHFS). With one command, everything gets synced to the remote server.
 
 <br />
 
