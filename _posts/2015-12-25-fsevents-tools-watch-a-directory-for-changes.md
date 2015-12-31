@@ -32,7 +32,7 @@ Watching /Users/ggreer/Public/Drop Box
 Change 18158642688910021128 in /Users/ggreer/Public/Drop Box/untitled folder, flags 131328 - matched directory, notifying
 {% endhighlight %}
 
-…followed by your computer talking. Note: `notifywait` will exit if a file or directory is deleted as well, so it might alert for more things than you want.
+…followed by your computer talking. Note: `notifywait` will also exit if a file or directory is moved or deleted. In this specific example, that's probably more than you want.
 
 
 ### notifyloop

@@ -8,7 +8,7 @@ releases:
 - 1.0.0
 ---
 
-FSEvents Tools are the OS X counterpart to Linux's [inotify-tools](https://github.com/rvoicilas/inotify-tools). See [the GitHub page](https://github.com/ggreer/fsevents-tools) for more info.
+FSEvents-tools is the OS X counterpart to Linux's [inotify-tools](https://github.com/rvoicilas/inotify-tools). See [the GitHub page](https://github.com/ggreer/fsevents-tools) for more info.
 
 Release tarballs are signed with [my public key](/ggreer_gpg_key.asc) (3F0A04B6). To verify a release, first download my public key and import it:
 
