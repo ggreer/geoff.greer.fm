@@ -37,7 +37,7 @@ Change 18158642688910021128 in /Users/ggreer/Public/Drop Box/untitled folder, fl
 
 ### notifyloop
 
-`notifyloop` takes a path and a command. When something in `path` changes, it runs `command`. For example, if you have a bunch of LESS in `styles/` and you want to rebuild CSS when they change, you'd do something like this:
+`notifyloop` takes a `path` and a `command`. When something in `path` changes, it runs `command`. For example, if you have a bunch of LESS in `styles/` and you want to rebuild CSS when they change, you'd do something like this:
 
 {% highlight text %}
 ggreer@carbon:~/code/geoff.greer.fm% notifyloop styles ./rebuild_less.sh
@@ -62,8 +62,38 @@ While simple, `notifyloop` is very flexible. You'll probably use it more than th
 
 ### autorsync
 
+Finally, there's `autorsync`. It takes a `path` and a remote destination. If anything in `path` changes, it [rsyncs](https://en.wikipedia.org/wiki/Rsync) `path` to the remote. In the following example, I copy the source for [ag](/ag/) to my home server. Since the repo was out of date on that server, my first save of `decompress.c` causes a lengthy rsync. As expected, the second save rsyncs much faster. Here's the command and output:
 
+{% highlight text %}
+ggreer@carbon:~/code% autorsync ag lithium.local:code/
+Watching ag
+Path is /Users/ggreer/code/ag
+Watching /Users/ggreer/code/ag
+Change 18158642688910848099 in /Users/ggreer/code/ag/src/decompress.c, flags 70656 - matched directory, notifying
+Running rsync -avz ag lithium.local:code/
+building file list ... done
+ag/
+...
+sent 2882666 bytes  received 52598 bytes  1174105.60 bytes/sec
+total size is 6612119  speedup is 2.25
+Path is /Users/ggreer/code/ag
+Watching /Users/ggreer/code/ag
+Change 18158642688910848167 in /Users/ggreer/code/ag/src/decompress.c, flags 70656 - matched directory, notifying
+Running rsync -avz ag lithium.local:code/
+building file list ... done
+ag/src/decompress.c
 
+sent 36800 bytes  received 114 bytes  73828.00 bytes/sec
+total size is 6612119  speedup is 179.12
+Path is /Users/ggreer/code/ag
+Watching /Users/ggreer/code/ag
+...
+{% endhighlight %}
 
-[Signed releases are available here](/fsevents/). If you want to see the source code (it's very short), visit [fsevents-tools on GitHub](https://github.com/ggreer/fsevents-tools).
+…and so on.
 
+Those who use GUI editors will likely recognize the value of `autorsync`. No longer will you have to ssh in and make changes using Vim or Emacs. Nor will you have to manually copy files or set up [sshfs](https://github.com/osxfuse/osxfuse/wiki/SSHFS). Just run one command and everything gets synced to the remote server.
+
+<br />
+
+I hope you find these tools as useful as I do. [Signed releases are available here](/fsevents/). The source code is on [GitHub at ggreer/fsevents-tools](https://github.com/ggreer/fsevents-tools).
