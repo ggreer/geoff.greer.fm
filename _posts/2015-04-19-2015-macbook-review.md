@@ -6,6 +6,7 @@ published: true
 title: 2015 MacBook Review
 categories:
   - Computers
+  - Laptops
   - Review
 ---
 
