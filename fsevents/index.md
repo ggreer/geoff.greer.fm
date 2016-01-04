@@ -2,10 +2,10 @@
 layout: page
 title: FSEvents Tools
 releases:
+- 1.0.0
+- 0.3.0
 - 0.2.1
 - 0.2.0
-- 0.3.0
-- 1.0.0
 ---
 
 FSEvents-tools is the OS X counterpart to Linux's [inotify-tools](https://github.com/rvoicilas/inotify-tools). See [the GitHub page](https://github.com/ggreer/fsevents-tools) for more info.
