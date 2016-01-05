@@ -8,7 +8,7 @@ categories:
 - Computers
 ---
 
-C is an important language for many reasons. It's ubiquitous. No other language runs on as many platforms. It's *fast*. It gets you closer to the bare metal than anything but assembly. It's old. It has a long history, much of it tied up with the beginnings of UNIX.
+C is an important language for many reasons. It's ubiquitous. No other language runs on as many platforms. It's *fast*. It gets you closer to the bare metal than anything but assembly. It's old. It has a long history, much of it intertwined with the beginnings of UNIX.
 
 It also has a reputation for being hard to master.
 
@@ -42,11 +42,11 @@ Humor aside, the book's age does hurt its educational value. Omissions include:
 - Variable-length arrays
 - [Variadic macros](https://en.wikipedia.org/wiki/Variadic_macro)
 
-It's not essential for beginners to know these features, but a book about C should at least mention them. K&R also avoids any mention of build systems (autotools), debuggers (gdb, lldb), or profiling tools (gprof, dtrace). That's more understandable though. These tools either didn't exist or were in their infancy when the book was authored. Considering how dated those sections would now be, it's probably a good thing that they don't exist.
+It's not essential for beginners to know these features, but a book about C should at least mention them. K&R also avoids any mention of build systems (autotools), debuggers (gdb, lldb), or profilers (gprof, dtrace). That's more understandable though. These tools either didn't exist or were in their infancy when the book was authored. Considering how dated those sections would now be, it's probably good that they're missing.
 
-Having read the book, I'm pretty sure Kernighan & Ritchie never had the goal of covering anything outside the language itself. And that's the main reason why I can't recommnend K&R to beginners. It lacks any sort of "getting started" section. It has no guides for setting up a basic development environment. No information on how to install and use a compiler. Again, I realize these sections would be completely out-of-date had they existed in the 1988 book. Still, it's important that books about languages help users set up development environments.
+I'm pretty sure Kernighan & Ritchie never had the goal of covering anything outside the language itself. And that's the main reason why I can't recommnend K&R to beginners. It lacks any sort of "getting started" section. It has no guides for setting up a development environment; no information on how to install and use a compiler. Again, I realize these sections would be completely out-of-date had they existed in the 1988 book. Still, it's important that books about languages help users set up development environments.
 
-I think with a few updates and a companion book, K&R could be a solid intro to C. In its current form, it serves as more of an overview and reference.
+K&R is part of a solid intro to C, but it's not enough. It needs a few updates to reflect modern C. More importantly, it needs a companion book covering tooling and a setup guide. In its current form, it serves as more of an overview and reference.
 
 ---
 <span id="lcthw"></span>
