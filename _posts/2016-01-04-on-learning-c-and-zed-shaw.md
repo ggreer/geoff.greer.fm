@@ -22,6 +22,7 @@ Unfortunately, I can't recommend either to beginners. Allow me to explain why.
 ### Table of Contents
 - [K&R: Decent, but Dated](#kr)
 - [Learn C the Hard Way](#lcthw)
+- [C Programming Substance Guidelines](#substance)
 - [Why should I believe you?](#why)
 
 ---
@@ -65,6 +66,14 @@ I knew nothing about LCTHW or this spat until [someone asked for "peer reviews"]
 ...
 
 ---
+<span id="substance"></span>
+
+## C Programming Substance Guidelines
+
+[C Programming Substance Guidelines](https://github.com/btrask/stronglink/blob/master/SUBSTANCE.md)
+
+
+---
 <span id="why"></span>
 
 ## Why should I believe you?
@@ -87,15 +96,12 @@ if (a = b) {
 }
 {% endhighlight %}
 
-That's right, a single equals in a conditional. All that effort and frustration for a single character.
-
-I've quoted him before, but [Douglas Crockford](http://www.crockford.com/) [said it best](http://www.youtube.com/watch?v=taaEzHI9xyY#t=26m50s):
+That's right, a single equals in a conditional. All that effort and frustration for a single character. I've quoted him before, but [Douglas Crockford](http://www.crockford.com/) [said it best](http://www.youtube.com/watch?v=taaEzHI9xyY#t=26m50s):
 
 >I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, "I'm done. This is stupid. I'm going to do something else." But not us, 'cause there's something really wrong with us.
 
+---
 
-
-https://github.com/btrask/stronglink/blob/master/SUBSTANCE.md
 
 
 ---
