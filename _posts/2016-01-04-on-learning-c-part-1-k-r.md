@@ -1,9 +1,9 @@
 ---
 date: '2016-01-04 21:38:43'
 layout: post
-slug: on-learning-c-and-zed-shaw
+slug: on-learning-c-part-1-k-r
 published: true
-title: On Learning C and Zed Shaw
+title: 'On Learning C, Part 1: K&R'
 categories:
 - Computers
 ---
@@ -50,61 +50,6 @@ It's not essential for beginners to know these features, but a book about C shou
 I think Kernighan & Ritchie never had the goal of covering anything outside the language itself. And that's the main reason why I can't recommnend K&R to beginners. It lacks any sort of "getting started" section. It has no guides for setting up a development environment. There's no chapter on how to install and use a compiler. Again, I realize these sections would be completely out-of-date had they existed in the 1988 book. Still, it's important that programming language books help users set up development environments.
 
 In short: K&R is part of a solid intro to C, but it's not enough. It needs a few updates to reflect modern C. More importantly, it needs a companion book covering setup and tooling. In its current form, it serves as more of an overview and reference.
-
----
-<span id="lcthw"></span>
-
-## Learn C the Hard Way: A Flawed Text with an Agenda
-
-As harsh as that title may sound, I'm really not trying to court controversy. I have no grudge with Zed Shaw. In fact, I think he's a talented programmer and an excellent teacher. He has helped hundreds of thousands of people with his guide, [*Learn Python the Hard way*](http://learnpythonthehardway.org/). He has done far more to advance programming education than I could ever hope to.
-
-It is for these reasons that I wish I didn't have to say: *Learn C the Hard Way* is not worth reading.
-
-I'm not alone in this view. The most well-known (though in my opinion, very flawed) criticism of LCTHW is [Learn C the Wrong way](http://hentenaar.com/dont-learn-c-the-wrong-way) by Tim Hentenaar. While snarky and hostile, it does contain valid criticisms. The setup chapter is quite poor. The chapter on invoking the compiler is atrocious. It only talks of `make`, not directly invoking `gcc` or `clang`. In essence, it pretends there is only one way to invoke the compiler: a build system, and only one build system: `make`. I'm all for keeping things simple in introductory texts, but Shaw goes too far. 
-
-I knew nothing about LCTHW or this spat until [someone asked for "peer reviews"](https://www.reddit.com/r/C_Programming/comments/3rd4dg/peer_review_learn_c_the_hard_way_by_zed_shaw_pub/) in [/r/C_Programming](https://www.reddit.com/r/C_Programming).
-
-
-...
-
----
-<span id="substance"></span>
-
-## C Programming Substance Guidelines
-
-Another C guide [was posted on Hacker News](https://news.ycombinator.com/item?id=10157018): [C Programming Substance Guidelines](https://github.com/btrask/stronglink/blob/master/SUBSTANCE.md). I disagreed with some of its recommendations, including the endorsement of Shaw's *Learn C the Hard Way*, so I left a comment on the HN submission.
-
-
----
-<span id="why"></span>
-
-## Why should I believe you?
-
-I really did learn C the hard way. I was twelve years old, and it was my first real programming language.<sup>[\[2\]](#ref_2)</sup> Thanks to some luck and an advanced placement test, I'd gotten into CS121 at Gonzaga University.
-
-I distinctly remember being stumped by a bug in an early programming assignment. There was an `else` statement that never seemed to be taken.
-
-It compiled without warnings.
-
-I spent days staring at that code. I added `printf()`s. I ... No matter what I tried, I simply couldn't understand why the program was misbehaving.
-
-I was practically in tears when I asked my dad for help. He saw the problem in seconds:
-
-{% highlight c %}
-if (a = b) {
-  ...
-} else {
-  ...
-}
-{% endhighlight %}
-
-That's right, a single equals in a conditional. All that effort and frustration for a single character. I've quoted him before, but [Douglas Crockford](http://www.crockford.com/) [said it best](http://www.youtube.com/watch?v=taaEzHI9xyY#t=26m50s):
-
->I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, "I'm done. This is stupid. I'm going to do something else." But not us, 'cause there's something really wrong with us.
-
----
-
-
 
 ---
 
