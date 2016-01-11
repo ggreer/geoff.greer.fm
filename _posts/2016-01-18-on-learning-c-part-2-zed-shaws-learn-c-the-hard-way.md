@@ -6,7 +6,11 @@ published: true
 title: "On Learning C, Part 2: Zed Shaw's Learn C the Hard Way"
 categories:
 - Computers
+- Learning C
 ---
+
+Another common answer to, "What book should I read to learn C?", is [Zed Shaw's](https://en.wikipedia.org/wiki/Zed_Shaw)'s [*Learn C the Hard Way*](http://c.learncodethehardway.org/book/), AKA "LCTHW."
+
 
 ## Learn C the Hard Way: A Flawed Text with an Agenda
 

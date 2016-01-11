@@ -6,29 +6,24 @@ published: true
 title: 'On Learning C, Part 1: K&R'
 categories:
 - Computers
+- Learning C
 ---
 
 C is an important language for many reasons. It's ubiquitous. No other language runs on as many platforms. It's *fast*. It gets you closer to the bare metal than anything but assembly. It's old. It has a long history, much of it intertwined with the beginnings of UNIX.
 
 It also has a reputation for being hard to master.
 
-When novices ask, "What book should I read to learn C?", I've heard two common recommendations:
-
-* [Kernighan](https://en.wikipedia.org/wiki/Brian_Kernighan) & [Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)'s [*The C Programming Language*](https://en.wikipedia.org/wiki/The_C_Programming_Language), AKA "the K&R book."
-* [Zed Shaw](https://en.wikipedia.org/wiki/Zed_Shaw)'s [*Learn C the Hard Way*](http://c.learncodethehardway.org/book/), AKA "LCTHW."
-
-Unfortunately, I can't recommend either to beginners. Allow me to explain why.
-
 ---
 
 ### Table of Contents
-- [K&R: Decent, but Dated](#kr)
-- [Learn C the Hard Way](#lcthw)
-- [C Programming Substance Guidelines](#substance)
-- [Why should I believe you?](#why)
+- [K&R: Decent, but Dated]({% post_url 2016-01-04-on-learning-c-part-1-k-r %}) (this post)
+- [Learn C the Hard Way]({% post_url 2016-01-18-on-learning-c-part-2-zed-shaws-learn-c-the-hard-way %})
+- [C Programming Substance Guidelines]({% post_url 2016-02-04-on-learning-c-part-3-c-programming-substance-guidelines %})
+- [So What Should I read? And Why should I believe you?]({% post_url 2016-02-10-on-learning-c-part-4-so-what-should-i-read %})
 
 ---
-<span id="kr"></span>
+
+When novices ask, "What book should I read to learn C?", I've heard a common recommendation: [Kernighan](https://en.wikipedia.org/wiki/Brian_Kernighan) & [Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)'s [*The C Programming Language*](https://en.wikipedia.org/wiki/The_C_Programming_Language), AKA "the K&R book." Unfortunately, I can't it to beginners. Allow me to explain why.
 
 ## K&R: Decent, but Dated
 

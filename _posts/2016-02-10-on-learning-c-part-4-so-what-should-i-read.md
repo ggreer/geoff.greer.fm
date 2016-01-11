@@ -3,12 +3,11 @@ date: '2016-02-04 22:30:00'
 layout: post
 slug: on-learning-c-part-4-so-what-should-i-read
 published: true
-title: On Learning C, Part 4: So What Should I Read?
+title: 'On Learning C, Part 4: What Should I Read? And Why Should I believe you?'
 categories:
+- Computers
+- Learning C
 ---
-
-
-
 
 ## Why should I believe you?
 

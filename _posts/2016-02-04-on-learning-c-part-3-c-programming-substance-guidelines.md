@@ -3,10 +3,11 @@ date: '2016-02-04 22:29:02'
 layout: post
 slug: on-learning-c-part-3-c-programming-substance-guidelines
 published: true
-title: On Learning C, Part 3: C Programming Substance Guidelines
+title: 'On Learning C, Part 3: C Programming Substance Guidelines'
 categories:
+- Computers
+- Learning C
 ---
-
 
 ## C Programming Substance Guidelines
 
