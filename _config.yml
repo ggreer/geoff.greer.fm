@@ -25,6 +25,8 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    big_sur_2016:
+      best_image: DSC_1362.jpg
     snowshoeing_2015:
       best_image: DSC_1251.jpg
     desolation_wilderness_2015:
