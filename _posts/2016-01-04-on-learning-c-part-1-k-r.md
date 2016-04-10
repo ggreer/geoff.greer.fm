@@ -16,18 +16,19 @@ It also has a reputation for being hard to master.
 ---
 
 ### Table of Contents
-- [K&R: Decent, but Dated]({% post_url 2016-01-04-on-learning-c-part-1-k-r %}) (this post)
-- [Learn C the Hard Way]({% post_url 2016-01-18-on-learning-c-part-2-zed-shaws-learn-c-the-hard-way %})
-- [C Programming Substance Guidelines]({% post_url 2016-02-04-on-learning-c-part-3-c-programming-substance-guidelines %})
-- [So What Should I read? And Why should I believe you?]({% post_url 2016-02-10-on-learning-c-part-4-so-what-should-i-read %})
+- [Part 1: K&R]({% post_url 2016-01-04-on-learning-c-part-1-k-r %}) (this post)
+- [Part 2: Zed Shaw's Learn C the Hard Way]({% post_url 2016-01-18-on-learning-c-part-2-zed-shaws-learn-c-the-hard-way %})
+- [Part 3: C Programming Substance Guidelines]({% post_url 2016-02-04-on-learning-c-part-3-c-programming-substance-guidelines %})
+- [Part 4: What Should I Read? Why Should I believe you?]({% post_url 2016-02-10-on-learning-c-part-4-so-what-should-i-read %})
 
 ---
 
-When novices ask, "What book should I read to learn C?", I've heard a common recommendation: [Kernighan](https://en.wikipedia.org/wiki/Brian_Kernighan) & [Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)'s [*The C Programming Language*](https://en.wikipedia.org/wiki/The_C_Programming_Language), AKA "the K&R book." Unfortunately, I can't it to beginners. Allow me to explain why.
+When novices ask, "What book should I read to learn C?", I've heard a common recommendation: [Kernighan](https://en.wikipedia.org/wiki/Brian_Kernighan) & [Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)'s [*The C Programming Language*](https://en.wikipedia.org/wiki/The_C_Programming_Language), AKA "the K&R book." Unfortunately, I can't recommend it to beginners. Allow me to explain why.
+
 
 ## K&R: Decent, but Dated
 
-The K&R book does an excellent job of explaining the C language. It describes syntax, keywords, program structure, preprocessor behavior, and the standard library. There's just one problem: it's old. The last major update was in 1988. This leads to amusing anachronisms, such as the intro to a section about function arguments:
+The K&R book does an excellent job of explaining the C language. It describes syntax, keywords, program structure, preprocessor behavior, and the standard library. There's just one problem: it's *old*. The last major update was in 1988. This leads to amusing anachronisms, such as the intro to a section about function arguments:
 
 > One aspect of C functions may be unfamiliar to programmers who are used to some other languages, particularly Fortran. In C, all function arguments are passed "by value."<sup>[\[1\]](#ref_1)</sup>
 
@@ -44,7 +45,7 @@ It's not essential for beginners to know these features, but a book about C shou
 
 I think Kernighan & Ritchie never had the goal of covering anything outside the language itself. And that's the main reason why I can't recommnend K&R to beginners. It lacks any sort of "getting started" section. It has no guides for setting up a development environment. There's no chapter on how to install and use a compiler. Again, I realize these sections would be completely out-of-date had they existed in the 1988 book. Still, it's important that programming language books help users set up development environments.
 
-In short: K&R is part of a solid intro to C, but it's not enough. It needs a few updates to reflect modern C. More importantly, it needs a companion book covering setup and tooling. In its current form, it serves as more of an overview and reference.
+In short: K&R is part of a solid intro to C, but it's not enough. It needs a few updates to reflect modern C. More importantly, it needs a companion book to cover setup and tooling. In its current form, it serves as more of an overview and reference.
 
 ---
 
