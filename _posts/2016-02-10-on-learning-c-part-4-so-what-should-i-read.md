@@ -9,6 +9,8 @@ categories:
 - Learning C
 ---
 
+{% include on_learning_c.md number=4 %}
+
 ## Why should I believe you?
 
 I really did learn C the hard way. I was twelve years old, and it was my first real programming language.<sup>[\[2\]](#ref_2)</sup> Thanks to some luck and an advanced placement test, I'd gotten into CS121 at Gonzaga University.

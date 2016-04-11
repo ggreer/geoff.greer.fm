@@ -13,15 +13,7 @@ C is an important language for many reasons. It's ubiquitous. No other language 
 
 It also has a reputation for being hard to master.
 
----
-
-### Table of Contents
-- [Part 1: K&R]({% post_url 2016-01-04-on-learning-c-part-1-k-r %}) (this post)
-- [Part 2: Zed Shaw's Learn C the Hard Way]({% post_url 2016-01-18-on-learning-c-part-2-zed-shaws-learn-c-the-hard-way %})
-- [Part 3: C Programming Substance Guidelines]({% post_url 2016-02-04-on-learning-c-part-3-c-programming-substance-guidelines %})
-- [Part 4: What Should I Read? Why Should I believe you?]({% post_url 2016-02-10-on-learning-c-part-4-so-what-should-i-read %})
-
----
+{% include on_learning_c.md number=1 %}
 
 When novices ask, "What book should I read to learn C?", I've heard a common recommendation: [Kernighan](https://en.wikipedia.org/wiki/Brian_Kernighan) & [Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)'s [*The C Programming Language*](https://en.wikipedia.org/wiki/The_C_Programming_Language), AKA "the K&R book." Unfortunately, I can't recommend it to beginners. Allow me to explain why.
 
