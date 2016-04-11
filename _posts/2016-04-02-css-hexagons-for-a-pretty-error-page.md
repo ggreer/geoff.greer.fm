@@ -1,5 +1,5 @@
 ---
-date: '2013-06-02 00:19:21'
+date: '2016-04-02 00:19:21'
 layout: post
 slug: css-hexagons-for-a-pretty-error-page
 published: false
