@@ -9,11 +9,11 @@ categories:
 - Learning C
 ---
 
+{% include on_learning_c.md number=1 %}
+
 C is an important language for many reasons. It's ubiquitous. No other language runs on as many platforms. It's *fast*. It gets you closer to the bare metal than anything but assembly. It's old. It has a long history, much of it intertwined with the beginnings of UNIX.
 
 It also has a reputation for being hard to master.
-
-{% include on_learning_c.md number=1 %}
 
 When novices ask, "What book should I read to learn C?", I've heard a common recommendation: [Kernighan](https://en.wikipedia.org/wiki/Brian_Kernighan) & [Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)'s [*The C Programming Language*](https://en.wikipedia.org/wiki/The_C_Programming_Language), AKA "the K&R book." Unfortunately, I can't recommend it to beginners. Allow me to explain why.
 

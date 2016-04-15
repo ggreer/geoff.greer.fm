@@ -9,9 +9,9 @@ categories:
 - Learning C
 ---
 
-Another common answer to, "What book should I read to learn C?", is [Zed Shaw's](https://en.wikipedia.org/wiki/Zed_Shaw)'s [*Learn C the Hard Way*](http://c.learncodethehardway.org/book/), AKA "LCTHW."
-
 {% include on_learning_c.md number=2 %}
+
+Another common answer to, "What book should I read to learn C?", is [Zed Shaw](https://en.wikipedia.org/wiki/Zed_Shaw)'s [*Learn C the Hard Way*](http://c.learncodethehardway.org/book/), AKA "LCTHW."
 
 ## Learn C the Hard Way: A Flawed Text with an Agenda
 
