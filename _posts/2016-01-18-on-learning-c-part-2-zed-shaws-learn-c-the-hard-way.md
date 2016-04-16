@@ -28,7 +28,7 @@ Shaw received enough criticism that he eventually [admitted defeat and removed t
 
 > But C? C’s dead. It’s the language for old programmers who want to debate section A.6.2 paragraph 4 of the undefined behavior of pointers. Good riddance. I’m going to go learn Go.
 
-[Shaw's response to Tim Hentenaar](https://zedshaw.com/2015/09/28/taking-down-tim-hentenaar/) had the same tact and grace. Honestly, I find Shaw's response baffling. He spends very few words addressing technical arguments. Most of the post is Shaw saying good things about himself and bad things about Tim Hentenaar. Tim lacks qualifications. Tim doesn't understand how to teach code. Tim is arrogant. Tim is hubristic. Tim can't spell. Those may all be true, but they don't address Tim's arguments. Yes, Tim is a snarky prick, but that doesn't invalidate his criticisms.
+[Shaw's response to Tim Hentenaar](https://zedshaw.com/2015/09/28/taking-down-tim-hentenaar/) had the same tact and grace. Honestly, I find Shaw's response baffling. He spends very few words addressing technical arguments. Most of the post is Shaw saying good things about himself and bad things about Tim Hentenaar. Tim lacks qualifications. Tim doesn't understand how to teach code. Tim is arrogant. Tim is hubristic. Tim can't spell. Those may all be true, but they don't address the arguments. Yes, Tim is a snarky prick, but that doesn't make his arguments incorrect.
 
 There's only one criticism that Shaw really addresses, and that's Hentenaar's defense of NULL-terminated strings. Shaw shows how Hentenaar's `copy()` could fail… if the source string is corrupted. As I read this part of Shaw's post, I was reminded of a quote by Charles Babbage:
 
