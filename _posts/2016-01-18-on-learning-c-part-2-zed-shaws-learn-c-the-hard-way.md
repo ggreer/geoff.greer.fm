@@ -24,7 +24,7 @@ If I could distill my evaluation of LCTHW to one sentence, it would be: Shaw fun
 
 ## Shaw's Response
 
-Shaw received enough criticism that he eventually [admitted defeat and removed the K&R chapter](https://zedshaw.com/2015/01/04/admitting-defeat-on-kr-in-lcthw/). In that blog post, he went on to disparage the entire C community and the language itself:
+Shaw eventually received enough criticism that he [admitted defeat and removed the K&R chapter](https://zedshaw.com/2015/01/04/admitting-defeat-on-kr-in-lcthw/). In that blog post, he went on to disparage the entire C community and the language itself:
 
 > But C? C’s dead. It’s the language for old programmers who want to debate section A.6.2 paragraph 4 of the undefined behavior of pointers. Good riddance. I’m going to go learn Go.
 
