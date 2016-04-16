@@ -37,9 +37,9 @@ There's only one criticism that Shaw really addresses, and that's Hentenaar's de
 If you're willing to posit corrupt or invalid inputs to a function, all bets are off. No data structure will save you. Amusingly, Shaw's original criticism of Hentenaar's `copy()` was incorrect. On the one technical issue Shaw engaged with, he was mistaken. Someone else had to correct him. That's quite the indictment of his C knowledge. If Shaw can't correctly refute one C example, what are the chances he's written a quality book on the language?
 
 
-## I Have no Dog in this Fight
+## Why I'm Writing this
 
-This post may seem too critical of Zed Shaw, but I promise I'm not trying to provoke anyone. I'm just trying to prevent newbies from being misinformed.<sup>[\[2\]](#ref_2)</sup>  As I said before, I think Zed Shaw has done tons of good. His guides for other languages have helped thousands. But when it comes to C, he is both mistaken and more than a little arrogant. I truly wish it were otherwise.
+This post may seem too critical of Zed Shaw, but I promise I'm not trying to provoke anyone. I just don't want newbies to be misinformed.<sup>[\[2\]](#ref_2)</sup> As I said before, I think Zed Shaw has done tons of good. His guides for other languages have helped thousands. But when it comes to C, he is both mistaken and more than a little arrogant. I truly wish it were otherwise.
 
 
 ---
