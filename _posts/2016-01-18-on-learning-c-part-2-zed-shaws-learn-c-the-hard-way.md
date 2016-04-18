@@ -39,7 +39,7 @@ If you're willing to posit corrupt or invalid inputs to a function, all bets are
 
 ## Why I'm Writing this
 
-This post may seem too critical of Zed Shaw, but I promise I'm not trying to provoke anyone. I just don't want newbies to be misinformed.<sup>[\[2\]](#ref_2)</sup> As I said before, I think Zed Shaw has done tons of good. His guides for other languages have helped thousands. But when it comes to C, he is both mistaken and more than a little arrogant. I truly wish it were otherwise.
+I have no dog in this fight. I just don't want newbies to be misinformed.<sup>[\[2\]](#ref_2)</sup> As I said before, Zed Shaw's guides have helped thousands. But when it comes to C, he is both mistaken and more than a little arrogant. I truly wish it were otherwise.
 
 
 ---
