@@ -17,10 +17,16 @@ A few months ago, another C guide [was posted on Hacker News](https://news.ycomb
 
 What follows is a sort of shotgun approach. I've quoted and responded to the guidelines that I think are particularly important to follow (or not follow). And in some cases, I present a more nuanced version of the author's advice, so as to diffuse some ways in which it could backfire. Alright, on with the show…
 
+
+### Codebase Size
+
 > Things that are large and frequently changing will **never** be secure.
 > If you care about security, the best thing you can do is keep the project small.
 
-This is great advice. It applies to all bugs, not just security issues. After a half-century of research into software development, the best predictor of a codebases's bug count is still lines of code.<sup>[\[1\]](#ref_1)</sup>
+This is great advice. It applies to all bugs, not just security issues. After a half-century of research into software development, the best predictor of a codebases's bug count is still lines of code.<sup>[\[1\]](#ref_1)</sup> Be warned though, [it is very hard to keep a codebase small]({% post_url 2013-03-06-the-cost-of-features %}).
+
+
+### Setting Pointers to `NULL` After `free()`
 
 > Immediately clear pointers after freeing…
 
@@ -28,19 +34,30 @@ I think this advice is dangerously double-edged. It really depends on what you'r
 
 On the other hand: If you intend for the pointer to be allocated and deallocated only once, clearing it just hides bugs. If your program's control flow has unexpected behavior that results in a double-free, it's important to find out why that's happening. Papering over it with `ptr = NULL;` will fix the symptom, but it won't fix the underlying cause.
 
+
+### `calloc()` vs. `malloc()`
+
 > Use `calloc` instead of `malloc`
 
-I don't think this matters much, but I mildly disagree.
+I don't think this matters much, but I mildly disagree. Like the previous example, this will likely hide the underlying cause of bugs in your program. If an issue is "fixed" by `calloc()` that means something wasn't properly initialized. Zeroing-out the entire memory region might be the correct way to initialize it, but it might not. It really depends on what you're doing. Better to make sure your 
+
+
+### Custom Allocators
 
 > Don't write custom allocators
 
-I hardly ever come across these, but I certainly agree. Unless you *really* know what you're doing, a custom allocator is likely to be buggy and slow. It will also make it harder for other programmers to understand your code. I've never needed to write my own allocator. If memory allocation/deallocation becomes a performance bottleneck, use an existing memory pool library.
+I hardly ever come across these, but I certainly agree. Unless you *really* know what you're doing, a custom allocator will likely be buggy and slow. It will also make it harder for other programmers to understand your code. I've never needed to write my own allocator. If memory allocation/deallocation becomes a performance bottleneck, use an existing memory pool library. [APR's memory pools](https://apr.apache.org/docs/apr/2.0/group__apr__pools.html) aren't a bad choice.
 
 
-> Single line if possible: if(rc < 0) return rc;
-> Single line if possible: if(X == rc) return Y;
+### Braces
+
+> Single line if possible: `if(rc < 0) return rc;`
+
+> Single line if possible: `if(X == rc) return Y;`
+
 > Put one-statement conditionals on the same line as the condition
-> if(rc < 0) goto fail;
+
+> `if(rc < 0) goto fail;`
 
 If you always use braces, you will make yourself immune to an entire class of bugs.
 
