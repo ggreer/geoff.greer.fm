@@ -13,7 +13,7 @@ I am more than proficient in C, JavaScript, and Python. I also have experience w
 
 I know Django and Node.js. In the past I have used Rails.
 
-I have extensive operational experience with MySQL, Cassandra, and BerkeleyDB. I have also dealt with RabbitMQ, Apache Solr, ElasticSearch, and Scribe in production environments. I have been in on-call rotations at Bloglines and Cloudkick.
+I have extensive operational experience with PostgreSQL, MySQL, Cassandra, and BerkeleyDB. I have also dealt with RabbitMQ, Apache Solr, ElasticSearch, and Scribe in production environments. I have been in on-call rotations at Bloglines and Cloudkick.
 
 ## Employment History
 ---
