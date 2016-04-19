@@ -13,9 +13,9 @@ categories:
 
 ## Why should I believe you?
 
-When it comes to C, I am quite proficient. I've been professionally employed to write C. I created [a somewhat popular open source project in C](/ag/). I've also contributed to other open source C projects.
+When it comes to C, I am quite proficient. I've been professionally employed to write C. I created [a somewhat popular open source project in C](/ag/). I have extensive experience profiling a C programs[^1][^2], optimizing them[^3][^4], and making them multithreaded[^5]. I've also contributed to other open source C projects.
 
-I really did learn C the hard way. It was my first real programming language.[^1] Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). I was 12 years old.
+I really did learn C the hard way. It was my first real programming language.[^6] Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). I was 12 years old.
 
 I distinctly remember an early assignment where I was completely stumped by a bug. I'd almost finished the program, but there was one issue that I couldn't fix. An `if` statement was always evaluating to true, even when it shouldn't. The `else` was never taken. The program compiled without warnings. It was incredibly frustrating.
 
@@ -29,7 +29,7 @@ if (a = b) {
 }
 {% endhighlight %}
 
-I had a single equals in a conditional. That meant I was assigning `a` to `b` instead of comparing them. As soon as I added another equals, my program worked flawlessly. All that effort and frustration was caused by a single missing character.[^2]
+I had a single equals in a conditional. That meant I was assigning `a` to `b` instead of comparing them. As soon as I added another equals, my program worked flawlessly. All that effort and frustration was caused by a single missing character.[^7]
 
 I'm still surprised that, afterwards, I remained interested in writing code. I've quoted him before, but [Douglas Crockford](http://www.crockford.com/) [said it best](http://www.youtube.com/watch?v=taaEzHI9xyY#t=26m50s):
 
@@ -54,6 +54,16 @@ The dearth of good C books is a bit of a bummer, but there may be a silver linin
 
 ---
 
-[^1]: Before that, I'd only written a few toy programs in [Logo](https://en.wikipedia.org/wiki/Logo_%28programming_language%29), [QBasic](https://en.wikipedia.org/wiki/QBasic), and [TI-BASIC](https://en.wikipedia.org/wiki/TI-BASIC).
+[^1]: [Making Ag Faster: Profiling with Valgrind]({% post_url 2012-01-23-making-programs-faster-profiling %})
 
-[^2]: If you're wondering why the compiler didn't warn about this, it's because this happened in 1998. Back then, gcc didn't warn about assignments in conditionals. Nowadays, any sane compiler will complain. How fortunate one is to learn C today. 🙂
+[^2]: [Profiling with Gprof]({% post_url 2012-02-08-profiling-with-gprof %})
+
+[^3]: [Optimizing Ag: Special-casing File Extensions]({% post_url 2015-02-08-optimizing-ag-special-casing-file-extensions %})
+
+[^4]: [Profiling Ag. Writing My Own Scandir]({% post_url 2012-09-03-profiling-ag-writing-my-own-scandir %})
+
+[^5]: [The Silver Searcher: Adding Pthreads]({% post_url 2012-09-07-the-silver-searcher-adding-pthreads %})
+
+[^6]: Before that, I'd only written a few toy programs in [Logo](https://en.wikipedia.org/wiki/Logo_%28programming_language%29), [QBasic](https://en.wikipedia.org/wiki/QBasic), and [TI-BASIC](https://en.wikipedia.org/wiki/TI-BASIC).
+
+[^7]: If you're wondering why the compiler didn't warn about this, it's because this happened in 1998. Back then, gcc didn't warn about assignments in conditionals. Nowadays, any sane compiler will complain. How fortunate one is to learn C today. 🙂
