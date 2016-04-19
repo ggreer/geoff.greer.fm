@@ -22,7 +22,7 @@ When novices ask, "What book should I read to learn C?", I've heard a common rec
 
 The K&R book does an excellent job of explaining the C language. It describes syntax, keywords, program structure, preprocessor behavior, and the standard library. There's just one problem: it's *old*. The last major update was in 1988. This leads to amusing anachronisms, such as the intro to a section about function arguments:
 
-> One aspect of C functions may be unfamiliar to programmers who are used to some other languages, particularly Fortran. In C, all function arguments are passed "by value."<sup>[\[1\]](#ref_1)</sup>
+> One aspect of C functions may be unfamiliar to programmers who are used to some other languages, particularly Fortran. In C, all function arguments are passed "by value."[^1]
 
 Humor aside, the book's age does hurt its educational value. Omissions include:
 
@@ -41,5 +41,4 @@ In short: K&R is part of a solid intro to C, but it's not enough. It needs a few
 
 ---
 
-1. <span id="ref_1"></span>Section 1.8: Arguments – Call by value. For those who may not know: Today, pass by value is the most popular design in modern languages.
-2. <span id="ref_2"></span>I'd dabbled in [QBasic](https://en.wikipedia.org/wiki/QBasic) and [TI-BASIC](https://en.wikipedia.org/wiki/TI-BASIC), but it was mostly tweaking other people's code, not writing anything substantial.
+[^1]: Section 1.8: Arguments – Call by value. For those who may not know: Today, pass by value is the most popular design in modern languages.

@@ -32,18 +32,18 @@ Shaw eventually received enough criticism that he [admitted defeat and removed t
 
 There's only one criticism that Shaw really addresses, and that's Hentenaar's defense of NULL-terminated strings. Shaw shows how Hentenaar's `copy()` could fail… if the source string is corrupted. As I read this part of Shaw's post, I was reminded of a quote by Charles Babbage:
 
-> On two occasions I have been asked, "Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?" ... I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.<sup>[\[1\]](#ref_1)</sup> 
+> On two occasions I have been asked, "Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?" ... I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.[^1]
 
 If you're willing to posit corrupt or invalid inputs to a function, all bets are off. No data structure will save you. Amusingly, Shaw's original criticism of Hentenaar's `copy()` was incorrect. On the one technical issue Shaw engaged with, he was mistaken. Someone else had to correct him. That's quite the indictment of his C knowledge. If Shaw can't correctly refute one C example, what are the chances he's written a quality book on the language?
 
 
 ## Why I'm Writing this
 
-I have no dog in this fight. I just don't want newbies to be misinformed.<sup>[\[2\]](#ref_2)</sup> As I said before, Zed Shaw's guides have helped thousands. But when it comes to C, he is both mistaken and more than a little arrogant. I truly wish it were otherwise.
+I have no dog in this fight. I just don't want newbies to be misinformed.[^2] As I said before, Zed Shaw's guides have helped thousands. But when it comes to C, he is both mistaken and more than a little arrogant. I truly wish it were otherwise.
 
 
 ---
 
-1. <span id="ref_1"></span>[Passages from the Life of a Philosopher](https://archive.org/details/passagesfromlif01babbgoog)
+[^1]: [Passages from the Life of a Philosopher](https://archive.org/details/passagesfromlif01babbgoog)
 
-2. <span id="ref_2"></span>In fact, I knew nothing about LCTHW or this spat until [someone asked for "peer reviews"](https://www.reddit.com/r/C_Programming/comments/3rd4dg/peer_review_learn_c_the_hard_way_by_zed_shaw_pub/) of LCTHW in [/r/C_Programming](https://www.reddit.com/r/C_Programming).
+[^2]: In fact, I knew nothing about LCTHW or this spat until [someone asked for "peer reviews"](https://www.reddit.com/r/C_Programming/comments/3rd4dg/peer_review_learn_c_the_hard_way_by_zed_shaw_pub/) of LCTHW in [/r/C_Programming](https://www.reddit.com/r/C_Programming).
