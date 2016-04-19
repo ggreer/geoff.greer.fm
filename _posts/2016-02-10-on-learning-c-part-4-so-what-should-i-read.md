@@ -15,7 +15,10 @@ categories:
 
 When it comes to C, I am quite proficient. I've been professionally employed to write C. I created [a somewhat popular open source project in C](/ag/). I have extensive experience profiling a C programs[^1][^2], optimizing them[^3][^4], and making them multithreaded[^5]. I've also contributed to other open source C projects.
 
-I really did learn C the hard way. It was my first real programming language.[^6] Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). I was 12 years old.
+
+### How I Learned C
+
+C was my first real programming language.[^6] Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). I was 12 years old.
 
 I distinctly remember an early assignment where I was completely stumped by a bug. I'd almost finished the program, but there was one issue that I couldn't fix. An `if` statement was always evaluating to true, even when it shouldn't. The `else` was never taken. The program compiled without warnings. It was incredibly frustrating.
 
@@ -35,6 +38,8 @@ I'm still surprised that, afterwards, I remained interested in writing code. I'v
 
 >I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, "I'm done. This is stupid. I'm going to do something else." But not us, 'cause there's something really wrong with us.
 
+This was undoubtedly the most difficult educational experience of my life. I really did learn C the hard way.
+
 
 ## So what should I read?
 
@@ -50,7 +55,7 @@ C Programming: A Modern Approach
 http://www.amazon.com/Programming-Modern-Approach-2nd-Edition/dp/0393979504/
  -->
 
-The dearth of good C books is a bit of a bummer, but there may be a silver lining. I think many learners rely too much on books. It's often more educational to poke around on your own. Read other people's code. Read open source projects. Ask others for help. And if you're not sure how something works, [do science]({% post_url 2012-01-30-programming-we-can-do-science %})!
+The dearth of good C books is a bit of a bummer, but there may be a silver lining. I think many learners rely too much on books. It's often more educational to poke around on your own. Read other people's code. Examine open source projects. Ask others for help. And if you're not sure how something works, [do science]({% post_url 2012-01-30-programming-we-can-do-science %})!
 
 ---
 
