@@ -51,6 +51,8 @@ I hardly ever come across these, but I certainly agree. Unless you *really* know
 
 ### Braces
 
+Several guidelines reference brace style:
+
 > Single line if possible: `if(rc < 0) return rc;`
 
 > Single line if possible: `if(X == rc) return Y;`
@@ -59,11 +61,22 @@ I hardly ever come across these, but I certainly agree. Unless you *really* know
 
 > `if(rc < 0) goto fail;`
 
-If you always use braces, you will make yourself immune to an entire class of bugs.
+I can't get behind that. Never omit braces. The reasoning behind this is straightforward: When changing a one-line conditional into a multi-line conditional, people occasionally forget to add braces. Often, a `goto` or `return` ends up always being taken. By always using braces, you make your programs immune to this entire class of bugs. It's a no-brainer. You're sacrificing some subjective stylistic appearance advantages for an objective increase in the likelihood of correctness.
+
+
+### Error Handling
 
 > Use an assertion macro that accepts a format string
 
 This is
+
+
+## Conclusion
+
+Overall, I think *C Programming Substance Guidelines* is helpful, but I can't point newbies to it unconditionally. A decent portion of its advice is double-edged or counterproductive.
+
+I've covered what I think is important. This post could be 10x longer by addressing more points in detail, but few would want to read that much. Also, I don't want to write that much.
+
 
 
 ---
