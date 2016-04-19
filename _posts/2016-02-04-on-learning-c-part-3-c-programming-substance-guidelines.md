@@ -75,13 +75,13 @@ I can't get behind that. Never omit braces. The reasoning behind this is straigh
 ...  
 >    - Handle errors like everyone is watching
 
-This seems needlessly paranoid. Both the "when" and "how" of error handling depend heavily on what you're doing. If your code is used (or can be used) in something important, then go wild checking return values. However, there are some errors that you should probably never try to handle. For example, according to the spec, `malloc()` will return `NULL` if it couldn't allocate the requested memory. In practice, it's practically useless to check the return value of `malloc()`. Modern operating systems will lie about having enough memory. According to [the Linux `malloc` manpage](http://linux.die.net/man/3/malloc):
+This seems needlessly paranoid. Both the "when" and "how" of error handling depend heavily on what you're doing. If your code is used (or can be used) in something important, then go wild dealing with different return values. However, there are some errors that you should probably never try to handle. For example, according to the spec, `malloc()` will return `NULL` if it couldn't allocate the requested memory. In practice, this is almost never the case. Modern operating systems lie about having enough memory. According to [the Linux `malloc` manpage](http://linux.die.net/man/3/malloc):
 
 > By default, Linux follows an optimistic memory allocation strategy. This means that when `malloc()` returns non-`NULL` there is no guarantee that the memory really is available.
 
-After lying to your process, the OS will then [kill it for accessing the "allocated" memory](https://www.kernel.org/doc/gorman/html/understand/understand016.html). Considering these behaviors, it makes very little sense to handle `malloc()` errors.
+After lying to your process, the OS will then [kill it for accessing the "allocated" memory](https://www.kernel.org/doc/gorman/html/understand/understand016.html). It's a similar story for OS X, FreeBSD, and others. Considering these behaviors, it makes very little sense to handle `malloc()` errors. Only the most mission critical code needs to be so robust. For most programs, it's fine to just crash. If you like, you can make the error message nicer by [wrapping `malloc()` in a check that `exit()`s with a nonzero value](https://github.com/ggreer/the_silver_searcher/blob/0.31.0/src/util.c#L17).
 
-That said, C programs written by beginners tend to have issues with error handling. Often, they completely ignore errors and keep on truckin', causing them to crash in odd ways. A simple crash-and-burn check would do wonders. Something like:
+That said, I think this guideline has a kernel of truth. C programs written by beginners tend to have issues with error handling. Often, they completely ignore errors and keep on truckin', causing them to crash in odd ways. A simple crash-and-burn check would do wonders. Something like:
 
 {% highlight c %}
 rv = do_something(&foo);
@@ -96,7 +96,7 @@ if (rv) {
 
 ## Conclusion
 
-Overall, I think *C Programming Substance Guidelines* is helpful, but I can't point newbies to it without major caveats. A decent portion of its advice is double-edged or counterproductive. My initial thoughts are a good note to end on:
+Overall, I think *C Programming Substance Guidelines* is helpful, but I can't point newbies to it without major caveats. A decent portion of its advice is double-edged or counterproductive. My initial thoughts on the guide are a good note to end on:
 
 > Please don't blindly follow this guide. Explore other codebases (including the ones the author linked to). Talk to other programmers. Write your own projects, and get feedback from those who are more knowledgable.
 
