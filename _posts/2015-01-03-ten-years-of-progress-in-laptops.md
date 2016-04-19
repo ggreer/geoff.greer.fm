@@ -11,64 +11,15 @@ categories:
 
 In 2010, <a href="{% post_url 2010-11-16-five-years-of-progress-in-laptops %}">I compared my 2005 laptop to my then-current laptop</a>. It's now 2015, so let's see how much devices have improved.
 
-<table>
-  <thead>
-    <th></th>
-    <th>2005<br />14″ iBook G4</th>
-    <th>2010<br />11.6″ MacBook Air</th>
-    <th>2014<br />11.6″ MacBook Air</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Processor</td>
-      <td>1.42GHz PowerPC G4</td>
-      <td>1.6GHz Core 2 Duo (Penryn)</td>
-      <td>1.4GHz Core i5 (Haswell) <sup>[1]</sup></td>
-    </tr>
-    <tr>
-      <td>Memory</td>
-      <td>512MB 333MHz DDR2 RAM <sup>[2]</sup></td>
-      <td>4GB 1067MHz DDR3 RAM</td>
-      <td>8GB 1667MHz LPDDR3 RAM</td>
-    </tr>
-    <tr>
-      <td>Storage</td>
-      <td>60GB 4200RPM HDD</td>
-      <td>128GB SSD</td>
-      <td>256GB PCIe SSD</td>
-    </tr>
-    <tr>
-      <td>Battery</td>
-      <td>3-4 hours</td>
-      <td>5-7 hours</td>
-      <td>7-10 hours</td>
-    </tr>
-    <tr>
-      <td>Weight</td>
-      <td>5.9 lbs</td>
-      <td>2.3 lbs</td>
-      <td>2.4 lbs</td>
-    </tr>
-    <tr>
-      <td>Dimensions</td>
-      <td>1.35 x 12.7 x 10.2</td>
-      <td>0.11-0.68 x 11.8 x 7.6</td>
-      <td>0.11-0.68 x 11.8 x 7.6</td>
-    </tr>
-    <tr>
-      <td>Cost</td>
-      <td>$1700</td>
-      <td>$1500</td>
-      <td>$1200</td>
-    </tr>
-  </tbody>
-</table>
-
-1. Turbo boost allows clocks up to 2.7GHz for short periods.
-
-2. Bottlenecked by 142MHz front side bus.
-
-<br />
+|            | 2005<br />14″ iBook G4     | 2010<br />11.6″ MacBook Air | 2014<br />11.6″ MacBook Air   |
+| ---------- | -------------------------- | --------------------------- | ----------------------------- |
+| Processor  | 1.42GHz PowerPC G4         | 1.6GHz Core 2 Duo (Penryn)  | 1.4GHz Core i5 (Haswell) [^1] |
+| Memory     | 512MB 333MHz DDR2 RAM [^2] | 4GB 1067MHz DDR3 RAM        | 8GB 1667MHz LPDDR3 RAM        |
+| Storage    | 60GB 4200RPM HDD           | 128GB SSD                   | 256GB SSD                     |
+| Battery    | 3-4 hours                  | 5-7 hours                   | 7-10 hours                    |
+| Weight     | 5.9 lbs                    | 2.3 lbs                     | 2.4 lbs                       |
+| Dimensions | 1.35 x 12.7 x 10.2         | 0.11-0.68 x 11.8 x 7.6      | 0.11-0.68 x 11.8 x 7.6        |
+| Cost       | $1700                      | $1500                       | $1200                         |
 
 The specs don't tell the full story, but they give you some idea of how little laptops have advanced in the past half-decade. My current hardware is significantly faster than the 2010 MacBook Air, but it's not the same leap up from the iBook. It's hard to distinguish the two Airs without closely inspecting them. The form factor is identical. The new Air has a backlit keyboard, a MagSafe 2 connector, and a dual-microphone for noise reduction. Welcome improvements, but not exactly revolutionary. This picture summarizes the progress:
 
@@ -83,3 +34,9 @@ This stagnation worries me. It's not just Apple neglecting their laptop line. I'
 This ThinkPad isn't in the same price range as the Air, but more expensive models make the same design mistakes. It has three always-on LEDs. They were so distracting that I had to cover them with black nail polish. The microphone is on the *palm rest*, making it useless. The camera is washed-out. The fan is noisy. The trackpad is tiny and glitchy. The keyboard is a mess. There is no caps lock indicator. Print Screen sits between the right alt and control keys. Although the hardware is [certified by Ubuntu](http://www.ubuntu.com/certification/hardware/201309-14195/), I spent months fixing basic things like screen brightness. I still can't get Bluetooth to work.
 
 In summary: Apple's laptops have stagnated, and most non-Apple products are a joke. The state of the laptop in 2015 is worrisome.
+
+---
+
+[^1]: Turbo boost allows clocks up to 2.7GHz for short periods.
+
+[^2]: Bottlenecked by 142MHz front side bus.
