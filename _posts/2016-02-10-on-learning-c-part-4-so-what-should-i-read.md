@@ -13,13 +13,13 @@ categories:
 
 ## Why should I believe you?
 
-I really did learn C the hard way. I was twelve years old, and it was my first real programming language.<sup>[\[1\]](#ref_1)</sup> Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University).
+I really did learn C the hard way. C was my first real programming language.<sup>[\[1\]](#ref_1)</sup> Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). I was twelve years old.
 
-I distinctly remember being stumped by a bug in an early programming assignment. I'd almost finished it, but there was one issue that I couldn't fix. A condition in an `if` statement was always evaluating to true, even when it shouldn't. The `else` was never taken. The program compiled without warnings.
+I distinctly remember an early programming assignment where I was completelystumped by a bug. I'd almost finished the program, but there was one issue that I couldn't fix. An `if` statement was always evaluating to true, even when it shouldn't. The `else` was never taken. The program compiled without warnings. It was incredibly frustrating.
 
-I spent two days staring at that code. I didn't know about debuggers, so I added `printf()`s. I commented and uncommented chunks of code. No effect. No matter what I tried, I simply couldn't understand why the program was misbehaving.
+I spent *two days* staring at that code. I didn't know about debuggers, so I peppered my code with `printf()`s. I commented and uncommented blocks. No matter what I tried, I simply couldn't understand why the program was misbehaving.
 
-I was practically in tears when I asked my dad for help. He saw the problem in seconds:
+I was almost in tears when I asked my dad for help. He saw the problem in seconds:
 
 {% highlight c %}
 if (a = b) {
@@ -35,7 +35,6 @@ I'm still surprised that, afterwards, I was still interested in writing code. I'
 
 >I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, "I'm done. This is stupid. I'm going to do something else." But not us, 'cause there's something really wrong with us.
 
----
 
 ## So what should I read?
 
@@ -45,4 +44,4 @@ If you are looking to learn C,
 
 1. <span id="ref_1"></span>Before that, I'd only written a few toy programs in [Logo](https://en.wikipedia.org/wiki/Logo_%28programming_language%29), [QBasic](https://en.wikipedia.org/wiki/QBasic), and [TI-BASIC](https://en.wikipedia.org/wiki/TI-BASIC).
 
-2. <span id="ref_2"></span>If you're wondering why the compiler didn't warn about this, it's because this happened in 1998. Back then, gcc didn't warn about assignments in conditionals. Nowadays, any sane compiler will complain. How fortunate one is to be learning C today. :)
+2. <span id="ref_2"></span>If you're wondering why the compiler didn't warn about this, it's because this happened in 1998. Back then, gcc didn't warn about assignments in conditionals. Nowadays, any sane compiler will complain. How fortunate one is to learn C today. :)
