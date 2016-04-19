@@ -39,14 +39,14 @@ On the other hand: If you intend for the pointer to be allocated and deallocated
 
 > Use `calloc` instead of `malloc`
 
-I don't think this matters much, but I mildly disagree. Like the previous example, this will likely hide the underlying cause of bugs in your program. If an issue is "fixed" by `calloc()` that means something wasn't properly initialized. Zeroing-out the entire memory region might be the correct way to initialize it, but it might not. It really depends on what you're doing. Better to make sure your 
+I don't think this matters much, but I mildly disagree. Like the previous example, this will likely hide the underlying cause of bugs in your program. If an issue is "fixed" by `calloc()`, that means something wasn't properly initialized. Zeroing-out the entire memory region might be the correct way to initialize it, or it might not. It really depends on what you're doing. Instead of blindly zeroing-out everything, it's better to explicitly initialize memory to the values you want. Doing so will help you avoid a class of bugs that –while rare– are very subtle and pernicious.
 
 
 ### Custom Allocators
 
 > Don't write custom allocators
 
-I hardly ever come across these, but I certainly agree. Unless you *really* know what you're doing, a custom allocator will likely be buggy and slow. It will also make it harder for other programmers to understand your code. I've never needed to write my own allocator. If memory allocation/deallocation becomes a performance bottleneck, use an existing memory pool library. [APR's memory pools](https://apr.apache.org/docs/apr/2.0/group__apr__pools.html) aren't a bad choice.
+I hardly ever come across these, but I certainly agree. Unless you *really* know what you're doing, a custom allocator will likely be buggy and slow. It will also make it harder for other programmers to understand your code. I've never needed to write my own allocator. If memory allocation/deallocation becomes a performance bottleneck, use an existing library such as [APR's memory pools](https://apr.apache.org/docs/apr/2.0/group__apr__pools.html).
 
 
 ### Braces
@@ -61,22 +61,38 @@ Several guidelines reference brace style:
 
 > `if(rc < 0) goto fail;`
 
-I can't get behind that. Never omit braces. The reasoning behind this is straightforward: When changing a one-line conditional into a multi-line conditional, people occasionally forget to add braces. Often, a `goto` or `return` ends up always being taken. By always using braces, you make your programs immune to this entire class of bugs. It's a no-brainer. You're sacrificing some subjective stylistic appearance advantages for an objective increase in the likelihood of correctness.
+I can't get behind that. Never omit braces. The reasoning behind this is straightforward: When changing a one-line conditional into a multi-line conditional, people occasionally forget to add braces. Often, a `goto` or `return` ends up always being taken. By always using braces, you make your programs immune to this entire class of bugs. It's a no-brainer. You're sacrificing subjective improvement in appearance for an objective improvement in correctness. I can't say it enough: Never omit braces.
 
 
 ### Error Handling
 
-> Use an assertion macro that accepts a format string
+>- Error handling
+>  - Do it, always, even in sample code  
+...  
+>    - Handle errors like everyone is watching
 
-This is
+This seems needlessly paranoid. Both the "when" and "how" of error handling depend heavily on what you're doing. If your code is used (or can be used) in something important, then go wild checking return values. However, there are some errors that you should probably never try to handle. For example, according to the spec, `malloc()` will return `NULL` if it couldn't allocate the requested memory. In practice, it's practically useless to check the return value of `malloc()`. Modern operating systems will lie about having enough memory<sup>[\[2\]](#ref_2)</sup>, then [kill your process for accessing the "allocated" memory](https://www.kernel.org/doc/gorman/html/understand/understand016.html).
+
+That said, C programs written by beginners tend to have issues with error handling. Often, they completely ignore errors and keep on truckin', causing them to crash in odd ways. A simple crash-and-burn check would do wonders. Something like:
+
+{% highlight c %}
+rv = do_something(&foo);
+if (rv) {
+  fprintf(stderr, "Error: %s\n", strerror(errno));
+  exit(1);
+}
+{% endhighlight %}
+
+(This assumes `do_something()` sets `errno`.)
 
 
 ## Conclusion
 
-Overall, I think *C Programming Substance Guidelines* is helpful, but I can't point newbies to it unconditionally. A decent portion of its advice is double-edged or counterproductive.
+Overall, I think *C Programming Substance Guidelines* is helpful, but I can't point newbies to it without major caveats. A decent portion of its advice is double-edged or counterproductive. My initial thoughts are a good note to end on:
 
-I've covered what I think is important. This post could be 10x longer by addressing more points in detail, but few would want to read that much. Also, I don't want to write that much.
+> Please don't blindly follow this guide. Explore other codebases (including the ones the author linked to). Talk to other programmers. Write your own projects, and get feedback from those who are more knowledgable.
 
+> You might notice that this advice generalizes to every language. That's because C isn't special. If anything, the language itself is simpler than most. C has just had more time to accumulate cruft, both technical and cultural. So don't feel intimidated. Once you learn those bits of historical trivia, you'll be fine.
 
 
 ---
@@ -85,3 +101,6 @@ I've covered what I think is important. This post could be 10x longer by address
 
 > For nonheader files, all the metrics show a high degree of correlation with lines of code. We accounted for the confounding effect of size, showing that the high correlation coefficients remain for different size ranges. In our opinion, there is a clear lesson from this study: syntactic complexity metrics cannot capture the whole picture of software complexity. Complexity metrics that are exclusively based on the structure of the program or the properties of the text (for example, redundancy, as Halstead’s metrics do), do not provide information on the amount of effort that is needed to comprehend a piece of code—or, at least, no more information than lines of code do.
 
+2. <span id="ref_2"></span>From [the Linux `malloc` manpage](http://linux.die.net/man/3/malloc):
+
+> By default, Linux follows an optimistic memory allocation strategy. This means that when `malloc()` returns non-`NULL` there is no guarantee that the memory really is available.
