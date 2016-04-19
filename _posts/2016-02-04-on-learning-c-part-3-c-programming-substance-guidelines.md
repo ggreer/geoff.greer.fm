@@ -23,7 +23,11 @@ What follows is a sort of shotgun approach. I've quoted and responded to the gui
 > Things that are large and frequently changing will **never** be secure.
 > If you care about security, the best thing you can do is keep the project small.
 
-This is great advice. It applies to all bugs, not just security issues. After a half-century of research into software development, the best predictor of a codebases's bug count is still lines of code.<sup>[\[1\]](#ref_1)</sup> Be warned though, [it is very hard to keep a codebase small]({% post_url 2013-03-06-the-cost-of-features %}).
+This is great advice. It applies to all bugs, not just security issues. After a half-century of research into software development, the best predictor of a codebases's bug count is still lines of code. Even when researchers try to find correlations with more advanced metrics, it reduces to lines of code:
+
+> For nonheader files, all the metrics show a high degree of correlation with lines of code. We accounted for the confounding effect of size, showing that the high correlation coefficients remain for different size ranges. In our opinion, there is a clear lesson from this study: syntactic complexity metrics cannot capture the whole picture of software complexity. Complexity metrics that are exclusively based on the structure of the program or the properties of the text (for example, redundancy, as Halstead’s metrics do), do not provide information on the amount of effort that is needed to comprehend a piece of code—or, at least, no more information than lines of code do.[^1]
+
+Be warned though, [it is very hard to keep a codebase small]({% post_url 2013-03-06-the-cost-of-features %}).
 
 
 ### Setting Pointers to `NULL` After `free()`
@@ -71,7 +75,11 @@ I can't get behind that. Never omit braces. The reasoning behind this is straigh
 ...  
 >    - Handle errors like everyone is watching
 
-This seems needlessly paranoid. Both the "when" and "how" of error handling depend heavily on what you're doing. If your code is used (or can be used) in something important, then go wild checking return values. However, there are some errors that you should probably never try to handle. For example, according to the spec, `malloc()` will return `NULL` if it couldn't allocate the requested memory. In practice, it's practically useless to check the return value of `malloc()`. Modern operating systems will lie about having enough memory<sup>[\[2\]](#ref_2)</sup>, then [kill your process for accessing the "allocated" memory](https://www.kernel.org/doc/gorman/html/understand/understand016.html).
+This seems needlessly paranoid. Both the "when" and "how" of error handling depend heavily on what you're doing. If your code is used (or can be used) in something important, then go wild checking return values. However, there are some errors that you should probably never try to handle. For example, according to the spec, `malloc()` will return `NULL` if it couldn't allocate the requested memory. In practice, it's practically useless to check the return value of `malloc()`. Modern operating systems will lie about having enough memory. According to [the Linux `malloc` manpage](http://linux.die.net/man/3/malloc):
+
+> By default, Linux follows an optimistic memory allocation strategy. This means that when `malloc()` returns non-`NULL` there is no guarantee that the memory really is available.
+
+After lying to your process, the OS will then [kill it for accessing the "allocated" memory](https://www.kernel.org/doc/gorman/html/understand/understand016.html). Considering these behaviors, it makes very little sense to handle `malloc()` errors.
 
 That said, C programs written by beginners tend to have issues with error handling. Often, they completely ignore errors and keep on truckin', causing them to crash in odd ways. A simple crash-and-burn check would do wonders. Something like:
 
@@ -97,10 +105,4 @@ Overall, I think *C Programming Substance Guidelines* is helpful, but I can't po
 
 ---
 
-1. <span id="ref_1"></span>From [*Making Software: What Really Works, and Why We Believe It*](http://www.amazon.com/Making-Software-Really-Works-Believe-ebook/dp/B004D4YI6G/), Chapter 8 (by Israel Herraiz & Ahmed E. Hassan):
-
-> For nonheader files, all the metrics show a high degree of correlation with lines of code. We accounted for the confounding effect of size, showing that the high correlation coefficients remain for different size ranges. In our opinion, there is a clear lesson from this study: syntactic complexity metrics cannot capture the whole picture of software complexity. Complexity metrics that are exclusively based on the structure of the program or the properties of the text (for example, redundancy, as Halstead’s metrics do), do not provide information on the amount of effort that is needed to comprehend a piece of code—or, at least, no more information than lines of code do.
-
-2. <span id="ref_2"></span>From [the Linux `malloc` manpage](http://linux.die.net/man/3/malloc):
-
-> By default, Linux follows an optimistic memory allocation strategy. This means that when `malloc()` returns non-`NULL` there is no guarantee that the memory really is available.
+[^1]: [*Making Software: What Really Works, and Why We Believe It*](http://www.amazon.com/Making-Software-Really-Works-Believe-ebook/dp/B004D4YI6G/), Chapter 8 (by Israel Herraiz & Ahmed E. Hassan)
