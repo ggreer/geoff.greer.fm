@@ -7,6 +7,7 @@ title: 'On Learning C, Part 3: C Programming Substance Guidelines'
 categories:
 - Computers
 - Learning C
+excerpt: C Programming Substance Guidelines by Ben Trask is helpful, but I can't recommend it without caveats.
 ---
 
 {% include on_learning_c.md number=3 %}

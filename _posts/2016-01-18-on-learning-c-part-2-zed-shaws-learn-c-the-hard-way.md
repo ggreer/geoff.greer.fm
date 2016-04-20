@@ -7,6 +7,7 @@ title: "On Learning C, Part 2: Zed Shaw's Learn C the Hard Way"
 categories:
 - Computers
 - Learning C
+excerpt: Learn C the Hard Way is a flawed text with an agenda.
 ---
 
 {% include on_learning_c.md number=2 %}

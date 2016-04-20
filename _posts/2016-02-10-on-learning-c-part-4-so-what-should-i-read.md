@@ -7,13 +7,14 @@ title: 'On Learning C, Part 4: What Should I Read? Why Should I believe you?'
 categories:
 - Computers
 - Learning C
+excerpt: C is special to me, as it was my first real programming language.
 ---
 
 {% include on_learning_c.md number=4 %}
 
 ## Why should I believe you?
 
-When it comes to C, I am quite proficient. I've been professionally employed to write C. I created [a somewhat popular open source project in C](/ag/). I have extensive experience profiling a C programs[^1][^2], optimizing them[^3][^4], and making them multithreaded[^5]. I've also contributed to other open source C projects.
+When it comes to C, I am quite proficient. I've been employed professionally to write C. I created [a somewhat popular open source project in C](/ag/). I have extensive experience profiling C programs[^1][^2], optimizing them[^3][^4], and making them multithreaded[^5]. I've contributed to other open source C projects. If I'm not qualified to speak on this topic, then very few people are.
 
 
 ### How I Learned C

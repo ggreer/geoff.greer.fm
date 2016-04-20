@@ -7,6 +7,7 @@ title: 'On Learning C, Part 1: K&R'
 categories:
 - Computers
 - Learning C
+excerpt: "Kernighan & Ritchie’s The C Programming Language isn't bad, but it needs an update. Also, it's missing some crucial sections for beginners."
 ---
 
 {% include on_learning_c.md number=1 %}
