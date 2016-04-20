@@ -1,14 +1,14 @@
 ---
 date: '2016-03-18 23:24:34'
 layout: post
-slug: warantless-fingerprinting
+slug: warrantless-fingerprinting
 published: true
-title: Warantless Fingerprinting
+title: Warrantless Fingerprinting
 categories:
 - Rationality
 ---
 
-Imagine a world in which the police needed a warrant to dust a crime scene for fingerprints. After a crime is discovered or reported, the police have to go to a judge and demonstrate probable cause that person X is involved. If the judge agrees, the fingerprint warrant is issued. Only then can the police dust the crime scene for fingerprints, and the only information they're allowed to us is whether X's fingerprints are found. If 
+Imagine a world in which the police needed a warrant to find latent fingerprints. That is, after a crime is discovered or reported, the police have to go to a judge and demonstrate probable cause that person X is involved. If the judge agrees, a fingerprint warrant is issued. Only then can the police dust the crime scene for fingerprints, and the only information they're allowed to use is whether X's fingerprints are present.
 
 It would be a world much like this one, except criminals would be caught less often.
 
@@ -18,6 +18,6 @@ Is there any doubt that despite your benevolent intentions, you would be branded
 
 Does this sound familiar?
 
-This post isn't about warrantless fingerprinting. Our current legal system is the result of many historical accidents. In some circumstances, it may give too much leeway to police and prosecutors. In others, it may give too little. Reasonable, intelligent people can come to different conclusions about this. Many of those in favor of warrantless X are not authoritarian or fascistic.
+Our current legal system is the product of many historical accidents. In some circumstances, it may give too much leeway to police and prosecutors. In others, it may give too little. Reasonable, intelligent people can come to different conclusions about this. Those in favor of warrantless X are not authoritarian or fascistic. Those against warrantless X are not paranoid anarchists.
 
-Even if you think the police should need a warrant to dust for fingerprints, you can at least recognize that reasonable people can disagree on the matter.
+Even if you think the police should need a warrant to dust for fingerprints, you can at least recognize that reasonable people can disagree on the matter. And [stop getting outraged]({% post_url 2015-03-25-please-stop-getting-outraged %}).
