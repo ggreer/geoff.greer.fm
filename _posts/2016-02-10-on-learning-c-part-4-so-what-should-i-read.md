@@ -20,7 +20,7 @@ When it comes to C, I am quite proficient. I've been professionally employed to 
 
 C was my first real programming language.[^6] Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). I was 12 years old.
 
-I distinctly remember an early assignment where I was completely stumped by a bug. I'd almost finished the program, but there was one issue that I couldn't fix. An `if` statement was always evaluating to true, even when it shouldn't. The `else` was never taken. The program compiled without warnings. It was incredibly frustrating.
+I distinctly remember an early assignment where I was completely stumped by a bug. I'd almost finished the program, but there was one issue that I couldn't fix. An `if` statement was always evaluating to `TRUE`, even when it shouldn't. The `else` was never taken. The program compiled without warnings. It was incredibly frustrating.
 
 I spent *two days* staring at that code. I didn't know about debuggers, so I peppered my code with `printf()`s. I commented and uncommented chunks of code. No matter what I tried, I simply couldn't understand why the program was misbehaving. I was almost in tears when I asked my dad for help. He saw the problem in seconds:
 
