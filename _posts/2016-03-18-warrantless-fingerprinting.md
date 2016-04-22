@@ -8,7 +8,7 @@ categories:
 - Rationality
 ---
 
-Imagine a world in which the police needed a warrant to find latent fingerprints. That is, after a crime is discovered or reported, the police have to go to a judge and demonstrate probable cause that person X is involved. If the judge agrees, a fingerprint warrant is issued. Only then can the police dust the crime scene for fingerprints, and the only information they're allowed to use is whether X's fingerprints are present.
+Imagine a world in which the police needed a warrant to dust for latent fingerprints. That is, after a crime is discovered or reported, the police have to go to a judge and demonstrate probable cause that person X is involved. If the judge agrees, a fingerprint warrant is issued. Only then can the police dust the crime scene for fingerprints, and the only information they're allowed to use is whether X's fingerprints are present.
 
 It would be a world much like this one, except criminals would be caught less often.
 
@@ -16,8 +16,6 @@ Now imagine living in that world and trying to convince others that the country 
 
 Is there any doubt that despite your benevolent intentions, you would be branded a fascist? After all, you are a proponent of *warrantless fingerprinting*. Many of your friends and peers would think less of you for that. If you had any fame, you would likely be hounded by the [ACLU](https://en.wikipedia.org/wiki/American_Civil_Liberties_Union) and the [EFF](https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation). Despite being sincere in your views and using straightforward reasoning, people would continually misrepresent you as an authoritarian who hates privacy.
 
-Does this sound familiar?
+Hopefully, this is starting to sound familiar.
 
-Our current legal system is the product of many historical accidents. In some circumstances, it may give too much leeway to police and prosecutors. In others, it may give too little. Reasonable, intelligent people can come to different conclusions about this. Those in favor of warrantless X are not authoritarian or fascistic. Those against warrantless X are not paranoid anarchists.
-
-Even if you think the police should need a warrant to dust for fingerprints, you can at least recognize that reasonable people can disagree on the matter. And [stop getting outraged]({% post_url 2015-03-25-please-stop-getting-outraged %}).
+Our current legal system is the product of many historical accidents. In some circumstances, it may give too much leeway to police and prosecutors. In others, it may give too little. Reasonable, intelligent people can come to different conclusions about this. Those in favor of warrantless X are not authoritarian or fascistic. Those against warrantless X are not paranoid anarchists. So please turn down the rhetoric and [stop getting outraged]({% post_url 2015-03-25-please-stop-getting-outraged %}).
