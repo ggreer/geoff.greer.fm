@@ -14,12 +14,20 @@ excerpt: C is special to me, as it was my first real programming language.
 
 ## Why should I believe you?
 
-When it comes to C, I am quite proficient. I've been employed professionally to write C. I created [a somewhat popular open source project in C](/ag/). I have extensive experience profiling C programs[^1][^2], optimizing them[^3][^4], and making them multithreaded[^5]. I've contributed to other open source C projects. If I'm not qualified to speak on this topic, then very few people are.
+When it comes to C, I am quite proficient. I've been employed professionally to write C. I created [a somewhat popular open source project in C](/ag/). I have extensive experience profiling C programs[^1][^2], optimizing them[^3][^4], and making them multithreaded[^5]. I've contributed to other open source C projects. In short, if I'm not worth taking seriously on this topic, then very few people are.
 
 
 ### How I Learned C
 
-C was my first real programming language.[^6] Thanks to some luck and an advanced placement test, I'd gotten into CS121 at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). I was 12 years old.
+C was my first real programming language.[^6] I was introduced to it at the age of 13. Thanks to some luck and an advanced placement test, I was allowed to take up to two classes per semester at [Gonzaga University](https://en.wikipedia.org/wiki/Gonzaga_University). Wanting to learn more about programming, I enrolled in CS121.
+
+<br />
+
+<img alt="My student ID" src="/images/student_id.jpg" style="width: 512px; height: 330px;" />
+
+I stuck out a little on campus.
+
+<br />
 
 I distinctly remember an early assignment where I was completely stumped by a bug. I'd almost finished the program, but there was one issue that I couldn't fix. An `if` statement was always evaluating to `TRUE`, even when it shouldn't. The `else` was never taken. The program compiled without warnings. It was incredibly frustrating.
 
