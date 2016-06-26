@@ -1,11 +1,13 @@
 ---
-date: '2016-04-14 17:36:23'
+date: '2016-05-14 17:36:23'
 layout: post
 slug: interesting-tech-that-is-just-around-the-corner
 published: true
 title: Interesting Tech that is Just Around the Corner
 categories:
+- Computers
 ---
+
 
 
 VR + gaze tracking == scariest game ever
