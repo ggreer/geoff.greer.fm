@@ -25,13 +25,19 @@ compatible with existing extensions (or force devs to update their extensions)
 
 
 
-### Event-driven httpd
+### Event-driven Apache
+
+When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()`, finally closing and exiting when it was done. This architecture has the advantage of being simple, easy to implement on many platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995.
+
+
+
+(link to forking conn handler model)
 
 Connection per process (fork)
 Connection per thread ()
 Event-driven (can support many more connections, immune to slowloris-style attacks)
 
-Nginx 
+Nginx was engineered with an event loop architecture. This allowed it to service many more concurrent connections.
 
 httpd (multi-process, multi-thread) vs nginx (event-driven)
 
