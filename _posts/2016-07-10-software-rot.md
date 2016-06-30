@@ -12,11 +12,40 @@ In Age of Em, Robin Hanson briefly discusses software rot as a specific instance
 
 > 
 
+I think he's right. Adapting mature software to new circumstances tends to take longer than writing new software from scratch. Open source software has several high-profile examples.
+
+
+### Multi-process Firefox
+
+When it was first written, Firefox had a single process model. After the release of Google Chrome, it was clear than a multi-process model allowed for better security and performance. Mozilla developers quickly began to sketch-out a path to making Firefox multi-process.
+
+That was in 2007. Almost a decade later, Firefox *still* isn't multi-process.
+
+compatible with existing extensions (or force devs to update their extensions)
+
+
+
+### Event-driven httpd
+
+Connection per process (fork)
+Connection per thread ()
+Event-driven (can support many more connections, immune to slowloris-style attacks)
+
+Nginx 
+
 httpd (multi-process, multi-thread) vs nginx (event-driven)
 
 
 
-firefox moving to multi process
+
+### Conclusion
+
+These are just a few 
+
+- Python GIL
+- 
+
+
 
 linux kernel arch?
 
