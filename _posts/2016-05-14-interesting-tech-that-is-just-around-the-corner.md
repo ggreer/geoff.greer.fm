@@ -8,23 +8,23 @@ categories:
 - Computers
 ---
 
-There are some interesting technologies that will probably exist in the next 5-10 years, but that few people seem to be paying attention to. The hype is around self-driving cars and CRISPR.
+There are some interesting technologies that will probably exist in the next 5-10 years, but that few people seem to be paying attention to. The hype is around bigger, self-driving cars and CRISPR.
 
 
-### VR with Gaze Tracking
+### VR with Eye Tracking
 
-VR is becoming feasible, but few have paid attention to how it can be improved with [gaze-tracking](). There are
+VR is becoming commercially feasible, but few have paid attention to how it can be improved with [eye-tracking](https://en.wikipedia.org/wiki/Eye_tracking). It may seem like a minor addition, but eye-tracking allows for far more interesting experiences.
 
-Imagine this technology being used the next [Silent Hill]() or [Resident Evil](). 
+Imagine this technology being used the next [Silent Hill](https://en.wikipedia.org/wiki/Silent_Hill) or [Resident Evil](https://en.wikipedia.org/wiki/Resident_Evil). 
 
- == scariest game ever
+It would be –without a doubt– the scariest game *ever*.
 
 
 ### Paralympics
 
-There was some talk of this in 2012, when Oscar Pistorious competed in the 400m. 
-
 paralympic records beat olympics (or olypmics allow paralympic athletes to compete)
+
+There was some talk of this in 2012, when Oscar Pistorious competed in the 400m. 
 
 
 ### Implantable Blood Glucose Monitors
@@ -32,4 +32,4 @@ paralympic records beat olympics (or olypmics allow paralympic athletes to compe
 
 ### Conclusion
 
-I
+These new technologies won't fundamentally change the human condition. 
