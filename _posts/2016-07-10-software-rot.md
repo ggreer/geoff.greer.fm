@@ -43,6 +43,10 @@ httpd (multi-process, multi-thread) vs nginx (event-driven)
 
 
 
+### CPython GIL
+
+
+
 
 ### Conclusion
 
