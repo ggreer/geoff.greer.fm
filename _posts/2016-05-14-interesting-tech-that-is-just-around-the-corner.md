@@ -8,28 +8,28 @@ categories:
 - Computers
 ---
 
-There are some interesting technologies that will probably exist in the next 5-10 years, but that few people seem to be paying attention to. The hype is around bigger, self-driving cars and CRISPR.
+When talking about near-future technologies, much hype surrounds stuff like self-driving cars and CRISPR. There are some other interesting things that will probably exist in the next 5-10 years, but that few people seem to be paying attention to.
 
 
-### VR with Eye Tracking
+## VR with Eye Tracking
 
-VR is becoming commercially feasible, but few have paid attention to how it can be improved with [eye-tracking](https://en.wikipedia.org/wiki/Eye_tracking). It may seem like a minor addition, but eye-tracking allows for far more interesting experiences.
+VR is becoming commercially feasible, but few have paid attention to how it can be improved with [eye-tracking](https://en.wikipedia.org/wiki/Eye_tracking). It may seem like a minor addition, but eye-tracking allows for far more interesting experiences. It's not just an extra input like a joystick.
 
-Imagine this technology being used the next [Silent Hill](https://en.wikipedia.org/wiki/Silent_Hill) or [Resident Evil](https://en.wikipedia.org/wiki/Resident_Evil). 
+Imagine this technology being used in a VR [Silent Hill](https://en.wikipedia.org/wiki/Silent_Hill) or [Resident Evil](https://en.wikipedia.org/wiki/Resident_Evil). You put the headset on and start playing. You see something move in your peripheral vision, but by the time your eyes have [saccaded](https://en.wikipedia.org/wiki/Saccade), it's gone.
 
-It would be –without a doubt– the scariest game *ever*.
+Such a game would be –without a doubt– the scariest game *ever*. I can't wait to play it. 😀
 
 
-### Paralympics
+## Paralympics
 
 paralympic records beat olympics (or olypmics allow paralympic athletes to compete)
 
 There was some talk of this in 2012, when Oscar Pistorious competed in the 400m. 
 
 
-### Implantable Blood Glucose Monitors
+## Implantable Blood Glucose Monitors
 
 
-### Conclusion
+## Conclusion
 
 These new technologies won't fundamentally change the human condition. 

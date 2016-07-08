@@ -5,6 +5,7 @@ slug: software-rot
 published: true
 title: Software Rot
 categories:
+- Age of Em
 - Computers
 ---
 
@@ -15,7 +16,7 @@ In Age of Em, Robin Hanson briefly discusses software rot as a specific instance
 I think he's right. Adapting mature software to new circumstances tends to take longer than writing new software from scratch. Open source software has several high-profile examples.
 
 
-### Multi-process Firefox
+## Multi-process Firefox
 
 When it was first written, Firefox had a single process model. After the release of Google Chrome, it was clear than a multi-process model allowed for better security and performance. Mozilla developers quickly began to sketch-out a path to making Firefox multi-process.
 
@@ -25,7 +26,7 @@ compatible with existing extensions (or force devs to update their extensions)
 
 
 
-### Event-driven Apache
+## Event-driven Apache
 
 When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()`, finally closing and exiting when it was done. This architecture has the advantage of being simple, easy to implement on many platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995.
 
@@ -43,24 +44,17 @@ httpd (multi-process, multi-thread) vs nginx (event-driven)
 
 
 
-### CPython GIL
+## CPython GIL
+
+Python is slow.
 
 
-
-
-### Conclusion
+## Conclusion
 
 These are just a few 
 
-- Python GIL
-- 
 
 
-
-linux kernel arch?
-
-other candidates for software rot:
-android audio stack?
 
 http://www.overcomingbias.com/2016/06/why-does-software-rot.html
 
