@@ -30,4 +30,4 @@ I know I'll break the streak eventually, but it's fun to see how long I can go. 
 
 1. <span id="ref_1"></span>This has been the case for as long as I can remember. When I was 12, I spent two days trying to fix a bug in a CS121 assignment. I was almost in tears by the end of it. Finally, I asked my dad for help. He saw the `if (a = b)` immediately. A modern compiler would warn about an assignment in a conditional, but I was writing this in 1998 on an HP-UX machine. I don't why I wanted to keep programming after that. Any sane person would have chosen a different career.
 
-2. <span id="ref_1"></span>This is one of the reasons I'm writing this post. `:)`
+2. <span id="ref_2"></span>This is one of the reasons I'm writing this post. `:)`
