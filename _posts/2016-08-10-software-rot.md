@@ -1,8 +1,8 @@
 ---
-date: '2016-07-10 17:59:53'
+date: '2016-08-10 17:59:53'
 layout: post
 slug: software-rot
-published: true
+published: false
 title: Software Rot
 categories:
 - Age of Em
