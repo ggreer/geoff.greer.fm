@@ -26,20 +26,24 @@ Such a game would be –without a doubt– the scariest game *ever*. I can't wai
 
 It's likely that some Paralympic records will soon exceed their Olympic counterparts. At top speed, the best below-the-knee prosthetics are more efficient than natural legs.<sup>[\[1\]](#ref_1)</sup> So why haven't the records already fallen? Several reasons:
 
-- Compared to able-bodied athletes, the talent pool of below-the-knee amputee athletes is miniscule. Oscar Pistorius was in the top 0.1% of that group. In comparison, Usain Bolt is in the top 0.000001% of able-bodied athletes.
-- Runners on prosthetics take longer to accelerate to top speed, hurting their performance in shorter distance events. Unfortunately, the longest Paralympic event for below-the-knee amputees is 400m.
+- Compared to able-bodied athletes, the talent pool of below-the-knee amputee athletes is miniscule. Oscar Pistorius was in the top 0.1% of that group. Usain Bolt is in the top 0.000001% of able-bodied athletes.
+- Runners on prosthetics take longer to accelerate to top speed, harming their performance in shorter distance events. Unfortunately, the longest Paralympic event for below-the-knee amputees is 400m.
 
-So the technology is here, but it's hard to predict exactly when a Paralympic athlete will hold an overall record. It all depends on the talent pool and the whims of the International Paralympic Committee. I'd put even money on it happening before or at Tokyo (2020).
+So the technology is here, but it's hard to predict exactly when a Paralympic athlete will hold an overall record. It depends on a sufficiently elite athlete emerging from the talent pool (effectively a random event) and the whims of the International Paralympic Committee. I'd put even money on it happening before or at Tokyo (2020).
 
 
 ## Implantable Blood Glucose Monitors
 
-1 in 12 adults worldwide have diabetes.<sup>[\[2\]](#ref_2)</sup> Sufferers can lose limbs or even go blind. With proper blood glucose monitoring, many of these maladies can be avoided. Today, this requires pricking the skin to get a blood sample. 
+1 in 12 adults worldwide have diabetes.<sup>[\[2\]](#ref_2)</sup> Sufferers can lose limbs or even go blind. With proper blood glucose monitoring, many of these maladies can be avoided. Today, this requires pricking the skin to get a blood sample. It's really hard to get people to cut themselves a half-dozen times a day, especially when the consequences of poor blood glucose management are years or decades away. Even then, 5-6 measurements per day doesn't allow for very accurate management. Implantable glucose monitors solve these problems.
+
+Several companies have such devices in trials. It's likely that they'll be publicly available in a few years.
 
 
 ## Conclusion
 
-These new technologies won't fundamentally change the human condition. Unless it's an uneventful day, I doubt they'll even make the news. But they are a few of the many ways in which people are improving the human condition. 
+There are so many new inventions that improve our lives. Most of them won't make the news. Most of them –when held in isolation– won't fundamentally change the human condition. But they gradually accumulate, and eventually we look back and think, "Wow, stuff sure was primitive back in the day."
+
+Don't forget that.
 
 ---
 
