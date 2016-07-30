@@ -41,7 +41,7 @@ Several companies have such devices in trials. It's likely that they'll be publi
 
 ## Conclusion
 
-There are so many new inventions that improve our lives. Most of them won't make the news. Most of them –when held in isolation– won't fundamentally change the human condition. But they gradually accumulate, and eventually we look back and think, "Wow, stuff sure was primitive back in the day."
+There are so many inventions that will improve our lives. Most of them won't make the news. Most of them –when held in isolation– won't fundamentally change the human condition. But they gradually accumulate, and eventually we look back and think, "Wow, stuff sure was primitive back in the day."
 
 Don't forget that.
 
