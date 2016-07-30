@@ -6,6 +6,7 @@ published: true
 title: Burnout is in the Mind
 categories:
 - Computers
+- GitHub
 - Productivity
 ---
 

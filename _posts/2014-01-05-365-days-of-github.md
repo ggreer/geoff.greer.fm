@@ -6,6 +6,7 @@ published: true
 title: 365 Days of GitHub
 categories:
 - Computers
+- GitHub
 ---
 
 Today marks my 365<sup>th</sup> consecutive day of commits.

@@ -41,6 +41,7 @@ gallery:
       hidden: true
     me:
       hidden: true
+      sort_reverse: true
     screenshots:
       hidden: true
       sort_reverse: true
