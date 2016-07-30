@@ -25,4 +25,4 @@ For those who care to see where we went, I tracked the entire route on Strava:
 - Day 8: [Trail Creek campground to Cascade](https://www.strava.com/activities/649947406)
 - Day 9: [Cascade to McCall](https://www.strava.com/activities/651066414)
 
-Lastly, this trip caused me to break [my GitHub streak]({% post_url 2015-01-07-burnout-is-in-the-mind %}). I brought my laptop, but most nights I was too tired to do anything. At the end, my streak had been going for 1280 days. That's 3 years, 6 months, and 3 days. Or put another way: over 10% of my life. I don't know if I'll ever exceed that, but I've already gotten back in the groove.
+Lastly, this trip caused me to break [my GitHub streak]({% post_url 2015-01-07-burnout-is-in-the-mind %}). I brought [my laptop]({% post_url 2015-04-19-2015-macbook-review %}), but most nights I was too tired to do anything. At the end, my streak had been going for 1280 days. That's 3 years, 6 months, and 3 days. Or put another way: over 10% of my life. I don't know if I'll ever exceed that, but I've already gotten back in the groove.

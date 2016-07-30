@@ -10,7 +10,7 @@ categories:
 - Predictions
 ---
 
-When talking about near-future technologies, much hype surrounds stuff like self-driving cars and [CRISPR](https://en.wikipedia.org/wiki/CRISPR). But few people are paying attention to things that are both closer to fruition and more likely to be brought to market.
+When talking about near-future technologies, much of the discussion surrounds stuff like self-driving cars and [CRISPR](https://en.wikipedia.org/wiki/CRISPR). Rarely do people notice the more modest things that are both closer to fruition and more likely to be brought to market. Allow me to provide some examples.
 
 
 ## VR with Eye Tracking
