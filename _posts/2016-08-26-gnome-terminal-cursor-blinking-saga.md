@@ -6,17 +6,26 @@ published: true
 title: 'GNOME Terminal Cursor Blinking Saga'
 categories:
 - Computers
+- Rant
 ---
 
-When setting up a new computer, one of the first things I do is disable cursor blinking in the terminal. I'm not the only one annoyed by an incessantly blinking square. Most terminal emulators have an option to disable blinking. For the past decade, the GNOME team has been working as hard as possible to make this
+When setting up a new computer, one of the first things I do is disable cursor blinking in the terminal. I'm not the only one annoyed by an incessantly blinking square. Most terminal emulators have an option to disable blinking. For the past decade, the GNOME team has been working as hard as possible to make this impossible.
 
-![](/images/gnome_terminal_cursor_blinking.png)
+<img alt="On. Off. On. Off. On. Off..." src="/images/gnome_terminal_cursor_blinking.gif" style="" />
+
+The story begins in 2006. Back then, GNOME Terminal had a checkbox in its settings:
+
+![GNOME Terminal Settings in Ubuntu 6.06](/images/gnome_terminal_ubuntu_6.png)
+
+Unchecking it would stop the cursor from blinking. It was simple and accessible, exactly the kind of UI that users like.
+
+Then some GNOME developers decided to "simplify" things by going, "…on a quest to remove all annoying tiny little bits in GNOME's UI."
+
+[Bug 342921 - Cursor blinking preference should follow system defaults](https://bugzilla.gnome.org/show_bug.cgi?id=342921)
 
 http://www.jurta.org/en/prog/noblink#GNOME_Terminal
 
-
 https://wiki.gnome.org/action/show/Apps/Terminal/FAQ?action=show&redirect=Terminal%2FFAQ#How_can_I_stop_the_cursor_from_blinking.3F
-
 
 ```
 gconftool-2 --set "/apps/gnome-terminal/profiles/Default/cursor_blink" \
@@ -35,7 +44,6 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 ```
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default|tr -d \')/ cursor-blink-mode off
 ```
-
 
 [Bug 342921 - Cursor blinking preference should follow system defaults](https://bugzilla.gnome.org/show_bug.cgi?id=342921)
 
