@@ -56,7 +56,7 @@ I cannot recall encountering a more user-hostile experience. How many people are
 
 The issue to re-add the blink checkbox still exists: [Bug 559990 - Add UI for the cursor blink preference](https://bugzilla.gnome.org/show_bug.cgi?id=559990). I doubt it will be fixed any time soon. In case you were curious: OS X has a non-blinking cursor by default. Changing it just requires checking a box in the settings:
 
-![OS X Terminal.app settings](/images/Screen Shot 2016-08-27 at 14.38.07.png)
+![OS X Terminal.app settings](/images/Screen Shot 2016-08-29 at 18.35.49.png)
 
 …just like Gnome had 10 years ago.
 
