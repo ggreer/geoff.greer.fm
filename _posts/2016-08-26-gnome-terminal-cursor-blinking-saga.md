@@ -45,7 +45,7 @@ To make it a one-liner, you have to use a subshell:
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')/ cursor-blink-mode off
 ```
 
-Annoyingly, this information isn't in Gnome's answer to [How can I stop the cursor from blinking?](https://wiki.gnome.org/action/show/Apps/Terminal/FAQ?action=show&redirect=Terminal%2FFAQ#How_can_I_stop_the_cursor_from_blinking.3F). Instead, they point you to another answer, which contains this gem:
+Annoyingly, this information isn't in Gnome's answer to [How can I stop the cursor from blinking?](https://wiki.gnome.org/action/show/Apps/Terminal/FAQ?action=show&redirect=Terminal%2FFAQ#How_can_I_stop_the_cursor_from_blinking.3F). Instead, they link to another answer, which contains this gem:
 
 > Unfortunately, the gsettings tool can't currently autocomplete the key names with relocatable schemas (that's [this bug](https://bugzilla.gnome.org/show_bug.cgi?id=704132)), but you can just [read the schema itself](https://git.gnome.org/browse/gnome-terminal/tree/src/org.gnome.Terminal.gschema.xml).
 
@@ -54,7 +54,7 @@ I cannot recall encountering a more user-hostile experience. How many people are
 
 ### Conclusion
 
-The issue to re-add the blink checkbox still exists: [Bug 559990 - Add UI for the cursor blink preference](https://bugzilla.gnome.org/show_bug.cgi?id=559990). I doubt it will be fixed any time soon. In case you were curious: OS X has a non-blinking cursor by default. Changing it just requires checking a box in the settings:
+The issue to re-add the blink checkbox still exists: [Bug 559990 - Add UI for the cursor blink preference](https://bugzilla.gnome.org/show_bug.cgi?id=559990). I doubt it will be fixed any time soon. In case you were curious: OS X has a non-blinking cursor by default. Changing it requires checking a box in the settings menu:
 
 ![OS X Terminal.app settings](/images/Screen Shot 2016-08-29 at 18.35.49.png)
 
