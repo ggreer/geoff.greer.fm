@@ -1,5 +1,6 @@
 ---
 ---
 User-agent: *
+Disallow: /evil
 Disallow: /stats
 Sitemap: {{ site.url }}/sitemap.xml
