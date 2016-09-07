@@ -25,6 +25,8 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    immigrant_wilderness_2016:
+      best_image: IMG_0423.jpg
     idaho_hot_springs_loop_2016:
       best_image: IMG_0363.jpg
     big_sur_2016:
