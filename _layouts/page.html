@@ -9,7 +9,7 @@
 <div id="wrapper"{% if page.style %} {{ page.style }}{% endif %}>
 {% include header.html %}
 <div class="post-header">
-<div class="post-title">{{ page.title }}</div>
+<div class="post-title">{{ page.title | xml_escape }}</div>
 <hr />
 </div>
 <div class="post">

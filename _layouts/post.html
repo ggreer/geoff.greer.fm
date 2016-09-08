@@ -11,7 +11,7 @@
 <div id="wrapper">
 {% include header.html %}
 <div class="post-header">
-<div class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></div>
+<div class="post-title"><a href="{{ page.url }}">{{ page.title | xml_escape }}</a></div>
 <hr />
 <div class="post-date">{{ page.date | date_to_string }}</div>
 </div>
@@ -21,10 +21,10 @@
 <hr />
 <div class="nav">
 {% if page.previous %}
-<a class="nav-left" href="{{ page.previous.url }}"><span style="float: left;">&larr;&nbsp;</span>{{ page.previous.title }}</a>
+<a class="nav-left" href="{{ page.previous.url }}"><span style="float: left;">&larr;&nbsp;</span>{{ page.previous.title | xml_escape }}</a>
 {% endif %}
 {% if page.next %}
-<a class="nav-right" href="{{ page.next.url }}"><span style="float: right;">&nbsp;&rarr;</span>{{ page.next.title }}</a>
+<a class="nav-right" href="{{ page.next.url }}"><span style="float: right;">&nbsp;&rarr;</span>{{ page.next.title | xml_escape }}</a>
 {% endif %}
 </div>
 <hr />
