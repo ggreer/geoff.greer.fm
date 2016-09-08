@@ -9,17 +9,17 @@
 {% include header.html %}
 <div id="wrapper" style="max-width: 100%;">
 <div class="post-header">
-<div class="post-title">{{ page.title }}</div>
+<div class="post-title">{{ page.title | xml_escape }}</div>
 </div>
 </div>
 <div id="gallery-list">
 {% for gallery in page.galleries %}
 <div class="gallery-index">
-    <a href="{{ gallery['gallery'] }}">
-        <img src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
-    </a>
-    <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
-    {{ gallery["images"] | size }} images
+  <a href="{{ gallery['gallery'] }}">
+    <img alt="{{ gallery['name'] }}" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}" />
+  </a>
+  <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
+  {{ gallery["images"] | size }} images
 </div>
 {% endfor %}
 </div>
