@@ -29,11 +29,11 @@ Almost a decade later, Firefox is just now becoming multi-process. This delay is
 
 ## Event-driven Apache
 
-When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()`, finally closing and exiting when it was done. This architecture has the advantage of being simple, easy to implement across platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995.
+When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()` on the socket, finally closing and exiting when it was done. This architecture has the advantage of being simple, easy to implement across platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995.
 
 Apache eventually moved to a threaded model, which did help performance. Still, it couldn't handle [10,000 simultaneous connections](c10k problem).
 
-In contrast, [Nginx]() was engineered with an event loop architecture. This allowed it to service many more concurrent connections. The advantage was
+In contrast, [Nginx](https://www.nginx.com) was engineered with an event loop architecture. This allowed it to service many more concurrent connections. The advantage was
 
 
 (link to forking conn handler model)
@@ -49,12 +49,12 @@ httpd (multi-process, multi-thread) vs nginx (event-driven)
 
 ## CPython GIL
 
-Python is slow.
+
 
 
 ## Conclusion
 
-Even with talented engineers, plenty of money, and clear vision, changing mature software can be near-impossible. I tried to find cases that disproved software rot, but they don't seem to exist.
+Even with talented engineers, plenty of money, and clear vision, changing mature software can be near-impossible. I tried to find cases that disproved software rot, but they don't seem to exist. There are plenty of old software projects, but they haven't adapted 
 
 
 
