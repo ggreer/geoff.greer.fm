@@ -49,24 +49,30 @@ httpd (multi-process, multi-thread) vs nginx (event-driven)
 
 ## CPython GIL
 
+Python is a nice programming language. It's easy to learn (as programming languages go), powerful, and it's supported on a wide variety of platforms. But for the past two decades, the most popular implementation of Python has had one major problem: it hard to parallelize. In other words, it can't easily take advantage of multiple CPU cores.
+
+The biggest reason for Python's lack of parallelism is its global interpreter lock, or GIL. From [the Python wiki](https://wiki.python.org/moin/GlobalInterpreterLock):
+
+> In CPython, the global interpreter lock, or GIL, is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython's memory management is not thread-safe. (However, since the GIL exists, other features have grown to depend on the guarantees that it enforces.)
+
+Originally, the GIL wasn't a big deal. When Python was invented, multi-core systems were rare. And a GIL is simple to write and easy to reason about. 
+
+Now, even watches have dual-core CPUs.
 
 
 
 ## Conclusion
 
-Even with talented engineers, plenty of money, and clear vision, changing mature software can be near-impossible. I tried to find cases that disproved software rot, but they don't seem to exist. There are plenty of old software projects, but they haven't adapted 
+Even with talented engineers, plenty of money, and clear vision, changing mature software can be near-impossible. I tried to find cases that disproved software rot, but they don't seem to exist. Robin Hanson [asked for counterexamples](https://twitter.com/robinhanson/status/616982698305974272) and nobody came up with anything convincing. There are plenty of old software projects, but they haven't had to adapt much.
 
 
 
 
 http://www.overcomingbias.com/2016/06/why-does-software-rot.html
 
-https://twitter.com/robinhanson/status/616982698305974272
-
-
 https://en.wikipedia.org/wiki/Software_rot
 
 http://www.agile-process.org/change.html
 
 
-[^Lehman]: The cite is for a text called *Program Evolution: Processes of Software Change*. The work is older than me, and I can't find an online version. I've ordered a copy, but it will take some time to read.
+[^Lehman]: The cite is for a text called *Program Evolution: Processes of Software Change*. The work is older than me, and I can't find an online version. I've bought a physical copy, but it will take some time to read.
