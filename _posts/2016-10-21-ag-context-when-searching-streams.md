@@ -1,5 +1,5 @@
 ---
-date: '2016-09-21 10:13:38'
+date: '2016-10-21 10:13:38'
 layout: post
 slug: ag-context-when-searching-streams
 published: false
