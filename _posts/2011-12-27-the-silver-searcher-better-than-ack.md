@@ -38,7 +38,7 @@ ggreer@carbon:~% time ag -i SOLR ~/cloudkick/reach | wc -l
 Here's Ag with some extra ignores, similar to how ack ignores many files by default:
 
 {% highlight text %}
-ggreer@carbon:~% cat ~/cloudkick/reach/.agignore 
+ggreer@carbon:~% cat ~/cloudkick/reach/.ignore
 extern
 release
 fixtures
