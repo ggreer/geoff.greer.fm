@@ -6,7 +6,7 @@ status: publish
 title: Consulting
 ---
 
-Want my help? I'm available for short-term remote work. What does "short-term remote work" mean, exactly? I'll review code, video chat, or even pair program with you (using [Floobits](https://floobits.com/), of course). Preferably, such jobs would only be a few hours.
+Want my help? I'm available for short-term remote work. What does "short-term remote work" mean, exactly? I'll review code, video chat, or even pair program with you (using [Floobits](https://floobits.com/), of course).
 
 For more info on my skills, see [my resume](/resume/) and [about me](/about/).
 
