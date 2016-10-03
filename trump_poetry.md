@@ -146,3 +146,9 @@ I've been all over
 
 <br />
 <br />
+
+---
+
+<p style="white-space: normal;">
+I'd read about <a href="http://www.slate.com/articles/news_and_politics/low_concept/2003/04/the_poetry_of_dh_rumsfeld.single.html">the Poetry of Donald Rumsfeld</a>, but it was only after making these that I remembered it. If you want more nonsense like this, check out <a href="https://twitter.com/deepdrumpf">DeepDrumpf</a> on Twitter and <a href="https://github.com/ppramesi/RoboTrumpDNN">RoboTrumpDNN</a> on GitHub. Thanks goes to <a href="http://www.gwern.net/">Gwern</a> for digging up those links.
+</p>
