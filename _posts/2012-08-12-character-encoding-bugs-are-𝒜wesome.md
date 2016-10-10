@@ -1,8 +1,8 @@
 ---
 date: '2012-08-12 14:56:54'
 layout: post
-slug: character-encoding-bugs-are-&#x1D49C;wesome!
-title: 'Character encoding bugs are &#x1D49C;wesome!'
+slug: character-encoding-bugs-are-𝒜wesome!
+title: 'Character encoding bugs are 𝒜wesome!'
 published: true
 permalink: /2012/08/12/character-encoding-bugs-are-%F0%9D%92%9Cwesome/
 categories:
