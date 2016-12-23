@@ -10,7 +10,7 @@ categories:
 excerpt: "Software rots. That is: Adapting mature software to new circumstances tends to take more time and effort than writing new software from scratch. Software people don't like to admit this, but open source software has several high-profile examples."
 ---
 
-In *Age of Em*, Robin Hanson briefly discusses software rot:
+In [*Age of Em*]({% post_url 2016-07-23-age-of-em %}), Robin Hanson briefly discusses software rot:
 
 > As software that was designed to match one set of tasks, tools, and situations is slowly changed to deal with a steady stream of new tasks, tools, and situations, such software becomes more complex, fragile, and more difficult to usefully change (Lehman and Belady 1985)[^Lehman]. Eventually it is better to start over and write whole new subsystems, and sometimes whole new systems, from scratch.
 
@@ -19,11 +19,11 @@ I'm pretty sure this is true. Adapting mature software to new circumstances tend
 
 ## Multi-process Firefox
 
-When it was first written, [Mozilla Firefox](https://en.wikipedia.org/wiki/Firefox) ran everything in a single process. After the release of [Google Chrome](https://en.wikipedia.org/wiki/Google_Chrome), it was clear than a multi-process model allowed for better security and performance. Mozilla developers quickly began to sketch-out a path to making Firefox multi-process. That was in 2007.
+When it was first written, [Mozilla Firefox](https://en.wikipedia.org/wiki/Firefox) ran everything in a single process. After the release of [Google Chrome](https://en.wikipedia.org/wiki/Google_Chrome), it was clear that a multi-process model allowed for better security and performance. Mozilla developers quickly began to sketch-out a path to making Firefox multi-process. That was in 2007.
 
 Almost a decade later, Firefox is just now becoming multi-process. This delay isn't from lack of trying. The teams at Mozilla are talented and driven. Still, Chrome was written from scratch in less time than it's taken for Firefox to change. There are several reasons for this:
 
-- Making single process architecture multi-process means changing a *lot* of small things. Certain function calls have to be replaced with inter-process communication. State can't be stored in shared variables. Caches and local databases must handle concurrent access.
+- Making a single process architecture multi-process means changing a *lot* of small things. Certain function calls have to be replaced with inter-process communication. State can't be stored in shared variables. Caches and local databases must handle concurrent access.
 - Firefox needed to be compatible with existing add-ons (or make devs update their add-ons). Chrome could create an extention API from scratch.
 
 
