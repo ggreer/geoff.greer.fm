@@ -25,6 +25,8 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    missoula_snowshoeing_2016:
+      best_image: DSC_2198.JPG
     maui_2016:
       best_image: IMG_0775.jpg
     immigrant_wilderness_2016:
