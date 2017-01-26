@@ -3,7 +3,7 @@ date: '2017-01-23 18:04:30'
 layout: post
 slug: oldest-viable-laptop
 published: true
-title: The Oldest Viable Laptop
+title: Oldest Viable Laptop
 categories:
 - Computers
 ---
@@ -18,7 +18,7 @@ This is a [ThinkPad X61s](http://www.thinkwiki.org/wiki/Category:X61s). Despite 
 
 Had a similar circumstance happened 10 years ago, my oldest viable laptop would not be so old. That is to say: There's no way that in 2007, I'd be able to get by with a laptop from 1997. The performance issues would be insurmountable.
 
-Either laptop tech is well into diminishing returns, hardware improvements are stagnating, or both.
+Growing up, I never thought I'd be able to use decade-old hardware without issue. Either laptop improvements are well into diminishing returns, or progress in hardware has stagnated, or both.
 
 ---
 
