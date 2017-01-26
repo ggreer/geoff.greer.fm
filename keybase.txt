@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/ggreer
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://geoff.greer.fm
+  * I am ggreer (https://keybase.io/ggreer) on keybase.
+  * I have a public key with fingerprint D96E 31F0 40F9 1A0F 864D  3D71 556B BFF0 3F0A 04B6
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e55bba455837484644c1760f38800a964f6f54e4b4885af6fb150d2f08d312e10a",
+            "fingerprint": "d96e31f040f91a0f864d3d71556bbff03f0a04b6",
+            "host": "keybase.io",
+            "key_id": "556bbff03f0a04b6",
+            "kid": "0101e55bba455837484644c1760f38800a964f6f54e4b4885af6fb150d2f08d312e10a",
+            "uid": "453029ef077b38fa6b192934b08f1400",
+            "username": "ggreer"
+        },
+        "service": {
+            "hostname": "geoff.greer.fm",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1485408008,
+    "expire_in": 157680000,
+    "prev": "6df457031701732be920604acf342942d148ec80da6609019a89c952b50fb47e",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUmtMFFcY5aUEGgQaKlFQ7BSzWla4s3PntdXyWOXRsMijIMam25mdO8tkZR+z
+wwJBKGhBt2kLTSOWFrW2FUsF/FOIsRGRGMvTpT7SGMBUsZWmaVFECWpiZ0j915/9
+dfN93znnnvPla4kIDggKLLZfuJ8aHtIXOPoHH1DqOxhRg/FOoRoz1mB2tPygvQLy
+KBa7JGBGDOAARyTJ8xwkSYagIQMpCK04TQGRYBgAOJaCIiWSEEEeMgzJqQWPk0Aw
+iIARCNyAcMBhekyUHDYku2TJoaiyAkshAhcBBCKLc0BkKCgQAo2TJMXzoggIEXAA
+8pRKLHN6NIZqjuc8KFlyqj21sCzb+w/8/+y7YlkOkgQwsEgENM0TjMhRPM4aWALy
+gBFxCIAG9CDZwZUjFW2zyQjJWK0eU3teyYq0tWo5XsyRUxSTl0HJYrnKdclOxWl1
+7lVnZYriMmpUpdqlYSsRb/lXxcJLDkFdo0rwItkjOR2YEVeRVkXSZHHIkBCo0Rg9
+hqpckowskoYgaUptAqB9g7yqJCWIkKQBsQunAU4TBh6xBkAByFlFAhpYaBBUKWRl
+gMBRFGABznIMa2VJA08CkYc0wrRgbocTM0LVJ2dTNT2SzcEpFTLCasN9QfEhAYFB
+AStXBGkHFhAeFvXi6kJfiXy+o9Hl7/oB65vbEpM4+cCc35P5Ze+OmY6JLHeCPr19
+bc5k/c6Q9x/rwtKG+pdmc3/7Ps2UIFlWnX1qN5PeVj4nOTemIWP9jc/nMm6PFMys
+zQn1nWhkB0q5nKbLz3hnhvsz27cVY73VFSkPn2B/RUe3B8/9VBoVe7zh6Jqtm8zx
+Vf7VlD/xMnnr2AdJv0zb9108cnLyBLb9Rvr8wVTPveSf/0zoPeQLLhzIIktbsoO2
+IdTdMTLx3plLX8SHzF6ZD96wq6bFH/qgCW//0H770dsHdof5D+vv1J78O2Vw5dl9
+ixvflWp769qy9hz3rjNl4MNd8Wz5WN1g6+beNcAxNFUX1kyZ+ouTTE1ToYOLYzOW
+sqPGBSXz/lyn69NnkZ9El2xIP9L6+0tsSkdeW/+tFZ1LsPD0QE9ntfnX81PD7uEf
+CwDytNUnDk5+ZzqUdHrEXZS5mBC5II0Wmk9FXEuLe155vWbjzievFZRF7znA3f3m
+DTl3NvRcVsr4pqiH0zlnHun095p1uqL1L7+j+2r3/qzNlxJZ3X7rSOXCuar0lO2j
+JXnTMjTUO5quFuU3X8he/dbH+RWNH53/2thpzptuOHbzjmehq2HL4VXr/OMxDcXd
+3onHr9bZhp72JMR2vB649c2bSxdz+0XPqcooZT4k7mpc67X5bbGl3SXZ1zNM+bQ9
+VXFf6SPvjjf6/gE=
+=FPhA
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ggreer
+
+==================================================================
