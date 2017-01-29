@@ -1,7 +1,7 @@
 ---
 date: '2015-03-25 18:03:49'
 layout: post
-slug: offense
+slug: please-stop-getting-outraged
 published: true
 title: Please Stop Getting Outraged
 categories:
