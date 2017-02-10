@@ -1,5 +1,5 @@
 ---
-date: '2016-10-10 17:59:53'
+date: '2017-02-02 17:59:53'
 layout: post
 slug: software-rot
 published: true
