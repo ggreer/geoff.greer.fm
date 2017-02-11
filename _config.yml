@@ -15,6 +15,9 @@ exclude:
 
 disqus_shortname: ggreer
 
+# Publish posts from the future
+future: true
+
 gems:
   - jekyll-gallery-generator
   - jekyll-paginate
