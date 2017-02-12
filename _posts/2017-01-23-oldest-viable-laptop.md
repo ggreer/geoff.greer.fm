@@ -20,6 +20,8 @@ Had a similar circumstance happened 10 years ago, my oldest viable laptop would 
 
 Growing up, I never thought I'd be able to use decade-old hardware without issue. Either laptop improvements are well into diminishing returns, or progress in hardware has stagnated, or both.
 
+Update: It's been two weeks since I got my MacBook back, and I still tend to use my ThinkPad more. I'm not sure if I'll stick with it, but there's something about this machine that causes me to favor it.
+
 ---
 
 [^font]: My terminal and editor windows had plenty of space thanks to [pixel-perfect programming fonts]({% post_url 2013-12-24-programming-fonts %}).
