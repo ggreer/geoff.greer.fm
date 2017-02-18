@@ -10,11 +10,11 @@ categories:
 excerpt: "Software rots. That is: Adapting mature software to new circumstances tends to take more time and effort than writing new software from scratch. Software people don't like to admit this, but open source software has several high-profile examples."
 ---
 
-In [*Age of Em*]({% post_url 2016-07-23-age-of-em %}), Robin Hanson briefly discusses software rot:
+In his book [*Age of Em: Work, Love and Life when Robots Rule the Earth*]({% post_url 2016-07-23-age-of-em %}), Robin Hanson briefly discusses software rot:
 
 > As software that was designed to match one set of tasks, tools, and situations is slowly changed to deal with a steady stream of new tasks, tools, and situations, such software becomes more complex, fragile, and more difficult to usefully change (Lehman and Belady 1985)[^Lehman]. Eventually it is better to start over and write whole new subsystems, and sometimes whole new systems, from scratch.
 
-I'm pretty sure this is true. Adapting mature software to new circumstances tends to take more time and effort than writing new software from scratch. Software people don't like to admit this, but open source software has several high-profile examples.
+I'm pretty sure this is true. Adapting mature software to new circumstances tends to take more time and effort than writing new software from scratch. Software people don't like to admit this, but the evidence is clear. Open source software has several high-profile examples.
 
 
 ## Multi-process Firefox
