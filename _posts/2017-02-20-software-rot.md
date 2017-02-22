@@ -29,11 +29,11 @@ Almost a decade later, Firefox is just now becoming multi-process. This delay is
 
 ## Event-driven Apache
 
-When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()` on the socket, finally closing and exiting when it was done. This architecture has the advantage of being simple, easy to implement across platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995.
+When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()` on the socket. When the request was finished, the child would `close()` the socket and `exit()`.
 
-Apache eventually moved to a threaded model, which did help performance. Still, it couldn't handle [10,000 simultaneous connections](c10k problem).
+This architecture has the advantage of being simple, easy to implement on many platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995. Apache soon moved to a threaded model, which did help performance. Still, it couldn't handle [10,000 simultaneous connections](https://en.wikipedia.org/wiki/C10k_problem).
 
-In contrast, [Nginx](https://www.nginx.com) was engineered with an event loop architecture. This allowed it to service many more concurrent connections. The advantage was
+In contrast, [Nginx](https://www.nginx.com) used a [reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern). This allowed it to service many more concurrent connections and rendered it immune to [slowloris attacks](https://en.wikipedia.org/wiki/Slowloris_%28computer_security%29).
 
 
 (link to forking conn handler model)
@@ -63,16 +63,16 @@ Now, even watches have dual-core CPUs.
 
 ## Conclusion
 
-Even with talented engineers, plenty of money, and clear vision, changing mature software can be near-impossible. I tried to find cases that disproved software rot, but they don't seem to exist. Robin Hanson [asked for counterexamples](https://twitter.com/robinhanson/status/616982698305974272) and nobody came up with anything convincing. There are plenty of old software projects, but they haven't had to adapt much.
+Even given talented engineers, plenty of money, and clear vision, mature software can be near-impossible to change. I tried to find cases that disproved software rot, but they don't seem to exist. Robin Hanson [asked for counterexamples](https://twitter.com/robinhanson/status/616982698305974272) and nobody came up with anything convincing. There are plenty of old software projects, but they haven't had to adapt much. I'd love to be proven wrong on this, as it paints bleak picture for the long-term future of software.
 
+---
 
+### Read more
 
+- [Overcoming Bias: Why Does Software Rot?](http://www.overcomingbias.com/2016/06/why-does-software-rot.html)
+- [Suprise: Software rots!](http://www.agile-process.org/change.html)
+- [Wikipedia: Software rot](https://en.wikipedia.org/wiki/Software_rot)
 
-http://www.overcomingbias.com/2016/06/why-does-software-rot.html
-
-https://en.wikipedia.org/wiki/Software_rot
-
-http://www.agile-process.org/change.html
-
+---
 
 [^Lehman]: The cite is for a text called *Program Evolution: Processes of Software Change*. The work is older than me, and I can't find an online version. I've bought a physical copy, but it will take some time to read.
