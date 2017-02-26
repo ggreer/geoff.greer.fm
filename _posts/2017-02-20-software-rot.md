@@ -31,20 +31,11 @@ Almost a decade later, Firefox is just now becoming multi-process. This delay is
 
 When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()` on the socket. When the request was finished, the child would `close()` the socket and `exit()`.
 
-This architecture has the advantage of being simple, easy to implement on many platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995. Apache soon moved to a threaded model, which did help performance. Still, it couldn't handle [10,000 simultaneous connections](https://en.wikipedia.org/wiki/C10k_problem).
+This architecture has the advantage of being simple, easy to implement on many platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair, this *was* 1995. Apache soon moved to a threaded model, which did help performance. Still, it couldn't handle [10,000 simultaneous connections](https://en.wikipedia.org/wiki/C10k_problem). A connection-per-thread architecture means that it takes 1,000 threads to service 1,000 concurrent connections. Each thread has its own stack and state, and must be scheduled by the operating system. In short: a bad time.
 
-In contrast, [Nginx](https://www.nginx.com) used a [reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern). This allowed it to service many more concurrent connections and rendered it immune to [slowloris attacks](https://en.wikipedia.org/wiki/Slowloris_%28computer_security%29).
+In contrast, [Nginx](https://www.nginx.com) used a [reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern) from the start. This allowed it to handle more concurrent connections and rendered it immune to [slowloris attacks](https://en.wikipedia.org/wiki/Slowloris_%28computer_security%29).
 
-
-(link to forking conn handler model)
-
-Connection per process (fork)
-Connection per thread ()
-Event-driven (can support many more connections, immune to slowloris-style attacks)
-
-
-httpd (multi-process, multi-thread) vs nginx (event-driven)
-
+Nginx was first released in 2007, and its performance advantage was obvious. Apache devs started work on re-architecting httpd to perform comparably. It took six years for Apache 2.4 to ship with the [event MPM](https://httpd.apache.org/docs/2.4/mod/event.html). While far better than the previous prefork and worker MPMs, this doesn't acheive parity with Nginx. Instead, it uses separate thread pools for listening/accepting connections and processing requests. It's roughly equivalent to running a load balancer or reverse proxy in front of Apache.
 
 
 ## CPython GIL
