@@ -40,21 +40,19 @@ Nginx was first released in 2007, and its performance advantage was obvious. Apa
 
 ## CPython GIL
 
-Python is a nice programming language. It's easy to learn (as programming languages go), powerful, and it's supported on a wide variety of platforms. But for the past two decades, the most popular implementation of Python has had one major problem: it hard to parallelize. In other words, it can't easily take advantage of multiple CPU cores.
+Python is a nice programming language. It's expressive, easy to learn (at least as programming languages go), and it's supported on a wide variety of platforms. But for the past two decades, the most popular implementation of Python has had one major problem: it's hard to parallelize. In other words, it can't easily take advantage of multiple CPU cores.
 
 The biggest reason for Python's lack of parallelism is its global interpreter lock, or GIL. From [the Python wiki](https://wiki.python.org/moin/GlobalInterpreterLock):
 
 > In CPython, the global interpreter lock, or GIL, is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython's memory management is not thread-safe. (However, since the GIL exists, other features have grown to depend on the guarantees that it enforces.)
 
-Originally, the GIL wasn't a big deal. When Python was invented, multi-core systems were rare. And a GIL is simple to write and easy to reason about. 
-
-Now, even watches have dual-core CPUs.
+Originally, the GIL wasn't a big deal. When Python was invented, multi-core systems were rare. And a GIL is simple to write and easy to reason about. Today, even watches have multi-core CPUs.
 
 
 
 ## Conclusion
 
-Even given talented engineers, plenty of money, and clear vision, mature software can be near-impossible to change. I tried to find cases that disproved software rot, but they don't seem to exist. Robin Hanson [asked for counterexamples](https://twitter.com/robinhanson/status/616982698305974272) and nobody came up with anything convincing. There are plenty of old software projects, but they haven't had to adapt much. I'd love to be proven wrong on this, as it paints bleak picture for the long-term future of software.
+Even when given talented engineers, plenty of money, and clear vision, mature software can be near-impossible to change. I tried to find cases that disproved software rot, but they don't seem to exist. Robin Hanson [asked for counterexamples](https://twitter.com/robinhanson/status/616982698305974272) and nobody came up with anything convincing. There are plenty of old software projects, but they haven't had to adapt much. I'd love to be proven wrong on this, as it paints bleak picture for the long-term future of software.
 
 ---
 
@@ -66,4 +64,4 @@ Even given talented engineers, plenty of money, and clear vision, mature softwar
 
 ---
 
-[^Lehman]: The cite is for a text called *Program Evolution: Processes of Software Change*. The work is older than me, and I can't find an online version. I've bought a physical copy, but it will take some time to read.
+[^Lehman]: The cite is for a text called *Program Evolution: Processes of Software Change*. The work is older than me, and I can't find an online version. I bought a physical copy and have been slowly making my way through it. So far, the terminology is odd, but the conclusions haven't been particularly surprising.
