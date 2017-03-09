@@ -19,26 +19,25 @@ I'm pretty sure this is true. Adapting mature software to new circumstances tend
 
 ## Multi-process Firefox
 
-When it was first written, [Mozilla Firefox](https://en.wikipedia.org/wiki/Firefox) ran everything in a single process. After the release of [Google Chrome](https://en.wikipedia.org/wiki/Google_Chrome), it was clear that a multi-process model allowed for better security and performance. Mozilla developers quickly started planning to make Firefox multi-process. That was in 2007.
+When it was first written, [Mozilla Firefox](https://en.wikipedia.org/wiki/Firefox) ran everything in a single process. After the release of [Google Chrome](https://en.wikipedia.org/wiki/Google_Chrome), it was clear that a multi-process model allowed for better security and performance. Mozilla developers soon started planning to make Firefox multi-process. That was in 2007.
 
-Almost a decade later, Firefox is just now becoming multi-process. This delay is not for want of trying. The teams at Mozilla are talented and driven. Still, Chrome was written from scratch in far less time than it has taken Firefox to change. There are a couple reasons for this:
+Almost a decade later, Mozilla finally [began rollout of multi-process Firefox](https://blog.mozilla.org/futurereleases/2016/12/21/update-on-multi-process-firefox/). This delay is not for want of trying. The teams at Mozilla are talented and driven. Still, Chrome was written from scratch in far less time than it has taken Firefox to change. There are two main reasons for this:
 
-- Making a single process architecture multi-process means changing a *lot* of small things. Certain function calls have to be replaced with inter-process communication. State can't be stored in shared variables. Caches and local databases must handle concurrent access.
-- Firefox needed to be compatible with existing add-ons (or make devs update their add-ons). Chrome got to create an extention API from scratch, avoiding such constraints.
+- Making a single process architecture multi-process means changing a *lot* of small things. Certain function calls have to be replaced with inter-process communication. Shared state must be wrapped in mutexes. Caches and local databases must handle concurrent access.
+- Firefox needed to remain compatible with existing add-ons (or force devs to update their add-ons). Chrome got to create an extention API from scratch, avoiding such constraints.
 
-It gets worse. These constraints are at odds with each other: Overhaul the internal architecture, but alter the public-facing APIs as little as possible. It's no wonder Mozilla needed 10 years to accomplish this feat.
+It gets worse. These constraints are at odds with each other: Overhaul the internal architecture, but alter public-facing APIs as little as possible. It's no wonder Mozilla needed 10 years to accomplish this feat.
 
 
 ## Event-driven Apache
 
-When Apache httpd was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()` on the socket. When the request was finished, the child would `close()` the socket and `exit()`.
+When [Apache httpd](https://httpd.apache.org/) was first written, it used a process-per-connection model. One process would listen on port 80, then `accept()` and `fork()`. The child process would then `read()` and `write()` on the socket. When the request was finished, the child would `close()` the socket and `exit()`.
 
-This architecture has the advantage of being simple, easy to implement on many platforms, and… not much else. It's absolutely terrible for performance, especially when handling long-lived connections. To be fair: this *was* 1995. And Apache soon moved to a threaded model, which did help performance. Still, it couldn't handle [10,000 simultaneous connections](https://en.wikipedia.org/wiki/C10k_problem). A connection-per-thread architecture means that it takes 1,000 threads to service 1,000 concurrent connections. Each thread has its own stack and state, and must be scheduled by the operating system. In short: you're gonna have a bad time.
+This architecture had the advantage of being simple, easy to implement on many platforms, and… not much else. It was absolutely terrible for performance, especially when handling long-lived connections. To be fair: this *was* 1995. And Apache soon moved to a threaded model, which did help performance. Still, it couldn't handle [10,000 simultaneous connections](https://en.wikipedia.org/wiki/C10k_problem). A connection-per-thread architecture takes 1,000 threads to service 1,000 concurrent connections. Each thread has its own stack and state, and must be scheduled by the operating system. It makes for a bad time.
 
 In contrast, [Nginx](https://www.nginx.com) used a [reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern) from the start. This allowed it to handle more concurrent connections and rendered it immune to [slowloris attacks](https://en.wikipedia.org/wiki/Slowloris_%28computer_security%29).
 
-Nginx was first released in 2007, and its performance advantage was obvious. Apache devs worked to re-architect httpd to perform comparably. It took six years for Apache 2.4 to ship with the [event MPM](https://httpd.apache.org/docs/2.4/mod/event.html). While far better than the previous prefork and worker MPMs, it didn't acheive parity with Nginx. Instead, it used separate thread pools for listening/accepting connections and processing requests. The architecture is roughly equivalent to running a load balancer or reverse proxy in front of a [worker MPM](https://httpd.apache.org/docs/2.4/mod/worker.html) httpd.
-
+Nginx was first released in 2007, and its performance advantage was obvious. Apache devs worked to re-architect httpd to perform comparably. It took six years for Apache 2.4 to ship with the [event MPM](https://httpd.apache.org/docs/2.4/mod/event.html). While far better than the previous [prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) and [worker MPM](https://httpd.apache.org/docs/2.4/mod/worker.html)s, it didn't acheive parity with Nginx. Instead, it used separate thread pools for listening/accepting connections and processing requests. The architecture is roughly equivalent to running a load balancer or reverse proxy in front of a worker MPM httpd.
 
 ## CPython GIL
 
@@ -48,7 +47,7 @@ The cause of Python's lack of parallelism is its global interpreter lock, or GIL
 
 > In CPython, the global interpreter lock, or GIL, is a mutex that prevents multiple native threads from executing Python bytecodes at once. This lock is necessary mainly because CPython's memory management is not thread-safe. (However, since the GIL exists, other features have grown to depend on the guarantees that it enforces.)
 
-Originally, the GIL wasn't a big deal. When Python was created, multi-core systems were rare. And a GIL is simple to write and easy to reason about. But today, even watches have multi-core CPUs. The GIL is an obvious and glaring defect in what is otherwise a pleasant language. Despite CPython's popularity, despite the project's capable developers, despite sponsors such as Google, Microsoft, and Intel, [fixing the GIL isn't even on the roadmap](https://docs.python.org/3.3/faq/library.html#can-t-we-get-rid-of-the-global-interpreter-lock).
+Originally, the GIL wasn't a big deal. When Python was created, multi-core systems were rare. And a GIL is simple to write and easy to reason about. But today, even wristwatches have multi-core CPUs. The GIL is an obvious and glaring defect in what is otherwise a pleasant language. Despite CPython's popularity, despite the project's capable developers, despite sponsors such as Google, Microsoft, and Intel, [fixing the GIL isn't even on the roadmap](https://docs.python.org/3.3/faq/library.html#can-t-we-get-rid-of-the-global-interpreter-lock).
 
 
 ## Conclusion
