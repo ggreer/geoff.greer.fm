@@ -37,7 +37,8 @@ This architecture had the advantage of being simple, easy to implement on many p
 
 In contrast, [Nginx](https://www.nginx.com) used a [reactor pattern](https://en.wikipedia.org/wiki/Reactor_pattern) from the start. This allowed it to handle more concurrent connections and rendered it immune to [slowloris attacks](https://en.wikipedia.org/wiki/Slowloris_%28computer_security%29).
 
-Nginx was first released in 2007, and its performance advantage was obvious. Apache devs worked to re-architect httpd to perform comparably. It took six years for Apache 2.4 to ship with the [event MPM](https://httpd.apache.org/docs/2.4/mod/event.html). While far better than the previous [prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) and [worker MPM](https://httpd.apache.org/docs/2.4/mod/worker.html)s, it didn't acheive parity with Nginx. Instead, it used separate thread pools for listening/accepting connections and processing requests. The architecture is roughly equivalent to running a load balancer or reverse proxy in front of a worker MPM httpd.
+Nginx was first released in 2007, and its performance advantage was apparent. Years before the release of Nginx, the Apache devs had begun re-architecting httpd to perform better. The [event MPM](https://httpd.apache.org/docs/2.4/mod/event.html) shipped with Apache 2.2 in 2005. Still, there were teething issues. Most importantly, the event MPM broke compatibility with popular modules like mod_php. It wasn't until 2012 that Apache 2.4 to shipped with it as the default.[^httpd] While far better than the previous [prefork](https://httpd.apache.org/docs/2.4/mod/prefork.html) and [worker MPM](https://httpd.apache.org/docs/2.4/mod/worker.html)s, the worker MPM didn't acheive parity with Nginx. Instead, it used separate thread pools for listening/accepting connections and processing requests. The architecture is roughly equivalent to running a load balancer or reverse proxy in front of a worker MPM httpd.[^httpd2]
+
 
 ## CPython GIL
 
@@ -65,3 +66,7 @@ Even when given talented engineers, plenty of money, and clear vision, mature so
 ---
 
 [^Lehman]: The cite is for a text called *Program Evolution: Processes of Software Change*. The work is older than me, and I can't find an online version. I bought a physical copy and have been slowly making my way through it. The terminology is odd, but the conclusions haven't been particularly surprising.
+
+[^httpd]: The original version of this blog post contained some misapprehensions about the timeline. Thanks goes to [Paul Querna](https://journal.paul.querna.org/) for correcting them.
+
+[^httpd2]: Anyone who knows about httpd's internals will take issue with this sentence. The comparison sacrifices accuracy for brevity. I apologize.
