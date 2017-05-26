@@ -6,9 +6,9 @@ status: publish
 title: Bets
 ---
 
-When people disagree, I'm a fan of betting. As economist Alex Tabarrok says, [A bet is a tax on bullshit](http://marginalrevolution.com/marginalrevolution/2012/11/a-bet-is-a-tax-on-bullshit.html). Betting stops people from saying things they don't actually believe.
+When my predictions disagree with someone else's, I prefer to bet instead of argue. As the economist Alex Tabarrok says, [A bet is a tax on bullshit](http://marginalrevolution.com/marginalrevolution/2012/11/a-bet-is-a-tax-on-bullshit.html). Betting stops people from saying things they don't actually believe. It's amazing how quickly people are to qualify and hedge their statements once incorrectness causes monetary loss.
 
-Below are my bets (and my attempts to bet) starting with the most recent.
+Below are my bets (and some of my attempts to bet), starting with the most recent.
 
 ---
 
