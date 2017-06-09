@@ -5,7 +5,7 @@
 paginate: 10
 permalink: /:year/:month/:day/:title/
 highlighter: pygments
-url: http://geoff.greer.fm
+url: https://geoff.greer.fm
 author: Geoff Greer
 title: Geoff's Site
 exclude:
