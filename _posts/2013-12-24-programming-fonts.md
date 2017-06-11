@@ -15,9 +15,9 @@ A similar principle applies when toolsmithing, although with time instead of mon
 A font meant for developers should have certain properties:
 
 1. Readable at small sizes. Big screens can help productivity. Since laptops have small screens, the only way to represent more information on them is to use smaller fonts.
-1. Easily-distinguishable `0` and `O`.
-1. Easily-distinguishable `1`, `l`, and `I`.
-1. Easily-distinguishable `,` and `.`.
+1. Easily distinguishable `0` and `O`.
+1. Easily distinguishable `1`, `l`, and `I`.
+1. Easily distinguishable `,` and `.`.
 1. Centered operators such as `=`, and `*`.
 1. Conspicuous parentheses `()`, brackets `[]`, and braces `{}`. Syntax highlighters reduce the need for this, but not everything has syntax highlighting. It's also nice if these symbols are horizontally centered.
 

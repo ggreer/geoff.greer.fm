@@ -15,7 +15,7 @@ When Gallant's post [was discussed on Hacker News](https://news.ycombinator.com/
 
 Support for `.ignore` files is in ag v0.33.0 and later. If you have `.agignore` files, don't worry. You'll have plenty of time to rename them. It will be at least six months before I deprecate them, and probably a year before they're no longer read.
 
-The whole experience was very positive for everyone involved. Andrew and I had an enjoyable exchange. Users of our tools were saved some trouble. And there's a decent chance that more software will support the same `.ignore` standard. I'm very happy to have played a part in creating this small gem of collaboration.
+The whole experience was positive for everyone involved. Andrew and I had an enjoyable exchange. Users of our tools were saved some trouble. And there's a decent chance that more software will support the same `.ignore` standard. I'm happy to have played a part in creating this small gem of collaboration.
 
 
 ---
