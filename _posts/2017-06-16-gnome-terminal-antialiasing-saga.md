@@ -8,12 +8,43 @@ categories:
 - Computers
 ---
 
-[Previously]({% post_url 2016-08-26-gnome-terminal-cursor-blinking-saga %})
+[Previously]({% post_url 2016-08-26-gnome-terminal-cursor-blinking-saga %}).
 
-on non-retina displays, I use bitmap fonts for fixed-width stuff (proggy fonts)
-gnome terminal was aliasing (screenshot)
-macos terminal & putty both have checkboxes to disable antialiasing & subpixel hinting
+On lower-DPI displays, [I prefer to use bitmap fonts]({% post_url 2013-12-24-programming-fonts %}) for fixed-width stuff like terminals and text editors. As the title foreshadows, Gnome did not agree with my preference.
+
+Despite the bitmap font, Gnome terminal was applying [antialiasing](https://en.wikipedia.org/wiki/Font_rasterization) and [subpixel hinting](https://en.wikipedia.org/wiki/Subpixel_rendering). This made text appear blurry:
+
+<img alt="Gnome terminal making stuff blurry" src="/images/Screenshot from 2017-06-11 16-53-20.png" style="width: 465px; height: 305px;" />
+
+<img alt="enlargement of obvious antialiasing" src="/images/Screenshot from 2017-06-11 16-53-20-crop.png" style="width: 450px; height: 180px;" />
+
+Other platforms have terminal emulators that make this an easy fix. Both Terminal.app and PuTTY have checkboxes to disable antialiasing and subpixel hinting. As one would expect of Gnome, there's no GUI config for this option.
+
+To solve this problem, I delved into [fontconfig](https://www.freedesktop.org/software/fontconfig/fontconfig-user.html). My goal was to disable antialiasing for just one font. I created a `~/.fonts.conf`:
+
+{% highlight xml %}
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+  <match target="pattern">
+    <test name="family">
+      <string>ProggyTinyTTSZ</string>
+    </test>
+    <edit mode="assign" name="antialias">
+      <bool>false</bool>
+    </edit>
+    <edit mode="assign" name="hinting">
+     <bool>false</bool>
+    </edit>
+  </match>
+</fontconfig>
+{% endhighlight %}
+
+
+
 http://i.imgur.com/SoSBkc9.png (putty)
+
+
 no way to tell terminal, so... other options
 fontconfig
 
@@ -44,7 +75,7 @@ stared at my xml file more and compared against docs
 
 had <match target="pattern"> instead of <match target="font">
 
-```xml
+{% highlight xml %}
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
 <fontconfig>
@@ -60,10 +91,10 @@ had <match target="pattern"> instead of <match target="font">
     </edit>
   </match>
 </fontconfig>
-```
+{% endhighlight %}
 
 finally!
 
-screenshot?
+<img alt="Gnome terminal with correctly rendered fonts" src="/images/Screenshot from 2017-06-11 12-22-58.png" style="width: 465px; height: 305px;" />
 
 in case it wasn't obvious already, gnome is absurdly hard to use
