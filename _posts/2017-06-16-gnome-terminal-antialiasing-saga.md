@@ -6,21 +6,28 @@ published: true
 title: "GNOME Terminal Antialiasing Saga"
 categories:
 - Computers
+excerpt: "On lower-DPI displays, I like to use bitmap fonts in my terminals and text editors. As the title foreshadows, Gnome was hostile to my preference."
 ---
 
 [Previously]({% post_url 2016-08-26-gnome-terminal-cursor-blinking-saga %}).
 
-On lower-DPI displays, [I prefer to use bitmap fonts]({% post_url 2013-12-24-programming-fonts %}) for fixed-width stuff like terminals and text editors. As the title foreshadows, Gnome did not agree with my preference.
+On lower-DPI displays, [I like to use bitmap fonts]({% post_url 2013-12-24-programming-fonts %}) in my terminals and text editors. I was surprised to see that Gnome Terminal still [antialiased](https://en.wikipedia.org/wiki/Font_rasterization) and [hinted](https://en.wikipedia.org/wiki/Subpixel_rendering) my bitmap font:
 
-Despite the bitmap font, Gnome terminal was applying [antialiasing](https://en.wikipedia.org/wiki/Font_rasterization) and [subpixel hinting](https://en.wikipedia.org/wiki/Subpixel_rendering). This made text appear blurry:
+<div style="text-align: center;">
+	<img alt="Gnome terminal making stuff blurry" src="/images/Screenshot from 2017-06-11 20-04-00.png" style="width: 471px; height: 239px;" />
+</div>
 
-<img alt="Gnome terminal making stuff blurry" src="/images/Screenshot from 2017-06-11 16-53-20.png" style="width: 465px; height: 305px;" />
+Here's a close-up:
 
-<img alt="enlargement of obvious antialiasing" src="/images/Screenshot from 2017-06-11 16-53-20-crop.png" style="width: 450px; height: 180px;" />
+<div style="text-align: center;">
+	<img alt="Enlargement of antialiasing" src="/images/Screenshot from 2017-06-11 20-04-00-crop.png" style="width: 450px; height: 135px; image-rendering: pixelated;" />
+</div>
 
-Other platforms have terminal emulators that make this an easy fix. Both Terminal.app and PuTTY have checkboxes to disable antialiasing and subpixel hinting. As one would expect of Gnome, there's no GUI config for this option.
+The red text is obvious, but you can also see tinges of blue and red on the white text. Not pretty.
 
-To solve this problem, I delved into [fontconfig](https://www.freedesktop.org/software/fontconfig/fontconfig-user.html). My goal was to disable antialiasing for just one font. I created a `~/.fonts.conf`:
+Other platforms make it easy to get the desired behavior. Both Terminal.app and PuTTY have checkboxes to disable antialiasing and subpixel hinting. But as anyone familiar with Gnome would expect, Gnome Terminal has no GUI setting to change this.
+
+To solve the problem, I delved into [fontconfig](https://www.freedesktop.org/software/fontconfig/fontconfig-user.html). My goal was to disable antialiasing for just one font. I created `~/.fonts.conf` and filled it with some guesses based on docs and related Stack Overflow answers:
 
 {% highlight xml %}
 <?xml version='1.0'?>
@@ -40,40 +47,30 @@ To solve this problem, I delved into [fontconfig](https://www.freedesktop.org/so
 </fontconfig>
 {% endhighlight %}
 
+This had no effect. I re-read some fontconfig docs and noticed that `~/.fonts.conf` had been deprecated for a new config path: `~/.config/fontconfig/fonts.conf`. I moved the config file. Still no change.
 
+After reading *more* fontconfig docs, I found out about `FC_DEBUG`:
 
-http://i.imgur.com/SoSBkc9.png (putty)
+> To help diagnose font and applications problems, fontconfig is built with a large amount of internal debugging left enabled. It is controlled by means of the FC_DEBUG environment variable.
 
+Surely, debug logging would give me some clues. Naturally, this variable wasn't just a boolean:
 
-no way to tell terminal, so... other options
-fontconfig
+> The value of this variable is interpreted as a number, and each bit within that value controls different debugging messages.
 
-fonts.conf
-wrong path (~/.fonts.conf is deprecated. use ~/.config/fontconfig/fonts.conf)
-still not working
+I tried setting `FC_DEBUG` to 35 (0b0100011), corresponding to verbose info for caching & matching. It turns out that verbose logging lives up to its name:
 
-read docs, found out about FC_DEBUG
-do binary arithmetic to figure out debug options
-tried various options. usually printed out 
-
+```
 ggreer@zinc:~% FC_DEBUG=35 fc-match -v ProggyTinyTTSZ family antialias hinting file | wc -l
 29771
+```
 
-30k lines of logs... wtf
+That's right: almost 30,000 lines of debug logs— almost as useless as no logs. I played with other values, eventually settling on `FC_DEBUG=4`. That generated "only" 5,000 lines and seemed to contain some useful clues.
 
-eventually settled on FC_DEBUG=4
-only 5k lines of logs
+The first thing I noticed when scouring the debug logs was that many settings were being processed after my user config. I traced this down to the order of config files in `/etc/fonts/conf.d/`. The rule to load user configs was in the middle, not at the last thing done. To ensure no global config was overriding my directives, I ran `sudo mv 50-user.conf 99-user.conf`. Debug logs then confirmed that my rules were run last.
 
-looks like some settings are being overridden or something? unclear (grab logs here?)
+Still, I saw blurry text.
 
-ls /etc/fonts/conf.d
-50-user
-user stuff loaded in the middle of font config, not at the end
-other stuff might be overriding my settings
-
-stared at my xml file more and compared against docs
-
-had <match target="pattern"> instead of <match target="font">
+At this point, I'd been at it for almost two hours. I was getting pretty frustrated. With nothing better coming to mind, I stared at my XML. I tediously compared it against examples in the fontconfig docs. I saw one suspicious line: I was using `<match target="pattern">`, while many examples used `<match target="font">`. I changed the target attribute from "pattern" to "font":
 
 {% highlight xml %}
 <?xml version='1.0'?>
@@ -93,8 +90,17 @@ had <match target="pattern"> instead of <match target="font">
 </fontconfig>
 {% endhighlight %}
 
-finally!
+…and was finally rewarded with pixel-perfect text:
 
-<img alt="Gnome terminal with correctly rendered fonts" src="/images/Screenshot from 2017-06-11 12-22-58.png" style="width: 465px; height: 305px;" />
+<div style="text-align: center;">
+	<img alt="Gnome terminal with correctly rendered fonts" src="/images/Screenshot from 2017-06-11 20-02-44.png" style="width: 471px; height: 239px;" />
+</div>
 
-in case it wasn't obvious already, gnome is absurdly hard to use
+A close-up:
+
+<div style="text-align: center;">
+	<img alt="Enlargement of no antialiasing" src="/images/Screenshot from 2017-06-11 20-02-44-crop.png" style="width: 450px; height: 135px; image-rendering: pixelated;" />
+</div>
+
+At last!
+In case it wasn't obvious already, Gnome is absurdly hard to customize.
