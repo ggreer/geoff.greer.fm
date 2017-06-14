@@ -1,5 +1,5 @@
 ---
-date: '2017-06-16 19:49:46'
+date: '2017-06-14 19:49:46'
 layout: post
 slug: gnome-terminal-antialiasing-saga
 published: true
@@ -25,7 +25,7 @@ Here's a close-up:
 
 The red text is obvious, but you can also see tinges of blue and red on the white text. Not pretty.
 
-Other platforms make it easy to get the desired behavior. Both Terminal.app and PuTTY have checkboxes to disable antialiasing and subpixel hinting. But as anyone familiar with Gnome would expect, Gnome Terminal has no GUI setting to change this.
+Other platforms make it easy to get the desired behavior. Both Terminal.app and PuTTY have checkboxes to disable antialiasing and subpixel hinting. But (as anyone familiar with Gnome would expect) Gnome Terminal has no GUI setting to change this.
 
 To solve the problem, I delved into [fontconfig](https://www.freedesktop.org/software/fontconfig/fontconfig-user.html). My goal was to disable antialiasing for just one font. I created `~/.fonts.conf` and filled it with some guesses based on docs and related Stack Overflow answers:
 
@@ -102,5 +102,6 @@ A close-up:
 	<img alt="Enlargement of no antialiasing" src="/images/Screenshot from 2017-06-11 20-02-44-crop.png" style="width: 450px; height: 135px; image-rendering: pixelated;" />
 </div>
 
-At last!
-In case it wasn't obvious already, Gnome is absurdly hard to customize.
+Finally!
+
+This is yet more evidence of how ridiculously hostile Gnome is to users. I'm no novice, but it took me two hours to accomplish what takes two seconds on every other platform. What a waste.

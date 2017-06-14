@@ -62,4 +62,4 @@ The issue to re-add the blink checkbox still exists: [Bug 559990 - Add UI for th
 
 Desktop Linux is fraught with these sorts of issues. The only reason I use it is because I need to test software on the platform. If not for that, I doubt I'd ever touch a Linux GUI again.
 
-Update: [the saga continues]({% post_url 2017-06-16-gnome-terminal-antialiasing-saga %}).
+Update: [the saga continues]({% post_url 2017-06-14-gnome-terminal-antialiasing-saga %}).
