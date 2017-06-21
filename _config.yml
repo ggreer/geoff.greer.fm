@@ -45,6 +45,7 @@ gallery:
     pride_parade_2015:
       best_image: DSC_0165.jpg
     backgrounds:
+      sort_field: name
       hidden: true
     pics:
       hidden: true
