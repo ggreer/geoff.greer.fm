@@ -5,11 +5,11 @@ if [ "$#" -lt 1 ]; then
     exit 1
 fi
 
-POST_DATE=$("date +%Y-%m-%d")
-POST_TIME=$("date +%H:%M:%S")
+POST_DATE=$(date '+%Y-%m-%d')
+POST_TIME=$(date '+%H:%M:%S')
 
 # Replace spaces with dashes, convert to lower case, strip non-slug chars
-TITLE=`echo "$@" | sed -E 's/ /-/g' | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:]-'`
+TITLE=$(echo "$@" | sed -E 's/ /-/g' | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:]-')
 
 POST_DIR=./_posts
 
