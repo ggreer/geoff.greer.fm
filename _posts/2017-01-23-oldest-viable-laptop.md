@@ -5,7 +5,8 @@ slug: oldest-viable-laptop
 published: true
 title: Oldest Viable Laptop
 categories:
-- Computers
+  - Computers
+  - Laptops
 ---
 
 What's the oldest laptop you could reasonably do your job with? 3 years old? 5 years? 10? And if asked the same question 10 years ago, would your number be higher or lower? Thanks to a failing battery in [my 12" MacBook]({% post_url 2015-04-19-2015-macbook-review %}), I discovered my answer.
