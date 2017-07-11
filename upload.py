@@ -26,8 +26,9 @@ jekyll_site = '_site'
 index_page = 'index.html'
 error_page = 'error.html'
 ttl = 900
-delete_files = True  # Delete stuff in cloudfiles that doesn't exist locally
-delete_all_files = False  # Nuke everything in the container before uploading stuff
+delete_files = True         # Delete stuff in cloudfiles that doesn't exist locally.
+delete_all_files = False    # Nuke everything in the container before uploading stuff.
+dry_run = False             # Don't actually do anything. Just print what would happen.
 
 storage_driver = get_driver(provider_type)
 provider = storage_driver(user, api_key)
@@ -46,6 +47,8 @@ def md5(path):
 
 def upload_file(container, file_path, cf_path):
     print('Uploading %s to %s/%s' % (file_path, container.name, cf_path.encode('utf-8')))
+    if dry_run:
+        return
     try:
         container.upload_object(file_path, cf_path)
     except AttributeError:
@@ -53,6 +56,9 @@ def upload_file(container, file_path, cf_path):
         container.upload_object(file_path, cf_path, extra={'content_type': 'binary/octet-stream'})
     except Exception as e:
         print('Error uploading file:', e)
+
+if dry_run:
+    print('(Dry run)')
 
 try:
     container = provider.get_container(container_name)
@@ -94,6 +100,8 @@ if delete_files:
     for name, obj in object_names.items():
         try:
             print('%s no longer exists locally. Deleting remote copy.' % name)
+            if dry_run:
+                continue
             obj.delete()
         except Exception as e:
             print('Error deleting file:', e)
