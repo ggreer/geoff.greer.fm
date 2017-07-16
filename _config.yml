@@ -18,7 +18,7 @@ disqus_shortname: ggreer
 # Publish posts from the future
 future: true
 
-gems:
+plugins:
   - jekyll-gallery-generator
   - jekyll-paginate
   - jekyll-sitemap
