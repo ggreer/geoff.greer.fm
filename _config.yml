@@ -28,6 +28,8 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    oregon_outback_2017:
+      best_image: IMG_1009.jpg
     missoula_snowshoeing_2016:
       best_image: DSC_2198.JPG
     maui_2016:
