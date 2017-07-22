@@ -12,7 +12,11 @@ Below are my bets (and some of my attempts to bet), starting with the most recen
 
 ---
 
-**2017/01** - I went back-and-forth with [Carl King](http://carlkingdom.com/). He claimed he was willing to bet that [President Trump would use nuclear weapons within the next 6 months](https://twitter.com/carlking/status/822128552015314945). [Gwern](https://www.gwern.net/) and I were willing to give him 3:1 odds against. Despite being quite active on Twitter, King was rather reluctant to hash out the details.
+**2017/01** - I went back-and-forth with [Carl King](http://carlkingdom.com/). He claimed he was willing to bet that [President Trump would use nuclear weapons within the next 6 months](https://twitter.com/carlking/status/822128552015314945). [Gwern](https://www.gwern.net/) and I were willing to give him 3:1 odds against. Despite being quite active on Twitter, King was rather reluctant to hash out the details. He eventually stopped responding to my requests. 6 months later, no nukes. I [called out King on his hypocrisy](https://twitter.com/ggreer/status/888059597407141889), which seems to have been well-received.
+
+<!--
+Tweet archived at http://archive.is/s3YXi
+-->
 
 **2016/10** - I bet Aaron Silverbook that upon a Clinton victory in the election, there would be no major unrest. That is: No national guard called up; no curfews or martial law declared. As Clinton did not win the election, our bet was nullified.
 
