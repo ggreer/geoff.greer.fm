@@ -6,7 +6,7 @@ status: publish
 title: About Me
 ---
 
-<img alt="Me" src="/me-2015.jpg" style="float: right; padding-left: 1em; height: 300px; width: 300px;">
+<a href="/me-2017.jpg"><img alt="Me" src="/me-2017.jpg" style="float:left; padding-right: 1em; height: 300px; width: 300px;"></a>
 
 My name is Geoff Greer. I live in Oakland. I like to mess with computers and motorcycles.
 
