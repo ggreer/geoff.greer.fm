@@ -8,10 +8,10 @@ categories:
 - Politics
 ---
 
-A useful way to combat [status quo bias](https://en.wikipedia.org/wiki/Status_quo_bias) is to ask, "What things wouldn't be allowed if they were invented today?"
+A useful way to recognize [status quo bias](https://en.wikipedia.org/wiki/Status_quo_bias) is to ask, "What things wouldn't be allowed if they were introduced today?"
 
 
-### Drugs
+## Drugs
 
 The obvious ones: alcohol and tobacco. These are highly addictive and clearly harmful. Tobacco is responsible for ≈20% of premature deaths in the US.[^tobacco] Alcohol is responsible for 10% of working-age deaths.[^alcohol] Had these substances been discovered today, is there any doubt that authorities would crack down on them mercilessly? Is there any doubt that they would have the public's full support? Our society has gone berserk over far less harmful substances. The reason these drugs are legal is [path dependence](https://en.wikipedia.org/wiki/Path_dependence).
 
@@ -22,7 +22,7 @@ I'm not even sure if caffeine would be legal. It's addictive, and people regular
 (Note: I am not saying it's a good idea to ban these drugs, just that they would be banned if invented today.)
 
 
-### Food
+## Food
 
 Meat would certainly be banned, as it runs afoul of every animal cruelty law. Raising animals for slaughter would be as despised as dog fighting. Our laws regarding chickens highlight the double-standard. It's perfectly legal to put chickens into cages too small for them to stand in, leave them in their own filth for 6 weeks, then [turn them into a pink paste](https://en.wikipedia.org/wiki/Mechanically_separated_meat). But cockfighting is illegal because it causes unnecessary animal suffering. Even if meat caused no suffering, it would still be banned due to health concerns. Every year in the US, meat-borne diseases sicken millions and kill around 5,000 people.[^meat] Had the same rate of illness and death come from Soylent, there would be class-action lawsuits and congressional hearings. People would ask, "How could the FDA let this happen?"
 
@@ -31,7 +31,7 @@ Some plants might be stricken from the menu. Today's produce is the result of se
 Speaking of selective breeding, what about pets? Many dogs suffer from the traits bred into them. Examples include [Pugs](https://en.wikipedia.org/wiki/Pug#Health_problems), [Bulldogs](https://en.wikipedia.org/wiki/Bulldog#Health), and [Shih Tzus](https://en.wikipedia.org/wiki/Shih_Tzu#Health). Had these breeds been created today through genetic engineering, the public would be outraged.
 
 
-### Transportation
+## Transportation
 
 Several forms of transportation would likely be restricted. Motorcycles are right out. They're dangerous, noisy, and fueled by a carcinogenic, flammable liquid. It's hard to convey just how hazardous motorcycles are. According to Wikipedia[^motorcycle]:
 
@@ -42,12 +42,12 @@ In the US, the fatality rate for motorcycles is 23 per 100 million miles travele
 [General aviation](https://en.wikipedia.org/wiki/General_aviation) (that is, private planes) would never be allowed today. Consider how society has reacted to drones. Now imagine drones were 50 times heavier and ran on leaded gasoline. Who would ever permit such machines to fly above their homes? Apparently we would, because that's what Cessnas are.
 
 
-### Fun
+## Fun
 
 A lot of fun things are just plain dangerous: fireworks, mountaineering, football, boxing, surfing, auto racing. These all reliably kill and injure people while serving no purpose other than entertainment. I doubt half of them would remain legal if introduced today.
 
 
-### Other
+## Other
 
 Could water fluoridation could happen today? I don't think so. Too many people would express worry and doubt. Some would ask, "What if fluoride has long-term health consequences?" Others would claim that fluoride causes autism. There would be enough controversy and protest that I doubt any municipality would introduce fluoridation. At best it would be like vaccination, with most parents giving fluoride supplements to their children.
 
@@ -55,7 +55,7 @@ Could water fluoridation could happen today? I don't think so. Too many people w
 <!-- subwoofers? -->
 
 
-### Conclusion
+## Conclusion
 
 Again, I am not saying these things should be banned or restricted. I enjoy alcohol, caffeine, and fireworks (occasionally all at once). I'm simply pointing out how society's standards have changed. In the past, people didn't curtail many inventions and products. Had society been as risk-averse then as it is today, would we be better off? I don't think so. Does that mean we should we be more enthusiastic about allowing new inventions today? Probably.
 
