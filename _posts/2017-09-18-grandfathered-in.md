@@ -13,18 +13,18 @@ A useful way to combat [status quo bias](https://en.wikipedia.org/wiki/Status_qu
 
 ### Drugs
 
-The are obvious ones: alcohol and tobacco. These are highly addictive and clearly harmful. Tobacco is responsible for ≈20% of premature deaths in the US.[^tobacco] Alcohol is responsible for 10% of working-age deaths.[^alcohol] Had these substances been discovered today, is there any doubt that authorities would crack down on them mercilessly? Is there any doubt that they would have the public's full support? Our society has gone berserk over far less harmful substances. The reason these drugs are legal is [path dependence](https://en.wikipedia.org/wiki/Path_dependence).
+The obvious ones: alcohol and tobacco. These are highly addictive and clearly harmful. Tobacco is responsible for ≈20% of premature deaths in the US.[^tobacco] Alcohol is responsible for 10% of working-age deaths.[^alcohol] Had these substances been discovered today, is there any doubt that authorities would crack down on them mercilessly? Is there any doubt that they would have the public's full support? Our society has gone berserk over far less harmful substances. The reason these drugs are legal is [path dependence](https://en.wikipedia.org/wiki/Path_dependence).
 
-I'm not even sure if caffeine would be legal. It's mildly addictive, and people regularly overdose on it. If not for the centuries-old culture of cafés, it could easily have become a party drug.
+I'm not even sure if caffeine would be legal. It's addictive, and people regularly overdose on it. If not for the centuries-old culture of cafés, it could easily have become a party drug.
 
 <!-- prescription only: most over-the-counter medications (cough syrup, tylenol) -->
 
-(Note: I am not saying we should ban these drugs, just that they would be banned if invented today.)
+(Note: I am not saying it's a good idea to ban these drugs, just that they would be banned if invented today.)
 
 
 ### Food
 
-Meat would certainly be banned if invented today, as it runs afoul of every animal cruelty law. Raising animals for slaughter would be as despised as dog fighting. Our laws regarding chickens highlight the double-standard. It's perfectly legal to put chickens into cages too small for them to stand up in, then leave them in their own filth for 6 weeks, then [turn them into paste](https://en.wikipedia.org/wiki/Mechanically_separated_meat). But cockfighting is illegal because unnecessary animal suffering is unethical. Even if meat caused no suffering, it would still be banned due to health concerns. Every year in the US, meat-borne diseases sicken millions and kill around 5,000 people.[^meat] Had the same rate of illness and death come from Soylent, there would be class-action lawsuits and congressional hearings. People would ask, "How could the FDA let this happen?"
+Meat would certainly be banned, as it runs afoul of every animal cruelty law. Raising animals for slaughter would be as despised as dog fighting. Our laws regarding chickens highlight the double-standard. It's perfectly legal to put chickens into cages too small for them to stand in, leave them in their own filth for 6 weeks, then [turn them into a pink paste](https://en.wikipedia.org/wiki/Mechanically_separated_meat). But cockfighting is illegal because it causes unnecessary animal suffering. Even if meat caused no suffering, it would still be banned due to health concerns. Every year in the US, meat-borne diseases sicken millions and kill around 5,000 people.[^meat] Had the same rate of illness and death come from Soylent, there would be class-action lawsuits and congressional hearings. People would ask, "How could the FDA let this happen?"
 
 Some plants might be stricken from the menu. Today's produce is the result of selective breeding… or worse. Most grapefruits in your supermarket have radioactive ancestors. The process is called [atomic gardening](https://en.wikipedia.org/wiki/Atomic_gardening), and it's still used today. The changes made in GMOs are far more precise and limited in scope, yet most Americans are wary of ingesting such carefully-crafted organisms. We prefer to play it safe and deal with plants like lemons and celery, which can [cause chemical burns (NSFW)](https://en.wikipedia.org/wiki/Phytophotodermatitis).
 
@@ -49,7 +49,7 @@ A lot of fun things are just plain dangerous: fireworks, mountaineering, footbal
 
 ### Other
 
-Could water fluoridation could happen today? I don't think so. Too many people would be worried. Some would ask, "What if fluoride has long-term health consequences?" Others would claim that fluoride causes autism. There would be enough controversy and protest that I doubt any municipality would introduce fluoridation. At best it would be like vaccination, with most parents giving fluoride supplements to their children.
+Could water fluoridation could happen today? I don't think so. Too many people would express worry and doubt. Some would ask, "What if fluoride has long-term health consequences?" Others would claim that fluoride causes autism. There would be enough controversy and protest that I doubt any municipality would introduce fluoridation. At best it would be like vaccination, with most parents giving fluoride supplements to their children.
 
 <!-- Paper money. -->
 <!-- subwoofers? -->
@@ -57,7 +57,7 @@ Could water fluoridation could happen today? I don't think so. Too many people w
 
 ### Conclusion
 
-Again, I am not saying these things should be banned or restricted. I enjoy alcohol, caffeine, and fireworks (occasionally all at once). I'm simply pointing out how society's standards have changed. In the past, people were either unwilling or unable to curtail many inventions and products. Had society been as risk-averse then as it is today, would we be better off? I don't think so. Does that mean we should we be more enthusiastic about allowing new inventions today? Probably.
+Again, I am not saying these things should be banned or restricted. I enjoy alcohol, caffeine, and fireworks (occasionally all at once). I'm simply pointing out how society's standards have changed. In the past, people didn't curtail many inventions and products. Had society been as risk-averse then as it is today, would we be better off? I don't think so. Does that mean we should we be more enthusiastic about allowing new inventions today? Probably.
 
 
 ---
