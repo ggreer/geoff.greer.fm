@@ -90,7 +90,7 @@ At this point, I'd been at it for almost two hours. I was getting pretty frustra
 </fontconfig>
 {% endhighlight %}
 
-…and was finally rewarded with pixel-perfect text:
+…and was at last rewarded with pixel-perfect text:
 
 <div style="text-align: center;">
 	<img alt="Gnome terminal with correctly rendered fonts" src="/images/Screenshot from 2017-06-11 20-02-44.png" style="width: 471px; height: 239px;" />
