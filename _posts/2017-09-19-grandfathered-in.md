@@ -15,7 +15,7 @@ A useful way to recognize [status quo bias](https://en.wikipedia.org/wiki/Status
 
 The obvious ones: alcohol and tobacco. These are highly addictive and clearly harmful. Tobacco is responsible for ≈20% of premature deaths in the US.[^tobacco] Alcohol is responsible for 10% of working-age deaths.[^alcohol] Had these substances been discovered today, is there any doubt that authorities would crack down on them mercilessly? Is there any doubt that they would have the public's full support? Our society has gone berserk over far less harmful substances. The reason these drugs are legal is [path dependence](https://en.wikipedia.org/wiki/Path_dependence).
 
-I'm not even sure if caffeine would be legal. It's addictive, and people regularly overdose on it. If not for the centuries-old culture of cafés, it could easily have become a party drug.
+I'm not even sure if caffeine would be legal. [It's addictive](https://en.wikipedia.org/wiki/Caffeine_dependence), and people [regularly overdose on it](https://en.wikipedia.org/wiki/Caffeine#Overdose). If not for the centuries-old culture of cafés, it could easily have become a party drug.
 
 <!-- prescription only: most over-the-counter medications (cough syrup, tylenol) -->
 
