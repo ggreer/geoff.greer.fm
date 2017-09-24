@@ -7,7 +7,7 @@ permalink: /:year/:month/:day/:title/
 highlighter: pygments
 url: https://geoff.greer.fm
 author: Geoff Greer
-title: Geoff's Site
+title: Geoff Greer's site
 exclude:
   - new_post.sh
   - less.sh
