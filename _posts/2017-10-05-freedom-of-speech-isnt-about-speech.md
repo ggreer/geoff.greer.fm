@@ -40,7 +40,7 @@ Imagine our society passes laws to ban the publishing of abhorrent and bigoted i
 
 ## Conclusion
 
-The arguments above aren't new[^credit], but they seem to have disappeared from discourse. That's unfortunate, as freedom of speech is crucial to the well-being of our society. That's why it's important, not because it's good for the speaker. And it's certainly not some noble ideal to be worshipped for its own sake. The original basis for free speech was pragmatic, not dogmatic. If Paine and Mill had thought that censorship would make people better-off, they would have said so.
+The arguments above aren't new[^credit], but they seem to have disappeared from discourse. That's unfortunate, as freedom of speech is crucial to the well-being of our society. *That* is why it's important, not because it's good for the speaker, and certainly not because it's some noble ideal to be worshipped for its own sake. The original basis for free speech was pragmatic, not dogmatic. If Paine and Mill had thought that censorship would make people better-off, they would have said so.
 
 I'm disappointed that so many people misunderstand this. Hopefully that changes.
 
