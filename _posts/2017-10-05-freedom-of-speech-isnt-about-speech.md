@@ -17,7 +17,7 @@ A concise version of this argument comes from Thomas Paine's introduction to [*T
 
 > You will do me the justice to remember, that I have always strenuously supported the Right of every Man to his own opinion, however different that opinion might be to mine. He who denies to another this right, makes a slave of himself to his present opinion, because he precludes himself the right of changing it.[^reason_intro]
 
-Paine wrote this in 1794, while imprisoned in Liechtenstein. Paine avoided execution[^paine_execution] and eventually returned to the US.
+Paine wrote this in 1794, while imprisoned in Paris. Paine avoided execution[^paine_execution] and eventually returned to the US.
 
 80 years later, John Stuart Mill made the same point in [*On Liberty*](https://en.wikipedia.org/wiki/On_Liberty):
 
