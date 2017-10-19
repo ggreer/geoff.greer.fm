@@ -30,16 +30,16 @@ Several forms of transportation would likely be restricted. Motorcycles are righ
 
 In the US, the fatality rate for motorcycles is 23 per 100 million miles traveled. Assuming a typical rider travels 4,000 miles per year and rides for 40 years, that amounts to a 4% chance of death. That's only the risk of *death*. The chance of crippling injury or brain damage is likely higher.
 
-[General aviation](https://en.wikipedia.org/wiki/General_aviation) (that is, private planes) would never be allowed today. Consider how society has reacted to drones. Now imagine drones were 50 times heavier and ran on leaded gasoline. Who would ever permit such machines to fly above their homes? Apparently we would, because that's what Cessnas are.
+[General aviation](https://en.wikipedia.org/wiki/General_aviation) (that is, private planes) would never be allowed today. Consider how society has reacted to drones. Now imagine drones were 50 times heavier and ran on leaded gasoline. Who would ever permit such machines to fly above their homes? Apparently we would, because they're called Cessnas.
 
 
 ## Food
 
 Meat would certainly be banned, as it runs afoul of every animal cruelty law. Raising animals for slaughter would be as despised (and as illegal) as dog fighting. Even if meat caused no suffering, it would still be banned due to health concerns. Every year in the US, meat-borne diseases sicken millions and kill around 5,000 people.[^meat] Had the same rate of illness and death come from Soylent, there would be class-action lawsuits and congressional hearings. People would ask, "How could the FDA let this happen?"
 
-Some plants might be stricken from the menu. Today's produce is the result of selective breeding… or worse. Most grapefruits in your supermarket have radioactive ancestors, courtesy of [atomic gardening](https://en.wikipedia.org/wiki/Atomic_gardening). The changes made in GMOs are far more precise and limited in scope, yet most Americans are wary of ingesting such carefully-crafted organisms. We prefer to play it safe and deal with plants like lemons and celery, which can [cause chemical burns (NSFW)](https://en.wikipedia.org/wiki/Phytophotodermatitis).
+Some plants might be stricken from the menu. Today's produce is the result of selective breeding… or worse. Most grapefruits in your supermarket have radioactive ancestors, courtesy of [atomic gardening](https://en.wikipedia.org/wiki/Atomic_gardening). The changes made in GMOs are far more precise and limited in scope, yet most Americans are wary of ingesting such carefully-crafted organisms. We prefer to play it safe and deal with plants like lemons and celery, which can [cause chemical burns (warning: graphic images)](https://en.wikipedia.org/wiki/Phytophotodermatitis).
 
-Speaking of selective breeding, what about pets? Many dogs suffer from the traits bred into them. Examples include [Pugs](https://en.wikipedia.org/wiki/Pug#Health_problems), [Bulldogs](https://en.wikipedia.org/wiki/Bulldog#Health), and [Shih Tzus](https://en.wikipedia.org/wiki/Shih_Tzu#Health). Had these breeds been created today through genetic engineering, the public would be outraged.
+Speaking of selective breeding: What about pets? Many dogs suffer from the traits bred into them. Examples include [Pugs](https://en.wikipedia.org/wiki/Pug#Health_problems), [Bulldogs](https://en.wikipedia.org/wiki/Bulldog#Health), and [Shih Tzus](https://en.wikipedia.org/wiki/Shih_Tzu#Health). Had these breeds been created today through genetic engineering, the public would be outraged.
 
 
 ## Fluoridation
@@ -54,7 +54,7 @@ Could water fluoridation could happen today? I don't think so. Too many people w
 
 These are just a few examples. I can go on, though I'll spare myself the effort of going into detail. A lot of fun things are just plain dangerous: fireworks, mountaineering, football, boxing, surfing, auto racing. These all reliably kill and cripple people while serving no purpose other than entertainment. I doubt half of them would remain legal if introduced today.
 
-Again, I am not saying these things should be banned or restricted. I enjoy alcohol, caffeine, and fireworks (occasionally all at once). I just wanted to show how society's standards have changed so I could make another point: Had the past been as risk-averse as the present, would we be better off? I don't think so. Does that mean we should we be more enthusiastic about allowing new inventions? Probably.
+Again, I am not saying these things should be banned or restricted. I enjoy alcohol, caffeine, and fireworks (occasionally all at once). I wanted to show how society's standards have changed so I could make another point: Had the past been as risk-averse as the present, would we be better off? I don't think so. Does that mean we should we be more enthusiastic about allowing new inventions? Probably.
 
 
 ---
