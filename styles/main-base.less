@@ -5,7 +5,7 @@
 }
 
 @media_max_width: 768px;
-@max_width: 720px;
+@max_width: 768px;
 @min_width: 320px;
 @body_margin: 10px;
 @space: 16px;
@@ -152,18 +152,20 @@ div.row {
     .nows;
     max-width: @max_width;
     min-width: @min_width;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 div.col {
     .nows;
     padding-bottom: @space;
-    display: inline-block;
     vertical-align: top;
-    &.w1 { width: 120px; }
-    &.w2 { width: 240px; }
-    &.w3 { width: 360px; }
-    &.w4 { width: 480px; }
-    &.w5 { width: 600px; }
-    &.w6 { width: 720px; }
+    &.w1 { min-width: @max_width/6; flex: 0 0 100%/6; }
+    &.w2 { min-width: @max_width/3; flex: 0 0 100%/3; }
+    &.w3 { min-width: @max_width/3; flex: 0 0 100%/2; }
+    &.w4 { min-width: @max_width/3; flex: 0 0 100%/1.5; }
+    &.w5 { min-width: @max_width/3; flex: 0 0 100%/(5/6); }
+    &.w6 { min-width: @max_width/3; flex: 0 0 100%; }
 }
 
 .fixed-font {
@@ -259,10 +261,10 @@ code {
     .gallery-image {
         margin: auto;
         position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         max-height: 100%;
         max-width: 100%;
         @media (min-width: @media_max_width) {
