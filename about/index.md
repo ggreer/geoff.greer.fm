@@ -12,7 +12,7 @@ My name is Geoff Greer. I live in Oakland. I like to mess with computers and mot
 
 Works speak louder than words, so look at [my GitHub activity](https://github.com/ggreer).
 
-If you'd like to take advantage of my expertise, I'm available for [contract work](/hire/).
+If you'd like to take advantage of my expertise, I'm often available for [contract work](/hire/).
 
 <h4><img src="/icons/resume_icon.png" height="16" width="16" alt="" /> <a href="/resume/" rel="me">Resume</a></h4>
 
