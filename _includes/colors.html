@@ -3,7 +3,7 @@
 var _gaq = _gaq || [];
 var main_css;
 var code_css;
-var invert_text = null;
+var invert_text = [];
 var styles = {
   light: ["Light", "#fff", "/styles/main-light.css", "/styles/solarized-light.css", "Go dark."],
   dark: ["Dark", "#000", "/styles/main-dark.css", "/styles/solarized-dark.css", "Brighten my day."]
@@ -14,7 +14,9 @@ function set_style(style) {
   document.body.style.backgroundColor = style[1];
   main_css.attributes.href.value = style[2];
   code_css.attributes.href.value = style[3];
-  invert_text.textContent = style[4];
+  invert_text.forEach(function (elem) {
+    elem.textContent = style[4];
+  });
   date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
   document.cookie = "main-css=" + main_css.attributes.href.value + "; expires=" + date.toGMTString() + "; path=/";
   return style;
@@ -25,7 +27,7 @@ function invert_colors() {
 }
 document.addEventListener("DOMContentLoaded", function () {
   code_css = document.getElementById("code-css");
-  invert_text = document.getElementById("invert-colors");
+  invert_text = document.querySelectorAll(".invert-colors");
   main_css = document.getElementById("main-css");
   if (window.location.hash.slice(1) === "dark") {
     set_style(styles.dark);
