@@ -39,7 +39,7 @@ provider = storage_driver(user, api_key)
 
 
 def md5(path):
-    f = open(path)
+    f = open(path, 'rb')
     data = True
     md5sum = hashlib.md5()
     while data:
