@@ -21,7 +21,7 @@ This screenshot is particularly egregious, but it exemplifies a common issue. Ev
 
 I'm sure if you asked each UI designer involved, they'd feel justified in their decision. The OS needs a menu bar. Application windows need title bars. Browsers need location and tab bars. No single pebble is responsible for the avalanche.
 
-But if you are a web designer, and you think that having a fixed bar on your site makes for happier users, you are almost certainly mistaken. If you *must* add a top bar, hide it as the user scrolls down, then show it on scroll up. This interaction pattern is common on mobile devices, and it's not much effort to add to PCs. You only need to choose a library like [Headroom.js](http://wicky.nillia.ms/headroom.js/).
+But if you are a web designer, and you think that having a fixed bar on your site makes for happier users, you are almost certainly mistaken. If you *must* add a top bar, hide it as the user scrolls down, then show it on scroll up. This interaction pattern is common on mobile devices and it's not much effort to add to PCs. You can use a library like [Headroom.js](http://wicky.nillia.ms/headroom.js/).
 
 Hopefully, future designers will look back on this era of vertical annexation the same way we view excesses such as the <code>&lt;blink&gt;</code> tag.
 
