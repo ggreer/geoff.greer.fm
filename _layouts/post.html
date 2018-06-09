@@ -10,14 +10,16 @@
 {% include colors.html %}
 <div id="wrapper">
 {% include header.html %}
+<article>
 <div class="post-header">
-<div class="post-title"><a href="{{ page.url }}">{{ page.title | xml_escape }}</a></div>
+<div class="post-title" itemprop="title"><a href="{{ page.url }}">{{ page.title | xml_escape }}</a></div>
 <hr />
-<div class="post-date">{{ page.date | date_to_string }}</div>
+<div class="post-date" itemprop="pubdate">{{ page.date | date_to_string }}</div>
 </div>
 <div class="post">
 {{ content }}
 </div>
+</article>
 <hr />
 <div class="nav">
 {% if page.previous %}
