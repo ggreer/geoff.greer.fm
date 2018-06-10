@@ -22,21 +22,49 @@ I have extensive operational experience with PostgreSQL, MySQL, Cassandra, Level
 ## Employment History
 ---
 
-CoreOS: October 2016 - Present  
+### Red Hat <span style="float: right;">February 2018 - June 2018</span>  
 Senior Software Engineer
 
-Floobits: September 2012 - October 2016  
+([CoreOS was acquired by Red Hat](https://www.redhat.com/en/about/press-releases/red-hat-acquire-coreos-expanding-its-kubernetes-and-containers-leadership).)
+- After the acquisition, Red Hat chose to use the Tectonic Console codebase for their [new OpenShift Console](https://github.com/openshift/console). See [the project's contributor stats](https://github.com/openshift/console/graphs/contributors) to get some idea of my work.
+
+
+### CoreOS <span style="float: right;">October 2016 - February 2018</span>  
+Senior Software Engineer
+
+- Technical lead for the Tectonic Console, which became the starting codebase for Red Hat's new [OpenShift Console](https://github.com/openshift/console).
+- Helped migrate Tectonic Console from Angular 1 to React.
+- Helped develop the UI for the [Tectonic Installer](https://github.com/coreos/tectonic-installer)
+
+
+### Floobits <span style="float: right;">September 2012 - October 2016</span>  
 CEO & Co-founder  
-Floobits never really took off, and is now a side project. Still, it pays the bills.
 
-Cloudkick/Rackspace: March 2010 - August 2012  
+- Full stack. Built frontend JS, Django app, backend services, and editor plugins.
+- Discovered a bug in Node.js: [Crash when trying to create buffers with invalid base64](https://github.com/nodejs/node/issues/3496)  
+
+Floobits never really took off and is now a side project. Still, it pays the bills.
+
+
+### Cloudkick/Rackspace <span style="float: right;">March 2010 - August 2012</span>  
 Software Engineer
 
-Bloglines/Ask.com: April 2007 - February 2010  
+Discovered a bug in Node.js: [Signals aren't received when debugging](https://github.com/nodejs/node-v0.x-archive/issues/3167). Explained in more detail [here](https://geoff.greer.fm/2012/05/30/leaky-abstractions-a-journey-into-mordor/).
+
+
+### Bloglines/Ask.com <span style="float: right;">April 2007 - February 2010</span>  
 Software Engineer
 
-Inland Northwest Health Services: July 2006 - April 2007  
+### Inland Northwest Health Services <span style="float: right;">July 2006 - April</span> 2007  
 Web Developer
+
+
+## Extracurricular Activities
+---
+
+Authored `ag`, a text searching tool similar to `ack`.
+
+See [my GitHub](https://github.com/ggreer/) for more.
 
 ## Education
 ---
