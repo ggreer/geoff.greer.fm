@@ -2,6 +2,7 @@
 layout: page
 title: The Silver Searcher
 releases:
+- 2.2.0
 - 2.1.0
 - 2.0.0
 - 1.0.3
