@@ -28,6 +28,9 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    sf_marathon_2018:
+      best_image: 20x30-SANR2195.jpeg
+      sort_reverse: true
     x62:
       best_image: DSC_2308.JPG
     oregon_outback_2017:
