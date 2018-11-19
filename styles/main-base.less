@@ -129,11 +129,21 @@ h1, h2, h3, h4, h5, h6 {
 .post {
     line-height: 145%;
     padding-bottom: 1em;
+    max-width: 60ch; // Narrow, but very readable
     sup {
         line-height: 100%;
         margin-left: 1px;
     }
-    img { max-width: 100%; }
+    @media (max-width: 60ch) {
+        img { max-width: 100%; }
+    }
+    @media (min-width: 60ch) and (max-width: (@body_margin * 2 + @media_max_width)) {
+        img { max-width: ~"calc(100vw - @{body_margin} * 2)"; }
+    }
+    @media (min-width: (@body_margin * 2 + @media_max_width)) {
+        img { max-width: @max_width; }
+    }
+
     a, a:link { text-decoration: underline; }
     table {
         border-collapse: collapse;
