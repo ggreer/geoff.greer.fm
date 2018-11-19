@@ -3,7 +3,7 @@ date: '2012-03-29 05:56:16'
 layout: post
 slug: get-a-toehold
 status: draft
-title: Learning: Get a Toehold
+title: 'Learning: Get a Toehold'
 categories:
 - Computers
 - Productivity
