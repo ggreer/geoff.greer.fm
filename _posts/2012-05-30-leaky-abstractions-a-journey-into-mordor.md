@@ -52,7 +52,7 @@ I built a simple failure case and created [an issue](https://github.com/joyent/n
 
 To summarize: I went from a bug in a program, to a bug in the test suite for that program, to a bug in Node.js, which was caused by a bug in [V8](http://code.google.com/p/v8/). Talk about your leaky abstractions!
 
-As [Douglas Crockford](http://www.crockford.com/) [says](http://www.youtube.com/watch?v=taaEzHI9xyY#t=26m50s):
+As [Douglas Crockford](http://www.crockford.com/) [says](http://www.youtube.com/watch?v=taaEzHI9xyY&t=26m50s):
 
 >I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, "I'm done. This is stupid. I'm going to do something else." But not us, 'cause there's something really wrong with us.
 

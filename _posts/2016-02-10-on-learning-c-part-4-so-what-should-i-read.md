@@ -43,7 +43,7 @@ if (a = b) {
 
 I had a single equals in a conditional. That meant I was assigning `a` to `b` instead of comparing them. As soon as I added another equals, my program worked flawlessly. All that effort and frustration was caused by a single missing character.[^7]
 
-I'm still surprised that, afterwards, I remained interested in writing code. I've quoted him before, but [Douglas Crockford](http://www.crockford.com/) [said it best](http://www.youtube.com/watch?v=taaEzHI9xyY#t=26m50s):
+I'm still surprised that, afterwards, I remained interested in writing code. I've quoted him before, but [Douglas Crockford](http://www.crockford.com/) [said it best](http://www.youtube.com/watch?v=taaEzHI9xyY&t=26m50s):
 
 >I think there has to be something seriously wrong with you in order to do this work. A normal person, once they've looked into the abyss, will say, "I'm done. This is stupid. I'm going to do something else." But not us, 'cause there's something really wrong with us.
 
