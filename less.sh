@@ -2,10 +2,10 @@
 
 for less_file in styles/*.less
 do
-  if [[ $less_file == "styles/main-base.less" ]]; then
-    continue
-  fi
-  if [[ $less_file == "styles/colors.less" ]]; then
+  if [[
+    $less_file == "styles/colors.less" ||
+    $less_file == "styles/gallery.less" ||
+    $less_file == "styles/main-base.less" ]]; then
     continue
   fi
   css_file=$(echo "$less_file" | sed -E "s/.less//")
