@@ -1,10 +1,13 @@
 # Jekyll 3 seems to not interact well with rdiscount/discount. Use default markdown processor for now.
-# markdown: rdiscount
+# default markdown processor is kramdown
+kramdown:
+  show_warnings: true
+  parse_block_html: true
 # rdiscount:
 #   extensions: [smart, strict]
 paginate: 10
 permalink: /:year/:month/:day/:title/
-highlighter: pygments
+# highlighter: pygments
 url: https://geoff.greer.fm
 author: Geoff Greer
 title: Geoff Greer's site
