@@ -19,8 +19,6 @@ I'm 5'6", so the bike is pretty tall for me. I can barely touch my toes to the p
 
 Finally, it can do this: 
 
-<embed src="https://www.youtube.com/v/U_Xkywi5XGM?version=3&amp;hl=en_US&amp;rel=0" width="640" height="480" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash">
-
-</embed>
+<embed src="https://www.youtube.com/v/U_Xkywi5XGM?version=3&amp;hl=en_US&amp;rel=0" width="640" height="480" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" />
 
 OK, maybe it's not safer.

@@ -30,7 +30,7 @@ While Eliezer Yudkowsky's post convinced me to sign up for cryonics, the most pe
 
 This presentation by Brian Wowk does a good job showing the state of cryopreservation technology:
 
-<embed src="http://video.google.com/googleplayer.swf?docid=2157944955525659858&amp;hl=en&amp;fs=true" width="480" height="385" allowscriptaccess="never" allowfullscreen="true" wmode="transparent" type="application/x-shockwave-flash"></embed>
+<embed src="http://video.google.com/googleplayer.swf?docid=2157944955525659858&amp;hl=en&amp;fs=true" width="480" height="385" allowscriptaccess="never" allowfullscreen="true" wmode="transparent" type="application/x-shockwave-flash" />
 
 For those who don't want to spend 25 minutes watching the video, the main points are:
 

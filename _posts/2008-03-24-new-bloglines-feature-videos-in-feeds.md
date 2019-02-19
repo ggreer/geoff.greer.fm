@@ -56,5 +56,4 @@ I made this list by asking my co-workers for video sites. If I'm missing somethi
 
 Oh, and the obligatory demonstration of this feature:
 
-<embed src="https://www.youtube.com/v/VhnVQizc69c?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true">
-</embed>
+<embed src="https://www.youtube.com/v/VhnVQizc69c?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true" />
