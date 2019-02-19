@@ -2,9 +2,6 @@
 # default markdown processor is kramdown
 kramdown:
   show_warnings: true
-  parse_block_html: true
-# rdiscount:
-#   extensions: [smart, strict]
 paginate: 10
 permalink: /:year/:month/:day/:title/
 # highlighter: pygments
