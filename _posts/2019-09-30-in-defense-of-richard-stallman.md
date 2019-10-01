@@ -49,3 +49,11 @@ I think everyone is overlooking a bigger issue: **You don't get the free softwar
 There are pedantic ideologues trying moonshots today. They're not famous yet, because they haven't succeeded. And due to their lack of fame, you won't hear about them when they are inevitably canceled. And we will all be poorer for it.
 
 By satisfying the mob today, we are sacrificing our future. That's the real risk.
+
+---
+
+Update: [According to his website, Stallman has found housing](https://archive.is/nRAqB). He also says he will continue to head GNU:
+
+> I continue to be the Chief GNUisance of the GNU Project.  
+> I do not intend to stop any time soon.  
+> I found new interim housing — thanks to those who helped.  
