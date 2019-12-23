@@ -57,3 +57,5 @@ Update: [According to his website, Stallman has found housing](https://archive.i
 > I continue to be the Chief GNUisance of the GNU Project.  
 > I do not intend to stop any time soon.  
 > I found new interim housing — thanks to those who helped.  
+
+Update (2019-10-01): I discussed Stallman's removal with some others on [an episode of The Bailey Podcast](https://soundcloud.com/thebaileypodcast/e006).
