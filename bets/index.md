@@ -6,11 +6,19 @@ status: publish
 title: Bets
 ---
 
-When my predictions disagree with someone else's, I prefer to bet instead of argue. As the economist Alex Tabarrok says, [A bet is a tax on bullshit](http://marginalrevolution.com/marginalrevolution/2012/11/a-bet-is-a-tax-on-bullshit.html). Betting stops people from saying things they don't actually believe. It's amazing how quickly people are to qualify and hedge their statements once incorrectness causes monetary loss.
+When my predictions disagree with someone else's, I prefer to bet instead of argue. As the economist Alex Tabarrok says, [A bet is a tax on bullshit](http://marginalrevolution.com/marginalrevolution/2012/11/a-bet-is-a-tax-on-bullshit.html). Betting stops people from saying things they don't actually believe. It's amazing how, once money is on the line, people suddenly qualify and hedge their statements.
 
 Below are my bets (and some of my attempts to bet), starting with the most recent.
 
 ---
+
+**2020/03** - I bet Patrick Breitenbach $100 that SARS-CoV-2 would kill over 20,000 Americans by the end of 2020. [Source](https://twitter.com/pbreit/status/1241106016663523328) ([archive](https://archive.is/6kaUA))
+
+**2020/03** - I bet PolishBearSneeze $100 that SARS-CoV-2 would cause over 250,000 deaths worldwide by the end of 2020. [Source](https://old.reddit.com/r/TheMotte/comments/fjzqsd/coronavirus_quarantine_thread_week_2/fkvz6ze/?context=2) ([archive](https://archive.is/bI891))
+
+<!--
+**2020/03** - Tried to bet Twitter user ElonBachman that there would be over 25,000 Americans killed by SARS-CoV-2 in 2020. He ignored me. ([Source 1](https://twitter.com/ggreer/status/1237164317142736896). [Source 2](https://twitter.com/ggreer/status/1241140854892285953).)
+-->
 
 **2017/01** - I went back-and-forth with [Carl King](http://carlkingdom.com/). He claimed he was willing to bet that [President Trump would use nuclear weapons within the next 6 months](https://twitter.com/carlking/status/822128552015314945). [Gwern](https://www.gwern.net/) and I were willing to give him 3:1 odds against. Despite being quite active on Twitter, King was rather reluctant to hash out the details. He eventually stopped responding to my requests. 6 months later, no nukes. I [called out King on his hypocrisy](https://twitter.com/ggreer/status/888059597407141889), which seems to have been well-received.
 
