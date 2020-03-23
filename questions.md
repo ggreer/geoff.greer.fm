@@ -5,7 +5,7 @@ title: Open Questions
 
 ### Food Allergies
 
-Why have food allergies increased by a factor of 80 since 1940? This seems to be a worldwide phenomenon, at least among developed countries.
+Why have food allergies increased by a factor of 80 since 1940? This seems to be a worldwide phenomenon. Despite different governments, cultures, diets, and hobbies, we all seem to be getting more allergic.
 
 
 ### [Neutron Lifetime Puzzle](https://en.wikipedia.org/wiki/Free_neutron_decay#Neutron_lifetime_puzzle)
