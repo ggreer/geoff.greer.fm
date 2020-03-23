@@ -3,11 +3,8 @@ layout: page
 title: My Development Environment
 ---
 
-It's not uncommon for me to get emails like this:
-
-> I checked out your website and saw you have a custom laptop.  I'm going to finally retire my Macbook Pro and looking at the new XPS 15" with 8th Gen processor for development.  What do you recommend and do you develop in Linux, Mac, or Windows?  I'm just starting off compared to you any tips appreciated.
-
 A substantial number of people have asked me about my development environment. What sort of hardware do I use? What operating system suits me? What text editor do I favor? Etcetera. Well, here are my answers.
+
 
 ### Hardware
 
