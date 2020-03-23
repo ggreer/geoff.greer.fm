@@ -3,6 +3,18 @@ layout: default
 title: ~/
 ---
 
+<p>My name is Geoff Greer. This is my website.</p>
+
+<ul style="font-size: 121%">
+  <li><a href="/about/">About me</a></li>
+  <li><a href="/bets/">Bets</a></li>
+  <li><a href="/dev/">Dev environment</a></li>
+  <li><a href="/projects/">Projects</a></li>
+  <li><a href="/questions/">Questions</a></li>
+</ul>
+
+<h2>Posts</h2>
+
 <div id="post-list">
 {% for post in site.posts %}
 {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
