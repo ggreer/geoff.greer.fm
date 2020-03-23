@@ -7,6 +7,7 @@ title: "Reading the Qur'an"
 categories:
   - 'Everything/Nothing'
   - Religion
+  - Book Review
 ---
 
 A few weeks ago, I read the Qur'an<sup>[\[1\]](#ref_1)</sup> while on vacation. I'm not religious, but I figured it must have some positive qualities if over a billion people believe it to be the greatest book ever written. Also it was a short read, maybe 15 hours total.
