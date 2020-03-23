@@ -10,18 +10,22 @@ title: About Me
 
 My name is Geoff Greer. I live in Berkeley. I like to mess with computers and motorcycles.
 
-Works speak louder than words, so look at [my GitHub activity](https://github.com/ggreer).
+Works speak louder than words, so look at [my GitHub activity](https://github.com/ggreer) to get an idea of what I'm up to.
 
-If you'd like to take advantage of my expertise, I'm often available for [contract work](/hire/).
+[Here's what hardware and software I use](/dev/).
 
-<h4><img src="/icons/resume_icon.png" height="16" width="16" alt="" /> <a href="/resume/" rel="me">Resume</a></h4>
+<!-- If you'd like to take advantage of my expertise, I'm often available for [contract work](/hire/). -->
+
+<h4><a href="/resume/" rel="me">My resume</a></h4>
 
 <br style="clear: both;" />
 
-## Contact
-You can {% include contact.html %} {% include public_key.md %}.
-
-<br />
 
 ## Me on the web
+
 {% include links.md %}
+
+
+## Contact
+
+You can {% include contact.html %} {% include public_key.md %}.
