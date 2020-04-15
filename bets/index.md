@@ -14,7 +14,7 @@ Below are my bets (and some of my attempts to bet), starting with the most recen
 
 **2020/03** - I bet [EnyeWord](https://twitter.com/EnyeWord) $100 that SARS-CoV-2 would kill over 25,000 Americans by the end of 2020. [Source](https://twitter.com/EnyeWord/status/1241244459712593921) ([archive](https://archive.is/Q0sdq))
 
-**2020/03** - I bet Patrick Breitenbach $100 that SARS-CoV-2 would kill over 20,000 Americans by the end of 2020. [Source](https://twitter.com/pbreit/status/1241106016663523328) ([archive](https://archive.is/6kaUA))
+**2020/03** - I bet Patrick Breitenbach $100 that SARS-CoV-2 would kill over 20,000 Americans by the end of 2020. [Source](https://twitter.com/pbreit/status/1241106016663523328) ([archive](https://archive.is/6kaUA)) On April 11th, 2020, I won the bet and Patrick paid me $100.
 
 **2020/03** - I bet PolishBearSneeze $100 that SARS-CoV-2 would cause over 250,000 deaths worldwide by the end of 2020. [Source](https://old.reddit.com/r/TheMotte/comments/fjzqsd/coronavirus_quarantine_thread_week_2/fkvz6ze/?context=2) ([archive](https://archive.is/bI891))
 
