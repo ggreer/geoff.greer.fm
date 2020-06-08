@@ -13,7 +13,7 @@ Frankly, none of this should have happened. In a sane world, people would have r
 
 But we don't live in a sane world. We live in a bizarro world where someone can leak private communications, blatantly lie about what was said, and cause a selfless man's life to be ruined. And in reaction to these events, people cheer. This is madness.
 
-Perhaps I should explain myself before I'm removed for having problematic opinions.
+Perhaps I should explain myself before I too am removed for having problematic opinions.
 
 
 ### Lies, Damned Lies, and Journalism
