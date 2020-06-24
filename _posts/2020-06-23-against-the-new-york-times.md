@@ -10,11 +10,11 @@ categories:
 excerpt: "Scott Alexander is an amazing writer. He is also one of the nicest and most charitable people I have encountered. And the New York Times has endangered his safety & his livelihood for no good reason."
 ---
 
-I've been reading [Scott Alexander](https://slatestarcodex.com/) for over a decade, since the time when he was posting on LiveJournal and [Lesswrong](https://www.lesswrong.com/). Scott is an amazing writer. Over the years he has provided countless thoughtful and informative posts on a wide range of topics. He is also one of the nicest and most charitable people I have encountered.
+I've been reading [Scott Alexander](https://slatestarcodex.com/) since the days of his LiveJournal and [Lesswrong](https://www.lesswrong.com/) posts (over a decade ago). Scott is an amazing writer. Over the years he has provided countless thoughtful and informative posts on a wide range of topics. He is also one of the nicest and most charitable people I have encountered.
 
 And the New York Times has endangered his safety and his livelihood for no good reason.
 
-Scott Alexander recently [decided to delete his entire blog](https://slatestarcodex.com/2020/06/22/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/) ([archive](/archive/NYT Is Threatening My Safety By Revealing My Real Name, So I Am Deleting The Blog _ Slate Star Codex (2020-06-23 11_30_17 AM).html)) in response to an upcoming New York Times article that promises to reveal his real name. Scott is a psychiatrist. He in his most recent (and only remaining) post, he explains why publishing his real name could be harmful:
+Scott recently [decided to delete his entire blog](https://slatestarcodex.com/2020/06/22/nyt-is-threatening-my-safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/) ([archive](/archive/NYT Is Threatening My Safety By Revealing My Real Name, So I Am Deleting The Blog _ Slate Star Codex (2020-06-23 11_30_17 AM).html)) in response to an upcoming New York Times article that promises to reveal his real name. Scott is a psychiatrist. In his most recent (and only remaining) post, he explains why publishing his real name could be harmful:
 
 > I think it’s plausible that if I became a national news figure under my real name, my patients – who run the gamut from far-left anarchists to far-right gun nuts – wouldn’t be able to engage with me in a normal therapeutic way. I also worry that my clinic would decide I am more of a liability than an asset and let me go, which would leave hundreds of patients in a dangerous situation as we tried to transition their care.  
 > ...  
@@ -26,11 +26,12 @@ Apparently, the New York Times has a policy on using real names. From their [Gui
 >  
 > If compassion or the unavoidable conditions of reporting require shielding an identity, the preferred solution is to omit the name and explain the omission. (That situation might arise, for example, in an interview conducted inside a hospital or a school governed by privacy rules.) If a complex narrative must distinguish among several shielded identities, it may be necessary to use given names with last initials or, less desirable, given names alone (Hilary K.; Ashley M.; Terry). Descriptions may serve instead (the lawyer; the Morristown psychotherapist). As a rare last resort, if genuine given names would be too revealing, real or coined single initials (Dr. D, Ms. L) may be used after consultation with senior editors. The article must gracefully indicate the device and the reason.
 
-So that's the policy, and it sounds rather strict policy. In practice, it's not so clear-cut. There are many examples of the Times avoiding any mention of the real names of subjects of their reporting. Usually little or no justification is given. Here are some examples:
+Their stated policy seems rather strict in favoring the use of real names. In practice, it's not so clear-cut. There are many examples of the Times avoiding any mention of subjects' real names, typically with little or no justification. Here are a few cases:
 
 - [Banksy](https://www.nytimes.com/2020/02/05/arts/design/banksy-legacy.html) ([archive](/archive/Banksy Is a Control Freak. But He Can’t Control His Legacy. - The New York Times (2020-06-23 12_40_49 PM).html))
 - [Virgil Texas](https://www.nytimes.com/2020/02/29/us/politics/bernie-sanders-chapo-trap-house.html), co-host of the Chapo Trap House podcast ([archive](/archive/The Pied Pipers of the Dirtbag Left Want to Lead Everyone to Bernie Sanders - The New York Times (2020-06-23 11_30_02 AM).html))
 - Performance artist and Libertarian candidate [Vermin Supreme](https://www.nytimes.com/2016/05/30/us/politics/libertarians-see-chance-amid-discontent-over-donald-trump-and-hillary-clinton.html) ([archive](/archive/Libertarians See Chance Amid Discontent Over Donald Trump and Hillary Clinton - The New York Times (2020-06-23 12_41_36 PM).html))
+- Drag queens such as [Lil Miss Hot Mess, Sister Roma, and Heklina](https://www.nytimes.com/2014/09/25/fashion/drag-performers-fight-facebooks-real-name-policy.html) ([archive](/archive/Drag Performers Fight Facebook’s ‘Real Name’ Policy - The New York Times (2020-06-23 12_38_25 PM).html))
 - [Women gamers and streamers](https://www.nytimes.com/2020/06/23/style/women-gaming-streaming-harassment-sexism-twitch.html) ([archive](/archive/Dozens of Women in Gaming Speak Out About Sexism and Harassment - The New York Times (2020-06-23 3_55_09 PM).html)):
 
 > The streamers did not provide their legal names to The New York Times. In years past, women gamers who have spoken out against the industry using their legal names have been subjected to further harassment, hacking and doxxing.
@@ -41,8 +42,7 @@ So that's the policy, and it sounds rather strict policy. In practice, it's not 
 
 > Reporter: It’s still unclear what the true story is of the Canadian known as Abu Huzayfah al-Kanadi and the time he says he spent...
 
-- Drag queens such as [Lil Miss Hot Mess, Sister Roma, and Heklina](https://www.nytimes.com/2014/09/25/fashion/drag-performers-fight-facebooks-real-name-policy.html) ([archive](/archive/Drag Performers Fight Facebook’s ‘Real Name’ Policy - The New York Times (2020-06-23 12_38_25 PM).html))
-- [A random woman](https://www.nytimes.com/2015/02/25/nyregion/commodes-if-not-commutes-have-improved-at-port-authority-bus-terminal.html) ([archive](/archive/Commodes, if Not Commutes, Have Improved at Port Authority Bus Terminal - The New York Times (2020-06-23 12_44_51 PM).html)):
+- [A random person](https://www.nytimes.com/2015/02/25/nyregion/commodes-if-not-commutes-have-improved-at-port-authority-bus-terminal.html) ([archive](/archive/Commodes, if Not Commutes, Have Improved at Port Authority Bus Terminal - The New York Times (2020-06-23 12_44_51 PM).html)):
 
 > A second person who checked out the women’s restroom — and who asked not to be identified because she has always wanted to be an anonymous source — reported her findings by email...
 
@@ -54,13 +54,15 @@ So that's the policy, and it sounds rather strict policy. In practice, it's not 
 
 "A therapist and a writer", hmmm... who else fits that description? Oh right, Scott Alexander!
 
-I hope these examples make it clear that, in practice, the New York Times has no strict policy on using real names. If anything, they seem eager to protect the identities of people who would be harmed by having their real names published. I'm not sure why one of their reporters misled Scott about this and decided to publish Scott's real name against his wishes.
+I hope these examples make it clear that in practice, the New York Times has no strict policy on using real names. If anything, they seem eager to protect the identities of people who would be harmed by having their real names published. This is why I am *extremely* suspicious of their motives for enforcing their real name policy against Scott. For some reason I cannot fathom, one of their reporters misled Scott about their name policy, then decided to publish Scott's real name against his wishes. And because of this, we are all worse off. Scott is worse off. His patients are worse off. His readers are worse off.
+
+Slate Star Codex was an island of sanity in an ocean of madness. For now, it is gone.
 
 
 ## What You Can Do
 
 If you have a subscription to the New York Times, cancel it. If a reporter from the Times asks you for an interview or for information, refuse to talk to them and explain why.
 
-In fact **do not talk to journalists** in general. If you must, record everything. Journalists will quote you out of context, selectively edit your words, and even make up quotes and attribute them to you. All of these things have happened to me and people I know. I'm sure there are some good journalists, but the bad ones are at every major news organization.
+In fact **do not talk to journalists** in general. If you must, record everything. Journalists will quote you out of context, selectively edit your words, and even make up quotes and attribute them to you. All of these things have happened to me or to people I know. I'm sure there are some good journalists, but the bad ones are the majority of every major news organization.
 
-The New York Times of today is a wolf wearing the skin of a reputable newspaper. The old New York Times is dead. The sooner more people realize that, the less damage the new New York Times will do to society.
+The old New York Times is dead. The New York Times of today is a wolf wearing the skin of a reputable newspaper. The sooner more people realize that, the sooner NYT's influence wanes and the sooner that innocent, interesting people like Scott will feel free to spread their ideas.
