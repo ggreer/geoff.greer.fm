@@ -8,7 +8,7 @@ title: About Me
 
 <a href="/me-2017.jpg"><img alt="Me" src="/me-2017.jpg" style="float:left; padding-right: 1em; height: 300px; width: 300px;"></a>
 
-My name is Geoff Greer. I live in Berkeley. I like to mess with computers and motorcycles.
+My name is Geoff Greer. I live in Vancouver, Washington. I like to mess with computers and motorcycles.
 
 Works speak louder than words, so look at [my GitHub activity](https://github.com/ggreer) to get an idea of what I'm up to.
 
