@@ -13,7 +13,7 @@ GitHub: [ggreer](https://github.com/ggreer)
 
 ## Skills
 ---
-I am more than proficient in C, JavaScript, and Python. I also have experience with Bash, C++, Go, Java, Lua, Ruby, PHP, and Perl.
+I am more than proficient in C, JavaScript, and Python. I also have experience with Bash, C++, Go, Java, Lua, Ruby, PHP, Perl, and TypeScript.
 
 I know React, Django, and Node.js. In the past I have used Rails and Twisted Python.
 
@@ -21,6 +21,13 @@ I have extensive operational experience with PostgreSQL, MySQL, Cassandra, Level
 
 ## Employment History
 ---
+
+### Okta <span style="float: right;">June 2018 - Present</span>  
+Principle Software Engineer
+
+- Advanced Server Access
+- Workflows (Previously Azuqua)
+- Okta Incubator
 
 ### Red Hat <span style="float: right;">February 2018 - June 2018</span>  
 Senior Software Engineer
