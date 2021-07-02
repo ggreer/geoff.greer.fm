@@ -59,3 +59,5 @@ Update: [According to his website, Stallman has found housing](https://archive.i
 > I found new interim housing — thanks to those who helped.  
 
 Update (2019-10-01): I discussed Stallman's removal with some others on [an episode of The Bailey Podcast](https://soundcloud.com/thebaileypodcast/e006).
+
+Update (2021-04-04): Stallman is now back on the Free Software Foundation's board.
