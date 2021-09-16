@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN"
+    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">
+<html version="XHTML+RDFa 1.1" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+{% include head.html %}
+{% include twitter_card.html %}
+{% include og.html %}
+</head>
+<body>
+<div id="wrapper"{% if page.style %} {{ page.style }}{% endif %}>
+{% include header.html %}
+<div class="wrapper">
+  <div class="row">
+    <div class="col w1">
+      <a href="/guns">Guns</a>
+    </div>
+    <div class="col w5">
+      <a href="/guns/rules-of-gun-safety">Rules of Gun Safety</a> &#183;
+      <a href="/guns/glossary">Glossary</a> &#183;
+      <a href="/guns/why">Why?</a>
+    </div>
+  </div>
+</div>
+
+<article>
+<div class="post-header">
+<div class="post-title">{{ page.title | xml_escape }}</div>
+<hr />
+</div>
+<div class="post">
+{{ content }}
+</div>
+</article>
+<hr />
+{% include footer.html %}
+</div>
+{% include ga.html %}
+</body>
+</html>
