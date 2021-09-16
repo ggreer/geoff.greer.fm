@@ -15,3 +15,4 @@ stats
 styles/*.css
 styles/main*.css
 videos
+node_modules

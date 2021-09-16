@@ -10,5 +10,5 @@ do
   fi
   css_file=$(echo "$less_file" | sed -E "s/.less//")
   echo "lessc $less_file $css_file.css"
-  lessc -x "$less_file" "$css_file.css"
+  ./node_modules/.bin/lessc -x "$less_file" "$css_file.css"
 done
