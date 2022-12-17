@@ -14,7 +14,7 @@ One of my hobbies is firearms. This information is intended to help inexperience
 
 If it's your first time shooting, try not to expect too much. Think of your first time driving a car. Remember how many little things you had to learn before getting on the road: This is the brake. This is the gas pedal. Here's how you grip the steering wheel. Here's how you use the turn signal. Here's how you adjust your mirrors. Here's how the shifter works. And so on. Before shooting, you'll have to spend time familiarizing yourself with [the rules of gun safety](/guns/rules-of-gun-safety), the operation of the specific firearms you'll be shooting, and the rules of whatever gun range you're going to. Just remember: it gets better.
 
-If you're not sure about something, *ask*. Experienced people are [cursed with knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge). They learned the basics so long ago that they'll forget to mention crucial information to beginners. Even professional teachers make this mistake, so don't be afraid to ask!
+If you're not sure about something, *ask*. Experienced people are [cursed with knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge). They learned the basics so long ago that they forget to mention crucial information to beginners. Even professional teachers make this mistake, so don't be afraid to ask!
 
 If you are holding a gun and you're not sure what to do: 
 - Keep your finger off the trigger.
