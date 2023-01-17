@@ -7,12 +7,27 @@ Here are some things I've made. See [GitHub](https://github.com/ggreer) for more
 
 <br />
 
+## [1990 Mazda Miata](/miata/)
+
+My project car. I bought it in early 2023.
+
+<br />
+
+
+## [3D Printing](/3d/)
+
+I got into 3D printing in early 2022. I mostly make things for myself, but many of my designs are useful for others.
+
+<br />
+
+<br />
+
 ## [Floobits](https://floobits.com/)
 Like [Etherpad](http://en.wikipedia.org/wiki/Etherpad), but with plugins for popular code editors. The buzz-wordy term is "cross-editor real-time collaboration platform." Basically, it lets developers pair program when they're not in the same room. It's super-cool. At Floobits, we all work remotely, using Floobits to develop Floobits.
 
 These days, much of the code I write is under the [Floobits GitHub organization](https://github.com/Floobits).
 #### Related posts
-{% for post in site.categories.floobits %}
+{% for post in site.categories.Floobits %}
 * [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
