@@ -14,7 +14,7 @@
 <div class="post-title">{{ page.title | xml_escape }}</div>
 <hr />
 </div>
-<div class="post">
+<div class="post"{% if page.post_style %} {{ page.post_style }}{% endif %}>
 {{ content }}
 </div>
 </article>

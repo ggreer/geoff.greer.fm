@@ -5,11 +5,23 @@ slug: pegboard
 status: publish
 published: true
 title: Pegboard Accessories
+post_style: 'style="max-width: none;"'
 ---
 
 ## Trays
 
-{% include model.md name="pegboard-tray" title="Pegboard Tray" desc="This pegboard tray is parameterized. If you change the dimensions in the OpenSCAD file it will automatically generate the correct mounting pegs." %}
+{% include model.md name="pegboard-tray" title="Pegboard Tray" desc="This pegboard tray is parameterized. If you change the dimensions in the OpenSCAD file, it will automatically generate the correct mounting pegs. You can tweak other attributes such as peg diamter, though the default should work with most pegboard." %}
+
+I've also generated STL files for some common tray sizes.
+
+{% include model.md name="pegboard-tray-2x2x2" title="Pegboard Tray 2x2x2" desc="" hide_scad=true %}
+{% include model.md name="pegboard-tray-3x3x2" title="Pegboard Tray 3x3x2" desc="" hide_scad=true %}
+{% include model.md name="pegboard-tray-4x4x2" title="Pegboard Tray 4x4x2" desc="" hide_scad=true %}
+{% include model.md name="pegboard-tray-4x4x3" title="Pegboard Tray 4x4x3" desc="" hide_scad=true %}
+{% include model.md name="pegboard-tray-4x5x2" title="Pegboard Tray 4x5x2" desc="" hide_scad=true %}
+{% include model.md name="pegboard-tray-4x6x2" title="Pegboard Tray 4x6x2" desc="" hide_scad=true %}
+{% include model.md name="pegboard-tray-6x4x2" title="Pegboard Tray 6x4x2" desc="" hide_scad=true %}
+{% include model.md name="pegboard-tray-7x4x2" title="Pegboard Tray 7x4x2" desc="" hide_scad=true %}
 
 
 ## Magazine holders

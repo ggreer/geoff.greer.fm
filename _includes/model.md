@@ -34,9 +34,10 @@
     </a>
   </div>
 </div>
-
-
-OpenSCAD: [{{ include.name }}.scad]({{ include.name }}.scad)  
-STL: [{{ include.name }}.stl]({{ include.name }}.stl)
+<div>
+  <!-- I'd love for these to be show_scad and show_stl, but Jekyll doesn't allow Liquid v5 which adds the allow_false arg to default -->
+  {% unless include.hide_scad %}OpenSCAD: <a href="{{ include.name }}.scad">{{ include.name }}.scad</a><br />{% endunless %}
+  {% unless include.hide_stl %}STL: <a href="{{ include.name }}.stl">{{ include.name }}.stl</a>{% endunless %}
+</div>
 
 {{ include.desc }}
