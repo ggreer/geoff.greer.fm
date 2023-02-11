@@ -27,7 +27,7 @@ My goal with this car was to turn it into a time capsule from the 1990s. No perf
 
 ### Restoration
 
-I got to work. First, I vacuumed everything. (The seller had a very cute dog with white fur.) The engine compartment had quite a few leaves. leaving my shop vac looking like I'd tried to vacuum up a tree.
+I got to work. First, I vacuumed everything. (The seller had a very cute dog with white fur.) The engine compartment had quite a few leaves, leaving my shop vac looking like I'd tried to vacuum up a tree.
 
 The driver side sun visor had lost a screw, so I found a replacement. Though the car is 100% metric, a #10x3/4in sheet metal screw fit just fine.
 
@@ -43,12 +43,20 @@ I removed the aftermarket LED interior light. I didn't know until afterwards, bu
 
 The pedal pads were worn, so I replaced those.
 
-I printed some [visor delete plates](https://www.thingiverse.com/thing:3072123), keeping the original sun visors in case I ever changed my mind. Note: If you live in a hot area, you want to print these with something other than PLA filament. PLA's glass transition temperature is 60–65°C, meaning it can soften or become tacky in the hot sun.
+I replaced the ignition switch which fixed the intermittent starting issue.
 
-I ordered a battery hold down clamp (new), hardware to hold down the spare tire (used), and hardware to hold down the scissor jack (used).
+I printed some [visor delete plates](https://www.thingiverse.com/thing:3072123), keeping the original sun visors in case I ever changed my mind. Note: If you live in a hot area, you want to print these with something other than PLA filament. PLA's glass transition temperature is 60–65°C, meaning it can soften or become tacky in the hot sun. I used carbon fiber nylon since it's a similar black as the rest of the interior.
+
+I ordered a battery hold down clamp (new), hardware to hold down the spare tire (used), and hardware to hold down the scissor jack (used). I also designed and printed [a clamp to mount a fire extinguisher in the trunk]({% link 3d/fire-extinguisher-bracket/index.md %}). I don't expect the car to catch fire. I just like having a fire extinguisher and a first aid kit in case I come across an emergency.
 
 The doors and trunk creaked when opening/closing, so I greased the hinges.
 
 The windows were rather difficult to roll up/down, so I lubricated the window tracks. It's important to use a rubber-compatible lubricant on the front window channel. Silicone lubricant is probably best.
 
-The latches on the soft top were a little loose, so I tightened to 
+The latches on the soft top were a little loose, so I tightened them to ensure the top didn't open while I was driving down the highway.
+
+After driving the car around for a week, I heard a belt squeak. I noticed that the tensioner for the water pump and alternator belt was very loose. I tightened it, but a few days later it was loose again. After closely examining the bolts, I noticed that the locking bolt that went through the alternator was installed backwards. It wasn't actually locking the tensioner in place. It was just... bolted to the alternator. I switched it around and the belt tension has been fine ever since.
+
+I managed to find a replacement antenna, greatly improving the sound quality of the radio. I also cleaned the tape heads in the cassette deck, which made the . I know that Miatas aren't known for their audio systems, but the speakers sounded worse than I expected. I popped the panels in front of the speakers (noticing some missing/worn panel clips, which I ordered replacements for), revealing some very tired-looking speakers. I replaced them with some random 6.5" Walmart speakers and the audio quality was night and day.
+
+It rains a lot in Vancouver, so I got some floor mats to protect the carpet.

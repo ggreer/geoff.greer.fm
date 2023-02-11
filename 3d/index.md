@@ -18,3 +18,5 @@ I got a 3D printer in early 2021. Since then, I've designed and printed many thi
 [Cheek pistol]({% link 3d/cheek-pistol/index.md %})
 
 [Pegboard accessories]({% link 3d/pegboard/index.md %})
+
+[Fire extinguisher bracket]({% link 3d/fire-extinguisher-bracket/index.md %})
