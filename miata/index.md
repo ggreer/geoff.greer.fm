@@ -29,9 +29,17 @@ My goal with this car was to turn it into a time capsule from the 1990s. No perf
 
 I got to work. First, I vacuumed everything. (The seller had a very cute dog with white fur.) The engine compartment had quite a few leaves, leaving my shop vac looking like I'd tried to vacuum up a tree.
 
+![The result of vacuuming](/photos/miata/IMG_2273_1.JPG)
+
 The driver side sun visor had lost a screw, so I found a replacement. Though the car is 100% metric, a #10x3/4in sheet metal screw fit just fine.
 
-I removed the window tint. The original owner installed the tint in 2000. He'd managed to get a doctor's prescription for window tint.
+I removed the window tint. The original owner installed the tint in 2000. Oregon has restrictions around window tint, so he'd managed to get a doctor's prescription for it.
+
+![Copy of Oregon law allowing window tint with a doctor's permission](/photos/miata/IMG_2272_1.JPG)
+
+![Prescription for window tint](/photos/miata/IMG_2271_1.JPG)
+
+I don't know why someone with basal cell carcinoma would buy a convertible, but who am I to judge?
 
 I replaced the windshield wipers with some fancy Rain-X silicone wipers. I kept the original frames in case I ever wanted to go back to normal wiper blades.
 
@@ -39,15 +47,33 @@ The ash tray had been replaced with a cup holder that had a broken tab. I replac
 
 After wiping down the interior, I took some Meguiar's Ultimate Insane Shine Protectant to all exposed plastic. What a difference that made.
 
+I washed the car, then polished and waxed the exterior.
+
+Before: ![Before polishing and waxing](/photos/miata/IMG_2269_1.JPG)
+
+After: ![After polishing and waxing](/photos/miata/IMG_2289_1.JPG)
+![After polishing and waxing (rear)](/photos/miata/IMG_2288_1.JPG)
+
 I removed the aftermarket LED interior light. I didn't know until afterwards, but that part had caused an annoying rattling at 3,700-3,900rpm.
+
+![The OEM light that replaced the annoying LEDs](/photos/miata/IMG_2294_1.JPG)
 
 The pedal pads were worn, so I replaced those.
 
 I replaced the ignition switch which fixed the intermittent starting issue.
 
+The old and new switches side by side: ![Old and new ignition switches](/photos/miata/IMG_2283_1.JPG)
+![Old and new ignition switches](/photos/miata/IMG_2282_1.JPG)
+
 I printed some [visor delete plates](https://www.thingiverse.com/thing:3072123), keeping the original sun visors in case I ever changed my mind. Note: If you live in a hot area, you want to print these with something other than PLA filament. PLA's glass transition temperature is 60–65°C, meaning it can soften or become tacky in the hot sun. I used carbon fiber nylon since it's a similar black as the rest of the interior.
 
+![Printed visor deletes](/photos/miata/IMG_E2284_1.JPG)
+<!-- ![Installed visor deletes](/photos/miata/IMG_E2284_1.JPG) -->
+
 I ordered a battery hold down clamp (new), hardware to hold down the spare tire (used), and hardware to hold down the scissor jack (used). I also designed and printed [a clamp to mount a fire extinguisher in the trunk]({% link 3d/fire-extinguisher-bracket/index.md %}). I don't expect the car to catch fire. I just like having a fire extinguisher and a first aid kit in case I come across an emergency.
+
+![What the trunk normally looks like](/photos/miata/IMG_2335.JPG)
+![The trunk with the battery and jack revealed](/photos/miata/IMG_2336.JPG)
 
 The doors and trunk creaked when opening/closing, so I greased the hinges.
 
@@ -57,6 +83,18 @@ The latches on the soft top were a little loose, so I tightened them to ensure t
 
 After driving the car around for a week, I heard a belt squeak. I noticed that the tensioner for the water pump and alternator belt was very loose. I tightened it, but a few days later it was loose again. After closely examining the bolts, I noticed that the locking bolt that went through the alternator was installed backwards. It wasn't actually locking the tensioner in place. It was just... bolted to the alternator. I switched it around and the belt tension has been fine ever since.
 
-I managed to find a replacement antenna, greatly improving the sound quality of the radio. I also cleaned the tape heads in the cassette deck, which made the . I know that Miatas aren't known for their audio systems, but the speakers sounded worse than I expected. I popped the panels in front of the speakers (noticing some missing/worn panel clips, which I ordered replacements for), revealing some very tired-looking speakers. I replaced them with some random 6.5" Walmart speakers and the audio quality was night and day.
+I managed to find a replacement antenna, greatly improving the sound quality of the radio. I also cleaned the tape heads in the cassette deck, which fixed the issue of tapes sounding muffled and muddy compared to the radio. I know that Miatas aren't known for their audio systems, but the speakers still sounded worse than I expected. I popped the panels in front of the speakers (noticing some missing/worn panel clips, which I got replacements for), revealing some very tired-looking speakers. I replaced them with some random 6.5" Walmart speakers and the audio quality was night and day.
 
 It rains a lot in Vancouver, so I got some floor mats to protect the carpet.
+
+The driver's side seatbelt sometimes had trouble clicking in, so I replaced both seat belt receptacles.
+
+![New seat belt receptacle installed with the old one positioned](/photos/miata/IMG_2333_1.JPG)
+
+(No, you cannot attach two seat belts at once. I just set the old one next to the new one for comparison.)
+
+The new receptacles were OEM, but they used 17mm bolts instead of the 16mm that came with the car. Fortunately the threads were the same so I had no issues replacing them.
+
+One of the tail lights had some cracks, so I ordered replacements and swapped them out.
+
+Part of the the windshield cowling had broken off, so I ordered replacement and installed it. The plastic was aged from sunlight and time, so the new cowling improved the look of the car.
