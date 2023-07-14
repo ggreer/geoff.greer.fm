@@ -27,6 +27,8 @@ My goal with this car was to turn it into a time capsule from the 1990s. No perf
 
 ### Restoration
 
+This is what the car looked like when I got it: ![In the garage](/photos/miata/IMG_2269_1.JPG)
+
 I got to work. First, I vacuumed everything. (The seller had a very cute dog with white fur.) The engine compartment had quite a few leaves, leaving my shop vac looking like I'd tried to vacuum up a tree.
 
 ![The result of vacuuming](/photos/miata/IMG_2273_1.JPG)
@@ -53,6 +55,8 @@ Before: ![Before polishing and waxing](/photos/miata/IMG_2269_1.JPG)
 
 After: ![After polishing and waxing](/photos/miata/IMG_2289_1.JPG)
 ![After polishing and waxing (rear)](/photos/miata/IMG_2288_1.JPG)
+
+While waxing and polishing, I noticed the headlights were a little low, so I pulled them up to fix the panel gaps.
 
 I removed the aftermarket LED interior light. I didn't know until afterwards, but that part had caused an annoying rattling at 3,700-3,900rpm.
 
@@ -81,9 +85,9 @@ The windows were rather difficult to roll up/down, so I lubricated the window tr
 
 The latches on the soft top were a little loose, so I tightened them to ensure the top didn't open while I was driving down the highway.
 
-After driving the car around for a week, I heard a belt squeak. I noticed that the tensioner for the water pump and alternator belt was very loose. I tightened it, but a few days later it was loose again. After closely examining the bolts, I noticed that the locking bolt that went through the alternator was installed backwards. It wasn't actually locking the tensioner in place. It was just... bolted to the alternator. I switched it around and the belt tension has been fine ever since.
+After driving the car for a week, I heard a belt squeak. I noticed that the tensioner for the water pump and alternator belt was very loose. I tightened it, but a few days later it was loose again. After closely examining the bolts, I noticed that the locking bolt that went through the alternator was installed backwards. It wasn't actually locking the tensioner in place. It was just... bolted to the alternator. I switched it around and the belt tension has been fine ever since.
 
-I managed to find a replacement antenna, greatly improving the sound quality of the radio. I also cleaned the tape heads in the cassette deck, which fixed the issue of tapes sounding muffled and muddy compared to the radio. I know that Miatas aren't known for their audio systems, but the speakers still sounded worse than I expected. I popped the panels in front of the speakers (noticing some missing/worn panel clips, which I got replacements for), revealing some very tired-looking speakers. I replaced them with some random 6.5" Walmart speakers and the audio quality was night and day.
+I managed to find a replacement antenna, greatly improving the sound quality of the radio. I also cleaned the tape heads in the cassette deck, which fixed the issue of tapes sounding muffled and muddy compared to the radio. I know that Miatas aren't known for their audio systems, but the speakers still sounded worse than I expected. I popped the panels in front of the speakers (noticing some missing/worn panel clips, which I got replacements for), revealing some very tired-looking speakers. I replaced them with some random 6.5" Walmart speakers. The audio quality was night and day.
 
 It rains a lot in Vancouver, so I got some floor mats to protect the carpet.
 
@@ -95,6 +99,31 @@ The driver's side seatbelt sometimes had trouble clicking in, so I replaced both
 
 The new receptacles were OEM, but they used 17mm bolts instead of the 16mm that came with the car. Fortunately the threads were the same so I had no issues replacing them.
 
+The headrests had some tears. I used some heavy thread and leather needles to sew them up. The result wasn't perfect, but it was a lot better than before. It was also much cheaper than reupholstering the seats.
+
+![Before](/photos/miata/IMG_2404.JPG)
+![After](/photos/miata/IMG_2406.JPG)
+
+![Start of sewing up the driver seat headrest](/photos/miata/IMG_2405.JPG)
+![After](/photos/miata/IMG_2407.JPG)
+
 One of the tail lights had some cracks, so I ordered replacements and swapped them out.
 
-Part of the the windshield cowling had broken off, so I ordered replacement and installed it. The plastic was aged from sunlight and time, so the new cowling improved the look of the car.
+![Old tail light next to the newly installed one](/photos/miata/IMG_2342.JPG)
+
+Part of the the windshield cowling had broken off, so I ordered replacement and installed it. The plastic was aged from sunlight and time, so the new cowling improved the look of the car. The wiper frames could use some new paint, but I haven't gotten around to that yet.
+
+![New cowling installed](/photos/miata/IMG_2341.JPG)
+
+The top brake light didn't work. The bulb seemed fine, but the wiring had a break. I soldered it back together, put some heatshrink around the bare wire, then put some plastic conduit around the padding. Hopefully that should prevent issues in the future.
+
+![Soldered and heatshrinked brake wire](/photos/miata/IMG_2388.JPG)
+
+![Fixed and reinforced wiring](/photos/miata/IMG_2389.JPG)
+
+
+I really enjoy this car. It's impractical, but boy is it fun.
+
+![Icy morning in Spokane](/photos/miata/IMG_2329.JPG)
+
+![Miatas are not very big](/photos/miata/IMG_2332.JPG)
