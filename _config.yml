@@ -12,6 +12,7 @@ exclude:
   - new_post.sh
   - less.sh
   - upload.py
+  - venv
 
 disqus_shortname: ggreer
 

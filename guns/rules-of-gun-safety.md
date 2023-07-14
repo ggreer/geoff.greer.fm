@@ -40,9 +40,9 @@ With pistols, it's easy to accidentally sweep your hand in front of the muzzle. 
 
 When grasping a gun, it feels natural to rest your index finger on the trigger. This is comfortable, but it's unsafe. There are countless reasons why you might unintentionally pull the trigger. A loud noise could startle you. A hot casing could hit your skin. Someone could bump into you. You could slip and instinctively grasp out to catch yourself. Etcetera.
 
-Prevent these scenarios by keeping your finger straight and out of the trigger guard until your sights are on the target. When you are done firing, straighten your finger.
+You can prevent these scenarios by keeping your finger straight and out of the trigger guard until your sights are on the target. When you are done firing, straighten your finger.
 
-The one negligent discharge I've had in my life was because I broke this rule. Thankfully I was following all the other rules so the bullet went downrange and into the backstop.
+I have had one negligent discharge in my life and it was because I broke this rule. Thankfully I was following all the other rules, so the bullet went downrange and into the backstop.
 
 
 ## 4. Be aware of your target and what is beyond it.
