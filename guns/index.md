@@ -24,7 +24,7 @@ Then let your instructor or shooting buddy deal with it.
 
 If you want to try shooting but you don't know a friend who is into guns, check your local gun ranges for introductory courses.
 
-Most people who work at gun ranges aren't there because of the pay or benefits. They're enthusiasts of one kind or another, and they're usually happy to help. That said, many of them do have jobs that involve monitoring customers for safety violations, so they might not be able to give their undivided attention.
+Most people who work at gun ranges aren't there because of the pay or benefits. They're enthusiasts of one kind or another, and they're usually happy to help. That said, many of them do have jobs that involve monitoring customers for safety violations, so they might not be able to give you their undivided attention.
 
 Wear proper attire. As part of their normal operation, most guns eject hot brass casings. If a casing falls inside your clothing, it can be very painful. It can even burn you enough to make a small scar. To prevent this you'll want to wear a shirt with a high neckline. V-necks are a bad idea. I also recommend wearing closed-toed shoes (many ranges require them), socks that cover your ankles, pants, and (weather permitting) a long sleeved shirt. If you're shooting rifles or shotguns, a jacket can help absorb recoil. You might also be surprised by how dirty guns are. Gunpowder does not burn perfectly clean. Expect your hands and clothes to get dirty with residue. Pistols (especially revolvers) tend to be dirtier than rifles.
 
