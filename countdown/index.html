@@ -6,8 +6,11 @@ stylesheet: countdown
 ---
 
 <div class="countdown_display">
+  <div class="">
+    <input id="datetime_picker" name="datetime_picker" type="datetime-local" />
+  </div>
   <div class="title">
-    Countdown <span class="when"></span>
+    T-0: <span class="when"></span>
   </div>
   <div class="digits">
     <div class="digit">
@@ -17,6 +20,60 @@ stylesheet: countdown
       <div class="sign"></div>
       <div class="plus"></div>
     </div>
+  </div>
+  <div class="digits day">
+    <div class="digit">
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+    <div class="digit">
+      <div class="segment a">
+        <div class="bottom"></div>
+      </div>
+      <div class="segment b">
+        <div class="left"></div>
+      </div>
+      <div class="segment c">
+        <div class="left"></div>
+      </div>
+      <div class="segment d">
+        <div class="top"></div>
+      </div>
+      <div class="segment e">
+        <div class="right"></div>
+      </div>
+      <div class="segment f">
+        <div class="right"></div>
+      </div>
+      <div class="segment g">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div class="colon day">
+    <div class="top"></div>
+    <div class="bottom"></div>
   </div>
   <div class="digits hour">
     <div class="digit">
@@ -233,7 +290,10 @@ stylesheet: countdown
 </div>
 
 <script type="text/javascript">
-var hours,
+var days,
+  days_0_s,
+  days_1_s,
+  hours,
   hours_0_s,
   hours_1_s,
   milliseconds,
@@ -247,8 +307,12 @@ var hours,
   seconds_0_s,
   seconds_1_s,
   when,
+  when_str,
   segment_lookup,
-  sign;
+  sign,
+  picker;
+
+picker = document.getElementById("datetime_picker");
 
 segment_lookup = [
   [1, 1, 1, 1, 1, 1, 0],
@@ -264,7 +328,8 @@ segment_lookup = [
 ];
 
 if (location.hash) {
-  when = new Date(location.hash.slice(1));
+  when_str = decodeURIComponent(location.hash.slice(1));
+  when = new Date(when_str);
 } else {
   when = new Date();
   when.setHours(0);
@@ -274,15 +339,41 @@ if (location.hash) {
   when.setDate(when.getDate() + 1);
 }
 
+function pad (num, size) {
+  var s = "00000000000000000000000000000000" + num;
+  return s.substr(s.length - size);
+}
+
+// TODO: hide picker if no activity
+function setPicker (dateTime) {
+  // Picker needs YYYY-MM-DDThh:mm
+  var whenStr = pad(when.getFullYear(), 4) + "-" + pad(when.getMonth() + 1, 2) + "-" + pad(when.getDate(), 2) + "T" + pad(when.getHours(), 2) + ":" + pad(when.getMinutes(), 2);
+  picker.value = whenStr;
+}
+setPicker(when);
+
+function updateDate (e) {
+  console.log("new value", e, picker.value);
+  if (!picker.value) {
+    console.error("no value", e);
+    return;
+  }
+  when = new Date(picker.value);
+  document.getElementsByClassName("when")[0].innerHTML = date_format(when);
+  location.hash = when.toISOString();
+}
+
+picker.onchange = updateDate
+
 function lead_zero(i) {
   return i < 10 ? "0" + i : i;
 }
 
 function date_format(d) {
   var str = "";
-  str += d.getFullYear() + "-" + lead_zero(d.getMonth() + 1) + "-" + lead_zero(d.getDate());
+  str += d.getUTCFullYear() + "-" + lead_zero(d.getUTCMonth() + 1) + "-" + lead_zero(d.getUTCDate());
   str += " ";
-  str += lead_zero(d.getHours()) + ":" + lead_zero(d.getMinutes()) + ":" + lead_zero(d.getSeconds());
+  str += lead_zero(d.getUTCHours()) + ":" + lead_zero(d.getUTCMinutes()) + ":" + lead_zero(d.getUTCSeconds());
   return str + " UTC";
 }
 
@@ -290,6 +381,10 @@ document.getElementsByClassName("when")[0].innerHTML = date_format(when);
 
 sign = document.getElementsByClassName("sign")[0];
 plus = document.getElementsByClassName("plus")[0];
+
+days = document.getElementsByClassName("day")[0].getElementsByClassName("digit");
+days_0_s = days[0].getElementsByClassName("segment");
+days_1_s = days[1].getElementsByClassName("segment");
 
 hours = document.getElementsByClassName("hour")[0].getElementsByClassName("digit");
 hours_0_s = hours[0].getElementsByClassName("segment");
@@ -330,6 +425,20 @@ function render() {
   } else {
     r = new Date(when - now);
     plus.classList.remove("on");
+  }
+
+  var dayValue = Math.floor(r.valueOf() / 1000 / 3600 / 24);
+  var daysElems = document.getElementsByClassName("day");
+  if (dayValue > 0) {
+    render_digit(days_0_s, Math.floor(dayValue / 10));
+    render_digit(days_1_s, dayValue % 10);
+    for (var i = 0; i < daysElems.length; i++) {
+      daysElems[i].style = "";
+    }
+  } else {
+    for (var i = 0; i < daysElems.length; i++) {
+      daysElems[i].style = "display: none;";
+    }
   }
 
   render_digit(hours_0_s, Math.floor(r.getHours() / 10));
