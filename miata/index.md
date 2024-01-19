@@ -27,19 +27,19 @@ My goal with this car was to turn it into a time capsule from the 1990s. No perf
 
 ### Restoration
 
-This is what the car looked like when I got it: ![In the garage](/photos/miata/IMG_2269_1.JPG)
+This is what the car looked like when I got it: [![In the garage](/photos/miata/thumbs/IMG_2269_1.JPG)](/photos/miata/IMG_2269_1.JPG)
 
 I got to work. First, I vacuumed everything. (The seller had a very cute dog with white fur.) The engine compartment had quite a few leaves, leaving my shop vac looking like I'd tried to vacuum up a tree.
 
-![The result of vacuuming](/photos/miata/IMG_2273_1.JPG)
+[![The result of vacuuming](/photos/miata/thumbs/IMG_2273_1.JPG)](/photos/miata/IMG_2273_1.JPG)
 
 The driver side sun visor had lost a screw, so I found a replacement. Though the car is 100% metric, a #10x3/4in sheet metal screw fit just fine.
 
 I removed the window tint. The original owner installed the tint in 2000. Oregon has restrictions around window tint, so he'd managed to get a doctor's prescription for it.
 
-![Copy of Oregon law allowing window tint with a doctor's permission](/photos/miata/IMG_2272_1.JPG)
+[![Copy of Oregon law allowing window tint with a doctor's permission](/photos/miata/thumbs/IMG_2272_1.JPG)](/photos/miata/IMG_2272_1.JPG)
 
-![Prescription for window tint](/photos/miata/IMG_2271_1.JPG)
+[![Prescription for window tint](/photos/miata/thumbs/IMG_2271_1.JPG)](/photos/miata/IMG_2271_1.JPG)
 
 I don't know why someone with basal cell carcinoma would buy a convertible, but who am I to judge?
 
@@ -51,32 +51,32 @@ After wiping down the interior, I took some Meguiar's Ultimate Insane Shine Prot
 
 I washed the car, then polished and waxed the exterior.
 
-Before: ![Before polishing and waxing](/photos/miata/IMG_2269_1.JPG)
+Before: [![Before polishing and waxing](/photos/miata/thumbs/IMG_2269_1.JPG)](/photos/miata/IMG_2269_1.JPG)
 
-After: ![After polishing and waxing](/photos/miata/IMG_2289_1.JPG)
-![After polishing and waxing (rear)](/photos/miata/IMG_2288_1.JPG)
+After: [![After polishing and waxing](/photos/miata/thumbs/IMG_2289_1.JPG)](/photos/miata/IMG_2289_1.JPG)
+[![After polishing and waxing (rear)](/photos/miata/thumbs/IMG_2288_1.JPG)](/photos/miata/IMG_2288_1.JPG)
 
 While waxing and polishing, I noticed the headlights were a little low, so I pulled them up to fix the panel gaps.
 
 I removed the aftermarket LED interior light. I didn't know until afterwards, but that part had caused an annoying rattling at 3,700-3,900rpm.
 
-![The OEM light that replaced the annoying LEDs](/photos/miata/IMG_2294_1.JPG)
+[![The OEM light that replaced the annoying LEDs](/photos/miata/thumbs/IMG_2294_1.JPG)](/photos/miata/IMG_2294_1.JPG)
 
 The pedal pads were worn, so I replaced those.
 
 I replaced the ignition switch which fixed the intermittent starting issue.
 
-The old and new switches side by side: ![Old and new ignition switches](/photos/miata/IMG_2283_1.JPG)
-![Old and new ignition switches](/photos/miata/IMG_2282_1.JPG)
+The old and new switches side by side: [![Old and new ignition switches](/photos/miata/thumbs/IMG_2283_1.JPG)](/photos/miata/IMG_2283_1.JPG)
+[![Old and new ignition switches](/photos/miata/thumbs/IMG_2282_1.JPG)](/photos/miata/IMG_2282_1.JPG)
 
 I printed some [visor delete plates](https://www.thingiverse.com/thing:3072123), keeping the original sun visors in case I ever changed my mind. Note: If you live in a hot area, you want to print these with something other than PLA filament. PLA's glass transition temperature is 60–65°C, meaning it can soften or become tacky in the hot sun. I used carbon fiber nylon since it's a similar black as the rest of the interior.
 
-![Printed visor deletes](/photos/miata/IMG_E2284_1.JPG)
+[![Printed visor deletes](/photos/miata/thumbs/IMG_E2284_1.JPG)](/photos/miata/IMG_E2284_1.JPG)
 
 I ordered a battery hold down clamp (new), hardware to hold down the spare tire (used), and hardware to hold down the scissor jack (used). I also designed and printed [a clamp to mount a fire extinguisher in the trunk]({% link 3d/fire-extinguisher-bracket/index.md %}). I don't expect the car to catch fire. I just like having a fire extinguisher and a first aid kit in case I come across an emergency.
 
-![What the trunk normally looks like](/photos/miata/IMG_2335.JPG)
-![The trunk with the battery and jack revealed](/photos/miata/IMG_2336.JPG)
+[![What the trunk normally looks like](/photos/miata/thumbs/IMG_2335.JPG)](/photos/miata/IMG_2335.JPG)
+[![The trunk with the battery and jack revealed](/photos/miata/thumbs/IMG_2336.JPG)](/photos/miata/IMG_2336.JPG)
 
 The doors and trunk creaked when opening/closing, so I greased the hinges.
 
@@ -92,7 +92,7 @@ It rains a lot in Vancouver, so I got some floor mats to protect the carpet.
 
 The driver's side seatbelt sometimes had trouble clicking in, so I replaced both seat belt receptacles.
 
-![New seat belt receptacle installed with the old one positioned](/photos/miata/IMG_2333_1.JPG)
+[![New seat belt receptacle installed with the old one positioned](/photos/miata/thumbs/IMG_2333_1.JPG)](/photos/miata/IMG_2333_1.JPG)
 
 (No, you cannot attach two seat belts at once. I just set the old one next to the new one for comparison.)
 
@@ -100,67 +100,67 @@ The new receptacles were OEM, but they used 17mm bolts instead of the 16mm that 
 
 The headrests had some tears. I used some heavy thread and leather needles to sew them up. The result wasn't perfect, but it was a lot better than before. It was also much cheaper than reupholstering the seats.
 
-![Before](/photos/miata/IMG_2404.JPG)
-![After](/photos/miata/IMG_2406.JPG)
+[![Before](/photos/miata/thumbs/IMG_2404.JPG)](/photos/miata/IMG_2404.JPG)
+[![After](/photos/miata/thumbs/IMG_2406.JPG)](/photos/miata/IMG_2406.JPG)
 
-![Start of sewing up the driver seat headrest](/photos/miata/IMG_2405.JPG)
-![After](/photos/miata/IMG_2407.JPG)
+[![Start of sewing up the driver seat headrest](/photos/miata/thumbs/IMG_2405.JPG)](/photos/miata/IMG_2405.JPG)
+[![After](/photos/miata/thumbs/IMG_2407.JPG)](/photos/miata/IMG_2407.JPG)
 
 One of the tail lights had some cracks, so I ordered replacements and swapped them out.
 
-![Old tail light next to the newly installed one](/photos/miata/IMG_2342.JPG)
+[![Old tail light next to the newly installed one](/photos/miata/thumbs/IMG_2342.JPG)](/photos/miata/IMG_2342.JPG)
 
 Part of the the windshield cowling had broken off, so I ordered replacement and installed it. The plastic was aged from sunlight and time, so the new cowling improved the look of the car. The wiper frames could use some new paint, but I haven't gotten around to that yet.
 
-![New cowling installed](/photos/miata/IMG_2341.JPG)
+[![New cowling installed](/photos/miata/thumbs/IMG_2341.JPG)](/photos/miata/IMG_2341.JPG)
 
 The top brake light didn't work. The bulb seemed fine, but the wiring had a break. I soldered it back together, put some heatshrink around the bare wire, then put some plastic conduit around the padding. Hopefully that should prevent issues in the future.
 
-![Soldered and heatshrinked brake wire](/photos/miata/IMG_2388.JPG)
+[![Soldered and heatshrinked brake wire](/photos/miata/thumbs/IMG_2388.JPG)](/photos/miata/IMG_2388.JPG)
 
-![Fixed and reinforced wiring](/photos/miata/IMG_2389.JPG)
+[![Fixed and reinforced wiring](/photos/miata/thumbs/IMG_2389.JPG)](/photos/miata/IMG_2389.JPG)
 
 While replacing the torn shifter boot, I noticed two AAA batteries underneath the center console.
 
-![Center console and shifter boot removed](/photos/miata/IMG_2344.JPG)
+[![Center console and shifter boot removed](/photos/miata/thumbs/IMG_2344.JPG)](/photos/miata/IMG_2344.JPG)
 
 They'd been there, not connected to anything, for over 20 years. I'm surprised they didn't leak. Also there was a nickel.
 
-![The batteries and change from underneath the console](/photos/miata/IMG_2345.JPG)
+[![The batteries and change from underneath the console](/photos/miata/thumbs/IMG_2345.JPG)](/photos/miata/IMG_2345.JPG)
 
 With the help of my friend Joseph, I replaced the soft top.
 
-![Joseph celebrating after we removed the old top](/photos/miata/IMG_2971.JPG)
+[![Joseph celebrating after we removed the old top](/photos/miata/thumbs/IMG_2971.JPG)](/photos/miata/IMG_2971.JPG)
 
 We removed the frame entirely, then removed the old soft top from it, installed the new one, and put the frame back onto the car.
 
-![Installing the new top onto the frame](/photos/miata/IMG_2978.JPG)
+[![Installing the new top onto the frame](/photos/miata/thumbs/IMG_2978.JPG)](/photos/miata/IMG_2978.JPG)
 
 When installing the new top onto the frame, we put the old top below it to prevent the new top from being dirtied or damaged by the cement floor.
 
-![The old top](/photos/miata/IMG_2979.JPG)
+[![The old top](/photos/miata/thumbs/IMG_2979.JPG)](/photos/miata/IMG_2979.JPG)
 
 The old top did a great job for a long time, but it was definitely starting to show its age. Also there was a Bic pen shoved in the middle loop. I had no idea I'd been driving around with a pen so close to my head.
 
-![Stretching the new top](/photos/miata/IMG_2980.JPG)
+[![Stretching the new top](/photos/miata/thumbs/IMG_2980.JPG)](/photos/miata/IMG_2980.JPG)
 
 The new top wouldn't close until it had been stretched out. This involved a lot of pulling and pushing, and a little bit of swearing.
 
-![Joseph tightening some nuts](/photos/miata/IMG_2981.JPG)
+[![Joseph tightening some nuts](/photos/miata/thumbs/IMG_2981.JPG)](/photos/miata/IMG_2981.JPG)
 
 After we finally got it closed, we tightened the bolts that attached the top to the body. I also replaced the seals between the top and the windows.
 
-![Success](/photos/miata/IMG_2982.JPG)
+[![Success](/photos/miata/thumbs/IMG_2982.JPG)](/photos/miata/IMG_2982.JPG)
 
 The new top is quite a bit nicer. I can actually see what's behind me. The old top was like looking through a porthole.
 
 
 I sewed a cover over the steering wheel to protect it and make driving a little more comfortable.
 
-![The interior with the wheel cover installed](/photos/miata/IMG_3580.JPG)
+[![The interior with the wheel cover installed](/photos/miata/thumbs/IMG_3580.JPG)](/photos/miata/IMG_3580.JPG)
 
 I really enjoy this car. It's impractical, but boy is it fun.
 
-![Icy morning in Spokane](/photos/miata/IMG_2329.JPG)
+[![Icy morning in Spokane](/photos/miata/thumbs/IMG_2329.JPG)](/photos/miata/IMG_2329.JPG)
 
-![Miatas are not very big](/photos/miata/IMG_2332.JPG)
+[![Miatas are not very big](/photos/miata/thumbs/IMG_2332.JPG)](/photos/miata/IMG_2332.JPG)
