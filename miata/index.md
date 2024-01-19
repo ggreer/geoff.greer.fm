@@ -72,7 +72,6 @@ The old and new switches side by side: ![Old and new ignition switches](/photos/
 I printed some [visor delete plates](https://www.thingiverse.com/thing:3072123), keeping the original sun visors in case I ever changed my mind. Note: If you live in a hot area, you want to print these with something other than PLA filament. PLA's glass transition temperature is 60–65°C, meaning it can soften or become tacky in the hot sun. I used carbon fiber nylon since it's a similar black as the rest of the interior.
 
 ![Printed visor deletes](/photos/miata/IMG_E2284_1.JPG)
-<!-- ![Installed visor deletes](/photos/miata/IMG_E2284_1.JPG) -->
 
 I ordered a battery hold down clamp (new), hardware to hold down the spare tire (used), and hardware to hold down the scissor jack (used). I also designed and printed [a clamp to mount a fire extinguisher in the trunk]({% link 3d/fire-extinguisher-bracket/index.md %}). I don't expect the car to catch fire. I just like having a fire extinguisher and a first aid kit in case I come across an emergency.
 
@@ -121,6 +120,44 @@ The top brake light didn't work. The bulb seemed fine, but the wiring had a brea
 
 ![Fixed and reinforced wiring](/photos/miata/IMG_2389.JPG)
 
+While replacing the torn shifter boot, I noticed two AAA batteries underneath the center console.
+
+![Center console and shifter boot removed](/photos/miata/IMG_2344.JPG)
+
+They'd been there, not connected to anything, for over 20 years. I'm surprised they didn't leak. Also there was a nickel.
+
+![The batteries and change from underneath the console](/photos/miata/IMG_2345.JPG)
+
+With the help of my friend Joseph, I replaced the soft top.
+
+![Joseph celebrating after we removed the old top](/photos/miata/IMG_2971.JPG)
+
+We removed the frame entirely, then removed the old soft top from it, installed the new one, and put the frame back onto the car.
+
+![Installing the new top onto the frame](/photos/miata/IMG_2978.JPG)
+
+When installing the new top onto the frame, we put the old top below it to prevent the new top from being dirtied or damaged by the cement floor.
+
+![The old top](/photos/miata/IMG_2979.JPG)
+
+The old top did a great job for a long time, but it was definitely starting to show its age. Also there was a Bic pen shoved in the middle loop. I had no idea I'd been driving around with a pen so close to my head.
+
+![Stretching the new top](/photos/miata/IMG_2980.JPG)
+
+The new top wouldn't close until it had been stretched out. This involved a lot of pulling and pushing, and a little bit of swearing.
+
+![Joseph tightening some nuts](/photos/miata/IMG_2981.JPG)
+
+After we finally got it closed, we tightened the bolts that attached the top to the body. I also replaced the seals between the top and the windows.
+
+![Success](/photos/miata/IMG_2982.JPG)
+
+The new top is quite a bit nicer. I can actually see what's behind me. The old top was like looking through a porthole.
+
+
+I sewed a cover over the steering wheel to protect it and make driving a little more comfortable.
+
+![The interior with the wheel cover installed](/photos/miata/IMG_3580.JPG)
 
 I really enjoy this car. It's impractical, but boy is it fun.
 
