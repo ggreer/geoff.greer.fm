@@ -29,6 +29,8 @@ gallery:
   dir: photos
   symlink: true
   galleries:
+    3d:
+      hidden: true
     miata:
       hidden: true
     sf_marathon_2018:

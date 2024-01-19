@@ -23,6 +23,7 @@ I've also generated STL files for some common tray sizes.
 {% include model.md name="pegboard-tray-6x4x2" title="Pegboard Tray 6x4x2" desc="" hide_scad=true %}
 {% include model.md name="pegboard-tray-7x4x2" title="Pegboard Tray 7x4x2" desc="" hide_scad=true %}
 
+---
 
 ## Magazine holders
 
@@ -33,3 +34,13 @@ I've also generated STL files for some common tray sizes.
 {% include model.md name="mag-holder-ruger-mk-iii" title="Ruger Mk III" desc="I'm pretty sure this works with magazines for all versions of the Ruger Standard." %}
 
 {% include model.md name="mag-holder-sig-p239" title="Sig P239" desc="This will also hold magazines for the Sig P225-A1." %}
+
+---
+
+## Electrical
+
+{% include model.md name="pegboard-outlet-box" title="Pegboard Power Outlet Holder" desc="This lets you mount a standard light switch or power outlet on pegboard." %}
+
+{% include model.md name="pegboard-outlet-back" title="Pegboard Power Outlet Holder (back)" desc="The back of the outlet holder." hide_scad=true %}
+
+{% include model.md name="surge-protector-pegboard" title="Pegboard Surge Protector Holder" desc="This lets you mount a surge protector on pegboard. You'll probably need to customize the OpenSCAD file for your particular surge protector." %}

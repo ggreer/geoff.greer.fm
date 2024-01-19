@@ -9,3 +9,5 @@ post_style: 'style="max-width: none;"'
 ---
 
 {% include model.md name="hair-dryer-holster" title="Hair Dryer Holster" desc="You might want to tweak the dimensions in the SCAD file to fit your hair dryer more accurately. You'll need a ratchet with a screwdriver attachment to mount it. A normal screwdriver can't be angled correctly to drive screws in the mounting holes. No supports are necessary." %}
+
+[![Hair dryer holster installed in the bathroom](/photos/3d/thumbs/IMG_2301.JPG)](/photos/3d/IMG_2301.JPG)
