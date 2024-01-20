@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Datadog to SQL</title>
+    <style>
+      #input {
+        width: 60rem;
+        height: 30rem;
+      }
+      #output {
+        width: 60rem;
+        height: 30rem;
+      }
+      #errorWrapper {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Input</h1>
+    <textarea id="input" placeholder="paste json here"></textarea>
+    <div id="errorWrapper">
+      <h1>Errors</h1>
+      <pre id="error"></pre>
+    </div>
+    <h1>Output</h1>
+    <textarea id="output" placeholder="SQL will show up here"></textarea>
+  </body>
+  <script type="text/javascript">
+    const input = document.getElementById("input");
+    const output = document.getElementById("output");
+    function onChange (e) {
+      try {
+        const json = JSON.parse(e.target.value);
+        const sql = json.content.attributes.sql;
+        const args = json.content.attributes.args.map((arg) => {
+          if (typeof arg === 'number') {
+            return arg;
+          }
+          return `'${arg}'`;
+        });
+        const v = `PREPARE query AS\n${sql};\n\nEXECUTE query(${args.join(', ')});`
+        console.debug(v);
+        document.getElementById("errorWrapper").style.display = "none";
+        output.value = v;
+      } catch (e) {
+        document.getElementById("error").innerText = e;
+        document.getElementById("errorWrapper").style.display = "block";
+      }
+    }
+    input.addEventListener("input", onChange);
+  </script>
+</html>
