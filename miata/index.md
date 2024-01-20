@@ -78,7 +78,7 @@ I ordered a battery hold down clamp (new), hardware to hold down the spare tire 
 [![What the trunk normally looks like](/photos/miata/thumbs/IMG_2335.JPG)](/photos/miata/IMG_2335.JPG)
 [![The trunk with the battery and jack revealed](/photos/miata/thumbs/IMG_2336.JPG)](/photos/miata/IMG_2336.JPG)
 
-The doors and trunk creaked when opening/closing, so I greased the hinges.
+The doors and trunk creaked when opening/closing, so I greased the hinges. The fire extinguisher in the trunk is mounted using my [3D printed fire extinguisher bracket]({% link 3d/fire-extinguisher-bracket/index.md %}).
 
 The windows were rather difficult to roll up/down, so I lubricated the window tracks. It's important to use a rubber-compatible lubricant on the front window channel. Silicone lubricant is probably best.
 
