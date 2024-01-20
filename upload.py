@@ -76,11 +76,11 @@ def upload_file(container, file_path, cf_path):
         driver = storage_driver(user, api_key)
         driver.upload_object(file_path, container, cf_path, headers=headers)
     except AttributeError as e:
-        print('AttributeError uploading file:', e)
+        print('AttributeError uploading file:', file_path, e)
         # Probably a stupid mime type thing. Retry
         driver.upload_object(file_path, container, cf_path, extra={'content_type': 'binary/octet-stream'}, headers=headers)
     except Exception as e:
-        print('Error uploading file:', e)
+        print('Error uploading file:', file_path, e)
 
 
 def delete_obj(obj, msg=None):
