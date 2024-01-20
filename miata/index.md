@@ -5,6 +5,7 @@ slug: miata
 status: publish
 published: true
 title: Miata
+post_style: 'style="max-width: none;"'
 ---
 
 ### Background
