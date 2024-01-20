@@ -45,7 +45,7 @@ I've also generated STL files for some common tray sizes.
 
 [![Power box attached to pegboard](/photos/3d/thumbs/IMG_3595_1.JPG)](/photos/3d/IMG_3595_1.JPG)
 
-I designed this to make a switch for a light above my work bench. It will fit any standard outlet or switch. The two parts dovetail into each other, so you may need to tweak the tolerances for your printer.
+I designed this to make a switch for a light above my work bench. It will fit any standard outlet or switch. The two parts slide together, so you may need to tweak the tolerances for your printer.
 
 {% include model.md name="surge-protector-pegboard" title="Pegboard Surge Protector Holder" desc="This lets you mount a surge protector on pegboard. You'll probably need to customize the OpenSCAD file for your particular surge protector." %}
 
