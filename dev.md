@@ -15,4 +15,4 @@ I'm of the opinion that hardware doesn't matter that much, yet is [worth spendin
 
 I run [Arch Linux](https://archlinux.org/) with [Sway](https://github.com/swaywm/sway/), a [tiling window manager](https://en.wikipedia.org/wiki/Tiling_window_manager) similar to [i3](https://i3wm.org/). My Sway configuration (along with many other configs) is avaliable in [my dotfiles repository](https://github.com/ggreer/dotfiles).
 
-My main editor is [Sublime Text](https://www.sublimetext.com/). My shell is [zsh](https://en.wikipedia.org/wiki/Z_shell).
+My main editor is [Visual Studio Code](https://code.visualstudio.com/). My shell is [zsh](https://en.wikipedia.org/wiki/Z_shell).
