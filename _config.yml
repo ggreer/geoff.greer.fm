@@ -31,6 +31,8 @@ gallery:
   galleries:
     3d:
       hidden: true
+    ring:
+      hidden: true
     miata:
       hidden: true
     sf_marathon_2018:

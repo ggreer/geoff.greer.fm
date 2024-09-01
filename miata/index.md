@@ -79,7 +79,7 @@ I ordered a battery hold down clamp (new), hardware to hold down the spare tire 
 [![What the trunk normally looks like](/photos/miata/thumbs/IMG_2335.JPG)](/photos/miata/IMG_2335.JPG)
 [![The trunk with the battery and jack revealed](/photos/miata/thumbs/IMG_2336.JPG)](/photos/miata/IMG_2336.JPG)
 
-The doors and trunk creaked when opening/closing, so I greased the hinges. The fire extinguisher in the trunk is mounted using my [3D printed fire extinguisher bracket]({% link 3d/fire-extinguisher-bracket/index.md %}).
+The doors and trunk creaked when opening/closing, so I greased the hinges.
 
 The windows were rather difficult to roll up/down, so I lubricated the window tracks. It's important to use a rubber-compatible lubricant on the front window channel. Silicone lubricant is probably best.
 
@@ -111,7 +111,7 @@ One of the tail lights had some cracks, so I ordered replacements and swapped th
 
 [![Old tail light next to the newly installed one](/photos/miata/thumbs/IMG_2342.JPG)](/photos/miata/IMG_2342.JPG)
 
-Part of the the windshield cowling had broken off, so I ordered replacement and installed it. The plastic was aged from sunlight and time, so the new cowling improved the look of the car. The wiper frames could use some new paint, but I haven't gotten around to that yet.
+Part of the the windshield cowling had broken off, so I ordered a replacement and installed it. The plastic was aged from sunlight and time, so the new cowling improved the look of the car. The wiper frames could use some new paint, but I haven't gotten around to that yet.
 
 [![New cowling installed](/photos/miata/thumbs/IMG_2341.JPG)](/photos/miata/IMG_2341.JPG)
 
@@ -165,3 +165,13 @@ I really enjoy this car. It's impractical, but boy is it fun.
 [![Icy morning in Spokane](/photos/miata/thumbs/IMG_2329.JPG)](/photos/miata/IMG_2329.JPG)
 
 [![Miatas are not very big](/photos/miata/thumbs/IMG_2332.JPG)](/photos/miata/IMG_2332.JPG)
+
+
+September 2024 update: I've replaced the wiper shield and had the car re-painted. It looks spectacular.
+
+[![](/photos/miata/thumbs/IMG_4307.JPG)](/photos/miata/IMG_4307.JPG)
+[![](/photos/miata/thumbs/IMG_4309.JPG)](/photos/miata/IMG_4309.JPG)
+[![Next to some friends' Miatas](/photos/miata/thumbs/IMG_4320.JPG)](/photos/miata/IMG_4320.JPG)
+[![At the Camas car show](/photos/miata/thumbs/IMG_4361.JPG)](/photos/miata/IMG_4361.JPG)
+
+I think the only thing left is to refurbish the wheels. I scrubbed the heck out of them, but the aluminum still has stains on it. I think it's going to take some sanding or and/or more powerful solvents.
