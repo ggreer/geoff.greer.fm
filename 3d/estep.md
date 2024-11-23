@@ -54,7 +54,7 @@ A common issue with 3D printers is incorrect extrusion. Under-extrusion can caus
 1. Load your filament into your printer.
 2. Measure 120mm from your extruder and mark the filament at that point.
 3. Command the printer to extrude 100mm of filament.
-4. Put a second wark on the filament where it feeds into the extruder.
+4. Put a second mark on the filament where it feeds into the extruder.
 5. Measure the distance between the two marks.
 6. In the top input, enter your printer's current extruder steps/mm.
 7. In the second input, enter the distance between the two marks.
