@@ -50,3 +50,5 @@ I designed this to make a switch for a light above my work bench. It will fit an
 {% include model.md name="surge-protector-pegboard" title="Pegboard Surge Protector Holder" desc="This lets you mount a surge protector on pegboard. You'll probably need to customize the OpenSCAD file for your particular surge protector." %}
 
 [![Surge protector attached to pegboard](/photos/3d/thumbs/IMG_3593_1.JPG)](/photos/3d/IMG_3593_1.JPG)
+
+[![Pegboard magazine holders installed](/photos/3d/thumbs/IMG_3335.JPG)](/photos/3d/IMG_3335.JPG)

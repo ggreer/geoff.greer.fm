@@ -175,3 +175,6 @@ September 2024 update: I've replaced the wiper shield and had the car re-painted
 [![At the Camas car show](/photos/miata/thumbs/IMG_4361.JPG)](/photos/miata/IMG_4361.JPG)
 
 I think the only thing left is to refurbish the wheels. I scrubbed the heck out of them, but the aluminum still has stains on it. I think it's going to take some sanding or and/or more powerful solvents.
+
+
+December 2024 update: I got annoyed with the Miata's lack of cabin air filter, so [I designed and built my own]({% link 3d/miata-cabin-air-filter/index.md %}).

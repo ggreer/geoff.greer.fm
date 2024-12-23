@@ -30,6 +30,10 @@ I got a 3D printer in early 2021. Since then, I've designed and printed many thi
 
 [Cheek pistol]({% link 3d/cheek-pistol/index.md %})
 
+[Sleeve for P365 17 round magazines]({% link 3d/p365-magguts-mag-sleeve/index.md %})
+
 [Fire extinguisher bracket]({% link 3d/fire-extinguisher-bracket/index.md %})
 
 [Giant friendship bracelet]({% link 3d/giant-friendship-bracelet/index.md %})
+
+[Mazda Miata cabin air filter]({% link 3d/miata-cabin-air-filter/index.md %})
