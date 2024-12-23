@@ -28,15 +28,15 @@ function render_all {
 
   # render multiple angles
   # standard view
-  render perspective "0,0,0,55,0,25,0" "${base_path}-0.png" "$scad_path"
+  render perspective "0,0,0,55,0,25,0" "${base_path}-0.png" "$scad_path" &
   # rotate 90 degrees
-  render perspective "0,0,0,55,0,115,0" "${base_path}-1.png" "$scad_path"
+  render perspective "0,0,0,55,0,115,0" "${base_path}-1.png" "$scad_path" &
   # rotate 180 degrees
-  render perspective "0,0,0,55,0,205,0" "${base_path}-2.png" "$scad_path"
+  render perspective "0,0,0,55,0,205,0" "${base_path}-2.png" "$scad_path" &
   # top
-  render ortho "0,0,0,0,0,0,0" "${base_path}-top.png" "$scad_path"
+  render ortho "0,0,0,0,0,0,0" "${base_path}-top.png" "$scad_path" &
   # side
-  render ortho "0,0,0,90,0,0,0" "${base_path}-side.png" "$scad_path"
+  render ortho "0,0,0,90,0,0,0" "${base_path}-side.png" "$scad_path" &
   # front
   render ortho "0,0,0,90,0,270,0" "${base_path}-front.png" "$scad_path"
   # back
