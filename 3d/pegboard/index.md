@@ -10,7 +10,7 @@ post_style: 'style="max-width: none;"'
 
 ## Trays
 
-{% include model.md name="pegboard-tray" title="Pegboard Tray" desc="This pegboard tray is parameterized. If you change the dimensions in the OpenSCAD file, it will automatically generate the correct mounting pegs. You can tweak other attributes such as peg diamter, though the default should work with most pegboard." %}
+{% include model.md name="pegboard-tray" title="Pegboard Tray" desc="This pegboard tray is parameterized. If you change the dimensions in the OpenSCAD file, it will automatically generate the correct mounting pegs. You can tweak other attributes such as peg diameter, though the default should work with most pegboard." %}
 
 I've also generated STL files for some common tray sizes.
 

@@ -7,6 +7,12 @@ Here are some things I've made. See [GitHub](https://github.com/ggreer) for more
 
 <br />
 
+## [Names](/names/)
+
+A tool to search and filter given name data. I made this to get some ideas for baby names.
+
+<br />
+
 ## [1990 Mazda Miata](/miata/)
 
 My project car. I bought it in early 2023.

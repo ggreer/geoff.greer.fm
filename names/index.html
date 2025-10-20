@@ -1,0 +1,68 @@
+---
+layout: page
+slug: names
+status: publish
+title: Names
+---
+
+<p>
+  This tool lets you search and filter all first names from Social Security data. It includes data from people born from 1880-2024. It definitely contains typoes and misspellings, though it's unclear if some of those are parents writing the wrong name on a form or data entry errors.
+</p>
+
+<div class="row">
+  <div class="col w6" style="text-align: right;">
+    <label for="start_year">From</label>
+    <input type="number" name="start_year" id="start_year" min="1880" max="2024" step="1" value="1880" />
+    <label for="end_year">to</label>
+    <input type="number" name="end_year" id="end_year" min="1880" max="2024" step="1" value="2024" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col w6" style="text-align: right;">
+    <input type="checkbox" id="most_popular_check" name="most_popular_check" checked />
+    <label for="most_popular">
+      Never more popular than
+    </label>
+    <input type="number" name="most_popular" id="most_popular" min="1" max="10000" step="1" value="1" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col w6" style="text-align: right;">
+    <input type="checkbox" id="least_popular_check" name="least_popular_check" checked />
+    <label for="least_popular">
+      Never less popular than
+    </label>
+    <input type="number" name="least_popular" id="least_popular" min="1" max="10000" step="1" value="100" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col w2">
+    <label for="sex">Sex</label>
+    <select name="sex" id="sex">
+      <option value=""></option>
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    </select>
+  </div>
+  <div class="col w4" style="text-align: right;">
+    <label for="filter">Filter</label>
+    <input type="search" name="filter" id="filter" />
+    <button type="button" onclick="filterNames()">Search</button>
+  </div>
+</div>
+
+<div>
+  <span id="count">0</span> results
+</div>
+
+<br />
+
+<div id="results">
+
+</div>
+
+<script type="text/javascript" src="name-data-compact.js"></script>
+<script type="text/javascript" src="names.js"></script>
