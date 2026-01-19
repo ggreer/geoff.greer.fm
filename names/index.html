@@ -6,35 +6,43 @@ title: Names
 ---
 
 <p>
-  This tool lets you search and filter all first names from Social Security data. It includes data from people born from 1880-2024. It definitely contains typoes and misspellings, though it's unclear if some of those are parents writing the wrong name on a form or data entry errors.
+  This tool lets you search and filter all first names from Social Security data of people born between 1880 and 2024. The data contains some typoes and misspellings.
 </p>
 
+<form id="name_form" onsubmit="filterNames()" disabled>
 <div class="row">
   <div class="col w6" style="text-align: right;">
     <label for="start_year">From</label>
-    <input type="number" name="start_year" id="start_year" min="1880" max="2024" step="1" value="1880" />
+    <input disabled type="number" name="start_year" id="start_year" min="1880" max="2024" step="1" value="1880" />
     <label for="end_year">to</label>
-    <input type="number" name="end_year" id="end_year" min="1880" max="2024" step="1" value="2024" />
+    <input disabled type="number" name="end_year" id="end_year" min="1880" max="2024" step="1" value="2024" />
   </div>
 </div>
 
 <div class="row">
-  <div class="col w6" style="text-align: right;">
-    <input type="checkbox" id="most_popular_check" name="most_popular_check" checked />
-    <label for="most_popular">
-      Never more popular than
+  <div class="col w3" style="text-align: right;">
+    <input disabled type="checkbox" id="was_popular_check" name="was_popular_check" checked />
+    <label for="was_popular">
+      Was ever in the top
     </label>
-    <input type="number" name="most_popular" id="most_popular" min="1" max="10000" step="1" value="1" />
+    <input disabled type="number" name="was_popular" id="was_popular" min="1" max="100000" step="1" value="1000" />
+  </div>
+  <div class="col w3" style="text-align: right;">
+    <input disabled type="checkbox" id="most_popular_check" name="most_popular_check" />
+    <label for="most_popular">
+      Never in the top
+    </label>
+    <input disabled type="number" name="most_popular" id="most_popular" min="1" max="100000" step="1" value="1" />
   </div>
 </div>
 
 <div class="row">
-  <div class="col w6" style="text-align: right;">
-    <input type="checkbox" id="least_popular_check" name="least_popular_check" checked />
+  <div class="col w3" style="text-align: right;">
+    <input disabled type="checkbox" id="least_popular_check" name="least_popular_check" />
     <label for="least_popular">
       Never less popular than
     </label>
-    <input type="number" name="least_popular" id="least_popular" min="1" max="10000" step="1" value="100" />
+    <input disabled type="number" name="least_popular" id="least_popular" min="1" max="100000" step="1" value="100" />
   </div>
 </div>
 
@@ -48,21 +56,32 @@ title: Names
     </select>
   </div>
   <div class="col w4" style="text-align: right;">
-    <label for="filter">Filter</label>
-    <input type="search" name="filter" id="filter" />
+    <label for="filter">Starts with</label>
+    <input disabled type="search" name="filter_start" id="filter_start" />
+  </div>
+  <div class="col w6" style="text-align: right;">
+    <label for="filter_contains">Contains</label>
+    <input disabled type="search" name="filter_contains" id="filter_contains" />
+  </div>
+  <div class="col w6" style="text-align: right;">
+    <label for="filter_end">Ends with</label>
+    <input disabled type="search" name="filter_end" id="filter_end" />
+  </div>
+</div>
+<div class="row">
+  <div class="col w6" style="text-align:right;">
     <button type="button" onclick="filterNames()">Search</button>
   </div>
 </div>
+</form>
 
-<div>
-  <span id="count">0</span> results
-</div>
+<p>
+  <span id="count"></span> results
+</p>
 
-<br />
+<div id="results"></div>
 
-<div id="results">
-
-</div>
-
-<script type="text/javascript" src="name-data-compact.js"></script>
-<script type="text/javascript" src="names.js"></script>
+<script async type="text/javascript" src="d3-v7.9.0.js"></script>
+<script async type="text/javascript" src="names.js"></script>
+<script async type="text/javascript" src="chart.js"></script>
+<script async type="text/javascript" src="name-data-compact.js"></script>
