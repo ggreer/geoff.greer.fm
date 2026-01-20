@@ -2,7 +2,9 @@
 
 const countElem = document.getElementById("count");
 const startYearInput = document.getElementById("start_year");
+const startYearValue = document.getElementById("start_year_value");
 const endYearInput = document.getElementById("end_year");
+const endYearValue = document.getElementById("end_year_value");
 const wasPopularElem = document.getElementById("was_popular");
 const wasPopularCheckElem = document.getElementById("was_popular_check");
 const mostPopularElem = document.getElementById("most_popular");
@@ -152,7 +154,13 @@ function initFilterNames() {
 function getFilterStateFromInputs() {
   // TODO: validate & constrain values
   const startYear = parseInt(startYearInput.value);
+  if (startYear) {
+    startYearValue.innerText = startYear;
+  }
   const endYear = parseInt(endYearInput.value);
+  if (endYear) {
+    endYearValue.innerText = endYear;
+  }
   const startsWith = startsWithElem.value.toLowerCase();
   const contains = containsElem.value.toLowerCase();
   const endsWith = endsWithElem.value.toLowerCase();
@@ -186,10 +194,12 @@ function setInputsFromFilterState(fs) {
   const startYear = parseInt(fs.startYear);
   if (startYear) {
     startYearInput.value = startYear;
+    startYearValue.innerText = startYear;
   }
   const endYear = parseInt(fs.endYear);
   if (endYear) {
     endYearInput.value = endYear;
+    endYearValue.innerText = endYear;
   }
   if (fs.startsWith) {
     startsWithElem.value = fs.startsWith;
@@ -307,28 +317,79 @@ async function filterNames_(filterState) {
   console.debug("set count", Date.now()-stepTime);
   stepTime = Date.now();
 
-  names.sort(function (a, b) {
-    if (a.name < b.name) {
-      return -1;
-    }
-    if (a.name === b.name) {
-      return 0;
-    }
-    return 1;
-  });
-  console.debug("sorted results", Date.now()-stepTime);
-  stepTime = Date.now();
-
-  await setResults(names);
+  let sortBy = "name";
+  if (filterState.sortBy !== "") {
+    sortBy = filterState.sortBy;
+  }
+  await setResults(names, sortBy, filterState.sortReversed);
   const end = Date.now();
   console.debug("set results", end-stepTime, end-start);
 }
 
-async function setResults(names) {
+function reverseSort (sortFunc) {
+  return function (a, b) {
+    return sortFunc(b, a);
+  }
+}
+
+function sortByName (a, b) {
+  if (a.name < b.name) {
+    return -1;
+  }
+  if (a.name === b.name) {
+    return 0;
+  }
+  return 1;
+}
+
+function sortByMaxRank(a, b) {
+  if (a.max < b.max) {
+    return -1;
+  }
+  if (a.max === b.max) {
+    return sortByName(a, b);
+  }
+  return 1;
+}
+
+function sortByMinRank(a, b) {
+  if (a.min < b.min) {
+    return -1;
+  }
+  if (a.min === b.min) {
+    return sortByName(a, b);
+  }
+  return 1;
+}
+
+function sortResults(sortBy, reversed) {
+  console.log("sorting by", sortBy, reversed);
+  const filterState = getFilterStateFromInputs();
+  filterState.sortBy = sortBy;
+  filterState.sortReversed = reversed;
+  filterNames_(filterState);
+}
+
+async function setResults(names, sortBy, reversed) {
   if (names.length === 0) {
     resultsElem.innerHTML = "No matching results.";
   }
   resultsElem.innerHTML = "";
+
+  let sortByFunc = sortByName;
+  switch (sortBy) {
+    case "minRank":
+      sortByFunc = sortByMinRank;
+      break;
+    case "maxRank":
+      sortByFunc = sortByMaxRank;
+      break;
+  }
+  if (reversed) {
+    sortByFunc = reverseSort(sortByFunc);
+  }
+
+  names = names.sort(sortByFunc);
 
   if (names.length > maxResults) {
     names = names.slice(0, maxResults);
@@ -336,10 +397,10 @@ async function setResults(names) {
   }
   resultsElem.innerHTML += `<table style="table-layout: fixed; width: 100%;">
   <thead>
-    <th onclick="sortByName()" style="width: 35%; text-align: left;">Name</th>
+    <th onclick="sortResults('name', ${sortBy === "name" ? !reversed : false})" style="width: 35%; text-align: left; cursor: pointer;">Name</th>
     <th style="width: 24px;"></th>
-    <th onclick="sortBymaxRank()" style="text-align: right; cursor: pointer;">Max rank</th>
-    <th onclick="sortByminRank()" style="text-align: right;">Min rank</th>
+    <th onclick="sortResults('maxRank', ${sortBy === "maxRank" ? !reversed : false})" style="text-align: right; cursor: pointer;">Max rank</th>
+    <th onclick="sortResults('minRank', ${sortBy === "minRank" ? !reversed : false})" style="text-align: right; cursor: pointer;">Min rank</th>
   </thead>
   <tbody id="results_rows">
   </tbody>

@@ -11,11 +11,19 @@ title: Names
 
 <form id="name_form" onsubmit="filterNames()" disabled>
 <div class="row">
-  <div class="col w6" style="text-align: right;">
-    <label for="start_year">From</label>
-    <input disabled type="number" name="start_year" id="start_year" min="1880" max="2024" step="1" value="1880" />
-    <label for="end_year">to</label>
-    <input disabled type="number" name="end_year" id="end_year" min="1880" max="2024" step="1" value="2024" />
+  <div class="col w6">
+    <div style="display:flex;">
+      <label for="start_year">From</label>
+      <input style="flex-grow: 1; margin: 0 10px;" disabled type="range" name="start_year" id="start_year" min="1880" max="2024" step="1" value="1880" />
+      <span id="start_year_value"></span>
+    </div>
+  </div>
+  <div class="col w6">
+    <div style="display:flex;">
+      <label for="end_year">to</label>
+      <input style="flex-grow: 1; margin: 0 10px;" disabled type="range" name="end_year" id="end_year" min="1880" max="2024" step="1" value="2024" />
+      <span id="end_year_value"></span>
+    </div>
   </div>
 </div>
 
@@ -30,7 +38,7 @@ title: Names
   <div class="col w3" style="text-align: right;">
     <input disabled type="checkbox" id="most_popular_check" name="most_popular_check" />
     <label for="most_popular">
-      Never in the top
+      Was never in the top
     </label>
     <input disabled type="number" name="most_popular" id="most_popular" min="1" max="100000" step="1" value="1" />
   </div>
@@ -40,7 +48,7 @@ title: Names
   <div class="col w3" style="text-align: right;">
     <input disabled type="checkbox" id="least_popular_check" name="least_popular_check" />
     <label for="least_popular">
-      Never less popular than
+      Was never less popular than
     </label>
     <input disabled type="number" name="least_popular" id="least_popular" min="1" max="100000" step="1" value="100" />
   </div>
